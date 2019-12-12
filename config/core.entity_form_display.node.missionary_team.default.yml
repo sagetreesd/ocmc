@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.missionary_team.body
     - field.field.node.missionary_team.field_departure_city
+    - field.field.node.missionary_team.field_interests
     - field.field.node.missionary_team.field_orientation_days
     - field.field.node.missionary_team.field_receiving_country
     - field.field.node.missionary_team.field_serving_cities
@@ -96,6 +97,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_interests:
+    weight: 133
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_orientation_days:
     weight: 123

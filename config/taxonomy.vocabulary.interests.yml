@@ -1,0 +1,8 @@
+uuid: 7ade8423-68bf-4e70-8582-bd75f157b507
+langcode: en
+status: true
+dependencies: {  }
+name: Interests
+vid: interests
+description: 'Interest and topic category.'
+weight: 0

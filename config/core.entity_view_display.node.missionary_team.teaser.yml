@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.missionary_team.body
     - field.field.node.missionary_team.field_departure_city
+    - field.field.node.missionary_team.field_interests
     - field.field.node.missionary_team.field_orientation_days
     - field.field.node.missionary_team.field_receiving_country
     - field.field.node.missionary_team.field_serving_cities
@@ -39,6 +40,7 @@ content:
     region: content
 hidden:
   field_departure_city: true
+  field_interests: true
   field_orientation_days: true
   field_receiving_country: true
   field_serving_cities: true

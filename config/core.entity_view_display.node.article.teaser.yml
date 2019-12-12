@@ -8,8 +8,8 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_article_author
     - field.field.node.article.field_content_paragraphs
+    - field.field.node.article.field_interests
     - field.field.node.article.field_thumbnail_image
-    - field.field.node.article.field_topics
     - node.type.article
   module:
     - text
@@ -36,5 +36,5 @@ hidden:
   comment: true
   field_article_author: true
   field_content_paragraphs: true
+  field_interests: true
   field_thumbnail_image: true
-  field_topics: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.board_member.body
+    - field.field.node.board_member.field_interests
     - node.type.board_member
   module:
     - path
@@ -18,6 +19,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_interests:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   path:
     type: path
     weight: 6

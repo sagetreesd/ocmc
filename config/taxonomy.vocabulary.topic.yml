@@ -1,8 +1,0 @@
-uuid: fb300303-9732-4648-955a-d09e4e5b4b8c
-langcode: en
-status: true
-dependencies: {  }
-name: Topic
-vid: topic
-description: 'Topic/Theme of a post or content.'
-weight: 0

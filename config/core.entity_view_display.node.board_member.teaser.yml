@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.board_member.body
+    - field.field.node.board_member.field_interests
     - node.type.board_member
   module:
     - text
@@ -27,4 +28,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_interests: true
