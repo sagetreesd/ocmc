@@ -1,0 +1,21 @@
+uuid: d2c326cf-450f-4f0b-a927-10450ad0e029
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_missionary_status
+    - node.type.missionary
+  module:
+    - options
+id: node.missionary.field_missionary_status
+field_name: field_missionary_status
+entity_type: node
+bundle: missionary
+label: 'Missionary Status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 50b4e0ed-0662-4e75-a2ad-83d2162a7de1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_title
+    - paragraphs.paragraphs_type.basic_html_section
+id: paragraph.basic_html_section.field_section_title
+field_name: field_section_title
+entity_type: paragraph
+bundle: basic_html_section
+label: 'Section Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

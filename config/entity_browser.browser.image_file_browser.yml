@@ -1,0 +1,47 @@
+uuid: 9158059d-bebe-457a-b612-267962e6c07c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.paragraphs_library_browser
+  module:
+    - views
+name: image_file_browser
+label: 'Image File Browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select Images'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: file
+  display: thumbnail
+  display_settings:
+    image_style: thumbnail
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  9301945f-2c8a-4456-b77f-eaf53c3e6412:
+    settings:
+      upload_location: 'public://gallery-images'
+      multiple: true
+      submit_text: 'Select files'
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+    uuid: 9301945f-2c8a-4456-b77f-eaf53c3e6412
+    weight: 1
+    label: 'Upload Images'
+    id: upload
+  0817d427-0020-46b1-9ede-f40b64bbe91a:
+    settings:
+      view: paragraphs_library_browser
+      view_display: entity_browser
+      submit_text: 'Select images'
+      auto_select: true
+    uuid: 0817d427-0020-46b1-9ede-f40b64bbe91a
+    weight: 2
+    label: 'View Images'
+    id: view

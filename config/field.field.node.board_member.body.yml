@@ -1,0 +1,23 @@
+uuid: 720e92d1-6905-466e-9097-df198f0e4583
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.board_member
+  module:
+    - text
+id: node.board_member.body
+field_name: body
+entity_type: node
+bundle: board_member
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,18 @@
+uuid: 09594b2a-035b-4f0f-992a-b692ac5a5b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.missionary_team
+id: node.missionary_team.title
+field_name: title
+entity_type: node
+bundle: missionary_team
+label: 'Team Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

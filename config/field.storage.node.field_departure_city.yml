@@ -1,0 +1,21 @@
+uuid: e51e5a83-9706-4ab4-9ca2-0fb5ab46316a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_departure_city
+field_name: field_departure_city
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

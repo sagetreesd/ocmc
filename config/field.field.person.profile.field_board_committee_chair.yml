@@ -1,0 +1,23 @@
+uuid: e3216588-0def-495b-becc-c29147f507b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_board_committee_chair
+id: person.profile.field_board_committee_chair
+field_name: field_board_committee_chair
+entity_type: person
+bundle: profile
+label: 'Committee Chair'
+description: 'This Board Member serves as Committee Chair'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

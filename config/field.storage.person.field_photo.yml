@@ -1,21 +1,19 @@
-uuid: e7380c9a-f3a2-4fbb-a475-930ffaae90ba
+uuid: 112ccbe7-5bbc-4de5-8c0e-50f6d107caad
 langcode: en
 status: true
 dependencies:
   module:
+    - eck
     - file
     - image
-    - node
-_core:
-  default_config_hash: SkXIPKZYiIMMtnBmfnxk58RYfbZ8cHSw5NZPY_JByME
-id: node.field_image
-field_name: field_image
-entity_type: node
+id: person.field_photo
+field_name: field_photo
+entity_type: person
 type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
@@ -27,8 +25,6 @@ module: image
 locked: false
 cardinality: 1
 translatable: true
-indexes:
-  target_id:
-    - target_id
+indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

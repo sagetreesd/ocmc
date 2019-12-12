@@ -1,0 +1,23 @@
+uuid: 3b695c25-b101-4c15-b716-8c8973335ab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_flickr
+  module:
+    - link
+id: person.profile.field_flickr
+field_name: field_flickr
+entity_type: person
+bundle: profile
+label: Flickr
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

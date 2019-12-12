@@ -1,0 +1,23 @@
+uuid: b9a46775-91b8-430c-a283-da4924d3c0e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_facebook
+  module:
+    - link
+id: person.profile.field_facebook
+field_name: field_facebook
+entity_type: person
+bundle: profile
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,28 @@
+uuid: b7440dfd-326a-4f08-9d9b-1d67b0e464ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.node.field_personal_information
+    - node.type.missionary
+id: node.missionary.field_personal_information
+field_name: field_personal_information
+entity_type: node
+bundle: missionary
+label: 'Personal Information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:person'
+  handler_settings:
+    target_bundles:
+      profile: profile
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

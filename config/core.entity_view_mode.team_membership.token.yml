@@ -1,0 +1,10 @@
+uuid: e2269de1-58ba-4c30-bbe3-3dd782b6ca17
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: team_membership.token
+label: Token
+targetEntityType: team_membership
+cache: true

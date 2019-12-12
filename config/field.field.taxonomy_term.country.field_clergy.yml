@@ -1,0 +1,25 @@
+uuid: a78d00b2-1bfb-447b-a473-7a12728d8e9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_clergy
+    - taxonomy.vocabulary.country
+id: taxonomy_term.country.field_clergy
+field_name: field_clergy
+entity_type: taxonomy_term
+bundle: country
+label: Clergy
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

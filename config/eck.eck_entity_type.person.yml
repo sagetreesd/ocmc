@@ -1,0 +1,10 @@
+uuid: 24e30760-61ba-4a34-a44f-b49afe9eb23d
+langcode: en
+status: true
+dependencies: {  }
+id: person
+label: Person
+created: true
+changed: true
+uid: false
+title: true

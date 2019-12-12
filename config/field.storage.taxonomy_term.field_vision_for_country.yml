@@ -1,0 +1,19 @@
+uuid: 6c725e29-75c5-48fc-804e-4e91984a94cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_vision_for_country
+field_name: field_vision_for_country
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: fe78beda-5844-448e-9059-30aca07669f0
+langcode: en
+status: true
+dependencies: {  }
+id: basic_html_section
+label: 'Basic HTML Section'
+icon_uuid: null
+description: 'Section title and HTML-enabled text area.'
+behavior_plugins: {  }

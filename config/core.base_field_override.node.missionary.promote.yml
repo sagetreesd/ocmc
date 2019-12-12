@@ -1,0 +1,22 @@
+uuid: 0389b6ed-b620-4267-aaf4-cabbd6b7e712
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.missionary
+id: node.missionary.promote
+field_name: promote
+entity_type: node
+bundle: missionary
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

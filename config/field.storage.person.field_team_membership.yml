@@ -1,0 +1,19 @@
+uuid: 3a005915-9347-4bc8-9516-fcc7e3e462e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: person.field_team_membership
+field_name: field_team_membership
+entity_type: person
+type: entity_reference
+settings:
+  target_type: team_membership
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

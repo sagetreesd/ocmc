@@ -1,0 +1,20 @@
+uuid: a11e2b0e-57e3-4d45-aada-3b6f73ab1e47
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_team_size
+field_name: field_team_size
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

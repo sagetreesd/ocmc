@@ -1,21 +1,19 @@
-uuid: 858720cc-be42-40b8-bdc2-6104b370ec08
+uuid: 079c17f7-2e5d-4eac-83f4-36a50ff61754
 langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - eck
     - taxonomy
-_core:
-  default_config_hash: WpOE_bs8Bs_HY2ns7n2r__de-xno0-Bxkqep5-MsHAs
-id: node.field_tags
-field_name: field_tags
-entity_type: node
+id: person.field_board_committee
+field_name: field_board_committee
+entity_type: person
 type: entity_reference
 settings:
   target_type: taxonomy_term
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,30 @@
+uuid: 66780ec0-5a0e-4050-a0eb-ac76179687c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.missionary.body
+    - node.type.missionary
+  module:
+    - text
+    - user
+id: node.missionary.teaser
+targetEntityType: node
+bundle: missionary
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 056dc919-ac52-49ac-9187-c97df2b614c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_roles
+  module:
+    - options
+id: person.profile.field_roles
+field_name: field_roles
+entity_type: person
+bundle: profile
+label: Roles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

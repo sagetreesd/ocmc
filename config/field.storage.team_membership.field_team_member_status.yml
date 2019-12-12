@@ -1,0 +1,27 @@
+uuid: cbe02556-b5a8-4055-bb89-a5f027246e73
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: team_membership.field_team_member_status
+field_name: field_team_member_status
+entity_type: team_membership
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Applied
+      label: Applied
+    -
+      value: Approved
+      label: Approved
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

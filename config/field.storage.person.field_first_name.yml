@@ -1,0 +1,21 @@
+uuid: 11b6be91-8830-46c1-97df-d9d8049bc88e
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: person.field_first_name
+field_name: field_first_name
+entity_type: person
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

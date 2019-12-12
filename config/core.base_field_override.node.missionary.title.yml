@@ -1,0 +1,18 @@
+uuid: 47e81345-0637-4d5e-855f-d4fe84fad3f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.missionary
+id: node.missionary.title
+field_name: title
+entity_type: node
+bundle: missionary
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

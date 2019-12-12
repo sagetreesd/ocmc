@@ -1,0 +1,39 @@
+uuid: 972c9255-ca08-43d7-b1ec-d624691d264a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_continent
+field_name: field_continent
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Africa
+      label: Africa
+    -
+      value: Asia
+      label: Asia
+    -
+      value: Europe
+      label: Europe
+    -
+      value: Oceania
+      label: Oceania
+    -
+      value: 'North America'
+      label: 'North America'
+    -
+      value: 'South America'
+      label: 'South America'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

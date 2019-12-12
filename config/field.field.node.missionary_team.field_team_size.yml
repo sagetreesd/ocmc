@@ -1,0 +1,23 @@
+uuid: 5066eba1-2df3-4c5c-85e5-fcd85ca7c3dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_size
+    - node.type.missionary_team
+id: node.missionary_team.field_team_size
+field_name: field_team_size
+entity_type: node
+bundle: missionary_team
+label: 'Team Size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,46 @@
+uuid: 27227053-d7ae-42c0-9aae-ec66d2c4806f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.missionary.body
+    - field.field.node.missionary.field_missionary_status
+    - field.field.node.missionary.field_personal_information
+    - node.type.missionary
+  module:
+    - options
+    - text
+    - user
+id: node.missionary.default
+targetEntityType: node
+bundle: missionary
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_missionary_status:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_personal_information:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

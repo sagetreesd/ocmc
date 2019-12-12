@@ -1,0 +1,39 @@
+uuid: 68a0c1ad-9ba9-4d92-b5f7-9aeb1a61ccec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_missionary_status
+field_name: field_missionary_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Applied
+      label: Applied
+    -
+      value: Pre-field
+      label: Pre-field
+    -
+      value: Active/In-field
+      label: Active/In-field
+    -
+      value: 'On Furlough'
+      label: 'On Furlough'
+    -
+      value: 'On Leave'
+      label: 'On Leave'
+    -
+      value: Returned
+      label: Returned
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: d45826c2-ade7-403e-86e8-248f8cf68749
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_last_name
+id: person.profile.field_last_name
+field_name: field_last_name
+entity_type: person
+bundle: profile
+label: 'Last Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

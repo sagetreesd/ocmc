@@ -1,0 +1,19 @@
+uuid: bb2d3ae9-8c7b-4e74-b380-945d5b5c03e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: team_membership.field_team_member_donation_url
+field_name: field_team_member_donation_url
+entity_type: team_membership
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

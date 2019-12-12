@@ -1,0 +1,23 @@
+uuid: 842c5017-c11c-49e8-9a0c-22f6b84a3bab
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_twitter
+  module:
+    - link
+id: person.profile.field_twitter
+field_name: field_twitter
+entity_type: person
+bundle: profile
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

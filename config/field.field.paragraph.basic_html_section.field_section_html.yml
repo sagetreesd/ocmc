@@ -1,0 +1,21 @@
+uuid: a55387c2-1460-4146-a15a-f87835d79451
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_html
+    - paragraphs.paragraphs_type.basic_html_section
+  module:
+    - text
+id: paragraph.basic_html_section.field_section_html
+field_name: field_section_html
+entity_type: paragraph
+bundle: basic_html_section
+label: 'Section HTML'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

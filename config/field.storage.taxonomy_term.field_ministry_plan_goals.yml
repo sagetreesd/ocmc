@@ -1,0 +1,19 @@
+uuid: 7fdf1def-55f9-437a-8c45-6865c4fa68e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_ministry_plan_goals
+field_name: field_ministry_plan_goals
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 30298d22-3cbe-4326-bdd0-47122b6d1dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_board_committee
+    - taxonomy.vocabulary.board_committee
+id: person.profile.field_board_committee
+field_name: field_board_committee
+entity_type: person
+bundle: profile
+label: 'Board Committee'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      board_committee: board_committee
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

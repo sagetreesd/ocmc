@@ -1,0 +1,21 @@
+uuid: 982349c9-9baf-4c23-b095-e4a535003413
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_title
+  module:
+    - options
+id: person.profile.field_title
+field_name: field_title
+entity_type: person
+bundle: profile
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 38306371-56a5-4f80-a886-7f768291eadc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.person.profile
+    - field.storage.person.field_staff_position
+  module:
+    - options
+id: person.profile.field_staff_position
+field_name: field_staff_position
+entity_type: person
+bundle: profile
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: c60fd820-4bbf-4218-8dcb-de5cf4cb8b27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_religions
+    - taxonomy.vocabulary.country
+id: taxonomy_term.country.field_religions
+field_name: field_religions
+entity_type: taxonomy_term
+bundle: country
+label: Religions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

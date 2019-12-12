@@ -1,0 +1,23 @@
+uuid: e1b69508-2600-49d4-935a-ad446575588f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.team_membership.team_membership
+    - field.storage.team_membership.field_team_member_donation_url
+  module:
+    - link
+id: team_membership.team_membership.field_team_member_donation_url
+field_name: field_team_member_donation_url
+entity_type: team_membership
+bundle: team_membership
+label: 'Donation URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,54 @@
+uuid: 1da9a7a2-5e69-4b9a-ba5c-bde227da781c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: person.field_title
+field_name: field_title
+entity_type: person
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Mr.
+      label: Mr.
+    -
+      value: Mrs.
+      label: Mrs.
+    -
+      value: Ms.
+      label: Ms.
+    -
+      value: Miss
+      label: Miss
+    -
+      value: Dr.
+      label: Dr.
+    -
+      value: Met.
+      label: Met.
+    -
+      value: Arch.
+      label: Arch.
+    -
+      value: Bp.
+      label: Bp.
+    -
+      value: Fr.
+      label: Fr.
+    -
+      value: Dcn.
+      label: Dcn.
+    -
+      value: Pr.
+      label: Pr.
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

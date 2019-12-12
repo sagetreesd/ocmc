@@ -1,0 +1,46 @@
+uuid: 32f58bda-bdc1-45ed-8caf-b05802f94140
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project.field_donation_url
+    - field.field.paragraph.project.field_project_description
+    - field.field.paragraph.project.field_project_title
+    - paragraphs.paragraphs_type.project
+  module:
+    - link
+    - text
+id: paragraph.project.default
+targetEntityType: paragraph
+bundle: project
+mode: default
+content:
+  field_donation_url:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_project_description:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_project_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

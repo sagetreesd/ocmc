@@ -1,0 +1,42 @@
+uuid: 3d88cc21-75f2-4d0b-bd3a-6a2eab064b4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.team_membership.team_membership
+    - field.field.team_membership.team_membership.field_mission_team
+    - field.field.team_membership.team_membership.field_team_member_donation_url
+    - field.field.team_membership.team_membership.field_team_member_status
+  module:
+    - link
+id: team_membership.team_membership.default
+targetEntityType: team_membership
+bundle: team_membership
+mode: default
+content:
+  field_mission_team:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_team_member_donation_url:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_team_member_status:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
