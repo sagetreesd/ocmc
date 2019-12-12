@@ -1,13 +1,13 @@
-uuid: 3639660b-1c27-4846-8e54-71629e14de6c
+uuid: 18bdc795-f0bd-4f12-b6b3-e822b4963da6
 langcode: en
 status: true
 dependencies:
   module:
-    - eck
     - link
-id: person.field_facebook
-field_name: field_facebook
-entity_type: person
+    - node
+id: node.field_team_raiser_link
+field_name: field_team_raiser_link
+entity_type: node
 type: link
 settings: {  }
 module: link

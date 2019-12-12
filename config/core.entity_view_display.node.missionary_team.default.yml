@@ -11,11 +11,13 @@ dependencies:
     - field.field.node.missionary_team.field_start_end_dates
     - field.field.node.missionary_team.field_team_cost
     - field.field.node.missionary_team.field_team_fund
+    - field.field.node.missionary_team.field_team_raiser_link
     - field.field.node.missionary_team.field_team_size
     - field.field.node.missionary_team.field_team_type
     - node.type.missionary_team
   module:
     - datetime_range
+    - link
     - options
     - text
     - user
@@ -92,6 +94,18 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_team_raiser_link:
+    weight: 111
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_team_size:
     weight: 107

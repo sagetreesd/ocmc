@@ -1,9 +1,0 @@
-uuid: af7d7ef4-a5b9-43de-9306-b84135acae42
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.team_membership
-type: team_membership
-name: 'Team Membership'
-description: ''

@@ -1,9 +1,0 @@
-uuid: 8b58db5e-cc1e-47d4-826f-cbe52a6b4196
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.person
-type: profile
-name: Profile
-description: ''

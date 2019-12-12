@@ -1,0 +1,23 @@
+uuid: a9f8cdf0-29b2-4d60-8e5a-5ed357135c7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_raiser_link
+    - node.type.missionary_team
+  module:
+    - link
+id: node.missionary_team.field_team_raiser_link
+field_name: field_team_raiser_link
+entity_type: node
+bundle: missionary_team
+label: 'Team Raiser Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link
