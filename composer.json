@@ -7,21 +7,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "moxiecode/plupload",
-                "version": "3.1.2",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/moxiecode/plupload/archive/v3.1.2.zip",
-                    "type": "zip"
-                },
-                "extra": {
-                    "installer-name": "plupload"
-                }
-            }
         }
     ],
     "require": {
@@ -46,14 +31,11 @@
         "drupal/paragraphs_edit": "^2.0-alpha6",
         "drupal/paragraphs_frontend_ui": "^2.0-alpha2",
         "drupal/pathauto": "^1.6",
-        "drupal/plupload": "1.0-beta2",
-        "drupal/plupload_widget": "^1.0",
         "drupal/redirect": "^1.4",
         "drupal/schema_metatag": "^1.4",
         "drupal/video_embed_field": "^2.2",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
-        "moxiecode/plupload": "^3.1",
         "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",
         "zaporylie/composer-drupal-optimizations": "^1.0"
@@ -99,12 +81,10 @@
         ],
         "unit-test": "echo 'No unit test step defined.'",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "plupload": "rm -rf web/libraries/plupload/examples",
         "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
         "post-install-cmd": [
             "@drupal-scaffold",
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "@plupload"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
