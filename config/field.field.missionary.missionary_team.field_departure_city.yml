@@ -1,0 +1,19 @@
+uuid: 4d2f484f-dc6c-403d-bd1b-0e5113cca0f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_departure_city
+id: missionary.missionary_team.field_departure_city
+field_name: field_departure_city
+entity_type: missionary
+bundle: missionary_team
+label: 'Departure City'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

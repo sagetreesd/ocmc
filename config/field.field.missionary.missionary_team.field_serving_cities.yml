@@ -1,0 +1,19 @@
+uuid: 71d5aa41-6ed1-43ec-831c-d6a6bf391b55
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_serving_cities
+id: missionary.missionary_team.field_serving_cities
+field_name: field_serving_cities
+entity_type: missionary
+bundle: missionary_team
+label: 'Serving Cities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

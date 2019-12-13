@@ -1,0 +1,23 @@
+uuid: 7c4df152-cc01-449c-ba29-205b9b94b3cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+    - field.storage.missionary.field_luminate_link
+  module:
+    - link
+id: missionary.missionary.field_luminate_link
+field_name: field_luminate_link
+entity_type: missionary
+bundle: missionary
+label: 'Luminate Link'
+description: 'URL to the Missionary''s Luminate page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,20 @@
+uuid: 88404d36-a9a8-425e-a864-03d586a3e933
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - taxonomy
+id: missionary.field_country_serving
+field_name: field_country_serving
+entity_type: missionary
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

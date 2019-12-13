@@ -1,0 +1,29 @@
+uuid: 026364b7-493b-44c3-9c6c-29a21061ab03
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_interests
+    - taxonomy.vocabulary.interests
+id: missionary.missionary_team.field_interests
+field_name: field_interests
+entity_type: missionary
+bundle: missionary_team
+label: Interests
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      interests: interests
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

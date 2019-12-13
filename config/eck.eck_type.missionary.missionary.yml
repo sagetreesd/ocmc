@@ -1,0 +1,9 @@
+uuid: ce025c45-e735-40f2-9a97-fac29e7f3114
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.missionary
+type: missionary
+name: Missionary
+description: ''

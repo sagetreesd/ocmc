@@ -1,0 +1,29 @@
+uuid: 76b6af5f-a788-4557-ac25-0434c3e207e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+    - field.storage.missionary.field_country_serving
+    - taxonomy.vocabulary.country
+id: missionary.missionary.field_country_serving
+field_name: field_country_serving
+entity_type: missionary
+bundle: missionary
+label: 'Country Serving'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      country: country
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

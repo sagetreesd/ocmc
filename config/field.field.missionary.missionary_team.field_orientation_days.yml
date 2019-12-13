@@ -1,0 +1,23 @@
+uuid: a5e8d347-e73b-4fb1-8eae-5c8b4334b264
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_orientation_days
+id: missionary.missionary_team.field_orientation_days
+field_name: field_orientation_days
+entity_type: missionary
+bundle: missionary_team
+label: 'Orientation Days'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

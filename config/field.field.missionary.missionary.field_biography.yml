@@ -1,0 +1,21 @@
+uuid: f27b9715-d66c-4a83-9139-bddedc48e16a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+    - field.storage.missionary.field_biography
+  module:
+    - text
+id: missionary.missionary.field_biography
+field_name: field_biography
+entity_type: missionary
+bundle: missionary
+label: Biography
+description: 'Short blurb about the Missionary.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

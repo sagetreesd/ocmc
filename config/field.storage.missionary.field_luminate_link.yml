@@ -1,0 +1,19 @@
+uuid: 0995963d-54df-4e71-ba44-098fc0db6219
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: missionary.field_luminate_link
+field_name: field_luminate_link
+entity_type: missionary
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

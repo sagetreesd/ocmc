@@ -1,0 +1,21 @@
+uuid: 0b6b6a0d-a581-4e3b-acf1-33ce1599f862
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: missionary.field_serving_cities
+field_name: field_serving_cities
+entity_type: missionary
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 23396f2a-a46a-4daf-acea-5d61c60c95a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: missionary.field_departure_city
+field_name: field_departure_city
+entity_type: missionary
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,148 @@
+uuid: c836bf93-b798-42e4-b400-46cb11045b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.field.missionary.missionary_team.field_country_serving
+    - field.field.missionary.missionary_team.field_departure_city
+    - field.field.missionary.missionary_team.field_interests
+    - field.field.missionary.missionary_team.field_orientation_days
+    - field.field.missionary.missionary_team.field_serving_cities
+    - field.field.missionary.missionary_team.field_start_end_dates
+    - field.field.missionary.missionary_team.field_team_cost
+    - field.field.missionary.missionary_team.field_team_raiser_link
+    - field.field.missionary.missionary_team.field_team_type
+  module:
+    - datetime_range
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_dates:
+      children:
+        - field_start_end_dates
+        - field_orientation_days
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Dates
+    group_locations:
+      children:
+        - field_country_serving
+        - field_serving_cities
+        - field_departure_city
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Locations
+    group_details:
+      children:
+        - field_team_type
+        - field_team_cost
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Details
+id: missionary.missionary_team.default
+targetEntityType: missionary
+bundle: missionary_team
+mode: default
+content:
+  field_country_serving:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_departure_city:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_interests:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_orientation_days:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_serving_cities:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_start_end_dates:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_team_cost:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_team_raiser_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_team_type:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

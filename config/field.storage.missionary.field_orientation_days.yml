@@ -1,0 +1,20 @@
+uuid: e9b1134d-8146-44b5-a523-74d2026df6a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: missionary.field_orientation_days
+field_name: field_orientation_days
+entity_type: missionary
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: ab583ad0-a535-4567-8c18-02fdf4944c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_team_raiser_link
+  module:
+    - link
+id: missionary.missionary_team.field_team_raiser_link
+field_name: field_team_raiser_link
+entity_type: missionary
+bundle: missionary_team
+label: 'Team Raiser Link'
+description: 'URL to the Mission Team''s Team Raiser page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

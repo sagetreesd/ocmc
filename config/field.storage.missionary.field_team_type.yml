@@ -1,0 +1,39 @@
+uuid: 7a6265f6-4494-4e45-a3c0-bf9b4c7811e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: missionary.field_team_type
+field_name: field_team_type
+entity_type: missionary
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Construction
+      label: Construction
+    -
+      value: Healthcare
+      label: Healthcare
+    -
+      value: 'Missions Tour'
+      label: 'Missions Tour'
+    -
+      value: Outreach
+      label: Outreach
+    -
+      value: Teaching
+      label: Teaching
+    -
+      value: 'Youth Work'
+      label: 'Youth Work'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

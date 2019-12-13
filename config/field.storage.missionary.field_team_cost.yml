@@ -1,0 +1,20 @@
+uuid: 9da3ce36-857d-4995-90df-9e0aae6d3ff2
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: missionary.field_team_cost
+field_name: field_team_cost
+entity_type: missionary
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

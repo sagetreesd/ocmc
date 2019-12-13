@@ -1,0 +1,21 @@
+uuid: e6a85a53-7dc9-4d6c-9225-f74db5b08024
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_team_type
+  module:
+    - options
+id: missionary.missionary_team.field_team_type
+field_name: field_team_type
+entity_type: missionary
+bundle: missionary_team
+label: 'Team Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

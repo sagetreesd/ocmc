@@ -1,0 +1,9 @@
+uuid: 905b60b3-aa75-4739-9386-2c868ed8926c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.missionary
+type: missionary_team
+name: 'Missionary Team'
+description: ''

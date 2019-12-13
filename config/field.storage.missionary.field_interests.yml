@@ -1,0 +1,20 @@
+uuid: 0b895007-58bb-4018-8fef-66b722ca208e
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - taxonomy
+id: missionary.field_interests
+field_name: field_interests
+entity_type: missionary
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

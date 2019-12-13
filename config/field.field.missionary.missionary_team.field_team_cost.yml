@@ -1,0 +1,23 @@
+uuid: a3acb133-8fc9-430f-bab5-8acfb36fd67d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_team_cost
+id: missionary.missionary_team.field_team_cost
+field_name: field_team_cost
+entity_type: missionary
+bundle: missionary_team
+label: 'Team Cost'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal
