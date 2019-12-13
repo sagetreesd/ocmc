@@ -1,0 +1,19 @@
+uuid: 5ec2f431-8499-4cfb-a65a-ce0693d5f36a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_friend_partner_name
+    - paragraphs.paragraphs_type.friends_and_partners
+id: paragraph.friends_and_partners.field_friend_partner_name
+field_name: field_friend_partner_name
+entity_type: paragraph
+bundle: friends_and_partners
+label: Name
+description: 'Name of Friend or Partner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

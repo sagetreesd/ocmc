@@ -1,0 +1,23 @@
+uuid: c82161b9-f477-49ec-8e50-e9a9361b5fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_friend_partner_website
+    - paragraphs.paragraphs_type.friends_and_partners
+  module:
+    - link
+id: paragraph.friends_and_partners.field_friend_partner_website
+field_name: field_friend_partner_website
+entity_type: paragraph
+bundle: friends_and_partners
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

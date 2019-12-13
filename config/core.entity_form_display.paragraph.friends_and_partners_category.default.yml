@@ -1,0 +1,38 @@
+uuid: 4f3b74dc-af2a-4ead-84e0-695f6d3c4c4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.friends_and_partners_category.field_friends_and_partners
+    - field.field.paragraph.friends_and_partners_category.field_section_title
+    - paragraphs.paragraphs_type.friends_and_partners_category
+  module:
+    - paragraphs
+id: paragraph.friends_and_partners_category.default
+targetEntityType: paragraph
+bundle: friends_and_partners_category
+mode: default
+content:
+  field_friends_and_partners:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_section_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

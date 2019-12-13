@@ -1,0 +1,14 @@
+uuid: f32022de-2d1b-4d61-847b-e2a820daecd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: links
+label: Links
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

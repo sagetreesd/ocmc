@@ -6,8 +6,11 @@ dependencies:
     - field.storage.node.field_content_paragraphs
     - node.type.article
     - paragraphs.paragraphs_type.basic_html_section
+    - paragraphs.paragraphs_type.friends_and_partners_category
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.project
     - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
@@ -30,6 +33,9 @@ settings:
       gallery: gallery
       hero: hero
       video: video
+      project: project
+      links: links
+      friends_and_partners_category: friends_and_partners_category
     target_bundles_drag_drop:
       basic_html_section:
         enabled: true
@@ -47,6 +53,15 @@ settings:
         weight: -9
         enabled: false
       project:
+        enabled: true
         weight: -8
+      links:
+        enabled: true
+        weight: 10
+      friends_and_partners:
+        weight: 12
         enabled: false
+      friends_and_partners_category:
+        enabled: true
+        weight: 13
 field_type: entity_reference_revisions

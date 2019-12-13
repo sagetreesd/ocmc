@@ -1,0 +1,9 @@
+uuid: c89d6e11-4782-49ee-bb67-dcb9968da0da
+langcode: en
+status: true
+dependencies: {  }
+id: friends_and_partners_category
+label: 'Friends and Partners Category'
+icon_uuid: null
+description: 'Grouped section of friends and partners listing.'
+behavior_plugins: {  }

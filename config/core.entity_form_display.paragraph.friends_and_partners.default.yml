@@ -1,0 +1,55 @@
+uuid: fbeda27f-bd33-4735-a189-9051bb84e54c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.friends_and_partners.field_friend_partner_description
+    - field.field.paragraph.friends_and_partners.field_friend_partner_email
+    - field.field.paragraph.friends_and_partners.field_friend_partner_name
+    - field.field.paragraph.friends_and_partners.field_friend_partner_website
+    - paragraphs.paragraphs_type.friends_and_partners
+  module:
+    - link
+    - text
+id: paragraph.friends_and_partners.default
+targetEntityType: paragraph
+bundle: friends_and_partners
+mode: default
+content:
+  field_friend_partner_description:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_friend_partner_email:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_friend_partner_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_friend_partner_website:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

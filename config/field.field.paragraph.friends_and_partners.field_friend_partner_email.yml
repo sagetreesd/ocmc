@@ -1,0 +1,19 @@
+uuid: fd708f0d-9db6-4aef-ad2d-b8f7a386fcf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_friend_partner_email
+    - paragraphs.paragraphs_type.friends_and_partners
+id: paragraph.friends_and_partners.field_friend_partner_email
+field_name: field_friend_partner_email
+entity_type: paragraph
+bundle: friends_and_partners
+label: Email
+description: 'Contact email for friend or partner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
