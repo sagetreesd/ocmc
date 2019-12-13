@@ -5,9 +5,15 @@ dependencies:
   config:
     - field.field.node.missionary.body
     - field.field.node.missionary.field_interests
+    - field.field.node.missionary.field_luminate_link
     - field.field.node.missionary.field_missionary_status
+    - field.field.node.missionary.field_photo
+    - field.field.node.missionary.field_receiving_country
+    - image.style.thumbnail
     - node.type.missionary
   module:
+    - image
+    - link
     - path
 id: node.missionary.default
 targetEntityType: node
@@ -30,11 +36,37 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_luminate_link:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_missionary_status:
     weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_photo:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_receiving_country:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path

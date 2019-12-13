@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.friends_and_partners.field_friend_partner_description
+    - field.field.paragraph.friends_and_partners.field_description
     - field.field.paragraph.friends_and_partners.field_friend_partner_email
     - field.field.paragraph.friends_and_partners.field_friend_partner_name
     - field.field.paragraph.friends_and_partners.field_friend_partner_website
@@ -16,8 +16,8 @@ targetEntityType: paragraph
 bundle: friends_and_partners
 mode: default
 content:
-  field_friend_partner_description:
-    weight: 1
+  field_description:
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }

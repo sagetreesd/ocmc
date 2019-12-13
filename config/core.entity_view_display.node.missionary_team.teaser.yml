@@ -12,9 +12,7 @@ dependencies:
     - field.field.node.missionary_team.field_serving_cities
     - field.field.node.missionary_team.field_start_end_dates
     - field.field.node.missionary_team.field_team_cost
-    - field.field.node.missionary_team.field_team_fund
     - field.field.node.missionary_team.field_team_raiser_link
-    - field.field.node.missionary_team.field_team_size
     - field.field.node.missionary_team.field_team_type
     - node.type.missionary_team
   module:
@@ -46,7 +44,5 @@ hidden:
   field_serving_cities: true
   field_start_end_dates: true
   field_team_cost: true
-  field_team_fund: true
   field_team_raiser_link: true
-  field_team_size: true
   field_team_type: true

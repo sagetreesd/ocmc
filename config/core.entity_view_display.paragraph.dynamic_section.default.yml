@@ -1,0 +1,33 @@
+uuid: b61cf4e8-f03d-48aa-91d0-47d1954df493
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dynamic_section.field_section_content
+    - field.field.paragraph.dynamic_section.field_section_title
+    - paragraphs.paragraphs_type.dynamic_section
+  module:
+    - entity_reference_revisions
+id: paragraph.dynamic_section.default
+targetEntityType: paragraph
+bundle: dynamic_section
+mode: default
+content:
+  field_section_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_section_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,83 @@
+uuid: 7c976478-083c-440e-9f44-0f1f82ab2c9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_content
+    - paragraphs.paragraphs_type.board_members
+    - paragraphs.paragraphs_type.dynamic_section
+    - paragraphs.paragraphs_type.events
+    - paragraphs.paragraphs_type.financial_documents
+    - paragraphs.paragraphs_type.friends_and_partners
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.project
+    - paragraphs.paragraphs_type.staff_members
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: paragraph.dynamic_section.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: dynamic_section
+label: 'Section Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      staff_members: staff_members
+      board_members: board_members
+      events: events
+      financial_documents: financial_documents
+      friends_and_partners: friends_and_partners
+      gallery: gallery
+      links: links
+      project: project
+      video: video
+    target_bundles_drag_drop:
+      staff_members:
+        enabled: true
+        weight: 14
+      dynamic_section:
+        weight: 14
+        enabled: false
+      basic_html_section:
+        weight: 15
+        enabled: false
+      board_members:
+        enabled: true
+        weight: 16
+      events:
+        enabled: true
+        weight: 17
+      financial_documents:
+        enabled: true
+        weight: 18
+      friends_and_partners:
+        enabled: true
+        weight: 19
+      from_library:
+        weight: 21
+        enabled: false
+      gallery:
+        enabled: true
+        weight: 22
+      hero:
+        weight: 23
+        enabled: false
+      links:
+        enabled: true
+        weight: 24
+      project:
+        enabled: true
+        weight: 25
+      video:
+        enabled: true
+        weight: 26
+field_type: entity_reference_revisions

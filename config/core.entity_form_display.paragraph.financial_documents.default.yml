@@ -1,0 +1,34 @@
+uuid: b16d60e1-053e-4203-982b-a42e92b1bbcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.financial_documents.field_link_to_financial_report
+    - field.field.paragraph.financial_documents.field_title
+    - paragraphs.paragraphs_type.financial_documents
+  module:
+    - link
+id: paragraph.financial_documents.default
+targetEntityType: paragraph
+bundle: financial_documents
+mode: default
+content:
+  field_link_to_financial_report:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

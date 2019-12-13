@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.friends_and_partners.field_friend_partner_description
+    - field.field.paragraph.friends_and_partners.field_description
     - field.field.paragraph.friends_and_partners.field_friend_partner_email
     - field.field.paragraph.friends_and_partners.field_friend_partner_name
     - field.field.paragraph.friends_and_partners.field_friend_partner_website
@@ -16,8 +16,8 @@ targetEntityType: paragraph
 bundle: friends_and_partners
 mode: default
 content:
-  field_friend_partner_description:
-    weight: 1
+  field_description:
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -27,7 +27,7 @@ content:
     type: text_textarea_with_summary
     region: content
   field_friend_partner_email:
-    weight: 3
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -43,7 +43,7 @@ content:
     type: string_textfield
     region: content
   field_friend_partner_website:
-    weight: 2
+    weight: 1
     settings:
       placeholder_url: ''
       placeholder_title: ''

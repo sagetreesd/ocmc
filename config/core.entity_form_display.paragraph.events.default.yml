@@ -1,0 +1,54 @@
+uuid: abaa830f-0bc1-4014-bfdb-17524b387d84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events.field_event_date
+    - field.field.paragraph.events.field_event_details
+    - field.field.paragraph.events.field_event_name
+    - field.field.paragraph.events.field_link_to_event
+    - paragraphs.paragraphs_type.events
+  module:
+    - datetime
+    - link
+    - text
+id: paragraph.events.default
+targetEntityType: paragraph
+bundle: events
+mode: default
+content:
+  field_event_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_details:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_event_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link_to_event:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

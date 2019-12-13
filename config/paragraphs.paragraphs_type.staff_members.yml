@@ -1,9 +1,9 @@
-uuid: e78b19f5-9dc3-4651-8fe5-fab610f4c1e8
+uuid: df42ab8e-8af0-461f-b8df-16444a5f5524
 langcode: en
 status: true
 dependencies: {  }
-id: friends_and_partners
-label: 'Friend or Partner'
+id: staff_members
+label: 'Staff Member'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

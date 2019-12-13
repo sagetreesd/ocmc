@@ -1,0 +1,19 @@
+uuid: b7db9287-63b1-4a58-ad04-624b1e914343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.mission_priest_country
+id: paragraph.mission_priest_country.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: mission_priest_country
+label: 'Country Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: d4594270-d77d-45e8-a739-080355397647
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_to_financial_report
+    - paragraphs.paragraphs_type.financial_documents
+  module:
+    - link
+id: paragraph.financial_documents.field_link_to_financial_report
+field_name: field_link_to_financial_report
+entity_type: paragraph
+bundle: financial_documents
+label: 'Link to Financial Report'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

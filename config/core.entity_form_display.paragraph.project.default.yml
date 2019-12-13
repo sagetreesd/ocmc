@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.project.field_description
     - field.field.paragraph.project.field_donation_url
-    - field.field.paragraph.project.field_project_description
     - field.field.paragraph.project.field_project_title
     - paragraphs.paragraphs_type.project
   module:
@@ -15,16 +15,8 @@ targetEntityType: paragraph
 bundle: project
 mode: default
 content:
-  field_donation_url:
+  field_description:
     weight: 2
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_project_description:
-    weight: 1
     settings:
       rows: 9
       summary_rows: 3
@@ -32,6 +24,14 @@ content:
       show_summary: false
     third_party_settings: {  }
     type: text_textarea_with_summary
+    region: content
+  field_donation_url:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_project_title:
     weight: 0

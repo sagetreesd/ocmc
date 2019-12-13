@@ -1,9 +1,9 @@
-uuid: e78b19f5-9dc3-4651-8fe5-fab610f4c1e8
+uuid: 351833cb-4de7-498f-b038-23b51c156a94
 langcode: en
 status: true
 dependencies: {  }
-id: friends_and_partners
-label: 'Friend or Partner'
+id: financial_documents
+label: 'Financial Document'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

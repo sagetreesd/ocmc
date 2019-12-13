@@ -1,0 +1,23 @@
+uuid: cbaa9595-d923-412e-b340-bed48901b76c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_details
+    - paragraphs.paragraphs_type.events
+  module:
+    - text
+id: paragraph.events.field_event_details
+field_name: field_event_details
+entity_type: paragraph
+bundle: events
+label: 'Event Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

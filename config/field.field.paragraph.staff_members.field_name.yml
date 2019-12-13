@@ -1,0 +1,19 @@
+uuid: edba306d-6827-4578-bd4f-78ff4ef6da14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.staff_members
+id: paragraph.staff_members.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: staff_members
+label: Name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

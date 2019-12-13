@@ -1,0 +1,47 @@
+uuid: ed7e0ecb-6b86-4689-b3ac-68c343332773
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.board_members.field_description
+    - field.field.paragraph.board_members.field_name
+    - field.field.paragraph.board_members.field_photo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.board_members
+  module:
+    - image
+    - text
+id: paragraph.board_members.default
+targetEntityType: paragraph
+bundle: board_members
+mode: default
+content:
+  field_description:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photo:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

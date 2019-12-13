@@ -1,0 +1,19 @@
+uuid: 04a0ddac-c865-47fe-979a-feca9a1840b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_email
+    - paragraphs.paragraphs_type.staff_members
+id: paragraph.staff_members.field_email
+field_name: field_email
+entity_type: paragraph
+bundle: staff_members
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

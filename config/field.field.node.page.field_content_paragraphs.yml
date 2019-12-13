@@ -6,10 +6,8 @@ dependencies:
     - field.storage.node.field_content_paragraphs
     - node.type.page
     - paragraphs.paragraphs_type.basic_html_section
-    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.dynamic_section
     - paragraphs.paragraphs_type.hero
-    - paragraphs.paragraphs_type.project
-    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.page.field_content_paragraphs
@@ -29,9 +27,7 @@ settings:
     target_bundles:
       hero: hero
       basic_html_section: basic_html_section
-      project: project
-      gallery: gallery
-      video: video
+      dynamic_section: dynamic_section
     target_bundles_drag_drop:
       hero:
         enabled: true
@@ -43,12 +39,33 @@ settings:
         weight: -7
         enabled: false
       project:
-        enabled: true
         weight: -6
+        enabled: false
       gallery:
-        enabled: true
         weight: 9
+        enabled: false
+      events:
+        weight: 11
+        enabled: false
       video:
-        enabled: true
         weight: 12
+        enabled: false
+      financial_documents:
+        weight: 13
+        enabled: false
+      friends_and_partners:
+        weight: 13
+        enabled: false
+      dynamic_section:
+        enabled: true
+        weight: 14
+      friends_and_partners_category:
+        weight: 14
+        enabled: false
+      board_members:
+        weight: 15
+        enabled: false
+      links:
+        weight: 18
+        enabled: false
 field_type: entity_reference_revisions
