@@ -1,0 +1,24 @@
+uuid: 9e4579d4-9c8e-43d2-a7a8-6887bfa68f4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_term_pathauto_pattern
+label: 'Taxonomy Term Pathauto Pattern'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria:
+  151fc7ef-da50-46b0-9b0c-5a72082cd2ba:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      country: country
+      interests: interests
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 151fc7ef-da50-46b0-9b0c-5a72082cd2ba
+selection_logic: and
+weight: -5
+relationships: {  }
