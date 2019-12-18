@@ -15,7 +15,7 @@ mode: default
 content:
   field_section_content:
     type: entity_reference_revisions_entity_view
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: default
@@ -23,7 +23,7 @@ content:
     third_party_settings: {  }
     region: content
   field_section_title:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
