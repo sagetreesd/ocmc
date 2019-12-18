@@ -7,6 +7,7 @@ dependencies:
     - field.field.missionary.missionary.field_biography
     - field.field.missionary.missionary.field_country_serving
     - field.field.missionary.missionary.field_interests
+    - field.field.missionary.missionary.field_links
     - field.field.missionary.missionary.field_luminate_link
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
@@ -14,6 +15,7 @@ dependencies:
   module:
     - image
     - link
+    - path
     - text
 id: missionary.missionary.default
 targetEntityType: missionary
@@ -48,6 +50,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
     region: content
+  field_links:
+    weight: 31
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_luminate_link:
     weight: 3
     settings:
@@ -70,6 +80,12 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0

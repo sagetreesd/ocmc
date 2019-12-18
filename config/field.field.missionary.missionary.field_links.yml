@@ -1,0 +1,23 @@
+uuid: 9a0445d6-b1ff-485e-8890-76b15bfed4e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+    - field.storage.missionary.field_links
+  module:
+    - link
+id: missionary.missionary.field_links
+field_name: field_links
+entity_type: missionary
+bundle: missionary
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

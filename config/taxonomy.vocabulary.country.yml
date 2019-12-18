@@ -2,7 +2,7 @@ uuid: 97660ef5-4a76-4a92-8212-81152b8b3b5e
 langcode: en
 status: true
 dependencies: {  }
-name: Country
+name: Countries
 vid: country
-description: ''
+description: 'OCMC''s list of serving countries for Missionaries, Mission Teams and Projects.'
 weight: 0

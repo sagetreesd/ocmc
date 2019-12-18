@@ -1,8 +1,0 @@
-uuid: 4fa47dc1-3113-45e1-ac38-63678491057d
-langcode: en
-status: true
-dependencies: {  }
-name: 'Board Committee'
-vid: board_committee
-description: ''
-weight: 0

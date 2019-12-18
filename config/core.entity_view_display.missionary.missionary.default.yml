@@ -7,6 +7,7 @@ dependencies:
     - field.field.missionary.missionary.field_biography
     - field.field.missionary.missionary.field_country_serving
     - field.field.missionary.missionary.field_interests
+    - field.field.missionary.missionary.field_links
     - field.field.missionary.missionary.field_luminate_link
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
@@ -42,6 +43,18 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_links:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_luminate_link:
     weight: -1

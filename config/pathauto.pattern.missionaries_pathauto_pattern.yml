@@ -1,0 +1,23 @@
+uuid: 4f317556-bffa-405b-a775-3426401338a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - eck
+id: missionaries_pathauto_pattern
+label: 'Missionaries Pathauto Pattern'
+type: 'canonical_entities:missionary'
+pattern: 'missionaries/[missionary:title]'
+selection_criteria:
+  4aa8273f-2128-429e-a094-09663bbbb545:
+    id: 'entity_bundle:missionary'
+    bundles:
+      missionary: missionary
+    negate: false
+    context_mapping:
+      missionary: missionary
+    uuid: 4aa8273f-2128-429e-a094-09663bbbb545
+selection_logic: and
+weight: -5
+relationships: {  }
