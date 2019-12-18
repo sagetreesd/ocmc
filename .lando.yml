@@ -4,3 +4,37 @@ config:
   framework: drupal8
   site: ocmc
   id: 56fc199e-402e-4733-87e4-f50029b384b8
+services:
+  appserver:
+    ssl: true
+    build_as_root:
+      - apt-get update && apt-get -y install
+      - "curl -sL https://deb.nodesource.com/setup_8.x | bash - && apt-get install -y nodejs"
+      - "nodejs -v"
+  node:
+    type: node
+    globals:
+      yarn: latest
+      gulp: latest
+      gulp-cli: latest
+tooling:
+  vim:
+    service: appserver
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for nginx.
+    cmd: docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm
+    user: root
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug for nginx.
+    cmd: rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm
+    user: root
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
+  gulp-cli:
+    service: node
