@@ -20,7 +20,7 @@ id: paragraph.dynamic_section.field_section_content
 field_name: field_section_content
 entity_type: paragraph
 bundle: dynamic_section
-label: 'Section Content'
+label: 'Dynamic Section Content'
 description: ''
 required: false
 translatable: false
@@ -41,14 +41,17 @@ settings:
       project: project
       video: video
     target_bundles_drag_drop:
-      staff_members:
-        enabled: true
-        weight: 14
       dynamic_section:
         weight: 14
         enabled: false
+      staff_members:
+        enabled: true
+        weight: 14
       basic_html_section:
         weight: 15
+        enabled: false
+      article_dynamic_section:
+        weight: 16
         enabled: false
       board_members:
         enabled: true
@@ -80,4 +83,7 @@ settings:
       video:
         enabled: true
         weight: 26
+      mission_priest_country:
+        weight: 27
+        enabled: false
 field_type: entity_reference_revisions

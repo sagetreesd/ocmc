@@ -14,7 +14,7 @@ id: paragraph.article_dynamic_section.field_article_content
 field_name: field_article_content
 entity_type: paragraph
 bundle: article_dynamic_section
-label: 'Article Content'
+label: 'Dynamic Article Content'
 description: ''
 required: false
 translatable: false
