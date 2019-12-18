@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.hero.field_cta_lead_text
     - field.field.paragraph.hero.field_cta_link
     - field.field.paragraph.hero.field_hero_image
     - image.style.thumbnail
@@ -15,6 +16,14 @@ targetEntityType: paragraph
 bundle: hero
 mode: default
 content:
+  field_cta_lead_text:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_cta_link:
     weight: 1
     settings:

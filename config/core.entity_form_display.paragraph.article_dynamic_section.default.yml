@@ -1,0 +1,38 @@
+uuid: 72d22633-7f51-4c20-85de-deca6d270119
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article_dynamic_section.field_article_content
+    - field.field.paragraph.article_dynamic_section.field_section_title
+    - paragraphs.paragraphs_type.article_dynamic_section
+  module:
+    - paragraphs
+id: paragraph.article_dynamic_section.default
+targetEntityType: paragraph
+bundle: article_dynamic_section
+mode: default
+content:
+  field_article_content:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_section_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

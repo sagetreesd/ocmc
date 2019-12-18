@@ -1,0 +1,77 @@
+uuid: 484a35a4-5ee8-4193-8364-6a3e8258d394
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_article_content
+    - paragraphs.paragraphs_type.article_dynamic_section
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: paragraph.article_dynamic_section.field_article_content
+field_name: field_article_content
+entity_type: paragraph
+bundle: article_dynamic_section
+label: 'Article Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gallery: gallery
+      links: links
+      video: video
+    target_bundles_drag_drop:
+      article_dynamic_section:
+        weight: 16
+        enabled: false
+      basic_html_section:
+        weight: 17
+        enabled: false
+      board_members:
+        weight: 18
+        enabled: false
+      dynamic_section:
+        weight: 19
+        enabled: false
+      events:
+        weight: 20
+        enabled: false
+      financial_documents:
+        weight: 21
+        enabled: false
+      friends_and_partners:
+        weight: 22
+        enabled: false
+      from_library:
+        weight: 23
+        enabled: false
+      gallery:
+        enabled: true
+        weight: 24
+      hero:
+        weight: 25
+        enabled: false
+      links:
+        enabled: true
+        weight: 26
+      mission_priest_country:
+        weight: 27
+        enabled: false
+      project:
+        weight: 28
+        enabled: false
+      staff_members:
+        weight: 29
+        enabled: false
+      video:
+        enabled: true
+        weight: 30
+field_type: entity_reference_revisions

@@ -1,0 +1,9 @@
+uuid: 1be1b8f5-fc07-4abd-a886-709e31e63032
+langcode: en
+status: true
+dependencies: {  }
+id: article_dynamic_section
+label: 'Article Dynamic Section'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

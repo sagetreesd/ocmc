@@ -1,0 +1,19 @@
+uuid: 5ea06321-d55f-4505-8c47-59a0afb8c4fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_lead_text
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.field_cta_lead_text
+field_name: field_cta_lead_text
+entity_type: paragraph
+bundle: hero
+label: 'CTA Lead Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
