@@ -1,0 +1,20 @@
+uuid: 9194b49b-a345-4334-b8df-26c324677c08
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - paragraphs
+id: paragraph.field_mission_priest_countries
+field_name: field_mission_priest_countries
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: missionary
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

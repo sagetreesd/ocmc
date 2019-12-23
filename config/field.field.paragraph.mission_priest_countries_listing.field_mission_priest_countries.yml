@@ -1,0 +1,28 @@
+uuid: 01b11e9f-5a80-4508-b7a8-c003fab7683e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.mission_priest_country
+    - field.storage.paragraph.field_mission_priest_countries
+    - paragraphs.paragraphs_type.mission_priest_countries_listing
+id: paragraph.mission_priest_countries_listing.field_mission_priest_countries
+field_name: field_mission_priest_countries
+entity_type: paragraph
+bundle: mission_priest_countries_listing
+label: 'Mission Priest Countries'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:missionary'
+  handler_settings:
+    target_bundles:
+      mission_priest_country: mission_priest_country
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

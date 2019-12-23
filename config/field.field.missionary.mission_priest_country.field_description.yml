@@ -1,15 +1,15 @@
-uuid: d8c090c5-719f-4b0a-b71a-fb7f2de862bc
+uuid: be214387-78f3-4ee4-96f4-a65960d392ee
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_description
-    - paragraphs.paragraphs_type.mission_priest_country
+    - eck.eck_type.missionary.mission_priest_country
+    - field.storage.missionary.field_description
   module:
     - text
-id: paragraph.mission_priest_country.field_description
+id: missionary.mission_priest_country.field_description
 field_name: field_description
-entity_type: paragraph
+entity_type: missionary
 bundle: mission_priest_country
 label: Description
 description: ''

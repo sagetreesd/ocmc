@@ -1,0 +1,30 @@
+uuid: f82f66b4-7af2-4d02-9b8f-157f2308f7a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.mission_priest_country
+    - field.field.missionary.mission_priest_country.field_description
+  module:
+    - text
+id: missionary.mission_priest_country.default
+targetEntityType: missionary
+bundle: mission_priest_country
+mode: default
+content:
+  field_description:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

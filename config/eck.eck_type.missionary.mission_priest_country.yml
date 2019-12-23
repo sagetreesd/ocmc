@@ -1,0 +1,9 @@
+uuid: 1704885b-a7e4-453b-8118-50a6af167b49
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.missionary
+type: mission_priest_country
+name: 'Mission Priest Country'
+description: ''
