@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: article_dynamic_section
-label: 'Article Dynamic Section'
+label: 'Dynamic Section'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

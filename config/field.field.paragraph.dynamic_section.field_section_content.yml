@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.friends_and_partners
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.mission_priest_countries_listing
     - paragraphs.paragraphs_type.person
     - paragraphs.paragraphs_type.project
     - paragraphs.paragraphs_type.video
@@ -35,6 +36,7 @@ settings:
       friends_and_partners: friends_and_partners
       gallery: gallery
       links: links
+      mission_priest_countries_listing: mission_priest_countries_listing
       project: project
       person: person
       video: video
@@ -69,6 +71,9 @@ settings:
       links:
         enabled: true
         weight: 24
+      mission_priest_countries_listing:
+        enabled: true
+        weight: 25
       project:
         enabled: true
         weight: 25
@@ -78,7 +83,4 @@ settings:
       video:
         enabled: true
         weight: 26
-      mission_priest_country:
-        weight: 27
-        enabled: false
 field_type: entity_reference_revisions
