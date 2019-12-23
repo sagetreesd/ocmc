@@ -1,0 +1,22 @@
+uuid: 2c61b7a8-5e65-40b4-9879-9a08399c1ab2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+    - field.storage.missionary.field_geo_draw
+  module:
+    - geofield
+id: missionary.missionary.field_geo_draw
+field_name: field_geo_draw
+entity_type: missionary
+bundle: missionary
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

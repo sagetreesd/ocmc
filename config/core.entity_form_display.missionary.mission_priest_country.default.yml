@@ -5,7 +5,9 @@ dependencies:
   config:
     - eck.eck_type.missionary.mission_priest_country
     - field.field.missionary.mission_priest_country.field_description
+    - field.field.missionary.mission_priest_country.field_geo_draw
   module:
+    - leaflet_widget
     - path
     - text
 id: missionary.mission_priest_country.default
@@ -22,6 +24,36 @@ content:
       show_summary: false
     third_party_settings: {  }
     type: text_textarea_with_summary
+    region: content
+  field_geo_draw:
+    weight: 32
+    settings:
+      map:
+        leaflet_map: 'OSM Mapnik'
+        height: 300
+        center:
+          lat: !!float 0
+          lng: !!float 0
+        auto_center: true
+        zoom: 10
+        locate: true
+        scroll_zoom_enabled: true
+      input:
+        show: true
+        readonly: false
+      toolbar:
+        position: topright
+        drawMarker: true
+        drawPolyline: true
+        drawRectangle: true
+        drawPolygon: true
+        drawCircle: true
+        editMode: true
+        dragMode: true
+        cutPolygon: false
+        removalMode: true
+    third_party_settings: {  }
+    type: leaflet_widget
     region: content
   path:
     type: path

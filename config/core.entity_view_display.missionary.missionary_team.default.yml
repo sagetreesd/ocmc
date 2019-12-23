@@ -6,6 +6,7 @@ dependencies:
     - eck.eck_type.missionary.missionary_team
     - field.field.missionary.missionary_team.field_country_serving
     - field.field.missionary.missionary_team.field_departure_city
+    - field.field.missionary.missionary_team.field_geo_draw
     - field.field.missionary.missionary_team.field_interests
     - field.field.missionary.missionary_team.field_orientation_days
     - field.field.missionary.missionary_team.field_serving_cities
@@ -16,6 +17,7 @@ dependencies:
     - field.field.missionary.missionary_team.field_team_type
   module:
     - datetime_range
+    - leaflet
     - link
     - options
 id: missionary.missionary_team.default
@@ -24,32 +26,96 @@ bundle: missionary_team
 mode: default
 content:
   field_country_serving:
-    weight: 6
-    label: above
+    weight: 7
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_departure_city:
-    weight: 3
-    label: above
+    weight: 4
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
+  field_geo_draw:
+    weight: 8
+    label: hidden
+    settings:
+      multiple_map: 0
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: 0
+      disable_wheel: 0
+      fullscreen_control: 1
+      reset_map:
+        control: 0
+        position: topright
+      popup: false
+      popup_content: ''
+      map_position:
+        force: 0
+        center:
+          lat: 0
+          lon: 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+      icon:
+        iconType: marker
+        iconUrl: ''
+        iconSize:
+          x: null
+          'y': null
+        iconAnchor:
+          x: null
+          'y': null
+        shadowUrl: ''
+        shadowSize:
+          x: null
+          'y': null
+        shadowAnchor:
+          x: null
+          'y': null
+        popupAnchor:
+          x: null
+          'y': null
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+      leaflet_markercluster:
+        control: 0
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+      geocoder:
+        control: 0
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: 0
+          options: ''
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
   field_interests:
-    weight: 4
-    label: above
+    weight: 5
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_orientation_days:
-    weight: 5
-    label: above
+    weight: 6
+    label: inline
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -57,16 +123,16 @@ content:
     type: number_integer
     region: content
   field_serving_cities:
-    weight: 7
-    label: above
+    weight: 9
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_start_end_dates:
-    weight: 2
-    label: above
+    weight: 3
+    label: inline
     settings:
       separator: '-'
       format_type: medium
@@ -75,8 +141,8 @@ content:
     type: daterange_default
     region: content
   field_team_cost:
-    weight: 8
-    label: above
+    weight: 10
+    label: inline
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -86,8 +152,8 @@ content:
     type: number_decimal
     region: content
   field_team_raiser_link:
-    weight: 9
-    label: above
+    weight: 11
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -99,14 +165,14 @@ content:
     region: content
   field_team_status:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_team_type:
-    weight: 10
-    label: above
+    weight: 2
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default

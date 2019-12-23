@@ -1,0 +1,22 @@
+uuid: 1a178d16-8393-4aee-bd97-581df66e9c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.mission_priest_country
+    - field.storage.missionary.field_geo_draw
+  module:
+    - geofield
+id: missionary.mission_priest_country.field_geo_draw
+field_name: field_geo_draw
+entity_type: missionary
+bundle: mission_priest_country
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

@@ -65,6 +65,7 @@ web/libraries
 # Pantheon commits a settings.php for environment-specific settings.
 # Place local settings in settings.local.php
 web/sites/*/settings.local.php
+web/sites/*/local.settings.php
 web/sites/*/services*.yml
 !web/sites/*/services.pantheon.*.yml
 !web/sites/*/services.yml

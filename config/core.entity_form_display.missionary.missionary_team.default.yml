@@ -6,6 +6,7 @@ dependencies:
     - eck.eck_type.missionary.missionary_team
     - field.field.missionary.missionary_team.field_country_serving
     - field.field.missionary.missionary_team.field_departure_city
+    - field.field.missionary.missionary_team.field_geo_draw
     - field.field.missionary.missionary_team.field_interests
     - field.field.missionary.missionary_team.field_orientation_days
     - field.field.missionary.missionary_team.field_serving_cities
@@ -17,6 +18,7 @@ dependencies:
   module:
     - datetime_range
     - field_group
+    - leaflet_widget
     - link
     - path
 third_party_settings:
@@ -82,6 +84,36 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_geo_draw:
+    weight: 10
+    settings:
+      map:
+        leaflet_map: 'OSM Mapnik'
+        height: 300
+        center:
+          lat: !!float 0
+          lng: !!float 0
+        auto_center: true
+        zoom: 10
+        locate: true
+        scroll_zoom_enabled: true
+      input:
+        show: true
+        readonly: false
+      toolbar:
+        position: topright
+        drawMarker: true
+        drawPolyline: true
+        drawRectangle: true
+        drawPolygon: true
+        drawCircle: true
+        editMode: true
+        dragMode: true
+        cutPolygon: false
+        removalMode: true
+    third_party_settings: {  }
+    type: leaflet_widget
     region: content
   field_interests:
     weight: 6

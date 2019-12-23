@@ -38,3 +38,12 @@ if (file_exists($local_settings)) {
  * modifying settings.php.
  */
 $settings['install_profile'] = 'standard';
+
+/**
+ * Local development environment settings.
+ */
+$local_settings = __DIR__  . '/local.settings.php';
+if (file_exists($local_settings)) {
+  include $local_settings;
+}
+

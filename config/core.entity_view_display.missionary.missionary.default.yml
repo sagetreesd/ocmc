@@ -6,6 +6,7 @@ dependencies:
     - eck.eck_type.missionary.missionary
     - field.field.missionary.missionary.field_biography
     - field.field.missionary.missionary.field_country_serving
+    - field.field.missionary.missionary.field_geo_draw
     - field.field.missionary.missionary.field_interests
     - field.field.missionary.missionary.field_links
     - field.field.missionary.missionary.field_luminate_link
@@ -13,6 +14,7 @@ dependencies:
     - field.field.missionary.missionary.field_photo
   module:
     - image
+    - leaflet
     - link
     - options
     - text
@@ -22,30 +24,94 @@ bundle: missionary
 mode: default
 content:
   field_biography:
-    weight: -4
-    label: above
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_country_serving:
-    weight: -3
-    label: above
+    weight: 3
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_geo_draw:
+    weight: 4
+    label: hidden
+    settings:
+      multiple_map: 0
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: 0
+      disable_wheel: 0
+      fullscreen_control: 1
+      reset_map:
+        control: 0
+        position: topright
+      popup: false
+      popup_content: ''
+      map_position:
+        force: 0
+        center:
+          lat: 0
+          lon: 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+      icon:
+        iconType: marker
+        iconUrl: ''
+        iconSize:
+          x: null
+          'y': null
+        iconAnchor:
+          x: null
+          'y': null
+        shadowUrl: ''
+        shadowSize:
+          x: null
+          'y': null
+        shadowAnchor:
+          x: null
+          'y': null
+        popupAnchor:
+          x: null
+          'y': null
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+      leaflet_markercluster:
+        control: 0
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+      geocoder:
+        control: 0
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: 0
+          options: ''
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
   field_interests:
-    weight: -2
-    label: above
+    weight: 5
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_links:
-    weight: 2
+    weight: 8
     label: above
     settings:
       trim_length: 80
@@ -57,8 +123,8 @@ content:
     type: link
     region: content
   field_luminate_link:
-    weight: -1
-    label: above
+    weight: 6
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -69,15 +135,15 @@ content:
     type: link
     region: content
   field_missionary_status:
-    weight: 0
-    label: above
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_photo:
-    weight: 1
-    label: above
+    weight: 7
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -87,7 +153,7 @@ content:
   title:
     label: hidden
     type: string
-    weight: -5
+    weight: 0
     region: content
     settings:
       link_to_entity: false
