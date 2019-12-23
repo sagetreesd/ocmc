@@ -1,0 +1,9 @@
+uuid: a3ec3fb1-cb3c-485b-896a-a7dba56e33fd
+langcode: en
+status: true
+dependencies: {  }
+id: person
+label: Person
+icon_uuid: null
+description: 'A paragraph containing information about a person. For example, a board or staff member.'
+behavior_plugins: {  }

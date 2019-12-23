@@ -3,18 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.country.field_clergy
-    - field.field.taxonomy_term.country.field_continent
-    - field.field.taxonomy_term.country.field_country_flag
-    - field.field.taxonomy_term.country.field_current_strategies
-    - field.field.taxonomy_term.country.field_ministry_plan_goals
-    - field.field.taxonomy_term.country.field_population
-    - field.field.taxonomy_term.country.field_religions
-    - field.field.taxonomy_term.country.field_vision_for_country
     - taxonomy.vocabulary.country
   module:
     - field_group
-    - link
     - path
     - text
 third_party_settings:
@@ -62,67 +53,6 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_clergy:
-    weight: 35
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
-  field_continent:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_country_flag:
-    weight: 3
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_current_strategies:
-    weight: 38
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_ministry_plan_goals:
-    weight: 37
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_population:
-    weight: 33
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_religions:
-    weight: 34
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_vision_for_country:
-    weight: 36
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
   name:
     type: string_textfield
     weight: 0

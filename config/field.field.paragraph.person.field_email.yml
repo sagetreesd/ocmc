@@ -1,18 +1,18 @@
-uuid: 04a0ddac-c865-47fe-979a-feca9a1840b1
+uuid: 5075dd62-aaf7-4eb6-ae74-49a8d71f7009
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_email
-    - paragraphs.paragraphs_type.staff_members
-id: paragraph.staff_members.field_email
+    - paragraphs.paragraphs_type.person
+id: paragraph.person.field_email
 field_name: field_email
 entity_type: paragraph
-bundle: staff_members
+bundle: person
 label: Email
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

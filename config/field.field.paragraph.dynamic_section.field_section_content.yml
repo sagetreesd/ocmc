@@ -4,15 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_section_content
-    - paragraphs.paragraphs_type.board_members
     - paragraphs.paragraphs_type.dynamic_section
     - paragraphs.paragraphs_type.events
     - paragraphs.paragraphs_type.financial_documents
     - paragraphs.paragraphs_type.friends_and_partners
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.person
     - paragraphs.paragraphs_type.project
-    - paragraphs.paragraphs_type.staff_members
     - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
@@ -31,31 +30,24 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      staff_members: staff_members
-      board_members: board_members
       events: events
       financial_documents: financial_documents
       friends_and_partners: friends_and_partners
       gallery: gallery
       links: links
       project: project
+      person: person
       video: video
     target_bundles_drag_drop:
       dynamic_section:
         weight: 14
         enabled: false
-      staff_members:
-        enabled: true
-        weight: 14
       basic_html_section:
         weight: 15
         enabled: false
       article_dynamic_section:
         weight: 16
         enabled: false
-      board_members:
-        enabled: true
-        weight: 16
       events:
         enabled: true
         weight: 17
@@ -80,6 +72,9 @@ settings:
       project:
         enabled: true
         weight: 25
+      person:
+        enabled: true
+        weight: 26
       video:
         enabled: true
         weight: 26

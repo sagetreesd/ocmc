@@ -1,9 +1,0 @@
-uuid: df42ab8e-8af0-461f-b8df-16444a5f5524
-langcode: en
-status: true
-dependencies: {  }
-id: staff_members
-label: 'Staff Member'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

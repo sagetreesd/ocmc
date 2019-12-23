@@ -1,14 +1,14 @@
-uuid: edba306d-6827-4578-bd4f-78ff4ef6da14
+uuid: 08cf9865-faf5-4cd8-b2d5-d8590a8ff3fa
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_name
-    - paragraphs.paragraphs_type.staff_members
-id: paragraph.staff_members.field_name
+    - paragraphs.paragraphs_type.person
+id: paragraph.person.field_name
 field_name: field_name
 entity_type: paragraph
-bundle: staff_members
+bundle: person
 label: Name
 description: ''
 required: false

@@ -3,18 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.country.field_clergy
-    - field.field.taxonomy_term.country.field_continent
-    - field.field.taxonomy_term.country.field_country_flag
-    - field.field.taxonomy_term.country.field_current_strategies
-    - field.field.taxonomy_term.country.field_ministry_plan_goals
-    - field.field.taxonomy_term.country.field_population
-    - field.field.taxonomy_term.country.field_religions
-    - field.field.taxonomy_term.country.field_vision_for_country
     - taxonomy.vocabulary.country
   module:
-    - link
-    - options
     - text
 id: taxonomy_term.country.default
 targetEntityType: taxonomy_term
@@ -28,69 +18,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_clergy:
-    weight: 5
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_continent:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_country_flag:
-    weight: 2
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_current_strategies:
-    weight: 8
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_ministry_plan_goals:
-    weight: 7
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_population:
-    weight: 3
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_religions:
-    weight: 4
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_vision_for_country:
-    weight: 6
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
 hidden: {  }

@@ -1,24 +1,24 @@
-uuid: cb0cb175-3006-4f03-adec-764de8f71bc4
+uuid: 3aa6923a-e1a9-4893-989d-b299b49765b2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_photo
-    - paragraphs.paragraphs_type.board_members
+    - paragraphs.paragraphs_type.person
   module:
     - image
-id: paragraph.board_members.field_photo
+id: paragraph.person.field_photo
 field_name: field_photo
 entity_type: paragraph
-bundle: board_members
+bundle: person
 label: Photo
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'member-photos/[date:custom:Y]-[date:custom:m]'
+  file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''

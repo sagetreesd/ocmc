@@ -1,9 +1,0 @@
-uuid: 6c05011d-996b-4d2e-a4dd-ca5f781a8464
-langcode: en
-status: true
-dependencies: {  }
-id: board_members
-label: 'Board Member'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }
