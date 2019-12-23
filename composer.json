@@ -39,6 +39,7 @@
         "drupal/redirect": "^1.4",
         "drupal/schema_metatag": "^1.4",
         "drupal/video_embed_field": "^2.2",
+        "drupal/views_bulk_operations": "^3.3",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
         "pantheon-systems/quicksilver-pushback": "^2",
