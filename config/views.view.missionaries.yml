@@ -689,7 +689,20 @@ display:
       title: Missionaries
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'There are content items to display.'
+            format: basic_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -714,7 +727,7 @@ display:
     display_plugin: page
     id: mission_teams_admin_page
     display_title: 'Mission Teams Content Administration Page'
-    position: 1
+    position: 2
     display_options:
       display_extenders: {  }
       path: admin/content/mission-teams
@@ -723,9 +736,9 @@ display:
         title: 'Mission Teams'
         description: ''
         expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
+        parent: system.admin_content
+        weight: 2
+        context: '1'
         menu_name: admin
       display_description: 'Administration page for mission team bundle content.'
       title: 'Mission Teams'
@@ -1743,9 +1756,9 @@ display:
         title: Missionaries
         description: ''
         expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
+        parent: system.admin_content
+        weight: 1
+        context: '1'
         menu_name: admin
       display_description: 'Administration page for missionary bundle content.'
     cache_metadata:
@@ -1765,7 +1778,7 @@ display:
     display_plugin: page
     id: missionary_priest_country_admin_page
     display_title: 'Mission Priest Countries Administration Page'
-    position: 1
+    position: 3
     display_options:
       display_extenders: {  }
       path: admin/content/mission-priest-countries
@@ -1774,9 +1787,9 @@ display:
         title: 'Mission Priest Countries'
         description: ''
         expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
+        parent: system.admin_content
+        weight: 3
+        context: '1'
         menu_name: admin
       display_description: 'Administration page for mission priest country bundle content.'
       title: 'Mission Priest Countries'
