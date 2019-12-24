@@ -10,7 +10,7 @@ id: missionary.missionary.field_country_serving
 field_name: field_country_serving
 entity_type: missionary
 bundle: missionary
-label: 'Country Serving'
+label: Country
 description: ''
 required: false
 translatable: false

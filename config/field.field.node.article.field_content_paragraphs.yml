@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_content_paragraphs
     - node.type.article
     - paragraphs.paragraphs_type.article_dynamic_section
-    - paragraphs.paragraphs_type.basic_html_section
   module:
     - entity_reference_revisions
 id: node.article.field_content_paragraphs
@@ -24,12 +23,11 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      basic_html_section: basic_html_section
       article_dynamic_section: article_dynamic_section
     target_bundles_drag_drop:
       basic_html_section:
-        enabled: true
         weight: -13
+        enabled: false
       gallery:
         weight: -12
         enabled: false

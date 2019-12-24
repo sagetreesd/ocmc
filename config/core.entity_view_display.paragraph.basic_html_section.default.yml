@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.basic_html_section.field_section_html
-    - field.field.paragraph.basic_html_section.field_section_title
     - paragraphs.paragraphs_type.basic_html_section
   module:
     - text
@@ -19,13 +18,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_section_title:
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
 hidden: {  }

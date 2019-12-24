@@ -1,15 +1,15 @@
-uuid: 42a235d9-c9b2-4de3-ae89-a051f88dd05f
+uuid: 45a4b311-7188-4cb4-9cad-1083b3447db8
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - adminimal_theme
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: seven_messages
-theme: seven
+  default_config_hash: YqKTtloWJ8FjLtfVNfrHaK6kVgxT67lC1cJ3j6i6WLo
+id: adminimal_theme_messages
+theme: adminimal_theme
 region: highlighted
 weight: 0
 provider: null

@@ -11,7 +11,7 @@ id: missionary.missionary.field_missionary_status
 field_name: field_missionary_status
 entity_type: missionary
 bundle: missionary
-label: 'Missionary Status'
+label: Status
 description: ''
 required: false
 translatable: false

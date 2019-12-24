@@ -1,0 +1,23 @@
+uuid: 499deea6-0f43-489d-93f8-9e1eed8f924c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_published
+id: missionary.missionary_team.field_published
+field_name: field_published
+entity_type: missionary
+bundle: missionary_team
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Published
+  off_label: 'Not Published'
+field_type: boolean

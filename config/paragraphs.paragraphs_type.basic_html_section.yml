@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: basic_html_section
-label: 'Basic HTML Section'
+label: 'Basic HTML'
 icon_uuid: null
-description: 'Section title and HTML-enabled text area.'
+description: 'Basic HTML content.'
 behavior_plugins: {  }

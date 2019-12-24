@@ -1,0 +1,28 @@
+uuid: 8efa2d64-d53a-404a-930d-a66b5ac9c6a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.paragraph.field_mission_team
+    - paragraphs.paragraphs_type.mission_teams
+id: paragraph.mission_teams.field_mission_team
+field_name: field_mission_team
+entity_type: paragraph
+bundle: mission_teams
+label: 'Mission Team'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:missionary'
+  handler_settings:
+    target_bundles:
+      missionary_team: missionary_team
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

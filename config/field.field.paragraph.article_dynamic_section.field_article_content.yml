@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_article_content
     - paragraphs.paragraphs_type.article_dynamic_section
+    - paragraphs.paragraphs_type.basic_html_section
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
     - paragraphs.paragraphs_type.video
@@ -14,7 +15,7 @@ id: paragraph.article_dynamic_section.field_article_content
 field_name: field_article_content
 entity_type: paragraph
 bundle: article_dynamic_section
-label: 'Dynamic Article Content'
+label: 'Section Content'
 description: ''
 required: false
 translatable: false
@@ -25,6 +26,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      basic_html_section: basic_html_section
       gallery: gallery
       links: links
       video: video
@@ -33,11 +35,8 @@ settings:
         weight: 16
         enabled: false
       basic_html_section:
+        enabled: true
         weight: 17
-        enabled: false
-      board_members:
-        weight: 18
-        enabled: false
       dynamic_section:
         weight: 19
         enabled: false
@@ -59,17 +58,20 @@ settings:
       hero:
         weight: 25
         enabled: false
+      mission_priest_countries_listing:
+        weight: 25
+        enabled: false
       links:
         enabled: true
         weight: 26
-      mission_priest_country:
+      person:
+        weight: 26
+        enabled: false
+      mission_teams:
         weight: 27
         enabled: false
       project:
         weight: 28
-        enabled: false
-      staff_members:
-        weight: 29
         enabled: false
       video:
         enabled: true

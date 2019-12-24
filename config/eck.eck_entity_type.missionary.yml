@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: missionary
-label: Missionary
+label: Mission
 created: false
 changed: false
 uid: false

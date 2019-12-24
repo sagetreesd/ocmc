@@ -1,9 +1,9 @@
-uuid: 1be1b8f5-fc07-4abd-a886-709e31e63032
+uuid: 470984cc-ca1b-45e5-ad9d-a9c05305c326
 langcode: en
 status: true
 dependencies: {  }
-id: article_dynamic_section
-label: Section
+id: mission_teams
+label: 'Mission Teams'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

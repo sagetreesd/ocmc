@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.basic_html_section.field_section_html
-    - field.field.paragraph.basic_html_section.field_section_title
     - paragraphs.paragraphs_type.basic_html_section
   module:
     - text
@@ -20,14 +19,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-    region: content
-  field_section_title:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
 hidden:
   created: true

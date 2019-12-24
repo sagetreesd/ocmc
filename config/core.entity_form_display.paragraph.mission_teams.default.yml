@@ -1,0 +1,29 @@
+uuid: f61d32d3-2691-4545-a848-b3370e06cd9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mission_teams.field_mission_team
+    - paragraphs.paragraphs_type.mission_teams
+  module:
+    - inline_entity_form
+id: paragraph.mission_teams.default
+targetEntityType: paragraph
+bundle: mission_teams
+mode: default
+content:
+  field_mission_team:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+hidden:
+  created: true
+  status: true

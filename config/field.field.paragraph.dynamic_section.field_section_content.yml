@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_section_content
+    - paragraphs.paragraphs_type.basic_html_section
     - paragraphs.paragraphs_type.dynamic_section
     - paragraphs.paragraphs_type.events
     - paragraphs.paragraphs_type.financial_documents
@@ -11,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
     - paragraphs.paragraphs_type.mission_priest_countries_listing
+    - paragraphs.paragraphs_type.mission_teams
     - paragraphs.paragraphs_type.person
     - paragraphs.paragraphs_type.project
     - paragraphs.paragraphs_type.video
@@ -20,7 +22,7 @@ id: paragraph.dynamic_section.field_section_content
 field_name: field_section_content
 entity_type: paragraph
 bundle: dynamic_section
-label: 'Dynamic Section Content'
+label: 'Section Content'
 description: ''
 required: false
 translatable: false
@@ -31,56 +33,61 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      basic_html_section: basic_html_section
       events: events
       financial_documents: financial_documents
       friends_and_partners: friends_and_partners
       gallery: gallery
       links: links
+      mission_teams: mission_teams
       mission_priest_countries_listing: mission_priest_countries_listing
       project: project
       person: person
       video: video
     target_bundles_drag_drop:
       dynamic_section:
-        weight: 14
+        weight: -31
         enabled: false
       basic_html_section:
-        weight: 15
-        enabled: false
+        enabled: true
+        weight: -30
       article_dynamic_section:
-        weight: 16
+        weight: -29
         enabled: false
       events:
         enabled: true
-        weight: 17
+        weight: -28
       financial_documents:
         enabled: true
-        weight: 18
+        weight: -27
       friends_and_partners:
         enabled: true
-        weight: 19
+        weight: -26
       from_library:
-        weight: 21
+        weight: -25
         enabled: false
       gallery:
         enabled: true
-        weight: 22
+        weight: -24
       hero:
-        weight: 23
+        weight: -23
         enabled: false
       links:
         enabled: true
-        weight: 24
+        weight: -22
+      mission_teams:
+        enabled: true
+        weight: -21
       mission_priest_countries_listing:
         enabled: true
-        weight: 25
+        weight: -20
       project:
         enabled: true
-        weight: 25
+        weight: -19
       person:
         enabled: true
-        weight: 26
+        weight: -18
       video:
         enabled: true
-        weight: 26
+        weight: -17
 field_type: entity_reference_revisions

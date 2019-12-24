@@ -1,15 +1,15 @@
-uuid: 3b818667-fcf4-4628-ad89-155c1587d7d5
+uuid: 66998823-daee-40cb-8c84-91d753e2168b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - adminimal_theme
 _core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: seven_breadcrumbs
-theme: seven
+  default_config_hash: 8by5KRsb7ZpmjHj0ms1d7xAG_xH54AWsOX6spDLJ59U
+id: adminimal_theme_breadcrumbs
+theme: adminimal_theme
 region: breadcrumb
 weight: 0
 provider: null

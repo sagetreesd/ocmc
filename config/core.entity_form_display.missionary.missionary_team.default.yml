@@ -9,6 +9,7 @@ dependencies:
     - field.field.missionary.missionary_team.field_geo_draw
     - field.field.missionary.missionary_team.field_interests
     - field.field.missionary.missionary_team.field_orientation_days
+    - field.field.missionary.missionary_team.field_published
     - field.field.missionary.missionary_team.field_serving_cities
     - field.field.missionary.missionary_team.field_start_end_dates
     - field.field.missionary.missionary_team.field_team_cost
@@ -131,6 +132,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_published:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_serving_cities:
     weight: 6

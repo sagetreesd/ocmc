@@ -1,0 +1,23 @@
+uuid: db1c8487-ad9c-4fa0-8b8d-9fa90cb87b44
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.mission_priest_country
+    - field.storage.missionary.field_published
+id: missionary.mission_priest_country.field_published
+field_name: field_published
+entity_type: missionary
+bundle: mission_priest_country
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Published
+  off_label: 'Not Published'
+field_type: boolean

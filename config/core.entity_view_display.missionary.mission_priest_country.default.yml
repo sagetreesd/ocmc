@@ -6,6 +6,7 @@ dependencies:
     - eck.eck_type.missionary.mission_priest_country
     - field.field.missionary.mission_priest_country.field_description
     - field.field.missionary.mission_priest_country.field_geo_draw
+    - field.field.missionary.mission_priest_country.field_published
   module:
     - leaflet
     - text
@@ -147,6 +148,16 @@ content:
       disable_wheel: 0
     third_party_settings: {  }
     type: leaflet_formatter_default
+    region: content
+  field_published:
+    weight: -2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   title:
     label: hidden

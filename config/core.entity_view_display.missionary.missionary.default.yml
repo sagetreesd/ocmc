@@ -12,6 +12,7 @@ dependencies:
     - field.field.missionary.missionary.field_luminate_link
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
+    - field.field.missionary.missionary.field_published
   module:
     - image
     - leaflet
@@ -149,6 +150,16 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_published:
+    weight: 9
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   title:
     label: hidden

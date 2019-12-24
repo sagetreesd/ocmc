@@ -5,5 +5,5 @@ dependencies:
   config:
     - eck.eck_entity_type.missionary
 type: mission_priest_country
-name: 'Mission Priest Country'
+name: 'Mission Priests'
 description: ''

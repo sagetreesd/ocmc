@@ -28,9 +28,9 @@ dependencies:
     - user
     - views_bulk_operations
 id: missionaries
-label: Missionaries
+label: 'Mission Content Administration'
 module: views
-description: 'Administration view of all missionary '
+description: 'Administration view of all mission content.'
 tag: ''
 base_table: missionary_field_data
 base_field: id
@@ -687,7 +687,20 @@ display:
           plugin_id: list_field
       sorts: {  }
       title: Missionaries
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<a href="/admin/content/missionary/add/missionary?destination=admin/content/missionaries" class="button button-action button--primary button--small">Add a Missionary<a>'
+            format: full_html
+          plugin_id: text
       footer: {  }
       empty:
         area:
@@ -747,6 +760,7 @@ display:
         filters: false
         filter_groups: false
         fields: false
+        header: false
       filters:
         title:
           id: title
@@ -1724,6 +1738,20 @@ display:
           destination: false
           entity_type: missionary
           plugin_id: entity_operations
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<a href="/admin/content/missionary/add/missionary_team?destination=admin/content/mission-teams" class="button button-action button--primary button--small">Add a Mission Team<a>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: 0
       contexts:
@@ -1781,10 +1809,10 @@ display:
     position: 3
     display_options:
       display_extenders: {  }
-      path: admin/content/mission-priest-countries
+      path: admin/content/mission-priests
       menu:
         type: normal
-        title: 'Mission Priest Countries'
+        title: 'Mission Priests'
         description: ''
         expanded: false
         parent: system.admin_content
@@ -1798,6 +1826,7 @@ display:
         filters: false
         filter_groups: false
         fields: false
+        header: false
       filters:
         title:
           id: title
@@ -2069,6 +2098,20 @@ display:
           destination: false
           entity_type: missionary
           plugin_id: entity_operations
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<a href="/admin/content/missionary/add/mission_priest_country?destination=admin/content/mission-priests" class="button button-action button--primary button--small">Add a Mission Priest<a>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: 0
       contexts:

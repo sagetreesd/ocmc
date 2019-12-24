@@ -12,6 +12,7 @@ dependencies:
     - field.field.missionary.missionary.field_luminate_link
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
+    - field.field.missionary.missionary.field_published
     - image.style.thumbnail
   module:
     - image
@@ -94,7 +95,7 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
+    type: options_select
     region: content
   field_photo:
     weight: 2
@@ -103,6 +104,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_published:
+    weight: 10
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   path:
     type: path
