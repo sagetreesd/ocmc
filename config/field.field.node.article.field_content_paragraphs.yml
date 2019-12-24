@@ -7,7 +7,6 @@ dependencies:
     - node.type.article
     - paragraphs.paragraphs_type.article_dynamic_section
     - paragraphs.paragraphs_type.basic_html_section
-    - paragraphs.paragraphs_type.hero
   module:
     - entity_reference_revisions
 id: node.article.field_content_paragraphs
@@ -26,7 +25,6 @@ settings:
     negate: 0
     target_bundles:
       basic_html_section: basic_html_section
-      hero: hero
       article_dynamic_section: article_dynamic_section
     target_bundles_drag_drop:
       basic_html_section:
@@ -36,8 +34,8 @@ settings:
         weight: -12
         enabled: false
       hero:
-        enabled: true
         weight: -11
+        enabled: false
       video:
         weight: -10
         enabled: false
@@ -59,19 +57,16 @@ settings:
       article_dynamic_section:
         enabled: true
         weight: 16
-      board_members:
-        weight: 16
-        enabled: false
       dynamic_section:
         weight: 17
         enabled: false
       financial_documents:
         weight: 19
         enabled: false
-      mission_priest_country:
+      mission_priest_countries_listing:
         weight: 25
         enabled: false
-      staff_members:
-        weight: 27
+      person:
+        weight: 26
         enabled: false
 field_type: entity_reference_revisions

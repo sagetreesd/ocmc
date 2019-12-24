@@ -7,7 +7,6 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.basic_html_section
     - paragraphs.paragraphs_type.dynamic_section
-    - paragraphs.paragraphs_type.hero
   module:
     - entity_reference_revisions
 id: node.page.field_content_paragraphs
@@ -25,13 +24,12 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      hero: hero
       basic_html_section: basic_html_section
       dynamic_section: dynamic_section
     target_bundles_drag_drop:
       hero:
-        enabled: true
         weight: -9
+        enabled: false
       basic_html_section:
         enabled: true
         weight: -8
@@ -59,13 +57,16 @@ settings:
       dynamic_section:
         enabled: true
         weight: 14
-      friends_and_partners_category:
-        weight: 14
-        enabled: false
-      board_members:
+      article_dynamic_section:
         weight: 15
         enabled: false
       links:
         weight: 18
+        enabled: false
+      mission_priest_countries_listing:
+        weight: 25
+        enabled: false
+      person:
+        weight: 26
         enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,70 @@
+uuid: b234c761-05a7-484c-b031-e8e0b963b9d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.page
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+id: node.page.field_hero
+field_name: field_hero
+entity_type: node
+bundle: page
+label: Hero
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero: hero
+    target_bundles_drag_drop:
+      article_dynamic_section:
+        weight: 15
+        enabled: false
+      basic_html_section:
+        weight: 16
+        enabled: false
+      dynamic_section:
+        weight: 17
+        enabled: false
+      events:
+        weight: 18
+        enabled: false
+      financial_documents:
+        weight: 19
+        enabled: false
+      friends_and_partners:
+        weight: 20
+        enabled: false
+      from_library:
+        weight: 21
+        enabled: false
+      gallery:
+        weight: 22
+        enabled: false
+      hero:
+        enabled: true
+        weight: 23
+      links:
+        weight: 24
+        enabled: false
+      mission_priest_countries_listing:
+        weight: 25
+        enabled: false
+      person:
+        weight: 26
+        enabled: false
+      project:
+        weight: 27
+        enabled: false
+      video:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions
