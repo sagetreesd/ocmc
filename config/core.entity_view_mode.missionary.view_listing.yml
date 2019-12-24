@@ -1,0 +1,10 @@
+uuid: dea4e97f-5e56-48cb-b8c7-d7f219c4cebf
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: missionary.view_listing
+label: 'View Listing'
+targetEntityType: missionary
+cache: true

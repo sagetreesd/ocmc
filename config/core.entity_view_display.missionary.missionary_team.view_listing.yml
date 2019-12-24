@@ -1,0 +1,68 @@
+uuid: f9862237-9375-4759-8ff8-90959e2ec1b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.missionary.view_listing
+    - eck.eck_type.missionary.missionary_team
+    - field.field.missionary.missionary_team.field_country_serving
+    - field.field.missionary.missionary_team.field_departure_city
+    - field.field.missionary.missionary_team.field_geo_draw
+    - field.field.missionary.missionary_team.field_interests
+    - field.field.missionary.missionary_team.field_orientation_days
+    - field.field.missionary.missionary_team.field_published
+    - field.field.missionary.missionary_team.field_serving_cities
+    - field.field.missionary.missionary_team.field_start_end_dates
+    - field.field.missionary.missionary_team.field_team_cost
+    - field.field.missionary.missionary_team.field_team_raiser_link
+    - field.field.missionary.missionary_team.field_team_status
+    - field.field.missionary.missionary_team.field_team_type
+  module:
+    - datetime_range
+    - link
+id: missionary.missionary_team.view_listing
+targetEntityType: missionary
+bundle: missionary_team
+mode: view_listing
+content:
+  field_start_end_dates:
+    weight: 1
+    label: inline
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_team_raiser_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_country_serving: true
+  field_departure_city: true
+  field_geo_draw: true
+  field_interests: true
+  field_orientation_days: true
+  field_published: true
+  field_serving_cities: true
+  field_team_cost: true
+  field_team_status: true
+  field_team_type: true

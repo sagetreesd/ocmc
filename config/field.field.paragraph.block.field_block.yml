@@ -1,0 +1,23 @@
+uuid: 39f64e60-1732-48c8-9eec-aef18f61bc00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block
+    - paragraphs.paragraphs_type.block
+  module:
+    - block_field
+id: paragraph.block.field_block
+field_name: field_block
+entity_type: paragraph
+bundle: block
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    'views_block:mission_teams-mission_teams_listing_block': 'views_block:mission_teams-mission_teams_listing_block'
+field_type: block_field
