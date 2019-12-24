@@ -1,9 +1,0 @@
-uuid: 470984cc-ca1b-45e5-ad9d-a9c05305c326
-langcode: en
-status: true
-dependencies: {  }
-id: mission_teams
-label: 'Mission Teams'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }
