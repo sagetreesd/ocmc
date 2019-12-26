@@ -19,5 +19,6 @@ default_value: {  }
 default_value_callback: ''
 settings:
   plugin_ids:
+    'views_block:missionaries_listing-missionaries_listing_block': 'views_block:missionaries_listing-missionaries_listing_block'
     'views_block:mission_teams-mission_teams_listing_block': 'views_block:mission_teams-mission_teams_listing_block'
 field_type: block_field

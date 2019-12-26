@@ -11,6 +11,7 @@ dependencies:
     - field.storage.missionary.field_luminate_link
     - field.storage.missionary.field_missionary_status
     - field.storage.missionary.field_orientation_days
+    - field.storage.missionary.field_published
     - field.storage.missionary.field_serving_cities
     - field.storage.missionary.field_start_end_dates
     - field.storage.missionary.field_team_cost
@@ -459,6 +460,71 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_published:
+          id: field_published
+          table: missionary__field_published
+          field: field_published
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Published
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: yes-no
+            format_custom_true: ''
+            format_custom_false: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         operations:
           id: operations
           table: missionary
@@ -685,6 +751,49 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
+        field_published_value:
+          id: field_published_value
+          table: missionary__field_published
+          field: field_published_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: Published
+            description: ''
+            use_operator: false
+            operator: field_published_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_published_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: 'Published (field_published)'
+            description: null
+            identifier: field_published_value
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          plugin_id: boolean
       sorts: {  }
       title: Missionaries
       header:
@@ -736,6 +845,7 @@ display:
         - 'config:field.storage.missionary.field_country_serving'
         - 'config:field.storage.missionary.field_luminate_link'
         - 'config:field.storage.missionary.field_missionary_status'
+        - 'config:field.storage.missionary.field_published'
   mission_teams_admin_page:
     display_plugin: page
     id: mission_teams_admin_page
@@ -978,6 +1088,46 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
+        field_published_value:
+          id: field_published_value
+          table: missionary__field_published
+          field: field_published_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: Published
+            description: ''
+            use_operator: false
+            operator: field_published_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_published_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
       filter_groups:
         operator: AND
         groups:
@@ -1687,6 +1837,71 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_published:
+          id: field_published
+          table: missionary__field_published
+          field: field_published
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Published
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: yes-no
+            format_custom_true: ''
+            format_custom_false: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         operations:
           id: operations
           table: missionary
@@ -1765,6 +1980,7 @@ display:
         - 'config:field.storage.missionary.field_country_serving'
         - 'config:field.storage.missionary.field_departure_city'
         - 'config:field.storage.missionary.field_orientation_days'
+        - 'config:field.storage.missionary.field_published'
         - 'config:field.storage.missionary.field_serving_cities'
         - 'config:field.storage.missionary.field_start_end_dates'
         - 'config:field.storage.missionary.field_team_cost'
@@ -1802,6 +2018,7 @@ display:
         - 'config:field.storage.missionary.field_country_serving'
         - 'config:field.storage.missionary.field_luminate_link'
         - 'config:field.storage.missionary.field_missionary_status'
+        - 'config:field.storage.missionary.field_published'
   missionary_priest_country_admin_page:
     display_plugin: page
     id: missionary_priest_country_admin_page
@@ -1820,7 +2037,7 @@ display:
         context: '1'
         menu_name: admin
       display_description: 'Administration page for mission priest country bundle content.'
-      title: 'Mission Priest Countries'
+      title: 'Mission Priests'
       defaults:
         title: false
         filters: false
@@ -1913,6 +2130,46 @@ display:
           entity_type: missionary
           entity_field: type
           plugin_id: bundle
+        field_published_value:
+          id: field_published_value
+          table: missionary__field_published
+          field: field_published_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: Published
+            description: ''
+            use_operator: false
+            operator: field_published_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_published_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
       filter_groups:
         operator: AND
         groups:
@@ -2098,6 +2355,71 @@ display:
           destination: false
           entity_type: missionary
           plugin_id: entity_operations
+        field_published:
+          id: field_published
+          table: missionary__field_published
+          field: field_published
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Published
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: yes-no
+            format_custom_true: ''
+            format_custom_false: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       header:
         area:
           id: area
@@ -2120,4 +2442,5 @@ display:
         - url
         - url.query_args
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.missionary.field_published'
