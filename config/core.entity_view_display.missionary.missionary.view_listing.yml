@@ -1,0 +1,68 @@
+uuid: f8a4af94-dc3d-409b-b7c3-6be05001d10b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.missionary.view_listing
+    - eck.eck_type.missionary.missionary
+    - field.field.missionary.missionary.field_biography
+    - field.field.missionary.missionary.field_country_serving
+    - field.field.missionary.missionary.field_geo_draw
+    - field.field.missionary.missionary.field_interests
+    - field.field.missionary.missionary.field_links
+    - field.field.missionary.missionary.field_luminate_link
+    - field.field.missionary.missionary.field_missionary_status
+    - field.field.missionary.missionary.field_photo
+    - field.field.missionary.missionary.field_published
+  module:
+    - image
+    - link
+    - options
+id: missionary.missionary.view_listing
+targetEntityType: missionary
+bundle: missionary
+mode: view_listing
+content:
+  field_luminate_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_missionary_status:
+    type: list_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_biography: true
+  field_country_serving: true
+  field_geo_draw: true
+  field_interests: true
+  field_links: true
+  field_published: true

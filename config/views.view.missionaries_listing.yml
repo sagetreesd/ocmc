@@ -1,17 +1,16 @@
-uuid: ae540de9-4207-4e2e-a991-d7b9a8dbdf6e
+uuid: 973e3835-0d11-4ce8-acb6-550c7a159296
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.missionary.view_listing
-    - eck.eck_type.missionary.missionary_team
+    - eck.eck_type.missionary.missionary
     - field.storage.missionary.field_country_serving
   module:
-    - datetime
     - eck
     - user
-id: mission_teams
-label: 'Mission Teams'
+id: missionaries_listing
+label: Missionaries
 module: views
 description: 'Displays the mission teams for all visitors on the site.'
 tag: ''
@@ -203,27 +202,12 @@ display:
           id: type
           table: missionary_field_data
           field: type
-          value:
-            missionary_team: missionary_team
-          entity_type: missionary
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        field_start_end_dates_end_value:
-          id: field_start_end_dates_end_value
-          table: missionary__field_start_end_dates
-          field: field_start_end_dates_end_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '<'
+          operator: in
           value:
-            min: ''
-            max: ''
-            value: '+1 week'
-            type: offset
+            missionary: missionary
           group: 1
           exposed: false
           expose:
@@ -240,9 +224,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -255,7 +237,9 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: datetime
+          entity_type: missionary
+          entity_field: type
+          plugin_id: bundle
         field_published_value:
           id: field_published_value
           table: missionary__field_published
@@ -307,19 +291,6 @@ display:
           expose:
             label: ''
           plugin_id: standard
-        field_start_end_dates_value:
-          id: field_start_end_dates_value
-          table: missionary__field_start_end_dates
-          field: field_start_end_dates_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          plugin_id: datetime
         title:
           id: title
           table: missionary_field_data
@@ -334,7 +305,7 @@ display:
           entity_type: missionary
           entity_field: title
           plugin_id: standard
-      title: 'Mission Teams'
+      title: Missionaries
       header: {  }
       footer: {  }
       empty: {  }
@@ -349,13 +320,14 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.missionary.field_country_serving'
-  mission_teams_listing_block:
+  missionaries_listing_block:
     display_plugin: block
-    id: mission_teams_listing_block
+    id: missionaries_listing_block
     display_title: Block
     position: 1
     display_options:
       display_extenders: {  }
+      block_description: 'Missionaries Listing'
     cache_metadata:
       max-age: -1
       contexts:
