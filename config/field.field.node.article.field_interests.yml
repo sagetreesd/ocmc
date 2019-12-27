@@ -10,8 +10,8 @@ dependencies:
     - custom_add_another
 third_party_settings:
   custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
+    custom_add_another: 'Add Another Interest'
+    custom_remove: 'Remove Interest'
 id: node.article.field_interests
 field_name: field_interests
 entity_type: node
