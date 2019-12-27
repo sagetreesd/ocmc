@@ -6,7 +6,12 @@ dependencies:
     - eck.eck_type.missionary.missionary
     - field.storage.missionary.field_photo
   module:
+    - custom_add_another
     - image
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: missionary.missionary.field_photo
 field_name: field_photo
 entity_type: missionary

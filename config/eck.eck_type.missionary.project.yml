@@ -1,0 +1,9 @@
+uuid: 5113f87e-56da-4632-8374-2794a9cd5d6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.missionary
+type: project
+name: Project
+description: ''

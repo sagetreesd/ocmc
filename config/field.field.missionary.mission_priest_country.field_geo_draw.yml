@@ -6,7 +6,12 @@ dependencies:
     - eck.eck_type.missionary.mission_priest_country
     - field.storage.missionary.field_geo_draw
   module:
+    - custom_add_another
     - geofield
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: missionary.mission_priest_country.field_geo_draw
 field_name: field_geo_draw
 entity_type: missionary

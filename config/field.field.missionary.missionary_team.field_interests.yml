@@ -6,6 +6,12 @@ dependencies:
     - eck.eck_type.missionary.missionary_team
     - field.storage.missionary.field_interests
     - taxonomy.vocabulary.interests
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: missionary.missionary_team.field_interests
 field_name: field_interests
 entity_type: missionary

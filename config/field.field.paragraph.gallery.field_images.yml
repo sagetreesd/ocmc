@@ -6,7 +6,12 @@ dependencies:
     - field.storage.paragraph.field_images
     - paragraphs.paragraphs_type.gallery
   module:
+    - custom_add_another
     - image
+third_party_settings:
+  custom_add_another:
+    custom_add_another: 'Add Another Image'
+    custom_remove: 'Remove Image'
 id: paragraph.gallery.field_images
 field_name: field_images
 entity_type: paragraph

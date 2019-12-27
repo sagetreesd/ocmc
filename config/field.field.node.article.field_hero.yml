@@ -7,7 +7,12 @@ dependencies:
     - node.type.article
     - paragraphs.paragraphs_type.hero
   module:
+    - custom_add_another
     - entity_reference_revisions
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: node.article.field_hero
 field_name: field_hero
 entity_type: node

@@ -6,7 +6,12 @@ dependencies:
     - field.storage.paragraph.field_link_to_event
     - paragraphs.paragraphs_type.events
   module:
+    - custom_add_another
     - link
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: paragraph.events.field_link_to_event
 field_name: field_link_to_event
 entity_type: paragraph

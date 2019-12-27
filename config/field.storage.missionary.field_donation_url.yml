@@ -1,13 +1,13 @@
-uuid: 302e6c7c-ae40-4180-bd03-7eae509d64d0
+uuid: 92ec3c47-267d-481c-a434-460d99711a01
 langcode: en
 status: true
 dependencies:
   module:
+    - eck
     - link
-    - paragraphs
-id: paragraph.field_donation_url
+id: missionary.field_donation_url
 field_name: field_donation_url
-entity_type: paragraph
+entity_type: missionary
 type: link
 settings: {  }
 module: link

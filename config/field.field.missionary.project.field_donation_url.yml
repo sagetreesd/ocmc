@@ -1,10 +1,10 @@
-uuid: c82161b9-f477-49ec-8e50-e9a9361b5fb8
+uuid: 5be8d939-7bc1-4303-a5e6-f5495fed1e57
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_friend_partner_website
-    - paragraphs.paragraphs_type.friends_and_partners
+    - eck.eck_type.missionary.project
+    - field.storage.missionary.field_donation_url
   module:
     - custom_add_another
     - link
@@ -12,11 +12,11 @@ third_party_settings:
   custom_add_another:
     custom_add_another: ''
     custom_remove: ''
-id: paragraph.friends_and_partners.field_friend_partner_website
-field_name: field_friend_partner_website
-entity_type: paragraph
-bundle: friends_and_partners
-label: Website
+id: missionary.project.field_donation_url
+field_name: field_donation_url
+entity_type: missionary
+bundle: project
+label: 'Donation URL'
 description: ''
 required: false
 translatable: false

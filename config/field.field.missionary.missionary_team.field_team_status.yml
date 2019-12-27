@@ -6,7 +6,12 @@ dependencies:
     - eck.eck_type.missionary.missionary_team
     - field.storage.missionary.field_team_status
   module:
+    - custom_add_another
     - options
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: missionary.missionary_team.field_team_status
 field_name: field_team_status
 entity_type: missionary

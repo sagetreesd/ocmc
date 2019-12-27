@@ -6,6 +6,12 @@ dependencies:
     - eck.eck_type.missionary.missionary_team
     - field.storage.missionary.field_country_serving
     - taxonomy.vocabulary.country
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: missionary.missionary_team.field_country_serving
 field_name: field_country_serving
 entity_type: missionary

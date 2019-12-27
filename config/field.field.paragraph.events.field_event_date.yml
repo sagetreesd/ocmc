@@ -6,7 +6,12 @@ dependencies:
     - field.storage.paragraph.field_event_date
     - paragraphs.paragraphs_type.events
   module:
+    - custom_add_another
     - datetime
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: paragraph.events.field_event_date
 field_name: field_event_date
 entity_type: paragraph

@@ -13,10 +13,14 @@ dependencies:
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
     - paragraphs.paragraphs_type.person
-    - paragraphs.paragraphs_type.project
     - paragraphs.paragraphs_type.video
   module:
+    - custom_add_another
     - entity_reference_revisions
+third_party_settings:
+  custom_add_another:
+    custom_add_another: 'Add More Content to this Section'
+    custom_remove: 'Remove Content from this Section'
 id: paragraph.dynamic_section.field_section_content
 field_name: field_section_content
 entity_type: paragraph
@@ -38,7 +42,6 @@ settings:
       friends_and_partners: friends_and_partners
       gallery: gallery
       links: links
-      project: project
       person: person
       video: video
       block: block

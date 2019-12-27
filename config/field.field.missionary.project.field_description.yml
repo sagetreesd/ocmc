@@ -1,15 +1,20 @@
-uuid: c1f4d3a3-4193-4d6f-9514-b4685fbac08a
+uuid: 8a246d80-f057-4263-ba30-21c2cf45b728
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_description
-    - paragraphs.paragraphs_type.project
+    - eck.eck_type.missionary.project
+    - field.storage.missionary.field_description
   module:
+    - custom_add_another
     - text
-id: paragraph.project.field_description
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: missionary.project.field_description
 field_name: field_description
-entity_type: paragraph
+entity_type: missionary
 bundle: project
 label: Description
 description: ''

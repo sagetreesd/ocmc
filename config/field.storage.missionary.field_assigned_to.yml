@@ -1,0 +1,19 @@
+uuid: 4d5920fd-0395-4231-9669-7e70b621ae35
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: missionary.field_assigned_to
+field_name: field_assigned_to
+entity_type: missionary
+type: entity_reference
+settings:
+  target_type: missionary
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

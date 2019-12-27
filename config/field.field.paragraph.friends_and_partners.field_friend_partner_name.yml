@@ -5,6 +5,12 @@ dependencies:
   config:
     - field.storage.paragraph.field_friend_partner_name
     - paragraphs.paragraphs_type.friends_and_partners
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: paragraph.friends_and_partners.field_friend_partner_name
 field_name: field_friend_partner_name
 entity_type: paragraph
