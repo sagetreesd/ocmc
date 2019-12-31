@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: missionary
-label: Mission
+label: 'OCMC Content'
 created: false
 changed: false
 uid: false
