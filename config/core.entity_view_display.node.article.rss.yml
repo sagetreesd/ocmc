@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_content_paragraphs
     - field.field.node.article.field_hero
     - field.field.node.article.field_interests
+    - field.field.node.article.field_missionaries
     - field.field.node.article.field_thumbnail_image
     - node.type.article
   module:
@@ -31,4 +32,5 @@ hidden:
   field_content_paragraphs: true
   field_hero: true
   field_interests: true
+  field_missionaries: true
   field_thumbnail_image: true

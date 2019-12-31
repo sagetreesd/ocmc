@@ -1,35 +1,34 @@
-uuid: 6b929227-f581-465a-a07f-09590084143d
+uuid: 20274876-9d22-499d-ad8d-c876d9cf6c79
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_interests
+    - eck.eck_type.missionary.missionary
+    - field.storage.node.field_missionaries
     - node.type.article
-    - taxonomy.vocabulary.interests
   module:
     - custom_add_another
 third_party_settings:
   custom_add_another:
-    custom_add_another: 'Add Another Interest'
-    custom_remove: 'Remove Interest'
-id: node.article.field_interests
-field_name: field_interests
+    custom_add_another: 'Add Another Missionary'
+    custom_remove: 'Remove Missionary'
+id: node.article.field_missionaries
+field_name: field_missionaries
 entity_type: node
 bundle: article
-label: Interests
+label: Missionaries
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:missionary'
   handler_settings:
     target_bundles:
-      interests: interests
+      missionary: missionary
     sort:
-      field: name
-      direction: asc
+      field: _none
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference
