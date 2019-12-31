@@ -1,0 +1,25 @@
+uuid: 80d4d120-7196-4fe0-ac6e-656f56d60658
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - sagebootstrap
+id: mainnavigation
+theme: sagebootstrap
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
