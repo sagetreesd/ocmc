@@ -28,7 +28,7 @@
         "drupal/entity_usage": "^2.0.0-beta1",
         "drupal/environment_indicator": "^3.7",
         "drupal/field_group": "^3.0-rc2",
-        "drupal/geocoder": "^2.5",
+        "drupal/geocoder": "^3.0@beta",
         "drupal/geofield": "^1.8",
         "drupal/google_analytics": "^3.0",
         "drupal/inline_entity_form": "1.0-rc2",
@@ -45,6 +45,7 @@
         "drupal/views_bulk_operations": "^3.3",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
+        "geocoder-php/google-maps-provider": "^4.4",
         "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",
         "zaporylie/composer-drupal-optimizations": "^1.0"
@@ -147,7 +148,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "7.0.8"
+            "php": "7.3"
         }
     }
 }
