@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_hero
     - field.field.node.article.field_interests
     - field.field.node.article.field_missionaries
+    - field.field.node.article.field_programs
     - field.field.node.article.field_thumbnail_image
     - image.style.thumbnail
     - node.type.article
@@ -74,6 +75,16 @@ content:
     region: content
   field_missionaries:
     weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_programs:
+    weight: 27
     settings:
       match_operator: CONTAINS
       match_limit: 10

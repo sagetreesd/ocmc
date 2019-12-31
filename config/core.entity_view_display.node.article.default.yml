@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_hero
     - field.field.node.article.field_interests
     - field.field.node.article.field_missionaries
+    - field.field.node.article.field_programs
     - field.field.node.article.field_thumbnail_image
     - node.type.article
   module:
@@ -24,7 +25,7 @@ bundle: article
 mode: default
 content:
   field_article_author:
-    weight: 3
+    weight: 4
     label: inline
     settings:
       link_to_entity: false
@@ -32,7 +33,7 @@ content:
     type: string
     region: content
   field_content_paragraphs:
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       view_mode: default
@@ -65,8 +66,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_programs:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_thumbnail_image:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       image_style: ''
@@ -75,7 +84,7 @@ content:
     type: image
     region: content
   links:
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
