@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.basic_html_section
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.location
     - paragraphs.paragraphs_type.video
   module:
     - custom_add_another
@@ -34,6 +35,7 @@ settings:
       basic_html_section: basic_html_section
       gallery: gallery
       links: links
+      location: location
       video: video
     target_bundles_drag_drop:
       article_dynamic_section:
@@ -42,6 +44,9 @@ settings:
       basic_html_section:
         enabled: true
         weight: 17
+      block:
+        weight: 17
+        enabled: false
       dynamic_section:
         weight: 19
         enabled: false
@@ -63,20 +68,14 @@ settings:
       hero:
         weight: 25
         enabled: false
-      mission_priest_countries_listing:
-        weight: 25
-        enabled: false
       links:
+        enabled: true
+        weight: 26
+      location:
         enabled: true
         weight: 26
       person:
         weight: 26
-        enabled: false
-      mission_teams:
-        weight: 27
-        enabled: false
-      project:
-        weight: 28
         enabled: false
       video:
         enabled: true

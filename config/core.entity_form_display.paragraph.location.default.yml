@@ -1,0 +1,47 @@
+uuid: 1f0aa6f3-978c-4c3a-835b-de0bc4687971
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.location.field_geo_draw
+    - paragraphs.paragraphs_type.location
+  module:
+    - leaflet_widget
+id: paragraph.location.default
+targetEntityType: paragraph
+bundle: location
+mode: default
+content:
+  field_geo_draw:
+    weight: 0
+    settings:
+      map:
+        leaflet_map: 'OSM Mapnik'
+        height: '300'
+        center:
+          lat: '0'
+          lng: '0'
+        auto_center: '1'
+        zoom: '10'
+        locate: '1'
+        scroll_zoom_enabled: '1'
+      input:
+        readonly: '1'
+        show: 0
+      toolbar:
+        position: topright
+        drawMarker: '1'
+        drawPolygon: '1'
+        drawCircle: '1'
+        drawPolyline: 0
+        drawRectangle: 0
+        editMode: 0
+        dragMode: 0
+        cutPolygon: 0
+        removalMode: 0
+    third_party_settings: {  }
+    type: leaflet_widget
+    region: content
+hidden:
+  created: true
+  status: true

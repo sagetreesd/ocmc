@@ -1,0 +1,24 @@
+uuid: 43df53e3-799c-4358-867f-097b7e9e4601
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.location.field_geo_draw
+    - paragraphs.paragraphs_type.location
+  module:
+    - geofield
+id: paragraph.location.default
+targetEntityType: paragraph
+bundle: location
+mode: default
+content:
+  field_geo_draw:
+    weight: 0
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
+hidden: {  }

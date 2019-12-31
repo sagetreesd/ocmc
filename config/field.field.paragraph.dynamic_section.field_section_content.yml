@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.friends_and_partners
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.location
     - paragraphs.paragraphs_type.person
     - paragraphs.paragraphs_type.video
   module:
@@ -45,6 +46,7 @@ settings:
       person: person
       video: video
       block: block
+      location: location
     target_bundles_drag_drop:
       dynamic_section:
         weight: -31
@@ -76,15 +78,6 @@ settings:
       links:
         enabled: true
         weight: -22
-      mission_teams:
-        enabled: true
-        weight: -21
-      mission_priest_countries_listing:
-        weight: -20
-        enabled: false
-      project:
-        enabled: true
-        weight: -19
       person:
         enabled: true
         weight: -18
@@ -94,4 +87,7 @@ settings:
       block:
         enabled: true
         weight: 19
+      location:
+        enabled: true
+        weight: 26
 field_type: entity_reference_revisions

@@ -31,28 +31,28 @@ content:
     settings:
       map:
         leaflet_map: 'OSM Mapnik'
-        height: 300
+        height: '300'
         center:
-          lat: !!float 0
-          lng: !!float 0
-        auto_center: true
-        zoom: 10
-        locate: true
-        scroll_zoom_enabled: true
+          lat: '0'
+          lng: '0'
+        auto_center: '1'
+        zoom: '10'
+        locate: '1'
+        scroll_zoom_enabled: '1'
       input:
-        show: true
-        readonly: false
+        readonly: '1'
+        show: 0
       toolbar:
         position: topright
-        drawMarker: true
-        drawPolyline: true
-        drawRectangle: true
-        drawPolygon: true
-        drawCircle: true
-        editMode: true
-        dragMode: true
-        cutPolygon: false
-        removalMode: true
+        drawMarker: '1'
+        drawRectangle: '1'
+        drawPolygon: '1'
+        drawCircle: '1'
+        drawPolyline: 0
+        editMode: 0
+        dragMode: 0
+        cutPolygon: 0
+        removalMode: 0
     third_party_settings: {  }
     type: leaflet_widget
     region: content
