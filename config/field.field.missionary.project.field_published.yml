@@ -1,0 +1,29 @@
+uuid: cd4851f5-a3b4-4514-a080-6447e5e8c21b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.project
+    - field.storage.missionary.field_published
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: missionary.project.field_published
+field_name: field_published
+entity_type: missionary
+bundle: project
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Published
+  off_label: 'Not Published'
+field_type: boolean

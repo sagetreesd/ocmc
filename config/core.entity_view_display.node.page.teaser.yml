@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_content_paragraphs
     - field.field.node.page.field_hero
-    - field.field.node.page.field_interests
     - node.type.page
   module:
     - text
@@ -35,4 +34,3 @@ content:
 hidden:
   field_content_paragraphs: true
   field_hero: true
-  field_interests: true

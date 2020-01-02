@@ -8,6 +8,7 @@ dependencies:
     - field.field.missionary.project.field_country_serving
     - field.field.missionary.project.field_description
     - field.field.missionary.project.field_donation_url
+    - field.field.missionary.project.field_published
   module:
     - link
     - path
@@ -46,6 +47,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_published:
+    weight: 35
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   path:
     type: path

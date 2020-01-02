@@ -1,0 +1,20 @@
+uuid: 37ebffde-dd16-4d93-8fdf-07106ac0411d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sagebootstrap
+id: tabs
+theme: sagebootstrap
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

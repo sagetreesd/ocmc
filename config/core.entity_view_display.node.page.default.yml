@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_content_paragraphs
     - field.field.node.page.field_hero
-    - field.field.node.page.field_interests
     - node.type.page
   module:
     - entity_reference_revisions
@@ -35,14 +34,6 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: content
-  field_interests:
-    weight: 2
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   links:
     weight: 3

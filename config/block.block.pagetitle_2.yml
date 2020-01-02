@@ -1,0 +1,18 @@
+uuid: f58ac699-32af-4762-a02d-09cffeef01f7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sagebootstrap
+id: pagetitle_2
+theme: sagebootstrap
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

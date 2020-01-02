@@ -8,6 +8,7 @@ dependencies:
     - field.field.missionary.project.field_country_serving
     - field.field.missionary.project.field_description
     - field.field.missionary.project.field_donation_url
+    - field.field.missionary.project.field_published
   module:
     - link
     - text
@@ -50,6 +51,16 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_published:
+    weight: 0
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   title:
     label: hidden
