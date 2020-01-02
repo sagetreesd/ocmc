@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_article_author
     - field.field.node.article.field_content_paragraphs
     - field.field.node.article.field_hero
@@ -159,4 +158,3 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  comment: true

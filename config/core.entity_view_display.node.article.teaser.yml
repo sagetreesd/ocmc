@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_article_author
     - field.field.node.article.field_content_paragraphs
     - field.field.node.article.field_hero
@@ -36,7 +35,6 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  comment: true
   field_article_author: true
   field_hero: true
   field_interests: true
