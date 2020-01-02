@@ -25,6 +25,11 @@ $config_directories = array(
 );
 $settings['config_sync_directory'] = $config_directories[$config_sync_directory];
 
+$config['environment_indicator.indicator']['bg_color'] = '#d84315';
+$config['environment_indicator.indicator']['fg_color'] = '#fff';
+$config['environment_indicator.indicator']['name'] = 'Dev';
+
+
 /**
  * If there is a local settings file, then include it
  */
@@ -38,12 +43,3 @@ if (file_exists($local_settings)) {
  * modifying settings.php.
  */
 $settings['install_profile'] = 'standard';
-
-/**
- * Local development environment settings.
- */
-$local_settings = __DIR__  . '/local.settings.php';
-if (file_exists($local_settings)) {
-  include $local_settings;
-}
-
