@@ -1,0 +1,24 @@
+uuid: 01a872bc-864d-4fb4-bfac-82a5a13d9f7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.basic_html_section.field_section_html
+    - paragraphs.paragraphs_type.basic_html_section
+  module:
+    - text
+id: paragraph.basic_html_section.news_article_listing
+targetEntityType: paragraph
+bundle: basic_html_section
+mode: news_article_listing
+content:
+  field_section_html:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+hidden: {  }

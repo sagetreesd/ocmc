@@ -13,12 +13,12 @@ bundle: gallery
 mode: default
 content:
   field_images:
+    type: image
     weight: 0
-    label: above
+    region: content
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-    type: image
-    region: content
 hidden: {  }

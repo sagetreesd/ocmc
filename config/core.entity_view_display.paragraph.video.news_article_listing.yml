@@ -1,0 +1,15 @@
+uuid: ab088d54-85d6-4ac0-b952-6428110de97f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.video.field_video
+    - paragraphs.paragraphs_type.video
+id: paragraph.video.news_article_listing
+targetEntityType: paragraph
+bundle: video
+mode: news_article_listing
+content: {  }
+hidden:
+  field_video: true

@@ -1,0 +1,15 @@
+uuid: 0f60114c-b275-42b3-b2a7-617a74668d14
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.gallery.field_images
+    - paragraphs.paragraphs_type.gallery
+id: paragraph.gallery.news_article_listing
+targetEntityType: paragraph
+bundle: gallery
+mode: news_article_listing
+content: {  }
+hidden:
+  field_images: true
