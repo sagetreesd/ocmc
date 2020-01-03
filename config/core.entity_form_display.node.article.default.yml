@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.article.field_hero
     - field.field.node.article.field_interests
     - field.field.node.article.field_locations
+    - field.field.node.article.field_metatags
     - field.field.node.article.field_missionaries
     - field.field.node.article.field_programs
     - field.field.node.article.field_thumbnail_image
@@ -16,6 +17,7 @@ dependencies:
     - node.type.article
   module:
     - image
+    - metatag
     - paragraphs
     - path
     - straw
@@ -83,6 +85,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
+    region: content
+  field_metatags:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_missionaries:
     weight: 26

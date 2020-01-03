@@ -10,6 +10,7 @@ dependencies:
     - field.field.missionary.missionary.field_interests
     - field.field.missionary.missionary.field_links
     - field.field.missionary.missionary.field_luminate_link
+    - field.field.missionary.missionary.field_metatags
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
     - field.field.missionary.missionary.field_published
@@ -18,6 +19,7 @@ dependencies:
     - image
     - leaflet_widget
     - link
+    - metatag
     - text
 id: missionary.missionary.default
 targetEntityType: missionary
@@ -89,6 +91,12 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_metatags:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_missionary_status:
     weight: 1

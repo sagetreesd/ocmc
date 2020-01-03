@@ -1,0 +1,26 @@
+uuid: 47f08585-e577-4ba1-b629-ed76d842be25
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+    - field.storage.missionary.field_metatags
+  module:
+    - custom_add_another
+    - metatag
+third_party_settings:
+  custom_add_another:
+    custom_add_another: 'Add More Metadata'
+    custom_remove: 'Remove Metadata'
+id: missionary.missionary.field_metatags
+field_name: field_metatags
+entity_type: missionary
+bundle: missionary
+label: Metatags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

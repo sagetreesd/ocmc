@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_hero
     - field.field.node.article.field_interests
     - field.field.node.article.field_locations
+    - field.field.node.article.field_metatags
     - field.field.node.article.field_missionaries
     - field.field.node.article.field_programs
     - field.field.node.article.field_thumbnail_image
@@ -39,6 +40,7 @@ hidden:
   field_hero: true
   field_interests: true
   field_locations: true
+  field_metatags: true
   field_missionaries: true
   field_programs: true
   field_thumbnail_image: true

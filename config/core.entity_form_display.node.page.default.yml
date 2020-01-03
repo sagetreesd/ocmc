@@ -6,8 +6,10 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_content_paragraphs
     - field.field.node.page.field_hero
+    - field.field.node.page.field_metatags
     - node.type.page
   module:
+    - metatag
     - paragraphs
     - path
 _core:
@@ -46,6 +48,12 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     type: entity_reference_paragraphs
+    region: content
+  field_metatags:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   path:
     type: path

@@ -1,0 +1,19 @@
+uuid: bb941503-31b3-4ba0-9e7f-166e84342747
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - metatag
+id: missionary.field_metatags
+field_name: field_metatags
+entity_type: missionary
+type: metatag
+settings: {  }
+module: metatag
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

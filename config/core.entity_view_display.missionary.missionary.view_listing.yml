@@ -11,6 +11,7 @@ dependencies:
     - field.field.missionary.missionary.field_interests
     - field.field.missionary.missionary.field_links
     - field.field.missionary.missionary.field_luminate_link
+    - field.field.missionary.missionary.field_metatags
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
     - field.field.missionary.missionary.field_published
@@ -65,4 +66,5 @@ hidden:
   field_geo_draw: true
   field_interests: true
   field_links: true
+  field_metatags: true
   field_published: true
