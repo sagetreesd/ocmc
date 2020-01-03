@@ -21,6 +21,7 @@ dependencies:
     - field_group
     - leaflet_widget
     - link
+    - straw
 third_party_settings:
   field_group:
     group_dates:
@@ -117,9 +118,13 @@ content:
     region: content
   field_interests:
     weight: 6
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: super_term_reference_autocomplete_widget
     region: content
   field_orientation_days:
     weight: 3

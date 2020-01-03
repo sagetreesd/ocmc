@@ -17,19 +17,19 @@ field_name: field_interests
 entity_type: missionary
 bundle: missionary_team
 label: Interests
-description: ''
+description: 'Start typing the term, one term per line, and the site will help you pick an existing term. <a href="/admin/structure/taxonomy/manage/interests/overview" target=_blank>View the list of Interest terms</a><br />Click the "Add Another Interest" button to add more terms related to this content.'
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: straw
   handler_settings:
     target_bundles:
       interests: interests
     sort:
       field: name
       direction: asc
-    auto_create: false
+    auto_create: 0
     auto_create_bundle: ''
 field_type: entity_reference
