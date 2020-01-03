@@ -1374,7 +1374,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<a href="/admin/content/missionary/add/project?destination=admin/content/projects" class="button button-action button--primary button--small">Add a Project<a>'
+            value: '<span class="action-links"><a href="/admin/content/missionary/add/project?destination=admin/content/projects" class="button button-action button--primary button--small">Add a Project<a></span>'
             format: full_html
           plugin_id: text
     cache_metadata:
@@ -2507,7 +2507,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<a href="/admin/content/missionary/add/missionary_team?destination=admin/content/mission-teams" class="button button-action button--primary button--small">Add a Mission Team<a>'
+            value: '<span class="action-links"><a href="/admin/content/missionary/add/missionary_team?destination=admin/content/mission-teams" class="button button-action button--primary button--small">Add a Mission Team<a></span>'
             format: full_html
           plugin_id: text
     cache_metadata:
@@ -2548,6 +2548,22 @@ display:
         context: '1'
         menu_name: admin
       display_description: 'Administration page for missionary bundle content.'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<span class="action-links"><a href="/admin/content/missionary/add/missionary?destination=admin/content/missionaries" class="button button-action button--primary button--small">Add a Missionary<a></span>'
+            format: full_html
+          plugin_id: text
+      defaults:
+        header: false
     cache_metadata:
       max-age: 0
       contexts:
@@ -2974,7 +2990,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<a href="/admin/content/missionary/add/mission_priest_country?destination=admin/content/mission-priests" class="button button-action button--primary button--small">Add a Mission Priest<a>'
+            value: '<span class="action-links"><a href="/admin/content/missionary/add/mission_priest_country?destination=admin/content/mission-priests" class="button button-action button--primary button--small">Add a Mission Priest<a></span>'
             format: full_html
           plugin_id: text
     cache_metadata:
