@@ -21,7 +21,7 @@ Feature: Content
     And I should see "Second article"
 
   @api
-  Scenario: Create many nodes as a site administrator
+  Scenario: Create many nodes as a site_administrator
     Given "page" content:
     | title    |
     | Page three |
@@ -30,7 +30,7 @@ Feature: Content
     | title          |
     | Third article  |
     | Fourth article |
-    And I am logged in as a user with the "site administrator" role
+    And I am logged in as a user with the "site_administrator" role
     When I go to "admin/content"
     Then I should see "Page three"
     And I should see "Page four"
@@ -67,12 +67,12 @@ Feature: Content
     And I should see "Tag two"
 
   @api
-  Scenario: Create many terms as site administrator
+  Scenario: Create many terms as site_administrator
     Given "tags" terms:
     | name    |
     | Tag three |
     | Tag four |
-    And I am logged in as a user with the "site administrator" role
+    And I am logged in as a user with the "site_administrator" role
     When I go to "admin/structure/taxonomy/manage/tags/overview"
     Then I should see "Tag three"
     And I should see "Tag four"
