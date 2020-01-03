@@ -39,7 +39,7 @@
         "drupal/paragraphs_edit": "2.x-dev",
         "drupal/paragraphs_frontend_ui": "^2.0-alpha2",
         "drupal/pathauto": "^1.6",
-        "drupal/redirect": "^1.4",
+        "drupal/redirect": "^1.5",
         "drupal/schema_metatag": "^1.4",
         "drupal/straw": "^1.2",
         "drupal/video_embed_field": "^2.2",
