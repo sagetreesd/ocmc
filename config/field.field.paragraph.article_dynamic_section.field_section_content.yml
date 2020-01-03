@@ -1,30 +1,29 @@
-uuid: 484a35a4-5ee8-4193-8364-6a3e8258d394
+uuid: d57afc68-4494-4b41-9866-0ac1c0570c5c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_article_content
+    - field.storage.paragraph.field_section_content
     - paragraphs.paragraphs_type.article_dynamic_section
     - paragraphs.paragraphs_type.basic_html_section
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
-    - paragraphs.paragraphs_type.location
     - paragraphs.paragraphs_type.video
   module:
     - custom_add_another
     - entity_reference_revisions
 third_party_settings:
   custom_add_another:
-    custom_add_another: 'Add More Content to this Section'
-    custom_remove: 'Remove Content from this Section'
-id: paragraph.article_dynamic_section.field_article_content
-field_name: field_article_content
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.article_dynamic_section.field_section_content
+field_name: field_section_content
 entity_type: paragraph
 bundle: article_dynamic_section
 label: 'Section Content'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -35,49 +34,48 @@ settings:
       basic_html_section: basic_html_section
       gallery: gallery
       links: links
-      location: location
       video: video
     target_bundles_drag_drop:
       article_dynamic_section:
-        weight: 16
+        weight: 15
         enabled: false
       basic_html_section:
         enabled: true
-        weight: 17
+        weight: 16
       block:
         weight: 17
         enabled: false
       dynamic_section:
-        weight: 19
+        weight: 18
         enabled: false
       events:
-        weight: 20
+        weight: 19
         enabled: false
       financial_documents:
-        weight: 21
+        weight: 20
         enabled: false
       friends_and_partners:
-        weight: 22
+        weight: 21
         enabled: false
       from_library:
-        weight: 23
+        weight: 22
         enabled: false
       gallery:
         enabled: true
-        weight: 24
+        weight: 23
       hero:
-        weight: 25
+        weight: 24
         enabled: false
       links:
         enabled: true
-        weight: 26
+        weight: 25
       location:
-        enabled: true
         weight: 26
+        enabled: false
       person:
-        weight: 26
+        weight: 27
         enabled: false
       video:
         enabled: true
-        weight: 30
+        weight: 28
 field_type: entity_reference_revisions

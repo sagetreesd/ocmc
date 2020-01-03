@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.article_dynamic_section.field_article_content
+    - field.field.paragraph.article_dynamic_section.field_section_content
     - field.field.paragraph.article_dynamic_section.field_section_title
     - paragraphs.paragraphs_type.article_dynamic_section
   module:
@@ -13,14 +13,14 @@ targetEntityType: paragraph
 bundle: article_dynamic_section
 mode: default
 content:
-  field_article_content:
-    type: entity_reference_revisions_entity_view
-    weight: 1
-    label: hidden
+  field_section_content:
+    weight: 2
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
   field_section_title:
     weight: 0
