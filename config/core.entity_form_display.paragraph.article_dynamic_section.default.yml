@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.article_dynamic_section.field_section_title
     - paragraphs.paragraphs_type.article_dynamic_section
   module:
-    - entity_reference_revisions
+    - paragraphs
 id: paragraph.article_dynamic_section.default
 targetEntityType: paragraph
 bundle: article_dynamic_section
@@ -16,12 +16,14 @@ content:
   field_section_content:
     weight: 2
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs
     region: content
   field_section_title:
     weight: 0
