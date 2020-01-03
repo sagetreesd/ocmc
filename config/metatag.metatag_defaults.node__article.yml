@@ -1,0 +1,10 @@
+uuid: 3f31add6-7f51-4b40-8253-1041e8d5ae0e
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  keywords: '[node:field_interests]'
+  title: '[node:title] | [site:name]'
+  description: '[node:field_content_paragraphs:entity:field_article_content:entity:field_section_html]'
