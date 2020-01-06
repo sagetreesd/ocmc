@@ -18,6 +18,8 @@ permissions:
   - 'access user profiles'
   - 'administer eck entities'
   - 'administer nodes'
+  - 'administer redirect settings'
+  - 'administer redirects'
   - 'change own username'
   - 'create article content'
   - 'create missionary entities'
