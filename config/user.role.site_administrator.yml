@@ -21,7 +21,6 @@ permissions:
   - 'administer meta tags'
   - 'administer nodes'
   - 'administer paragraphs library'
-  - 'administer taxonomy'
   - 'change own username'
   - 'create article content'
   - 'create missionary entities'
