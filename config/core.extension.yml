@@ -62,6 +62,13 @@ module:
   rdf: 0
   redirect: 0
   redirect_404: 0
+  schema_article: 0
+  schema_event: 0
+  schema_metatag: 0
+  schema_organization: 0
+  schema_person: 0
+  schema_web_page: 0
+  schema_web_site: 0
   search: 0
   settings_tray: 0
   shortcut: 0
