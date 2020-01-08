@@ -323,16 +323,42 @@ display:
             value: 'There are no projects.'
             format: basic_html
           plugin_id: text
-      relationships:
-        field_assigned_to:
-          id: field_assigned_to
-          table: missionary__field_assigned_to
-          field: field_assigned_to
-          relationship: none
-          group_type: group
-          admin_label: Assignee
-          required: false
-          plugin_id: standard
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user.permissions
+      tags:
+        - 'config:field.storage.missionary.field_country_serving'
+  mission_projects_listing_block:
+    display_plugin: block
+    id: mission_projects_listing_block
+    display_title: 'All Projects Listing Block'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Mission Projects Listing'
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user.permissions
+      tags:
+        - 'config:field.storage.missionary.field_country_serving'
+  projects_assigned_block:
+    display_plugin: block
+    id: projects_assigned_block
+    display_title: 'Projects Assigned Block'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      display_description: ''
       arguments:
         id:
           id: id
@@ -341,7 +367,7 @@ display:
           relationship: field_assigned_to
           group_type: group
           admin_label: ''
-          default_action: ignore
+          default_action: empty
           exception:
             value: all
             title_enable: false
@@ -376,25 +402,19 @@ display:
           entity_type: missionary
           entity_field: id
           plugin_id: numeric
-      display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - user.permissions
-      tags:
-        - 'config:field.storage.missionary.field_country_serving'
-  mission_projects_listing_block:
-    display_plugin: block
-    id: mission_projects_listing_block
-    display_title: 'Listing Block'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      block_description: 'Mission Projects Listing'
-      display_description: ''
+      defaults:
+        arguments: false
+        relationships: false
+      relationships:
+        field_assigned_to:
+          id: field_assigned_to
+          table: missionary__field_assigned_to
+          field: field_assigned_to
+          relationship: none
+          group_type: group
+          admin_label: Assignees
+          required: false
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:
