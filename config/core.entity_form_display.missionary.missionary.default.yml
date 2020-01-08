@@ -54,6 +54,9 @@ content:
         zoom: '10'
         locate: '1'
         scroll_zoom_enabled: '1'
+      input:
+        show: '1'
+        readonly: 0
       toolbar:
         position: topright
         drawMarker: '1'
@@ -65,9 +68,6 @@ content:
         drawRectangle: 0
         dragMode: 0
         cutPolygon: 0
-      input:
-        show: 0
-        readonly: 0
     third_party_settings: {  }
     type: leaflet_widget
     region: content
