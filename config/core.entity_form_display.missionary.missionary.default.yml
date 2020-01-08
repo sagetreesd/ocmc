@@ -62,12 +62,12 @@ content:
         drawMarker: '1'
         drawPolygon: '1'
         drawCircle: '1'
+        editMode: '1'
+        removalMode: '1'
         drawPolyline: 0
         drawRectangle: 0
-        editMode: 0
         dragMode: 0
         cutPolygon: 0
-        removalMode: 0
     third_party_settings: {  }
     type: leaflet_widget
     region: content
