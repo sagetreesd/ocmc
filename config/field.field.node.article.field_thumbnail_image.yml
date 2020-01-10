@@ -17,7 +17,7 @@ field_name: field_thumbnail_image
 entity_type: node
 bundle: article
 label: 'Thumbnail Image'
-description: ''
+description: 'This image will be used on teaser views that will link to this article. This image will not appear on the article page.'
 required: false
 translatable: false
 default_value: {  }
