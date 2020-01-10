@@ -123,16 +123,6 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_published:
-    weight: 12
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_serving_cities:
     weight: 9
     label: inline
@@ -196,4 +186,5 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_published: true

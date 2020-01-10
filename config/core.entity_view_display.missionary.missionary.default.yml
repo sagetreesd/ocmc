@@ -138,7 +138,7 @@ content:
     type: link
     region: content
   field_metatags:
-    weight: 10
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -160,16 +160,6 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_published:
-    weight: 9
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   title:
     label: hidden
     type: string
@@ -178,4 +168,5 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_published: true
