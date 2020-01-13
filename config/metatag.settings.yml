@@ -1,0 +1,66 @@
+entity_type_groups:
+  node:
+    article:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+      schema_article: schema_article
+    page:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+      schema_web_page: schema_web_page
+      schema_web_site: schema_web_site
+  paragraphs_library_item:
+    paragraphs_library_item:
+      basic: basic
+  path_alias:
+    path_alias:
+      basic: basic
+  redirect:
+    redirect:
+      basic: basic
+  taxonomy_term:
+    country:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    interests:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    locations:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    programs:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    tags:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+  user:
+    user:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+  missionary:
+    missionary:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+      schema_person: schema_person
+    missionary_team:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    mission_priest_country:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    project:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
