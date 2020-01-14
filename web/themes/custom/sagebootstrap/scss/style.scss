@@ -57,3 +57,7 @@ a {
 .slick>div {
     margin: 0 15px;
 }
+
+.field--name-field-hero-image img {
+    @extend .img-fluid;
+}
