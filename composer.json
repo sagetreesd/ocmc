@@ -31,6 +31,7 @@
         "drupal/field_group": "^3.0-rc2",
         "drupal/geocoder": "^3.0@beta",
         "drupal/geofield": "^1.8",
+        "drupal/geolocation": "^3.0-rc4",
         "drupal/google_analytics": "^3.0",
         "drupal/inline_entity_form": "1.0-rc2",
         "drupal/leaflet": "^1.23",

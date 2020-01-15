@@ -7,7 +7,7 @@ dependencies:
     - eck.eck_type.missionary.missionary
     - field.field.missionary.missionary.field_biography
     - field.field.missionary.missionary.field_country_serving
-    - field.field.missionary.missionary.field_geo_draw
+    - field.field.missionary.missionary.field_geo_location
     - field.field.missionary.missionary.field_interests
     - field.field.missionary.missionary.field_links
     - field.field.missionary.missionary.field_luminate_link
@@ -63,7 +63,7 @@ content:
 hidden:
   field_biography: true
   field_country_serving: true
-  field_geo_draw: true
+  field_geo_location: true
   field_interests: true
   field_links: true
   field_metatags: true

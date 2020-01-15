@@ -1,0 +1,19 @@
+uuid: 7cec316e-e718-437d-84af-20a80e478fdc
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - geolocation
+id: missionary.field_geo_location
+field_name: field_geo_location
+entity_type: missionary
+type: geolocation
+settings: {  }
+module: geolocation
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
