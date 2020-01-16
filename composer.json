@@ -25,7 +25,7 @@
         "drupal/custom_add_another": "^1.0-beta1",
         "drupal/devel": "^2.1",
         "drupal/eck": "1.x-dev",
-        "drupal/entity_browser": "^2.2",
+        "drupal/entity_browser": "^2.3",
         "drupal/entity_usage": "^2.0.0-beta1",
         "drupal/environment_indicator": "^3.7",
         "drupal/field_group": "^3.0-rc2",
