@@ -1364,16 +1364,16 @@
         },
         {
             "name": "doctrine/persistence",
-            "version": "1.3.5",
+            "version": "1.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/persistence.git",
-                "reference": "be70c016fdcd44a428405ee062ebcdd01a6867cd"
+                "reference": "5dd3ac5eebef2d0b074daa4440bb18f93132dee4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/persistence/zipball/be70c016fdcd44a428405ee062ebcdd01a6867cd",
-                "reference": "be70c016fdcd44a428405ee062ebcdd01a6867cd",
+                "url": "https://api.github.com/repos/doctrine/persistence/zipball/5dd3ac5eebef2d0b074daa4440bb18f93132dee4",
+                "reference": "5dd3ac5eebef2d0b074daa4440bb18f93132dee4",
                 "shasum": ""
             },
             "require": {
@@ -1381,7 +1381,7 @@
                 "doctrine/cache": "^1.0",
                 "doctrine/collections": "^1.0",
                 "doctrine/event-manager": "^1.0",
-                "doctrine/reflection": "^1.0",
+                "doctrine/reflection": "^1.1",
                 "php": "^7.1"
             },
             "conflict": {
@@ -1443,7 +1443,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2020-01-14T18:44:12+00:00"
+            "time": "2020-01-16T22:06:23+00:00"
         },
         {
             "name": "doctrine/reflection",
@@ -2760,7 +2760,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eck.git",
-                "reference": "54fef0ad1eca8c372aaad8dac2189afaf2a67de2"
+                "reference": "04d270494a403deb1f894bf41a6f5f783f6af437"
             },
             "require": {
                 "drupal/core": "^8"
@@ -2771,8 +2771,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5+12-dev",
-                    "datestamp": "1574020685",
+                    "version": "8.x-1.0-alpha5+13-dev",
+                    "datestamp": "1574020985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2835,7 +2835,7 @@
                 "source": "http://git.drupal.org/project/eck.git",
                 "issues": "https://www.drupal.org/project/issues/eck"
             },
-            "time": "2019-11-17T19:58:12+00:00"
+            "time": "2020-01-18T22:11:08+00:00"
         },
         {
             "name": "drupal/entity_browser",
@@ -4470,16 +4470,16 @@
         },
         {
             "name": "drush-ops/behat-drush-endpoint",
-            "version": "9.3.0",
+            "version": "9.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/behat-drush-endpoint.git",
-                "reference": "06e290cd5f477186d9df8501b1991ebd80f652fc"
+                "reference": "578aa5402b0cd5a0b0b577290e17e4eeec2835d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/behat-drush-endpoint/zipball/06e290cd5f477186d9df8501b1991ebd80f652fc",
-                "reference": "06e290cd5f477186d9df8501b1991ebd80f652fc",
+                "url": "https://api.github.com/repos/drush-ops/behat-drush-endpoint/zipball/578aa5402b0cd5a0b0b577290e17e4eeec2835d3",
+                "reference": "578aa5402b0cd5a0b0b577290e17e4eeec2835d3",
                 "shasum": ""
             },
             "require": {
@@ -4487,7 +4487,7 @@
                 "php": ">=5.3.0"
             },
             "conflict": {
-                "drush/drush": "<8.2 || >=9.0 <9.6.0 || >=10.0"
+                "drush/drush": "<8.2 || >=9.0 <9.6.0 || >=11.0"
             },
             "type": "drupal-drush",
             "notification-url": "https://packagist.org/downloads/",
@@ -4501,7 +4501,7 @@
                 "Drush",
                 "testing"
             ],
-            "time": "2019-03-29T17:31:34+00:00"
+            "time": "2020-01-17T00:59:53+00:00"
         },
         {
             "name": "drush/drush",
@@ -9059,16 +9059,16 @@
         },
         {
             "name": "behat/transliterator",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Transliterator.git",
-                "reference": "826ce7e9c2a6664c0d1f381cbb38b1fb80a7ee2c"
+                "reference": "3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Transliterator/zipball/826ce7e9c2a6664c0d1f381cbb38b1fb80a7ee2c",
-                "reference": "826ce7e9c2a6664c0d1f381cbb38b1fb80a7ee2c",
+                "url": "https://api.github.com/repos/Behat/Transliterator/zipball/3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc",
+                "reference": "3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc",
                 "shasum": ""
             },
             "require": {
@@ -9076,7 +9076,8 @@
             },
             "require-dev": {
                 "chuyskywalker/rolling-curl": "^3.1",
-                "php-yaoi/php-yaoi": "^1.0"
+                "php-yaoi/php-yaoi": "^1.0",
+                "phpunit/phpunit": "^4.8.36|^6.3"
             },
             "type": "library",
             "extra": {
@@ -9085,8 +9086,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Behat\\Transliterator": "src/"
+                "psr-4": {
+                    "Behat\\Transliterator\\": "src/Behat/Transliterator"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -9099,7 +9100,7 @@
                 "slug",
                 "transliterator"
             ],
-            "time": "2017-04-04T11:38:05+00:00"
+            "time": "2020-01-14T16:39:13+00:00"
         },
         {
             "name": "container-interop/container-interop",
