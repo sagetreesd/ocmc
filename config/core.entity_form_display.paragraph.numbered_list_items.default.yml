@@ -1,0 +1,29 @@
+uuid: 19913fcb-18c1-436b-8c55-a7933b1d1589
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.numbered_list_items.field_numbered_list_item
+    - paragraphs.paragraphs_type.numbered_list_items
+  module:
+    - paragraphs
+id: paragraph.numbered_list_items.default
+targetEntityType: paragraph
+bundle: numbered_list_items
+mode: default
+content:
+  field_numbered_list_item:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

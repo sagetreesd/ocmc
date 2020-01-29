@@ -1,0 +1,44 @@
+uuid: ae55a1f5-7456-4653-9386-4fd2ae383caa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.numbered_list_item.field_description_text
+    - field.field.paragraph.numbered_list_item.field_link
+    - field.field.paragraph.numbered_list_item.field_title
+    - paragraphs.paragraphs_type.numbered_list_item
+  module:
+    - link
+id: paragraph.numbered_list_item.default
+targetEntityType: paragraph
+bundle: numbered_list_item
+mode: default
+content:
+  field_description_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

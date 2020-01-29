@@ -1,0 +1,9 @@
+uuid: a18ceda5-ebd2-4237-8473-064b933db9a8
+langcode: en
+status: true
+dependencies: {  }
+id: numbered_list_item
+label: 'Numbered List Item'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

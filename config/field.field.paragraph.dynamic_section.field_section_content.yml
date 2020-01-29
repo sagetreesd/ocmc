@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.friends_and_partners
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.numbered_list_items
     - paragraphs.paragraphs_type.person
     - paragraphs.paragraphs_type.video
   module:
@@ -45,6 +46,7 @@ settings:
       person: person
       video: video
       block: block
+      numbered_list_items: numbered_list_items
     target_bundles_drag_drop:
       dynamic_section:
         weight: -31
@@ -88,4 +90,10 @@ settings:
       location:
         weight: 26
         enabled: false
+      numbered_list_item:
+        weight: 29
+        enabled: false
+      numbered_list_items:
+        enabled: true
+        weight: 30
 field_type: entity_reference_revisions

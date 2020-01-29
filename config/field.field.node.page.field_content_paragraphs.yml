@@ -39,9 +39,6 @@ settings:
       from_library:
         weight: -7
         enabled: false
-      project:
-        weight: -6
-        enabled: false
       gallery:
         weight: 9
         enabled: false
@@ -63,13 +60,19 @@ settings:
       article_dynamic_section:
         weight: 15
         enabled: false
-      links:
+      block:
         weight: 18
         enabled: false
-      mission_priest_countries_listing:
-        weight: 25
+      links:
+        weight: 18
         enabled: false
       person:
         weight: 26
         enabled: false
+      location:
+        weight: 27
+        enabled: false
+      numbered_list:
+        enabled: true
+        weight: 28
 field_type: entity_reference_revisions

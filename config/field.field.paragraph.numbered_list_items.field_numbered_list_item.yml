@@ -1,0 +1,81 @@
+uuid: 2ac87b7d-0fc5-49bf-bddf-cc2ac1af6471
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_numbered_list_item
+    - paragraphs.paragraphs_type.numbered_list_item
+    - paragraphs.paragraphs_type.numbered_list_items
+  module:
+    - custom_add_another
+    - entity_reference_revisions
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.numbered_list_items.field_numbered_list_item
+field_name: field_numbered_list_item
+entity_type: paragraph
+bundle: numbered_list_items
+label: 'Numbered List Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      numbered_list_item: numbered_list_item
+    target_bundles_drag_drop:
+      article_dynamic_section:
+        weight: 17
+        enabled: false
+      basic_html_section:
+        weight: 18
+        enabled: false
+      block:
+        weight: 19
+        enabled: false
+      dynamic_section:
+        weight: 20
+        enabled: false
+      events:
+        weight: 21
+        enabled: false
+      financial_documents:
+        weight: 22
+        enabled: false
+      friends_and_partners:
+        weight: 23
+        enabled: false
+      from_library:
+        weight: 24
+        enabled: false
+      gallery:
+        weight: 25
+        enabled: false
+      hero:
+        weight: 26
+        enabled: false
+      links:
+        weight: 27
+        enabled: false
+      location:
+        weight: 28
+        enabled: false
+      numbered_list_item:
+        enabled: true
+        weight: 29
+      numbered_list_items:
+        weight: 30
+        enabled: false
+      person:
+        weight: 31
+        enabled: false
+      video:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions
