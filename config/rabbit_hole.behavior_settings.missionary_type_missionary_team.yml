@@ -1,0 +1,11 @@
+uuid: 320ddd20-2db2-426c-9dfd-638c3fa223bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+id: missionary_type_missionary_team
+action: page_redirect
+allow_override: 1
+redirect: /mission-teams
+redirect_code: 301

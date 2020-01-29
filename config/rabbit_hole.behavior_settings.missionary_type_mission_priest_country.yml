@@ -1,0 +1,11 @@
+uuid: 4af1f444-d3ab-4053-8276-37cef60c9bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.mission_priest_country
+id: missionary_type_mission_priest_country
+action: page_redirect
+allow_override: 1
+redirect: /mission-priests
+redirect_code: 301

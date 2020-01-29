@@ -1,0 +1,11 @@
+uuid: 4108e801-4298-4e4b-896f-30739587d5e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+id: missionary_type_missionary
+action: page_redirect
+allow_override: 1
+redirect: /missionaries
+redirect_code: 301
