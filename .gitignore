@@ -69,6 +69,8 @@ web/sites/*/local.settings.php
 web/sites/*/services*.yml
 !web/sites/*/services.pantheon.*.yml
 !web/sites/*/services.yml
+web/sites/default/local.drush.yml
+web/sites/default/local.services.yml
 
 # Ignore SimpleTest multi-site environment.
 web/sites/simpletest
