@@ -6,6 +6,6 @@ dependencies:
     - eck.eck_type.missionary.mission_priest_country
 id: missionary_type_mission_priest_country
 action: page_redirect
-allow_override: 1
+allow_override: 0
 redirect: /mission-priests
 redirect_code: 301

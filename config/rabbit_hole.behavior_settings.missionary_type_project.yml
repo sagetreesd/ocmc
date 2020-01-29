@@ -6,6 +6,6 @@ dependencies:
     - eck.eck_type.missionary.project
 id: missionary_type_project
 action: page_redirect
-allow_override: 1
+allow_override: 0
 redirect: /projects
 redirect_code: 301
