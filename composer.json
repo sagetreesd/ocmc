@@ -46,6 +46,7 @@
         "drupal/redirect": "^1.5",
         "drupal/schema_metatag": "^1.4",
         "drupal/straw": "^1.2",
+        "drupal/twig_tweak": "^2.4",
         "drupal/video_embed_field": "^2.2",
         "drupal/views_bulk_operations": "^3.3",
         "drush-ops/behat-drush-endpoint": "^9.3",
