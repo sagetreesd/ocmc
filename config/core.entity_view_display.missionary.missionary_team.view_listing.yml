@@ -7,7 +7,7 @@ dependencies:
     - eck.eck_type.missionary.missionary_team
     - field.field.missionary.missionary_team.field_country_serving
     - field.field.missionary.missionary_team.field_departure_city
-    - field.field.missionary.missionary_team.field_geo_draw
+    - field.field.missionary.missionary_team.field_geo_location
     - field.field.missionary.missionary_team.field_interests
     - field.field.missionary.missionary_team.field_orientation_days
     - field.field.missionary.missionary_team.field_published
@@ -58,7 +58,7 @@ content:
 hidden:
   field_country_serving: true
   field_departure_city: true
-  field_geo_draw: true
+  field_geo_location: true
   field_interests: true
   field_orientation_days: true
   field_published: true

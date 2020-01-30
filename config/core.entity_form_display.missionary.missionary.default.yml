@@ -534,6 +534,7 @@ content:
             enabled: false
       auto_client_location_marker: '0'
       allow_override_map_settings: 0
+      hide_textfield_form: false
       auto_client_location: ''
     third_party_settings: {  }
     type: geolocation_leaflet
