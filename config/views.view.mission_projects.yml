@@ -405,6 +405,7 @@ display:
       defaults:
         arguments: false
         relationships: false
+        empty: false
       relationships:
         field_assigned_to:
           id: field_assigned_to
@@ -415,6 +416,20 @@ display:
           admin_label: Assignees
           required: false
           plugin_id: standard
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'There are no projects.'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
