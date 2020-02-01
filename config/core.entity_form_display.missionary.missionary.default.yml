@@ -7,6 +7,7 @@ dependencies:
     - field.field.missionary.missionary.field_biography
     - field.field.missionary.missionary.field_country_serving
     - field.field.missionary.missionary.field_geo_location
+    - field.field.missionary.missionary.field_geofield
     - field.field.missionary.missionary.field_interests
     - field.field.missionary.missionary.field_links
     - field.field.missionary.missionary.field_luminate_link
@@ -16,6 +17,7 @@ dependencies:
     - field.field.missionary.missionary.field_published
     - image.style.thumbnail
   module:
+    - geofield
     - geolocation_leaflet
     - image
     - link
@@ -88,7 +90,7 @@ content:
       leaflet_settings:
         height: 400px
         width: 100%
-        zoom: '10'
+        zoom: '5'
         map_features:
           leaflet_control_geocoder:
             weight: -100
@@ -538,6 +540,13 @@ content:
       auto_client_location: ''
     third_party_settings: {  }
     type: geolocation_leaflet
+    region: content
+  field_geofield:
+    weight: 11
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
     region: content
   field_interests:
     weight: 5

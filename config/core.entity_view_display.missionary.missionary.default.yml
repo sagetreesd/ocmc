@@ -7,6 +7,7 @@ dependencies:
     - field.field.missionary.missionary.field_biography
     - field.field.missionary.missionary.field_country_serving
     - field.field.missionary.missionary.field_geo_location
+    - field.field.missionary.missionary.field_geofield
     - field.field.missionary.missionary.field_interests
     - field.field.missionary.missionary.field_links
     - field.field.missionary.missionary.field_luminate_link
@@ -16,6 +17,7 @@ dependencies:
     - field.field.missionary.missionary.field_published
     - filter.format.plain_text
   module:
+    - geofield
     - geolocation
     - image
     - link
@@ -65,6 +67,15 @@ content:
       use_overridden_map_settings: 0
     third_party_settings: {  }
     type: geolocation_map
+    region: content
+  field_geofield:
+    weight: 10
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
     region: content
   field_interests:
     weight: 4

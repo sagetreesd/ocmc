@@ -35,3 +35,46 @@ function ocmc_mission_page_attachments_alter(array &$attachments) {
     }
   }
 }
+
+/**
+ * Implements hook_form_ID_alter().
+ */
+function ocmc_mission_form_missionary_missionary_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  // Geolocation field provides a great interface to use leaflet
+  // to add location data to an entity, but the leaflet map view
+  // requires geofield data. The following uses a custom submit
+  // handler to prefill the geofield data with the data from the
+  // geolocation field.
+
+  // Add a new submit handler to populate the geofield data with
+  // the data from the geo location field.
+  foreach (array_keys($form['actions']) as $action) {
+    if ($action != 'preview' && isset($form['actions'][$action]['#type']) && $form['actions'][$action]['#type'] === 'submit') {
+      array_unshift($form['actions'][$action]['#submit'], 'ocmc_mission_update_geofield_form_submit');
+    }
+  }
+
+  // Hide/Disable geofield so that the user doesn't get confused
+  // between this field and the geo location field.
+  $form['field_geofield']['#access'] = false;
+  $form['field_geofield']['#type'] = 'hidden';
+}
+
+/**
+ * Custom form submit handler.
+ * @see ocmc_mission_form_missionary_missionary_edit_form_alter().
+ */
+function ocmc_mission_update_geofield_form_submit($form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  // Get field values from the geolocation field.
+  $geolocation_value = $form_state->getValue('field_geo_location');
+  // Get the array structure from the target field.
+  $geofield_value = $form_state->getValue('field_geofield');
+
+  // Prepare the latitude and longitude values for the geofield
+  // value array with the values from geolocation field.
+  $geofield_value[0]['value']['lat'] = $geolocation_value[0]['lat'];
+  $geofield_value[0]['value']['lon'] = $geolocation_value[0]['lng'];
+
+  // Set the value array for geofield.
+  $form_state->setValue('field_geofield', $geofield_value);
+}
