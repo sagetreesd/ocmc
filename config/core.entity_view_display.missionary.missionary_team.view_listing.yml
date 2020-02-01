@@ -8,6 +8,7 @@ dependencies:
     - field.field.missionary.missionary_team.field_country_serving
     - field.field.missionary.missionary_team.field_departure_city
     - field.field.missionary.missionary_team.field_geo_location
+    - field.field.missionary.missionary_team.field_geofield
     - field.field.missionary.missionary_team.field_interests
     - field.field.missionary.missionary_team.field_orientation_days
     - field.field.missionary.missionary_team.field_published
@@ -59,6 +60,7 @@ hidden:
   field_country_serving: true
   field_departure_city: true
   field_geo_location: true
+  field_geofield: true
   field_interests: true
   field_orientation_days: true
   field_published: true

@@ -7,6 +7,7 @@ dependencies:
     - field.field.missionary.missionary_team.field_country_serving
     - field.field.missionary.missionary_team.field_departure_city
     - field.field.missionary.missionary_team.field_geo_location
+    - field.field.missionary.missionary_team.field_geofield
     - field.field.missionary.missionary_team.field_interests
     - field.field.missionary.missionary_team.field_orientation_days
     - field.field.missionary.missionary_team.field_published
@@ -19,6 +20,7 @@ dependencies:
   module:
     - datetime_range
     - field_group
+    - geofield
     - geolocation_leaflet
     - link
     - straw
@@ -137,7 +139,6 @@ content:
         zoom: '7'
         map_features:
           leaflet_control_geocoder:
-            enabled: true
             weight: -100
             settings:
               position: topright
@@ -145,11 +146,16 @@ content:
               settings:
                 label: Address
                 description: 'Enter an address to be localized.'
+                autocomplete_min_length: 1
+                location_priority:
+                  lat: null
+                  lng: null
+            enabled: false
           leaflet_control_layer:
             weight: 0
             settings:
               position: topright
-              default_label: true
+              default_label: false
               tile_layer_providers:
                 OpenStreetMap:
                   'OpenStreetMap Mapnik':
@@ -579,6 +585,13 @@ content:
       auto_client_location: ''
     third_party_settings: {  }
     type: geolocation_leaflet
+    region: content
+  field_geofield:
+    weight: 11
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
     region: content
   field_interests:
     weight: 6
