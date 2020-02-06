@@ -4,9 +4,12 @@
 $primary-shade: #e0a031;
 $primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
-$accent-shade: #0079C0;
+$accent-shade: #ad490f;
 $accent-light: lighten($accent-shade, 37%);
 $accent-dark: darken($accent-shade, 12%);
+
+$third-shade: #69df57;
+$fourth-shade: #3898ec;
 // Reassign color vars to semantic color scheme
 $red: #dc3545;
 $yellow: #ffc107;

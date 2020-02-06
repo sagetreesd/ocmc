@@ -1,0 +1,17 @@
+default_patterns:
+  headings: headings
+  text: text
+  lists: lists
+  blockquote: blockquote
+  table: table
+  forms: forms
+  buttons: buttons
+  rule: 0
+  alerts: 0
+  breadcrumbs: 0
+  pagination: 0
+default_colors:
+  - '#e0a031|gold|Primary color'
+  - '#ad490f|red|Accent Shade'
+  - '#69df57|green|Third Shade'
+  - '#3898ec|blue|Fourth Shade'
