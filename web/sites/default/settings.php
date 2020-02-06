@@ -25,9 +25,32 @@ $config_directories = array(
 );
 $settings['config_sync_directory'] = $config_directories[$config_sync_directory];
 
-$config['environment_indicator.indicator']['bg_color'] = '#d84315';
-$config['environment_indicator.indicator']['fg_color'] = '#fff';
-$config['environment_indicator.indicator']['name'] = 'Dev';
+// Pantheon Env Specific Config
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+    case 'dev':
+      $config['environment_indicator.indicator']['name'] = 'Dev';
+      $config['environment_indicator.indicator']['bg_color'] = '#2e7d32';
+      $config['environment_indicator.indicator']['fg_color'] = '#ffffff';
+      break;
+    case 'test':
+      $config['environment_indicator.indicator']['name'] = 'Test';
+      $config['environment_indicator.indicator']['bg_color'] = '#d84315';
+      $config['environment_indicator.indicator']['fg_color'] = '#ffffff';
+      break;
+    case 'live':
+      $config['environment_indicator.indicator']['name'] = 'Live!';
+      $config['environment_indicator.indicator']['bg_color'] = '#b71c1c';
+      $config['environment_indicator.indicator']['fg_color'] = '#ffffff';
+      break;
+    default:
+      // Multidev catchall
+      $config['environment_indicator.indicator']['name'] = 'Multidev';
+      $config['environment_indicator.indicator']['bg_color'] = '#efd01b';
+      $config['environment_indicator.indicator']['fg_color'] = '#000000';
+      break;
+  }
+}
 
 
 /**
