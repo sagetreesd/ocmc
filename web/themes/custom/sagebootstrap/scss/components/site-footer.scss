@@ -8,6 +8,10 @@
     .layout-container {
         padding: 0 $spacer;
     }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 
