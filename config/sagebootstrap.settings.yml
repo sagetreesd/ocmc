@@ -15,8 +15,8 @@ bootstrap_barrio_navbar_top_position: ''
 bootstrap_barrio_navbar_top_color: navbar-dark
 bootstrap_barrio_navbar_top_background: bg-secondary
 bootstrap_barrio_navbar_position: ''
-bootstrap_barrio_navbar_color: navbar-dark
-bootstrap_barrio_navbar_background: bg-primary
+bootstrap_barrio_navbar_color: navbar-light
+bootstrap_barrio_navbar_background: bg-white
 bootstrap_barrio_table_hover: 1
 _core:
   default_config_hash: n7BH2fFu6vYb38Lmo7wHlUvyFlaBOYn2h8Ba-4z_i-0
