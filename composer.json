@@ -46,6 +46,7 @@
         "drupal/rabbit_hole": "^1.0-beta6",
         "drupal/redirect": "^1.5",
         "drupal/schema_metatag": "^1.4",
+        "drupal/simple_styleguide": "^1.6",
         "drupal/straw": "^1.2",
         "drupal/twig_tweak": "^2.4",
         "drupal/video_embed_field": "^2.2",
