@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name: Bootstrap 4 Sass
 Description: Bootstrap 4 with Sass
 */
@@ -60,4 +60,5 @@ a {
 
 .field--name-field-hero-image img {
     @extend .img-fluid;
+    max-width: 50%;
 }
