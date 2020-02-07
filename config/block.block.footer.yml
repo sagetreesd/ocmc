@@ -5,13 +5,17 @@ dependencies:
   config:
     - system.menu.footer
   module:
+    - block_class
     - system
   theme:
     - sagebootstrap
+third_party_settings:
+  block_class:
+    classes: col-md-9
 id: footer
 theme: sagebootstrap
 region: footer_first
-weight: 0
+weight: -1
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

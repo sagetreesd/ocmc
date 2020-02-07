@@ -1,0 +1,29 @@
+uuid: 756945ee-98fa-4369-8645-fb8919420779
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a8d4faf8-7ebe-4cc7-9c27-1db732b3ccc6'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - sagebootstrap
+third_party_settings:
+  block_class:
+    classes: col-md-3
+id: ocmcinfo
+theme: sagebootstrap
+region: footer_first
+weight: -2
+provider: null
+plugin: 'block_content:a8d4faf8-7ebe-4cc7-9c27-1db732b3ccc6'
+settings:
+  id: 'block_content:a8d4faf8-7ebe-4cc7-9c27-1db732b3ccc6'
+  label: 'OCMC Info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

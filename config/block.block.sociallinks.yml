@@ -1,0 +1,25 @@
+uuid: 394626b5-87f9-4e54-a0ed-768c3b085a4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-links
+  module:
+    - system
+  theme:
+    - sagebootstrap
+id: sociallinks
+theme: sagebootstrap
+region: footer_second
+weight: -2
+provider: null
+plugin: 'system_menu_block:social-links'
+settings:
+  id: 'system_menu_block:social-links'
+  label: 'Social Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

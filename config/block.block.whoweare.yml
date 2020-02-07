@@ -1,0 +1,25 @@
+uuid: 6a996243-cfb9-4ccd-b3fc-eb1c79ec1e5f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a771cf9e-3b8f-41e7-8d42-111be3fc70e2'
+  module:
+    - block_content
+  theme:
+    - sagebootstrap
+id: whoweare
+theme: sagebootstrap
+region: footer_second
+weight: -3
+provider: null
+plugin: 'block_content:a771cf9e-3b8f-41e7-8d42-111be3fc70e2'
+settings:
+  id: 'block_content:a771cf9e-3b8f-41e7-8d42-111be3fc70e2'
+  label: 'Who We Are'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
