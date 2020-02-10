@@ -1,5 +1,11 @@
 /* ------------------ Header ------------------ */
 
+@include media-breakpoint-up(lg) {
+  #navbar-main {
+    height: 80px;
+  }
+}
+
 #navbar-top {
     padding: 0 1rem;
 }
@@ -26,6 +32,10 @@
     margin-right: 1rem;
 }
 
+.navbar-brand img {
+  max-width: 200px;
+}
+
 @media (max-width: 33.9em) {
     .navbar-toggleable-xs .navbar-nav .nav-item+.nav-item,
     .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item {
@@ -45,3 +55,5 @@
 .navbar-collapse {
     justify-content: end;
 }
+
+
