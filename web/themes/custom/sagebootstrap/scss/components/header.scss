@@ -56,4 +56,52 @@
     justify-content: end;
 }
 
+#block-mainnavigation li.nav-item {
+  border-left: 1px solid #333;
+  span, a {
+    padding: 0 40px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    color: #000;
+  }
+  a {
+    position: relative;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 
+  &::after {
+    border: none;
+  }
+
+}
+
+#block-mainnavigation li.nav-item .how-we {
+  @include add-fontawesome(20px, #000);
+  border-bottom-color: $third-shade;
+  &:before {
+    content: '\f005';
+  }
+}
+#block-mainnavigation li.nav-item .serve-abroad {
+  @include add-fontawesome(20px, #000);
+  border-bottom-color: $primary-shade;
+  &:before {
+    content: '\f005';
+  }
+}
+#block-mainnavigation li.nav-item .serve-home {
+  @include add-fontawesome(20px, #000);
+  border-bottom-color: $fourth-shade;
+  &:before {
+    content: '\f005';
+  }
+}
+#block-mainnavigation li.nav-item .donate {
+  @include add-fontawesome(20px, #000);
+  border-bottom-color: $accent-shade;
+  &:before {
+    content: '\f005';
+  }
+}

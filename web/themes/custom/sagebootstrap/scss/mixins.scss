@@ -16,3 +16,26 @@ $value in $theme-colors {
         @include button-outline-variant($value);
     }
 }
+
+// Icon in the format of '\f005' (with quotes).
+// Enable font awesome in Subtheme Settings
+@mixin add-fontawesome($font-size, $color) {
+  display: block;
+  &:before {
+    position: absolute;
+    color: $color;
+    font-size: $font-size;
+    font-family: Font Awesome\ 5 Free;
+    transition: color .15s ease;
+    left: 0;
+    top: -4px;
+  }
+  &:hover {
+    background: none;
+    text-decoration: none;
+  }
+}
+
+@mixin purple-background() {
+  background: mediumpurple;
+}
