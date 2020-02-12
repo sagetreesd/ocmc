@@ -57,15 +57,13 @@
 }
 
 #block-mainnavigation li.nav-item {
-  border-left: 1px solid #333;
+  border-left: 1px solid $gray-300;
+  padding: 26px 40px;
   span, a {
-    padding: 0 40px;
+    position: relative;
     border-bottom-width: 4px;
     border-bottom-style: solid;
     color: #000;
-  }
-  a {
-    position: relative;
   }
   &:hover {
     cursor: pointer;
@@ -88,20 +86,20 @@
   @include add-fontawesome(20px, #000);
   border-bottom-color: $primary-shade;
   &:before {
-    content: '\f005';
+    content: '\f0ac';
   }
 }
 #block-mainnavigation li.nav-item .serve-home {
   @include add-fontawesome(20px, #000);
   border-bottom-color: $fourth-shade;
   &:before {
-    content: '\f005';
+    content: '\f015';
   }
 }
 #block-mainnavigation li.nav-item .donate {
   @include add-fontawesome(20px, #000);
   border-bottom-color: $accent-shade;
   &:before {
-    content: '\f005';
+    content: '\f004';
   }
 }
