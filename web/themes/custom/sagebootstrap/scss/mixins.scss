@@ -27,8 +27,7 @@ $value in $theme-colors {
     font-size: $font-size;
     font-family: Font Awesome\ 5 Free;
     transition: color .15s ease;
-    left: 0;
-    top: -4px;
+    font-weight: 900 !important;
   }
   &:hover {
     background: none;

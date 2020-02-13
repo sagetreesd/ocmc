@@ -58,12 +58,16 @@
 
 #block-mainnavigation li.nav-item {
   border-left: 1px solid $gray-300;
-  padding: 26px 40px;
   span, a {
     position: relative;
     border-bottom-width: 4px;
     border-bottom-style: solid;
     color: #000;
+    padding: 40px 40px;
+    &:before {
+      top: 37px;
+      left: 10px;
+    }
   }
   &:hover {
     cursor: pointer;
