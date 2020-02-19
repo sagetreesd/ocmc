@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.financial_documents
     - paragraphs.paragraphs_type.friends_and_partners
     - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.links
     - paragraphs.paragraphs_type.numbered_list_items
     - paragraphs.paragraphs_type.person
@@ -42,6 +43,7 @@ settings:
       financial_documents: financial_documents
       friends_and_partners: friends_and_partners
       gallery: gallery
+      hero: hero
       links: links
       person: person
       video: video
@@ -73,8 +75,8 @@ settings:
         enabled: true
         weight: -24
       hero:
+        enabled: true
         weight: -23
-        enabled: false
       links:
         enabled: true
         weight: -22
