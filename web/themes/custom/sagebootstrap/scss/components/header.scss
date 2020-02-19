@@ -58,19 +58,34 @@
 
 #block-mainnavigation li.nav-item {
   border-left: 1px solid $gray-300;
+  padding-top: 24px;
   span, a {
     position: relative;
     border-bottom-width: 4px;
     border-bottom-style: solid;
     color: #000;
-    padding: 17px 40px;
+    padding: 0px 40px;
+    transition: all 200ms ease;
+    height: 51px;
+    top: 0px;
     &:before {
-      top: 14px;
+      top: -2px;
       left: 10px;
+    }
+    &:hover {
+
     }
   }
   &:hover {
     cursor: pointer;
+    padding-top: 18px;
+    transition: all 200ms ease;
+    span:hover, a:hover {
+      border-bottom-width: 12px;
+    }
+  }
+  a {
+    text-decoration: none;
   }
 
   &::after {
