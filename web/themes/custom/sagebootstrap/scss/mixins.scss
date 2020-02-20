@@ -35,6 +35,29 @@ $value in $theme-colors {
   }
 }
 
+@mixin fontawesome-hide-text($font-size: 18px) {
+  .fa, &.fa {
+    font-size: 0;
+    &:before, &:after {
+      font-size: $font-size;
+    }
+  }
+}
+
+@mixin outside-wrapper() {
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  img {
+    // Make full width images take up all space, otherwise they won't be centered.
+    // width: $large-width;
+    // margin: 0 auto;
+  }
+}
+
 @mixin purple-background() {
   background: mediumpurple;
 }
