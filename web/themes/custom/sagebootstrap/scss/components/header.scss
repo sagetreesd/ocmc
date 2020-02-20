@@ -1,8 +1,14 @@
 /* ------------------ Header ------------------ */
 
 @include media-breakpoint-up(lg) {
+  .navbar {
+    padding: 0;
+  }
   #navbar-main {
     height: 80px;
+  }
+  .navbar-brand {
+    margin-left: 25px;
   }
 }
 
@@ -64,13 +70,13 @@
     border-bottom-width: 4px;
     border-bottom-style: solid;
     color: #000;
-    padding: 0px 40px;
+    padding: 0px 25px 0 47px;
     transition: all 200ms ease;
     height: 51px;
     top: 0px;
     &:before {
-      top: -2px;
-      left: 10px;
+      top: -3px;
+      left: 20px;
     }
     &:hover {
 
