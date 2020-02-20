@@ -17,24 +17,23 @@ sans-serif;
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: -apple-system,
-system-ui,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
+$font-family-sans-serif: Montserrat,
 "Helvetica Neue",
 Arial,
 sans-serif !default;
+
 $font-family-serif: Georgia,
 "Times New Roman",
 Times,
 serif !default;
+
 $font-family-monospace: Menlo,
 Monaco,
 Consolas,
 "Liberation Mono",
 "Courier New",
 monospace;
+
 $font-family-base: $font-family-sans-serif;
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-size-lg: 1.25rem;
