@@ -37,7 +37,7 @@
 }
 
 #block-footer {
-
+  font-size: 17px;
   // Undo default firefox styling
   :-moz-any(ol, ul, menu, dir) ul,
   :-moz-any(ol, ul, menu, dir) menu,
@@ -45,18 +45,29 @@
     list-style-type: none;
   }
 
-  ul.navbar-nav li ul.menu {
-    padding: 0;
-    margin-right: 50px;
-    li {
-       a {
+  ul.navbar-nav > li {
+    width: 33%;
+    > .nav-link {
+      font-weight: bold;
+    }
+    > a.nav-link {
+      text-decoration: none;
+    }
+    ul.menu {
+      padding: 0;
+      margin-right: 50px;
+
+      li {
+        a {
           list-style-type: none;
           color: #000;
           border-bottom: 1px dotted #000;
           text-decoration: none;
           padding-bottom: 1px;
           margin-bottom: 8px;
-       }
+          display: inline-block;
+        }
+      }
     }
   }
 }
