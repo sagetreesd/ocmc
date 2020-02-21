@@ -5,13 +5,17 @@ dependencies:
   content:
     - 'block_content:basic:a771cf9e-3b8f-41e7-8d42-111be3fc70e2'
   module:
+    - block_class
     - block_content
   theme:
     - sagebootstrap
+third_party_settings:
+  block_class:
+    classes: col-md-4
 id: whoweare
 theme: sagebootstrap
 region: footer_second
-weight: -3
+weight: -5
 provider: null
 plugin: 'block_content:a771cf9e-3b8f-41e7-8d42-111be3fc70e2'
 settings:

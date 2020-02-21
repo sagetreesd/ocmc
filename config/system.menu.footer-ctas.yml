@@ -1,0 +1,8 @@
+uuid: be946e35-65ac-49ef-be17-42499039e6f1
+langcode: en
+status: true
+dependencies: {  }
+id: footer-ctas
+label: 'Footer CTAs'
+description: ''
+locked: false

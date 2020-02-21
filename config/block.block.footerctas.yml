@@ -1,9 +1,9 @@
-uuid: 394626b5-87f9-4e54-a0ed-768c3b085a4e
+uuid: 8c5bac33-157f-42ac-bda4-a9c7c7da050a
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.social-links
+    - system.menu.footer-ctas
   module:
     - block_class
     - system
@@ -11,16 +11,16 @@ dependencies:
     - sagebootstrap
 third_party_settings:
   block_class:
-    classes: col-md-3
-id: sociallinks
+    classes: 'col-md-5 offset-md-3'
+id: footerctas
 theme: sagebootstrap
 region: footer_third
-weight: -4
+weight: -3
 provider: null
-plugin: 'system_menu_block:social-links'
+plugin: 'system_menu_block:footer-ctas'
 settings:
-  id: 'system_menu_block:social-links'
-  label: 'Social Links'
+  id: 'system_menu_block:footer-ctas'
+  label: 'Footer CTAs'
   provider: system
   label_display: '0'
   level: 1
