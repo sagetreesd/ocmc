@@ -4,7 +4,9 @@
  */
 
 .site-footer {
-    padding: $spacer 0;
+  padding: $spacer 0;
+  color: $gray-600;
+  font-size: 17px;
     .layout-container {
         padding: 0 $spacer;
     }
@@ -37,7 +39,6 @@
 }
 
 #block-footer {
-  font-size: 17px;
   // Undo default firefox styling
   :-moz-any(ol, ul, menu, dir) ul,
   :-moz-any(ol, ul, menu, dir) menu,
@@ -69,5 +70,53 @@
         }
       }
     }
+  }
+}
+
+#block-whoweare {
+  font-size: 13px;
+}
+
+#block-sociallinks {
+  a {
+    @include add-fontawesome(40px, $primary-shade, true);
+    font-size: 0;
+    margin-right: 13px;
+  }
+  a.facebook {
+    &:before {
+      content: '\f39e';
+    }
+  }
+  a.instagram {
+    &:before {
+      content: '\f16d';
+    }
+  }
+  a.linkedin {
+    &:before {
+      content: '\f08c';
+    }
+  }
+  a.twitter {
+    &:before {
+      content: '\f081';
+    }
+  }
+  a.youtube {
+    &:before {
+      content: '\f167';
+    }
+  }
+}
+
+#block-footerctas {
+  a {
+    margin-right: 16px;
+    border-radius: 20px;
+    background-color: $gray-800;
+    color: $white;
+    padding: 9px 15px;
+    text-decoration: none;
   }
 }

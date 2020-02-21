@@ -16,3 +16,4 @@ fontawesome_5:
   css:
     component:
       //use.fontawesome.com/releases/v5.12.1/css/all.css: {}
+      //https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/brands.min.css: { type: external}

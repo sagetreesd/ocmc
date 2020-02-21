@@ -19,7 +19,7 @@ $value in $theme-colors {
 
 // Icon in the format of '\f005' (with quotes).
 // Enable font awesome in Subtheme Settings
-@mixin add-fontawesome($font-size, $color) {
+@mixin add-fontawesome($font-size, $color, $brand: false) {
   display: block;
   &:before {
     position: absolute;
@@ -28,6 +28,9 @@ $value in $theme-colors {
     font-family: Font Awesome\ 5 Free;
     transition: color .15s ease;
     font-weight: 900 !important;
+    @if $brand {
+      font-family: Font Awesome\ 5 Brands;
+    }
   }
   &:hover {
     background: none;
