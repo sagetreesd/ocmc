@@ -6,28 +6,19 @@ dependencies:
     - field.field.paragraph.links.field_link
     - paragraphs.paragraphs_type.links
   module:
-    - link_attributes
+    - link
 id: paragraph.links.default
 targetEntityType: paragraph
 bundle: links
 mode: default
 content:
   field_link:
-    weight: 0
+    weight: 1
     settings:
       placeholder_url: ''
       placeholder_title: ''
-      enabled_attributes:
-        target: true
-        rel: true
-        class: true
-        id: false
-        name: false
-        accesskey: false
-        aria-label: false
-        title: false
     third_party_settings: {  }
-    type: link_attributes
+    type: link_default
     region: content
 hidden:
   created: true
