@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.links.field_link
+    - field.field.paragraph.links.field_links_paragraph_reference
     - paragraphs.paragraphs_type.links
   module:
     - link
@@ -23,5 +24,13 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_links_paragraph_reference:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
 hidden: {  }

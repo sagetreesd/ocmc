@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.links.field_link
+    - field.field.paragraph.links.field_links_paragraph_reference
     - paragraphs.paragraphs_type.links
   module:
     - link
@@ -19,6 +20,16 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_links_paragraph_reference:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
 hidden:
   created: true

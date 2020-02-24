@@ -1,0 +1,27 @@
+uuid: 70b385ed-15c3-4c7f-8654-7974f3189db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_links_paragraph_reference
+    - paragraphs.paragraphs_type.links
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.links.field_links_paragraph_reference
+field_name: field_links_paragraph_reference
+entity_type: paragraph
+bundle: links
+label: 'Links Paragraph Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings: {  }
+field_type: entity_reference

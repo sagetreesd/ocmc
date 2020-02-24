@@ -1,0 +1,7 @@
+uuid: db1f3d1a-74a8-419a-891a-7df251f8da7d
+langcode: en
+status: true
+dependencies: {  }
+id: link_blocks
+label: 'Colored Link Blocks'
+classes: colored-link-blocks
