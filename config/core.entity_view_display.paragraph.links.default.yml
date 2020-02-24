@@ -15,7 +15,7 @@ mode: default
 content:
   field_link:
     weight: 0
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -25,12 +25,5 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_links_paragraph_reference:
-    weight: 1
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-hidden: {  }
+hidden:
+  field_links_paragraph_reference: true
