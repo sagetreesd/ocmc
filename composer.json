@@ -20,6 +20,7 @@
         "drupal/block_class": "^1.1",
         "drupal/block_field": "1.0-alpha8",
         "drupal/bootstrap_barrio": "^4.22",
+        "drupal/classy_paragraphs": "1.x-dev",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
@@ -37,7 +38,6 @@
         "drupal/inline_entity_form": "1.0-rc2",
         "drupal/leaflet": "^1.23",
         "drupal/leaflet_widget": "2.0-alpha1",
-        
         "drupal/link_attributes": "^1.10",
         "drupal/material_admin": "1.0-alpha7",
         "drupal/metatag": "^1.11",

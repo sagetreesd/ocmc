@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8938644db3e569db6ac404f14ce336aa",
+    "content-hash": "a9710fa7cbd4cc686f9455c2398884e9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1987,6 +1987,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/bootstrap_barrio"
             }
+        },
+        {
+            "name": "drupal/classy_paragraphs",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/classy_paragraphs.git",
+                "reference": "39d7d28bc9911a726b2b4084cfb89767892f5d64"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/paragraphs": "~1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1+6-dev",
+                    "datestamp": "1558619585",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Zugec",
+                    "homepage": "https://www.drupal.org/user/86970"
+                },
+                {
+                    "name": "i-trokhanenko",
+                    "homepage": "https://www.drupal.org/user/3546872"
+                }
+            ],
+            "description": "Allows an editor to apply a class to paragraphs.",
+            "homepage": "https://www.drupal.org/project/classy_paragraphs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/classy_paragraphs",
+                "issues": "https://www.drupal.org/project/issues/classy_paragraphs"
+            },
+            "time": "2019-05-24T12:08:11+00:00"
         },
         {
             "name": "drupal/config_direct_save",
@@ -11421,6 +11469,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "drupal/block_field": 15,
+        "drupal/classy_paragraphs": 20,
         "drupal/custom_add_another": 10,
         "drupal/eck": 20,
         "drupal/entity_usage": 10,
