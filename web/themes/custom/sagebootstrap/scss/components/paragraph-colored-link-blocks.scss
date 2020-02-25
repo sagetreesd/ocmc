@@ -1,0 +1,53 @@
+.colored-link-blocks {
+  .field--type-link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .field__item {
+      width: 100%;
+      &:nth-child(1) {
+        background: $third-shade;
+      }
+      &:nth-child(2) {
+        background: $primary-shade;
+      }
+      &:nth-child(3) {
+        background: $fourth-shade;
+      }
+      &:nth-child(4) {
+        background: $accent-shade;
+      }
+    }
+    a {
+      display: block;
+      color: #fff;
+      font-size: 25px;
+      line-height: 27px;
+      padding: 49px 0;
+      text-decoration: none;
+      transition: background-color 200ms ease;
+      &:hover {
+        background: $gray-800;
+      }
+    }
+  }
+
+  .how-we {
+    @include add-fontawesome(25px, #fff);
+    &:before {
+      content: '\f005';
+    }
+  }
+  .serve-abroad {
+    @include add-fontawesome(25px, #fff);
+    &:before {
+      content: '\f0ac';
+    }
+  }
+  .serve-home {
+    @include add-fontawesome(25px, #fff);
+    &:before {
+      content: '\f015';
+    }
+  }
+}
