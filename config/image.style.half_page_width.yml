@@ -1,0 +1,21 @@
+uuid: 7248864b-fe1a-45e5-89f4-4a3b1964d8ab
+langcode: en
+status: true
+dependencies: {  }
+name: half_page_width
+label: 'Half Page Width'
+effects:
+  056d3ca3-4214-4543-b74b-117599505bd8:
+    uuid: 056d3ca3-4214-4543-b74b-117599505bd8
+    id: image_scale
+    weight: 1
+    data:
+      width: 900
+      height: null
+      upscale: false
+  2861eb4a-96f0-4658-a1ba-39d157621660:
+    uuid: 2861eb4a-96f0-4658-a1ba-39d157621660
+    id: image_convert
+    weight: 2
+    data:
+      extension: jpg
