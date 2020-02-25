@@ -57,3 +57,8 @@ a {
 .slick>div {
     margin: 0 15px;
 }
+.path-frontpage {
+  #main-wrapper > .container {
+    @include outside-wrapper;
+  }
+}
