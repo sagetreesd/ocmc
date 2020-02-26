@@ -48,9 +48,9 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }} style="background-image: url({{ content.field_hero_image|field_target_entity.uri.value | image_style('half_page_width') }}) ">
+  <div{{ attributes.addClass(classes) }} style="background-image: url({{ content.field_hero_image.0['#markup'] }}) ">
     {% block content %}
-      {{ content }}
+      {{ content|without('field_hero_image') }}
     {% endblock %}
   </div>
 {% endblock paragraph %}

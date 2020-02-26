@@ -3,7 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: hero
-label: Hero
+label: 'Half Width Hero'
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Image with optional caption and link in half-page width squares'
 behavior_plugins: {  }
