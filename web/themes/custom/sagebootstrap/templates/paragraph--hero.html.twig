@@ -48,9 +48,11 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }} style="background-image: url({{ content.field_hero_image.0['#markup'] }}) ">
-    {% block content %}
-      {{ content|without('field_hero_image') }}
-    {% endblock %}
-  </div>
+<div class="paragraph--type--hero-wrapper">
+    <div{{ attributes.addClass(classes) }} style="background-image: url({{ content.field_hero_image.0['#markup'] }}) ">
+      {% block content %}
+       {{ content|without('field_hero_image') }}
+      {% endblock %}
+    </div>
+</div>
 {% endblock paragraph %}
