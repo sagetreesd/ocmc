@@ -19,10 +19,11 @@ $value in $theme-colors {
 
 // Icon in the format of '\f005' (with quotes).
 // Enable font awesome in Subtheme Settings
-@mixin add-fontawesome($font-size, $color, $brand: false) {
+@mixin add-fontawesome($font-size, $color, $brand: false, $position: before) {
   display: block;
   position: relative;
-  &:before {
+
+  &:#{$position} {
     position: relative;
     color: $color;
     font-size: $font-size;

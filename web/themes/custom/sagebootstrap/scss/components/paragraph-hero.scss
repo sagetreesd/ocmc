@@ -1,0 +1,36 @@
+
+.half-hero .field--name-field-section-content {
+  display: flex;
+  flex-wrap: wrap;
+  > .field__item { // first child wrapper for paragraphs
+    width: 50%;
+  }
+  .paragraph--type--hero {
+    height:500px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 0 0 50px 70px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 2px solid #fff;
+  }
+  .field--name-field-cta-link {
+    width: 70%;
+    a {
+      color: $white;
+      font-size: 52px;
+      line-height: 48px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      @include add-fontawesome(34px, #ffffff, false, after);
+      &:after {
+        content: '  \f054';
+        top: -4px;
+        left: 5px;
+      }
+    }
+  }
+}
