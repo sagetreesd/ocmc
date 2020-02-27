@@ -1,0 +1,7 @@
+uuid: 3cbd8aa6-c5bf-4121-a01d-337db2d3e083
+langcode: en
+status: true
+dependencies: {  }
+id: half_width_hero
+label: 'Section: Half Width Hero'
+classes: half-hero

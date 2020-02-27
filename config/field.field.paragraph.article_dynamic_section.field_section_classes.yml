@@ -1,0 +1,29 @@
+uuid: 9705035a-8e09-47df-8681-f325a7737476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_classes
+    - paragraphs.paragraphs_type.article_dynamic_section
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.article_dynamic_section.field_section_classes
+field_name: field_section_classes
+entity_type: paragraph
+bundle: article_dynamic_section
+label: 'Section Classes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

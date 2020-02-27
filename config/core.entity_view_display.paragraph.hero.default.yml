@@ -6,8 +6,10 @@ dependencies:
     - field.field.paragraph.hero.field_cta_lead_text
     - field.field.paragraph.hero.field_cta_link
     - field.field.paragraph.hero.field_hero_image
+    - image.style.half_page_width
     - paragraphs.paragraphs_type.hero
   module:
+    - image
     - link
 id: paragraph.hero.default
 targetEntityType: paragraph
@@ -34,5 +36,12 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-hidden:
-  field_hero_image: true
+  field_hero_image:
+    type: image_url
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: half_page_width
+    third_party_settings: {  }
+hidden: {  }
