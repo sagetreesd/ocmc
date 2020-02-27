@@ -49,7 +49,7 @@
 %}
 {% block paragraph %}
 <div class="paragraph--type--hero-wrapper">
-    <div{{ attributes.addClass(classes) }} style="background-image: url({{ content.field_hero_image.0['#markup'] }}) ">
+    <div{{ attributes.addClass(classes) }} style="background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 37%, #302c26), url({{ content.field_hero_image.0['#markup'] }});">
       {% block content %}
        {{ content|without('field_hero_image') }}
       {% endblock %}

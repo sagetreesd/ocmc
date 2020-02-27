@@ -60,5 +60,7 @@ a {
 .path-frontpage {
   #main-wrapper > .container {
     @include outside-wrapper;
+
+    max-width: 100%;
   }
 }
