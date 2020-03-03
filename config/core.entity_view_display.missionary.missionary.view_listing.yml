@@ -16,17 +16,17 @@ dependencies:
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
     - field.field.missionary.missionary.field_published
+    - image.style.medium_landscape_290x210_
   module:
     - image
     - link
-    - options
 id: missionary.missionary.view_listing
 targetEntityType: missionary
 bundle: missionary
 mode: view_listing
 content:
   field_luminate_link:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
@@ -37,18 +37,11 @@ content:
     third_party_settings: {  }
     type: link_separate
     region: content
-  field_missionary_status:
-    type: list_default
-    weight: 2
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_photo:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: medium_landscape_290x210_
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -69,4 +62,5 @@ hidden:
   field_interests: true
   field_links: true
   field_metatags: true
+  field_missionary_status: true
   field_published: true
