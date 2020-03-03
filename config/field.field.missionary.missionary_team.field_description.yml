@@ -1,0 +1,28 @@
+uuid: cae33f2d-9d7d-4081-83d3-9aa26bd1eedd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary_team
+    - field.storage.missionary.field_description
+  module:
+    - custom_add_another
+    - text
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: missionary.missionary_team.field_description
+field_name: field_description
+entity_type: missionary
+bundle: missionary_team
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

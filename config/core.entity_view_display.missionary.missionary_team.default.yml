@@ -6,10 +6,12 @@ dependencies:
     - eck.eck_type.missionary.missionary_team
     - field.field.missionary.missionary_team.field_country_serving
     - field.field.missionary.missionary_team.field_departure_city
+    - field.field.missionary.missionary_team.field_description
     - field.field.missionary.missionary_team.field_geo_location
     - field.field.missionary.missionary_team.field_geofield
     - field.field.missionary.missionary_team.field_interests
     - field.field.missionary.missionary_team.field_orientation_days
+    - field.field.missionary.missionary_team.field_photo
     - field.field.missionary.missionary_team.field_published
     - field.field.missionary.missionary_team.field_serving_cities
     - field.field.missionary.missionary_team.field_start_end_dates
@@ -21,15 +23,17 @@ dependencies:
     - datetime_range
     - geofield
     - geolocation
+    - image
     - link
     - options
+    - text
 id: missionary.missionary_team.default
 targetEntityType: missionary
 bundle: missionary_team
 mode: default
 content:
   field_country_serving:
-    weight: 7
+    weight: 8
     label: inline
     settings:
       link: true
@@ -37,22 +41,29 @@ content:
     type: entity_reference_label
     region: content
   field_departure_city:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
+  field_description:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_geo_location:
-    weight: 11
+    weight: 12
     label: above
     settings: {  }
     third_party_settings: {  }
     type: geolocation_latlng
     region: content
   field_geofield:
-    weight: 12
+    weight: 13
     label: above
     settings:
       output_format: wkt
@@ -61,7 +72,7 @@ content:
     type: geofield_default
     region: content
   field_interests:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       link: true
@@ -69,7 +80,7 @@ content:
     type: entity_reference_label
     region: content
   field_orientation_days:
-    weight: 6
+    weight: 7
     label: inline
     settings:
       thousand_separator: ''
@@ -77,8 +88,17 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
+  field_photo:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_serving_cities:
-    weight: 8
+    weight: 9
     label: inline
     settings:
       link_to_entity: false
@@ -86,7 +106,7 @@ content:
     type: string
     region: content
   field_start_end_dates:
-    weight: 3
+    weight: 4
     label: inline
     settings:
       separator: '-'
@@ -96,7 +116,7 @@ content:
     type: daterange_default
     region: content
   field_team_cost:
-    weight: 9
+    weight: 10
     label: inline
     settings:
       thousand_separator: ''
@@ -107,7 +127,7 @@ content:
     type: number_decimal
     region: content
   field_team_raiser_link:
-    weight: 10
+    weight: 11
     label: hidden
     settings:
       trim_length: 80
@@ -126,7 +146,7 @@ content:
     type: list_default
     region: content
   field_team_type:
-    weight: 2
+    weight: 3
     label: inline
     settings: {  }
     third_party_settings: {  }
