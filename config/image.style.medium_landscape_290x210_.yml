@@ -1,0 +1,15 @@
+uuid: e8d68eca-4725-49d9-b67a-2d15ece60928
+langcode: en
+status: true
+dependencies: {  }
+name: medium_landscape_290x210_
+label: 'Medium Landscape (290x210)'
+effects:
+  4d1bcb46-2d51-46d4-81a5-1f7c57a933a0:
+    uuid: 4d1bcb46-2d51-46d4-81a5-1f7c57a933a0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 290
+      height: 210
+      anchor: center-center
