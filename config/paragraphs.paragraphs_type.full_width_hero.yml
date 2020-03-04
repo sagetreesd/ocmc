@@ -1,0 +1,10 @@
+uuid: 3035d23a-39ac-4d7c-8176-79b028adf34e
+langcode: en
+status: true
+dependencies: {  }
+id: full_width_hero
+label: 'Full Width Hero'
+icon_uuid: null
+icon_default: null
+description: 'Full width image behind title and secondary text '
+behavior_plugins: {  }

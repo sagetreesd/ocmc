@@ -1,0 +1,36 @@
+uuid: a70ea205-3a66-44eb-b084-d155f090caf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_width_hero.field_hero_image
+    - field.field.paragraph.full_width_hero.field_section_html
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.full_width_hero
+  module:
+    - image
+    - text
+id: paragraph.full_width_hero.default
+targetEntityType: paragraph
+bundle: full_width_hero
+mode: default
+content:
+  field_hero_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_section_html:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

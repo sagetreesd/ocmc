@@ -1,0 +1,26 @@
+uuid: 172ddf63-7661-499a-b663-4a90fd91eb43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_html
+    - paragraphs.paragraphs_type.full_width_hero
+  module:
+    - custom_add_another
+    - text
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.full_width_hero.field_section_html
+field_name: field_section_html
+entity_type: paragraph
+bundle: full_width_hero
+label: 'Section HTML'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

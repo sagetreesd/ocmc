@@ -1,0 +1,33 @@
+uuid: a8b8a1c8-eb76-4a75-bb6e-3ca90498a76b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_width_hero.field_hero_image
+    - field.field.paragraph.full_width_hero.field_section_html
+    - paragraphs.paragraphs_type.full_width_hero
+  module:
+    - image
+    - text
+id: paragraph.full_width_hero.default
+targetEntityType: paragraph
+bundle: full_width_hero
+mode: default
+content:
+  field_hero_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_section_html:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
