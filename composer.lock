@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "392660c719eb7c50154f6b5d72f951db",
+    "content-hash": "6cf37fdcf06aa27fe6ff54e3b119ee05",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3815,6 +3815,64 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/leaflet",
                 "issues": "https://www.drupal.org/project/issues/leaflet"
+            }
+        },
+        {
+            "name": "drupal/leaflet_more_maps",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/leaflet_more_maps.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/leaflet_more_maps-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "0aa02138eed25efb6d579b2128bbe47a8b149842"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/leaflet": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1473325739",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "patches_applied": {
+                    "Stamen https support": "https://www.drupal.org/files/issues/2018-10-18/stamen.https-3007651.2.patch",
+                    "Add Navionics Navigation Maps": "https://www.drupal.org/files/issues/2019-10-20/leaflet_more_maps-add-navionics-maps-3040902-1.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RdeBoer",
+                    "homepage": "https://www.drupal.org/user/404007"
+                },
+                {
+                    "name": "rachel_norfolk",
+                    "homepage": "https://www.drupal.org/user/66273"
+                }
+            ],
+            "description": "Adds a swag of map styles to Leaflet, e.g Thunderforest, Esri, Stamen, Google.",
+            "homepage": "https://www.drupal.org/project/leaflet_more_maps",
+            "support": {
+                "source": "https://git.drupalcode.org/project/leaflet_more_maps"
             }
         },
         {
@@ -11574,6 +11632,7 @@
         "drupal/geocoder": 10,
         "drupal/geolocation": 5,
         "drupal/inline_entity_form": 5,
+        "drupal/leaflet_more_maps": 15,
         "drupal/leaflet_widget": 15,
         "drupal/material_admin": 15,
         "drupal/paragraphs_edit": 20,

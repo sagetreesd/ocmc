@@ -37,6 +37,7 @@
         "drupal/google_analytics": "^3.0",
         "drupal/inline_entity_form": "^1.0-rc3",
         "drupal/leaflet": "^1.23",
+        "drupal/leaflet_more_maps": "^1.0-alpha3",
         "drupal/leaflet_widget": "2.0-alpha1",
         "drupal/link_attributes": "^1.10",
         "drupal/material_admin": "1.0-alpha7",
@@ -130,6 +131,10 @@
         "patches": {
             "drupal/core": {
                 "Add a \"context\" array variable to all theme hooks and \"#context\" array property to all elements to provide optional contextual data": "https://www.drupal.org/files/issues/2019-04-30/2511548-83.patch"
+            },
+            "drupal/leaflet_more_maps": {
+                "Stamen https support": "https://www.drupal.org/files/issues/2018-10-18/stamen.https-3007651.2.patch",
+                "Add Navionics Navigation Maps": "https://www.drupal.org/files/issues/2019-10-20/leaflet_more_maps-add-navionics-maps-3040902-1.patch"
             },
             "drupal/paragraphs_edit": {
                 "Revisions are not reflected on parent node's revision log": "https://www.drupal.org/files/issues/2019-11-05/paragraphs_edit-better-revisions-3065643-2.patch",
