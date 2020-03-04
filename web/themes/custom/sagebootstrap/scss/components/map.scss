@@ -3,8 +3,20 @@
  * Visual styles for Bootstrap Barrio's map component.
  */
 
+.leaflet-tile-pane {
+  filter: grayscale(100%) invert(80%) contrast(175%) brightness(330%);
+}
+
 #leaflet-map-view-missionary-and-mission-team-map-block-1 {
   max-width: 1000px;
-  width: 100%;
+  width: 60%;
+
+  @media (max-width: 991px) {
+    display: none;
+    height: 0;
+    min-width: 0;
+    visibility: hidden;
+    width: 0;
+  }
 }
 
