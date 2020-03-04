@@ -261,23 +261,23 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
+            alter_text: true
+            text: Support
+            make_link: true
+            path: '{{ field_luminate_link__uri }}'
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
+            alt: 'Support {{ type }}'
             rel: ''
             link_class: ''
             prefix: ''
             suffix: ''
-            target: ''
+            target: _blank
             nl2br: false
             max_length: 0
             word_boundary: true
@@ -305,10 +305,10 @@ display:
           type: link
           settings:
             trim_length: 80
-            url_only: false
-            url_plain: false
+            url_only: true
+            url_plain: true
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -331,7 +331,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ title }}<br />\r\n{{ type }}<br />\r\n<a href=\"{{ field_luminate_link }}\" target=_blank>Support</a>\r\n"
+            text: "{{ title }}<br />\r\n{{ type }}<br />\r\n{{ field_luminate_link }}"
             make_link: false
             path: ''
             absolute: false

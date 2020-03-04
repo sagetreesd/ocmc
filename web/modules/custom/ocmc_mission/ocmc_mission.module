@@ -42,7 +42,7 @@ function ocmc_mission_page_attachments_alter(array &$attachments) {
 function ocmc_mission_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   switch ($form_id) {
     case 'missionary_missionary_edit_form':
-    case 'missionary_missionary_team_form':
+    case 'missionary_missionary_team_edit_form':
       // Geolocation field provides a great interface to use leaflet
       // to add location data to an entity, but the leaflet map view
       // requires geofield data. The following uses a custom submit
