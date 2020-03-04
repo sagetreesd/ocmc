@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.events
     - paragraphs.paragraphs_type.financial_documents
     - paragraphs.paragraphs_type.friends_and_partners
+    - paragraphs.paragraphs_type.full_width_hero
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.links
@@ -48,6 +49,7 @@ settings:
       person: person
       video: video
       block: block
+      full_width_hero: full_width_hero
       numbered_list_items: numbered_list_items
     target_bundles_drag_drop:
       dynamic_section:
@@ -92,6 +94,9 @@ settings:
       location:
         weight: 26
         enabled: false
+      full_width_hero:
+        enabled: true
+        weight: 26
       numbered_list_item:
         weight: 29
         enabled: false
