@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_hero
     - node.type.page
-    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.full_width_hero
   module:
     - custom_add_another
     - entity_reference_revisions
@@ -28,7 +28,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      hero: hero
+      full_width_hero: full_width_hero
     target_bundles_drag_drop:
       article_dynamic_section:
         weight: 15
@@ -45,6 +45,9 @@ settings:
       financial_documents:
         weight: 19
         enabled: false
+      block:
+        weight: 20
+        enabled: false
       friends_and_partners:
         weight: 20
         enabled: false
@@ -55,21 +58,27 @@ settings:
         weight: 22
         enabled: false
       hero:
-        enabled: true
         weight: 23
+        enabled: false
       links:
         weight: 24
-        enabled: false
-      mission_priest_countries_listing:
-        weight: 25
         enabled: false
       person:
         weight: 26
         enabled: false
-      project:
-        weight: 27
-        enabled: false
+      full_width_hero:
+        enabled: true
+        weight: 26
       video:
         weight: 28
+        enabled: false
+      location:
+        weight: 30
+        enabled: false
+      numbered_list_item:
+        weight: 31
+        enabled: false
+      numbered_list_items:
+        weight: 32
         enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,15 @@
+uuid: 8e4fd9ff-e095-41ad-9fd3-06b67fad27e9
+langcode: en
+status: true
+dependencies: {  }
+name: full_page_width
+label: 'Full Page Width'
+effects:
+  33d0bd9b-bec1-4023-a150-5768c4b327cc:
+    uuid: 33d0bd9b-bec1-4023-a150-5768c4b327cc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 640
+      anchor: center-center
