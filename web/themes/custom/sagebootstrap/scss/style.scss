@@ -57,10 +57,15 @@ a {
 .slick>div {
     margin: 0 15px;
 }
+
 .path-frontpage {
   #main-wrapper > .container {
     @include outside-wrapper;
 
     max-width: 100%;
   }
+}
+
+.field--name-field-content-paragraphs {
+  clear: both;
 }
