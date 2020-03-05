@@ -3,4 +3,16 @@
   background-size: cover;
   text-align: center;
   height: 700px;
+  padding: 0 200px;
+  h2 {
+    font-size: 90px;
+    line-height: 100px;
+  }
+  .field--name-field-section-html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
 }
