@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.full_width_hero.field_hero_image
+    - field.field.paragraph.full_width_hero.field_full_width_hero_image
     - field.field.paragraph.full_width_hero.field_section_html
     - image.style.thumbnail
     - paragraphs.paragraphs_type.full_width_hero
@@ -15,8 +15,8 @@ targetEntityType: paragraph
 bundle: full_width_hero
 mode: default
 content:
-  field_hero_image:
-    weight: 1
+  field_full_width_hero_image:
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
