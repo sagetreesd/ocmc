@@ -69,3 +69,13 @@ a {
 .field--name-field-content-paragraphs {
   clear: both;
 }
+
+.yellow {
+  color: $primary-shade;
+}
+
+.highlight {
+  background-color: $brown;
+  color: $primary-shade;
+  font-style: italic;
+}

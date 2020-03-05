@@ -45,7 +45,7 @@ settings:
             - Source
   plugins:
     stylescombo:
-      styles: span.yellow|Yellow
+      styles: "span.yellow|Yellow\r\nspan.highlight|Highlight"
     language:
       language_list: un
 image_upload:
