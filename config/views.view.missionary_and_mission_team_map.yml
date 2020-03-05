@@ -93,7 +93,7 @@ display:
               x: '18'
               'y': '30'
             iconAnchor:
-              x: '9'
+              x: '0'
               'y': '30'
             shadowSize:
               x: ''
@@ -102,8 +102,8 @@ display:
               x: ''
               'y': ''
             popupAnchor:
-              x: ''
-              'y': ''
+              x: '9'
+              'y': '-30'
           leaflet_markercluster:
             control: 0
             options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
