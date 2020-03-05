@@ -82,6 +82,11 @@
     @include add-fontawesome(40px, $primary-shade, true);
     font-size: 0;
     margin-right: 13px;
+    padding: 0;
+    text-decoration: none;
+    &:hover:before {
+      color: $gray-600;
+    }
   }
   a.facebook {
     &:before {
