@@ -87,3 +87,15 @@ function ocmc_mission_update_geofield_form_submit($form, \Drupal\Core\Form\FormS
   // Set the value array for geofield.
   $form_state->setValue('field_geofield', $geofield_value);
 }
+
+/**
+ * Implements hook_leaflet_map_info().
+ */
+function leaflet_leaflet_map_info_alter(&$map_info) {
+  $current_path = \Drupal::service('path.current')->getPath();;
+  if ($current_path === '/node/1') {
+    $map_info['OSM Mapnik']['settings']['dragging'] = FALSE;
+    $map_info['OSM Mapnik']['settings']['touchZoom'] = FALSE;
+    $map_info['OSM Mapnik']['settings']['zoomControl'] = FALSE;
+  }
+}
