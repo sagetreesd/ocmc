@@ -59,6 +59,7 @@ $value in $theme-colors {
   margin-left: -50vw;
   margin-right: -50vw;
   position: relative;
+  padding: 0;
   img {
     // Make full width images take up all space, otherwise they won't be centered.
     // width: $large-width;

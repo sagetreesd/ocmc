@@ -10,6 +10,12 @@
   .navbar-brand {
     margin-left: 25px;
   }
+  #block-mainnavigation {
+    width: 100%;
+  }
+  .navbar-nav {
+    float: right;
+  }
 }
 
 #navbar-top {
@@ -66,7 +72,7 @@
   border-left: 1px solid $gray-300;
   padding-top: 24px;
   font-weight: 300;
-  span, a {
+  > span, > a {
     position: relative;
     border-bottom-width: 4px;
     border-bottom-style: solid;
@@ -94,11 +100,9 @@
   a {
     text-decoration: none;
   }
-
   &::after {
     border: none;
   }
-
 }
 
 #block-mainnavigation li.nav-item .how-we {
@@ -128,4 +132,26 @@
   &:before {
     content: '\f004';
   }
+}
+
+// Dropdown Menus
+#block-mainnavigation {
+  .nav-item {
+    &:nth-child(1) .dropdown-item:hover {
+      background-color: $third-shade;
+    }
+    &:nth-child(2) .dropdown-item:hover {
+      background-color: $primary-shade;
+    }
+    &:nth-child(3) .dropdown-item:hover {
+      background-color: $fourth-shade;
+    }
+    &:nth-child(4) .dropdown-item:hover {
+      background-color: $accent-shade;
+    }
+  }
+  .dropdown-item:hover a {
+    color: #fff;
+  }
+
 }

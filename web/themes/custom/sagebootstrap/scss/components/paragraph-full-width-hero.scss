@@ -4,7 +4,6 @@
   text-align: center;
   .paragraph--type--full-width-hero-inner {
     height: 700px;
-    padding: 0 200px;
     background-color: rgba(48, 39, 34, 0.57);
   }
   h2 {
@@ -23,5 +22,7 @@
     height: 100%;
     font-size: 30px;
     line-height: 56px;
+    max-width: 940px;
+    margin: 0 auto;
   }
 }
