@@ -3,6 +3,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
     .field__item {
       width: 100%;
       &:nth-child(1) {
