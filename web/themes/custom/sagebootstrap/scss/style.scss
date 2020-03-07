@@ -61,7 +61,6 @@ a {
 .path-frontpage {
   #main-wrapper > .container {
     @include outside-wrapper;
-
     max-width: 100%;
   }
 }
@@ -78,4 +77,8 @@ a {
   background-color: $brown;
   color: $primary-shade;
   font-style: italic;
+}
+
+.path-frontpage #content {
+  padding: 0;
 }
