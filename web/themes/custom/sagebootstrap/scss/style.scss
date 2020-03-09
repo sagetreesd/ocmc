@@ -79,6 +79,11 @@ a {
   font-style: italic;
 }
 
-.path-frontpage #content {
-  padding: 0;
+.path-frontpage {
+  #content {
+    padding: 0;
+  }
+  .node__content {
+    margin-top: 0;
+  }
 }
