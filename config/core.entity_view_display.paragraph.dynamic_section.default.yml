@@ -16,7 +16,7 @@ mode: default
 content:
   field_section_classes:
     weight: 2
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
