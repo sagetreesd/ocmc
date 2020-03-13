@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_content_paragraphs
     - field.field.node.page.field_hero
+    - field.field.node.page.field_internal_full_width_hero
     - field.field.node.page.field_metatags
+    - field.field.node.page.field_subtitle
     - node.type.page
   module:
     - text
@@ -35,4 +37,6 @@ content:
 hidden:
   field_content_paragraphs: true
   field_hero: true
+  field_internal_full_width_hero: true
   field_metatags: true
+  field_subtitle: true
