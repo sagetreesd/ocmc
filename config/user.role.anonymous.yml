@@ -15,3 +15,4 @@ permissions:
   - 'access style guide'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view any missionary entities'
