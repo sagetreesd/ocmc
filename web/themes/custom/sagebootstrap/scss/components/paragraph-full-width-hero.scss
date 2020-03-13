@@ -6,7 +6,7 @@
     height: 700px;
     background-color: rgba(48, 39, 34, 0.57);
   }
-  h2 {
+  h1, h2 {
     font-size: 52px;
     line-height: 44px;
     font-weight: bold;
@@ -32,5 +32,16 @@
       font-size: 30px;
       line-height: 56px;
     }
+  }
+}
+
+.internal-hero {
+  @include outside-wrapper();
+  .paragraph--type--full-width-hero-inner {
+    height: 500px;
+  }
+  .subtitle {
+    font-size: 36px;
+    text-transform: uppercase;
   }
 }

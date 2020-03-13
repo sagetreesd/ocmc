@@ -51,3 +51,14 @@ function sagebootstrap_preprocess_page_title(&$variables) {
     $variables['is_front'] = FALSE;
   }
 }
+
+function sagebootstrap_preprocess_node(&$variables) {
+  // An exception might be thrown.
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    // If the database is not yet available, set the default value.
+    $variables['is_front'] = FALSE;
+  }
+}
