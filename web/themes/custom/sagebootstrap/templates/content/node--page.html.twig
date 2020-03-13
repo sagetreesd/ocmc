@@ -72,10 +72,11 @@
     'clearfix',
   ]
 %}
+
 {% if not is_front %}
   <section class="internal-hero paragraph--type--full-width-hero" style="background-image: url(' {{ content.field_internal_full_width_hero|field_target_entity.uri.value| image_style('full_page_width') }} ');">
     <div class="paragraph--type--full-width-hero-inner">
-      <h1>{{ elements.field_title.0['#context'].value }}</h1>
+      <h1 {{ title_attributes.addClass('node__title') }} > {{ label }} </h1>
       <p class="subtitle">{{ elements.field_subtitle.0['#context'].value }}</p>
     </div>
   </section>
