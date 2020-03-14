@@ -2930,6 +2930,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "ECK entity is not working with jsonapi filter": "https://www.drupal.org/files/issues/2019-03-02/eck_entity_is_not_working_with_jsonapi_filter-3025975-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2987,7 +2990,8 @@
             "support": {
                 "source": "http://git.drupal.org/project/eck.git",
                 "issues": "https://www.drupal.org/project/issues/eck"
-            }
+            },
+            "time": "2020-03-01T22:47:45+00:00"
         },
         {
             "name": "drupal/entity_browser",
