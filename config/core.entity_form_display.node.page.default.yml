@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_color
     - field.field.node.page.field_content_paragraphs
     - field.field.node.page.field_hero
     - field.field.node.page.field_internal_full_width_hero
@@ -45,6 +46,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_color:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_content_paragraphs:
     type: entity_reference_paragraphs
     weight: 10
