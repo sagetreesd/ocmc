@@ -62,3 +62,8 @@ function sagebootstrap_preprocess_node(&$variables) {
     $variables['is_front'] = FALSE;
   }
 }
+
+function sagebootstrap_preprocess_html(&$variables) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $variables['current_path'] = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+}
