@@ -2,8 +2,13 @@ uuid: f58ac699-32af-4762-a02d-09cffeef01f7
 langcode: en
 status: true
 dependencies:
+  module:
+    - block_class
   theme:
     - sagebootstrap
+third_party_settings:
+  block_class:
+    classes: sr-only
 id: pagetitle_2
 theme: sagebootstrap
 region: content
@@ -14,5 +19,5 @@ settings:
   id: page_title_block
   label: 'Page title'
   provider: core
-  label_display: '0'
+  label_display: visible
 visibility: {  }

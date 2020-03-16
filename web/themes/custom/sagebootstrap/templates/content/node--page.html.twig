@@ -106,6 +106,6 @@
 
 
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content|without('field_internal_full_width_hero')|without('field_subtitle') }}
+    {{ content|without('field_internal_full_width_hero', 'field_subtitle', 'field_color') }}
   </div>
 </article>
