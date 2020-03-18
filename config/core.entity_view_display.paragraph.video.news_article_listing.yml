@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.news_article_listing
     - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_video_background_image
+    - field.field.paragraph.video.field_video_text
     - paragraphs.paragraphs_type.video
 id: paragraph.video.news_article_listing
 targetEntityType: paragraph
@@ -13,3 +15,5 @@ mode: news_article_listing
 content: {  }
 hidden:
   field_video: true
+  field_video_background_image: true
+  field_video_text: true

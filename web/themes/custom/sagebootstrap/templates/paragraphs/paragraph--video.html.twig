@@ -47,11 +47,13 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
-<a data-colorbox-inline=".colorbox" data-width="950" data-height="570">colorbox</a>
+
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }} style="background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 37%, #302c26), url({{ content.field_video_background_image|field_target_entity.uri.value| image_style('full_page_width') }});">
+    <a data-colorbox-inline=".colorbox" data-width="950" data-height="567"><i class="fas fa-play"></i></a>
+    <h3>{{ content.field_video_text.0['#context'].value }}</h3>
     {% block content %}
-      <div class="colorbox">{{ content }}</div>
+      <div class="colorbox">{{ content|without('field_video_background_image', 'field_video_text') }}</div>
     {% endblock %}
   </div>
 {% endblock paragraph %}
