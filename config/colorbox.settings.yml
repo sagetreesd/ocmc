@@ -1,6 +1,6 @@
 custom:
-  style: default
-  activate: 0
+  style: example2
+  activate: 1
   transition_type: elastic
   transition_speed: 350
   opacity: 0.85
