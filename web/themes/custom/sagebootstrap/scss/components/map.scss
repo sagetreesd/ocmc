@@ -2,13 +2,42 @@
  * @file
  * Visual styles for Bootstrap Barrio's map component.
  */
+.map-caption-split {
+  background-color: #9f9f9f;
+
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: $orange;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .field--name-field-section-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 740px;
+    width: 100%;
+
+    > .field__item {
+      &:first-child {
+        padding-right: 68px;
+        width: 500px;
+      }
+
+      &:last-child {
+        width: 60%;
+      }
+    }
+  }
+}
 
 .leaflet-tile-pane {
   filter: grayscale(100%) invert(80%) contrast(175%) brightness(330%);
-}
-
-.block-views-blockmissionary-and-mission-team-map-block-1 {
-  background-color: #c9c9c9;
 }
 
 #leaflet-map-view-missionary-and-mission-team-map-block-1 {

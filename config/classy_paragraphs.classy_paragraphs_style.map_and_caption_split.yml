@@ -1,0 +1,7 @@
+uuid: ba2f912d-2702-48aa-997c-25ad45fe63f7
+langcode: en
+status: true
+dependencies: {  }
+id: map_and_caption_split
+label: 'Map and Caption Split'
+classes: map-caption-split
