@@ -21,6 +21,8 @@
         "drupal/block_field": "1.0-alpha8",
         "drupal/bootstrap_barrio": "^4.22",
         "drupal/classy_paragraphs": "1.x-dev",
+        "drupal/colorbox": "^1.4",
+        "drupal/colorbox_inline": "1.x-dev",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",

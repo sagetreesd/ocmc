@@ -12,6 +12,8 @@ module:
   ckeditor: 0
   classy_paragraphs: 0
   color: 0
+  colorbox: 0
+  colorbox_inline: 0
   config: 0
   contact: 0
   contextual: 0
