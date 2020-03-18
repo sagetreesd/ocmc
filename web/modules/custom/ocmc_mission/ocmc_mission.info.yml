@@ -1,6 +1,7 @@
 type: module
 name: OCMC Mission
 description: OCMC base customizations.
+package: OCMC
 core_version_requirement: ^8.7.7 || ^9
 version: '8.x-1.0'
 project: 'ocmc_mission'

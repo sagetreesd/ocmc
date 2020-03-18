@@ -1,0 +1,15 @@
+ocmc_mobile.ocmc_mobile_app_link.*:
+  type: config_entity
+  label: 'OCMC mobile app link config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    url:
+      type: string
+      label: 'URL'
+    uuid:
+      type: string

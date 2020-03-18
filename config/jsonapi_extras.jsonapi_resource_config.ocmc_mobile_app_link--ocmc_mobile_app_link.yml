@@ -1,0 +1,35 @@
+uuid: e2d99f8a-2bd0-42b5-9544-beaa108c8188
+langcode: en
+status: true
+dependencies:
+  module:
+    - ocmc_mobile
+id: ocmc_mobile_app_link--ocmc_mobile_app_link
+disabled: false
+path: ocmc_mobile/ocmc_mobile_app_links
+resourceType: ocmc_mobile_app_link--ocmc_mobile_app_link
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false

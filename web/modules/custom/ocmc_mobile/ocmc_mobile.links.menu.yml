@@ -1,0 +1,8 @@
+# OCMC mobile app link menu items definition
+entity.ocmc_mobile_app_link.collection:
+  title: 'OCMC Mobile App Links'
+  route_name: entity.ocmc_mobile_app_link.collection
+  description: 'List OCMC Mobile App Links (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

@@ -1,0 +1,41 @@
+# OCMCMobileAppLink routing definition
+entity.ocmc_mobile_app_link.collection:
+  path: '/admin/structure/ocmc_mobile_app_links'
+  defaults:
+    _entity_list: 'ocmc_mobile_app_link'
+    _title: 'OCMC Mobile App Links'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.ocmc_mobile_app_link.add_form:
+  path: '/admin/structure/ocmc_mobile_app_links/add'
+  defaults:
+    _entity_form: 'ocmc_mobile_app_link.add'
+    _title: 'Add OCMC Mobile App Link'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.ocmc_mobile_app_link.edit_form:
+  path: '/admin/structure/ocmc_mobile_app_links/{ocmc_mobile_app_link}'
+  defaults:
+    _entity_form: 'ocmc_mobile_app_link.edit'
+    _title: 'Edit OCMC Mobile App Link'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.ocmc_mobile_app_link.delete_form:
+  path: '/admin/structure/ocmc_mobile_app_links/{ocmc_mobile_app_link}/delete'
+  defaults:
+    _entity_form: 'ocmc_mobile_app_link.delete'
+    _title: 'Delete OCMC Mobile App Link'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+

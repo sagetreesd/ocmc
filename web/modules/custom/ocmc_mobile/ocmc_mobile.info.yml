@@ -1,0 +1,7 @@
+name: OCMC Mobile
+description: Manages Mobile App configurations.
+package: OCMC
+core: 8.x
+version: '8.x-1.0'
+type: module
+configure: entity.ocmc_mobile_app_link.collection

@@ -1,0 +1,6 @@
+entity.ocmc_mobile_app_link.add_form:
+  route_name: 'entity.ocmc_mobile_app_link.add_form'
+  title: 'Add OCMC mobile app link'
+  appears_on:
+    - entity.ocmc_mobile_app_link.collection
+

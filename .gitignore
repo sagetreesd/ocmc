@@ -36,6 +36,8 @@ web/sites/example.settings.local.php
 web/sites/example.sites.php
 web/update.php
 web/web.config
+web/.gitignore
+web/*/.gitignore
 
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.
@@ -113,3 +115,5 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+/.drush-lock-update
+/.gitattributes
