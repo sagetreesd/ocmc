@@ -56,7 +56,7 @@ Feature: Content
 #    Then I should see the link "Log out"
 
   @api
-  Scenario: Create many terms
+  Scenario: Create many terms as administrator
     Given "tags" terms:
     | name    |
     | Tag one |
@@ -78,12 +78,78 @@ Feature: Content
     And I should see "Tag four"
 
   @api
-  Scenario: Create nodes with specific authorship
-    Given users:
-    | name     | mail            | status |
-    | Joe User | joe@example.com | 1      |
-    And "article" content:
-    | title          | author   | promote |
-    | Article by Joe | Joe User | 1       |
-    When I go to "news"
-    Then I should see the link "Article by Joe"
+  Scenario: Create many interests as administrator
+    Given "interests" terms:
+      | name    |
+      | Interest one |
+      | Interest two |
+    And I am logged in as a user with the "site_administrator" role
+    When I go to "admin/structure/taxonomy/manage/interests/overview"
+    Then I should see "Interest one"
+    And I should see "Interest two"
+
+  @api
+  Scenario: Create many interests as site_administrator
+    Given "interests" terms:
+      | name    |
+      | Interest three |
+      | Interest four |
+    And I am logged in as a user with the "site_administrator" role
+    When I go to "admin/structure/taxonomy/manage/interests/overview"
+    Then I should see "Interest three"
+    And I should see "Interest four"
+
+  @api
+  Scenario: Create many countries as administrator
+    Given "country" terms:
+      | name    |
+      | Country one |
+      | Country two |
+    And I am logged in as a user with the "site_administrator" role
+    When I go to "admin/structure/taxonomy/manage/country/overview"
+    Then I should see "Country one"
+    And I should see "Country two"
+
+  @api
+  Scenario: Create many countries as site_administrator
+    Given "country" terms:
+      | name    |
+      | Country three |
+      | Country four |
+    And I am logged in as a user with the "site_administrator" role
+    When I go to "admin/structure/taxonomy/manage/country/overview"
+    Then I should see "Country three"
+    And I should see "Country four"
+
+  @api
+  Scenario: Create many locations as administrator
+    Given "locations" terms:
+      | name    |
+      | Location one |
+      | Location two |
+    And I am logged in as a user with the "site_administrator" role
+    When I go to "admin/structure/taxonomy/manage/locations/overview"
+    Then I should see "Location one"
+    And I should see "Location two"
+
+  @api
+  Scenario: Create many locations as site_administrator
+    Given "locations" terms:
+      | name    |
+      | Location three |
+      | Location four |
+    And I am logged in as a user with the "site_administrator" role
+    When I go to "admin/structure/taxonomy/manage/locations/overview"
+    Then I should see "Location three"
+    And I should see "Location four"
+
+#  @api
+#  Scenario: Create nodes with specific authorship
+#    Given users:
+#    | name     | mail            | status |
+#    | Joe User | joe@example.com | 1      |
+#    And "article" content:
+#    | title          | author   | promote |
+#    | Article by Joe | Joe User | 1       |
+#    When I go to "news"
+#    Then I should see the link "Article by Joe"
