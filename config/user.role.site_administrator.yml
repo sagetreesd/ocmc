@@ -18,6 +18,7 @@ permissions:
   - 'access user profiles'
   - 'administer eck entities'
   - 'administer nodes'
+  - 'administer ocmc mobile app links'
   - 'administer redirect settings'
   - 'administer redirects'
   - 'change own username'

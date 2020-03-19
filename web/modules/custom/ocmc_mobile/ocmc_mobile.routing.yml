@@ -5,7 +5,7 @@ entity.ocmc_mobile_app_link.collection:
     _entity_list: 'ocmc_mobile_app_link'
     _title: 'OCMC Mobile App Links'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'administer ocmc mobile app links'
   options:
     _admin_route: TRUE
 
@@ -15,7 +15,7 @@ entity.ocmc_mobile_app_link.add_form:
     _entity_form: 'ocmc_mobile_app_link.add'
     _title: 'Add OCMC Mobile App Link'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'administer ocmc mobile app links'
   options:
     _admin_route: TRUE
 
@@ -25,7 +25,7 @@ entity.ocmc_mobile_app_link.edit_form:
     _entity_form: 'ocmc_mobile_app_link.edit'
     _title: 'Edit OCMC Mobile App Link'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'administer ocmc mobile app links'
   options:
     _admin_route: TRUE
 
@@ -35,7 +35,7 @@ entity.ocmc_mobile_app_link.delete_form:
     _entity_form: 'ocmc_mobile_app_link.delete'
     _title: 'Delete OCMC Mobile App Link'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'administer ocmc mobile app links'
   options:
     _admin_route: TRUE
 

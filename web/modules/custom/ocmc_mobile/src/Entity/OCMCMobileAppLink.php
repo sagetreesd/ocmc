@@ -3,7 +3,9 @@
 namespace Drupal\ocmc_mobile\Entity;
 
 use Drupal\Core\Config\Entity\ConfigEntityBase;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\ocmc_mobile\OCMCMobileAppLinkInterface;
+use Drupal\Core\Access\AccessResult;
 
 /**
  * Defines the OCMC Mobile App Link entity.
@@ -56,6 +58,31 @@ class OCMCMobileAppLink extends ConfigEntityBase implements OCMCMobileAppLinkInt
    * @var string
    */
   protected $url;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function access($operation, AccountInterface $account = NULL, $return_as_object = FALSE) {
+    switch ($operation) {
+      case 'create':
+        $result = $this->entityTypeManager()
+          ->getAccessControlHandler($this->entityTypeId)
+          ->createAccess($this->bundle(), $account, [], $return_as_object);
+        break;
+
+      case 'view':
+        $result = AccessResult::allowedIfHasPermission($account ?: \Drupal::currentUser(), 'view ocmc mobile app links');
+        $result = $return_as_object ? $result : $result->isAllowed();
+        break;
+
+      default:
+        $result = $this->entityTypeManager()
+          ->getAccessControlHandler($this->entityTypeId)
+          ->access($this, $operation, $account, $return_as_object);
+        break;
+    }
+    return $result;
+  }
 
   /**
    * {@inheritdoc}
