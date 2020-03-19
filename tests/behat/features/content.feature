@@ -37,14 +37,14 @@ Feature: Content
     And I should see "Third article"
     And I should see "Fourth article"
 
-  @api
-  Scenario: Create users
-    Given users:
-    | name     | mail            | status |
-    | Joe User | joe@example.com | 1      |
-    And I am logged in as a user with the "administrator" role
-    When I visit "admin/people"
-    Then I should see the link "Joe User"
+#  @api
+#  Scenario: Create users
+#    Given users:
+#    | name     | mail            | status |
+#    | Joe User | joe@example.com | 1      |
+#    And I am logged in as a user with the "administrator" role
+#    When I visit "admin/people"
+#    Then I should see the link "Joe User"
 
     # The following is not a valid test scenario.
 #  @api
