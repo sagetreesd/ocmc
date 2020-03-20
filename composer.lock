@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28a512bf8ae936b69f5bda4b1da989da",
+    "content-hash": "3e776535a2a17880bb4d53ab802aa778",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1888,17 +1888,17 @@
         },
         {
             "name": "drupal/config_direct_save",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_direct_save.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_direct_save-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "dae776d96310aa01aa6e3c536821a1b496ffae1f"
+                "url": "https://ftp.drupal.org/files/projects/config_direct_save-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "cd363b1255d06b1b99cc391eab77a80ff5f2f7ab"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1909,8 +1909,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1476108239",
+                    "version": "8.x-1.1",
+                    "datestamp": "1584694478",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2909,7 +2909,7 @@
                     }
                 },
                 "patches_applied": {
-                    "ECK entity is not working with jsonapi filter": "https://www.drupal.org/files/issues/2019-03-02/eck_entity_is_not_working_with_jsonapi_filter-3025975-10.patch"
+                    "ECK entity is not working with jsonapi filter": "https://www.drupal.org/files/issues/2020-03-20/eck_entity_is_not_working_with_jsonapi_filter-3025975-11.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
