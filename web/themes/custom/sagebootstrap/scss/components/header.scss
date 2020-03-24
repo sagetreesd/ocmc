@@ -99,6 +99,7 @@
   }
   a {
     text-decoration: none;
+    color: $black;
   }
   &::after {
     border: none;
@@ -137,17 +138,30 @@
 // Dropdown Menus
 #block-mainnavigation {
   .nav-item {
-    &:nth-child(1) .dropdown-item:hover {
-      background-color: $third-shade;
+    &:nth-child(1) {
+      .dropdown-item:hover,
+      .dropdown-item.active {
+        background-color: $third-shade;
+
+      }
     }
-    &:nth-child(2) .dropdown-item:hover {
-      background-color: $primary-shade;
+    &:nth-child(2) {
+      .dropdown-item:hover,
+      .dropdown-item.active {
+        background-color: $primary-shade;
+      }
     }
-    &:nth-child(3) .dropdown-item:hover {
-      background-color: $fourth-shade;
+    &:nth-child(3) {
+      .dropdown-item:hover,
+      .dropdown-item.active {
+        background-color: $fourth-shade;
+      }
     }
-    &:nth-child(4) .dropdown-item:hover {
-      background-color: $accent-shade;
+    &:nth-child(4) {
+      .dropdown-item:hover,
+      .dropdown-item.active {
+        background-color: $accent-shade;
+      }
     }
   }
   .dropdown-item:hover a {
