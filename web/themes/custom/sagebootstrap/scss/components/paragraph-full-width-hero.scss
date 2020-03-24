@@ -37,6 +37,7 @@
 
 .internal-hero {
   @include outside-wrapper();
+  margin-bottom: 110px;
   .paragraph--type--full-width-hero-inner {
     height: 500px;
     display: flex;
