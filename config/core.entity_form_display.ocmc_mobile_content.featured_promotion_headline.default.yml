@@ -1,0 +1,56 @@
+uuid: 3cb9ec5b-8ee8-4884-90a4-9fde0cfd6c09
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_content.featured_promotion_headline
+    - field.field.ocmc_mobile_content.featured_promotion_headline.field_headline_expiration_date
+    - field.field.ocmc_mobile_content.featured_promotion_headline.field_image
+    - field.field.ocmc_mobile_content.featured_promotion_headline.field_link
+    - image.style.thumbnail
+  module:
+    - datetime
+    - image
+    - link
+id: ocmc_mobile_content.featured_promotion_headline.default
+targetEntityType: ocmc_mobile_content
+bundle: featured_promotion_headline
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_headline_expiration_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

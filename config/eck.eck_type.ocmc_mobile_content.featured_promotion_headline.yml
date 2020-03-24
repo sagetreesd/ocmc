@@ -1,0 +1,9 @@
+uuid: 836ad812-d265-400f-810d-ea69828b319f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.ocmc_mobile_content
+type: featured_promotion_headline
+name: 'Featured Promotion Headline'
+description: ''

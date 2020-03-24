@@ -1,0 +1,28 @@
+uuid: c48337c2-efbd-4d68-b422-8dd4ec6a6279
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_content.featured_promotion_headline
+    - field.storage.ocmc_mobile_content.field_link
+  module:
+    - custom_add_another
+    - link
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: ocmc_mobile_content.featured_promotion_headline.field_link
+field_name: field_link
+entity_type: ocmc_mobile_content
+bundle: featured_promotion_headline
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

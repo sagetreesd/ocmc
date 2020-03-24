@@ -1,0 +1,26 @@
+uuid: aab7a1b9-85f0-42ea-a5c4-f6e4f395b576
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_content.featured_promotion_headline
+    - field.storage.ocmc_mobile_content.field_headline_expiration_date
+  module:
+    - custom_add_another
+    - datetime
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: ocmc_mobile_content.featured_promotion_headline.field_headline_expiration_date
+field_name: field_headline_expiration_date
+entity_type: ocmc_mobile_content
+bundle: featured_promotion_headline
+label: 'Headline Expiration Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

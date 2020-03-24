@@ -1,0 +1,20 @@
+uuid: a27983c0-1f7b-400e-93ca-10f0b1dff5d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - eck
+id: ocmc_mobile_content.field_headline_expiration_date
+field_name: field_headline_expiration_date
+entity_type: ocmc_mobile_content
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

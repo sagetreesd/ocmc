@@ -1,0 +1,69 @@
+uuid: 8dff7b4a-c632-48c7-b8f1-a86cd5ab98d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_content.featured_promotion_headline
+    - field.field.ocmc_mobile_content.featured_promotion_headline.field_headline_expiration_date
+    - field.field.ocmc_mobile_content.featured_promotion_headline.field_image
+    - field.field.ocmc_mobile_content.featured_promotion_headline.field_link
+    - image.style.medium
+  module:
+    - datetime
+    - image
+    - link
+id: ocmc_mobile_content.featured_promotion_headline.default
+targetEntityType: ocmc_mobile_content
+bundle: featured_promotion_headline
+mode: default
+content:
+  created:
+    label: inline
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: html_datetime
+      custom_date_format: U
+      timezone: ''
+    third_party_settings: {  }
+  field_headline_expiration_date:
+    weight: 3
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'Y-m-d\TH:i:s'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true

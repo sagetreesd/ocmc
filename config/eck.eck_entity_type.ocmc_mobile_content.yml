@@ -1,0 +1,10 @@
+uuid: 50944fff-f350-4588-b25a-045fc636e940
+langcode: en
+status: true
+dependencies: {  }
+id: ocmc_mobile_content
+label: 'OCMC Mobile Content'
+created: true
+changed: true
+uid: false
+title: true
