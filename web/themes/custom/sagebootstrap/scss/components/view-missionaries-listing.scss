@@ -1,0 +1,20 @@
+.view-missionaries-listing {
+  .view-content {
+    h3 {
+      display: block;
+      width: 100%;
+      margin: 40px 0 10px;
+    }
+    .views-row {
+      @include make-col(4);
+      margin-bottom: 40px;
+    }
+    .field--type-image {
+      width: 100%;
+      float: none;
+      img {
+        box-shadow: 0 40px 40px -40px #707070;
+      }
+    }
+  }
+}
