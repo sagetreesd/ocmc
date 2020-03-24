@@ -6,4 +6,4 @@ dependencies:
     - eck.eck_entity_type.ocmc_mobile_content
 type: featured_promotion_headline
 name: 'Featured Promotion Headline'
-description: ''
+description: 'Featured promotion headlines that show up in the Mobile app.'

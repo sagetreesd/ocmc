@@ -1,0 +1,11 @@
+uuid: 5a2cdaf9-d9d2-4938-9031-043f75e37d1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_content.featured_promotion_headline
+id: ocmc_mobile_content_type_featured_promotion_headline
+action: page_redirect
+allow_override: 0
+redirect: /admin/content/ocmc-mobile-featured-headlines
+redirect_code: 301

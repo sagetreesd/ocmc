@@ -12,6 +12,7 @@ permissions:
   - 'access image_file_browser entity browser pages'
   - 'access in-place editing'
   - 'access missionary entity listing'
+  - 'access ocmc_mobile_content entity listing'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
   - 'access toolbar'
