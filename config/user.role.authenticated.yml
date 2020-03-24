@@ -18,4 +18,5 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view any missionary entities'
+  - 'view any ocmc_mobile_content entities'
   - 'view ocmc mobile app links'
