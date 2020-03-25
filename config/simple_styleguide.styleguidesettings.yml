@@ -5,10 +5,10 @@ default_patterns:
   blockquote: blockquote
   table: table
   forms: forms
-  buttons: buttons
   rule: 0
   alerts: 0
   breadcrumbs: 0
+  buttons: 0
   pagination: 0
 default_colors:
   - '#e0a031|gold|Primary color'

@@ -1,0 +1,7 @@
+uuid: 8e69ce84-329c-43b2-8593-bbec77c843be
+langcode: en
+status: true
+dependencies: {  }
+id: primary_button
+label: 'Primary Button'
+pattern: '<a href="http://www.google.com" class="btn btn-primary">Learn More</a>'
