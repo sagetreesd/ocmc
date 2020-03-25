@@ -101,7 +101,10 @@ a {
   text-decoration: none;
   -webkit-transition: color 200ms ease, background-color 200ms ease;
   transition: color 200ms ease, background-color 200ms ease;
-  font-size: 17px;
+  font-size: 14px;
+  @include media-breakpoint-up(lg) {
+    font-size: 17px;
+  }
   font-weight: 400;
 }
 
@@ -109,4 +112,10 @@ a {
   &:hover {
     background-color: $gray-800;
   }
+}
+
+.field--type-image img {
+  box-shadow: 0 40px 40px -40px #707070;
+  max-width: 100%;
+  height: auto;
 }

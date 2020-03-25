@@ -1,0 +1,7 @@
+uuid: 437ef8fc-e190-497b-9811-7418f38be0fa
+langcode: en
+status: true
+dependencies: {  }
+id: image_field
+label: 'Image Field'
+pattern: "<div class=\"field--type-image\"><img src=\"/sites/default/files/styles/medium_landscape_290x210_/public/missionary-photo/Georgia%20G%20Bendo.jpg?itok=3kQjLRT0\" alt=\"Mrs. Georgia G Bendo\" typeof=\"foaf:Image\" class=\"image-style-medium-landscape-290x210-\" width=\"290\" height=\"210\"></div></div>\r\n"
