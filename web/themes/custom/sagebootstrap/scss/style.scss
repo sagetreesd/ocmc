@@ -114,6 +114,17 @@ a {
   }
 }
 
+.field {
+  margin-bottom: 10px;
+}
+
+.field__label {
+  color: $primary-shade;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .field--type-image img {
   box-shadow: 0 40px 40px -40px #707070;
   max-width: 100%;
