@@ -1,0 +1,26 @@
+uuid: cae10f70-57a5-42cf-8b73-5af7030c36da
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_device.push_notification_token
+    - field.storage.ocmc_mobile_device.field_device_operating_system
+  module:
+    - custom_add_another
+    - options
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: ocmc_mobile_device.push_notification_token.field_device_operating_system
+field_name: field_device_operating_system
+entity_type: ocmc_mobile_device
+bundle: push_notification_token
+label: 'Device Operating System'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

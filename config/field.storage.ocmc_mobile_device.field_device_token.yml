@@ -1,0 +1,21 @@
+uuid: 25d44b4a-0e82-4772-ab62-3cd62656a69e
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: ocmc_mobile_device.field_device_token
+field_name: field_device_token
+entity_type: ocmc_mobile_device
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

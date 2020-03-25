@@ -1,0 +1,49 @@
+uuid: 278d1496-9265-462e-926e-5189d08ab0e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_device.push_notification_token
+    - field.field.ocmc_mobile_device.push_notification_token.field_device_operating_system
+    - field.field.ocmc_mobile_device.push_notification_token.field_device_token
+    - field.field.ocmc_mobile_device.push_notification_token.field_subscribed_ocmc_content
+    - field.field.ocmc_mobile_device.push_notification_token.field_subscribed_taxonomy
+  module:
+    - options
+id: ocmc_mobile_device.push_notification_token.default
+targetEntityType: ocmc_mobile_device
+bundle: push_notification_token
+mode: default
+content:
+  field_device_operating_system:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_device_token:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subscribed_ocmc_content:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_subscribed_taxonomy:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

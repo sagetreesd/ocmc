@@ -1,0 +1,25 @@
+uuid: b4c6ca51-4051-4284-ab04-fe7def93bfac
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_device.push_notification_token
+    - field.storage.ocmc_mobile_device.field_device_token
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: ocmc_mobile_device.push_notification_token.field_device_token
+field_name: field_device_token
+entity_type: ocmc_mobile_device
+bundle: push_notification_token
+label: 'Device Token'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

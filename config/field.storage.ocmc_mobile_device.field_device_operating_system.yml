@@ -1,0 +1,27 @@
+uuid: 8a60efac-6106-4dd4-8246-8868bcdc359a
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: ocmc_mobile_device.field_device_operating_system
+field_name: field_device_operating_system
+entity_type: ocmc_mobile_device
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ios
+      label: iOS
+    -
+      value: android
+      label: Android
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

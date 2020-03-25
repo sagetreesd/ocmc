@@ -1,0 +1,14 @@
+uuid: f5e3c92c-4995-465a-bd95-ebba468822af
+langcode: en
+status: true
+dependencies: {  }
+id: api
+label: API
+weight: 4
+is_admin: null
+permissions:
+  - 'create ocmc_mobile_device entities'
+  - 'delete any ocmc_mobile_device entities'
+  - 'edit any ocmc_mobile_device entities'
+  - 'view any ocmc_mobile_content entities'
+  - 'view any ocmc_mobile_device entities'

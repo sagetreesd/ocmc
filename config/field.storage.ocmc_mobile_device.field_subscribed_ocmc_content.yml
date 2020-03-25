@@ -1,0 +1,19 @@
+uuid: 04511d0e-4a3a-4a95-9536-4125184dc014
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: ocmc_mobile_device.field_subscribed_ocmc_content
+field_name: field_subscribed_ocmc_content
+entity_type: ocmc_mobile_device
+type: entity_reference
+settings:
+  target_type: missionary
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

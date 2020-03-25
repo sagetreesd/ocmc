@@ -1,0 +1,9 @@
+uuid: 740afb77-8520-4179-8872-12a29df3aeb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.ocmc_mobile_device
+type: push_notification_token
+name: 'Push Notification Token'
+description: ''

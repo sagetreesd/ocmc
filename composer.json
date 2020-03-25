@@ -59,6 +59,7 @@
         "drupal/redirect": "^1.5",
         "drupal/schema_metatag": "^1.4",
         "drupal/search_kint": "^1.0",
+        "drupal/simple_oauth": "^4.4",
         "drupal/simple_styleguide": "^1.6",
         "drupal/straw": "^1.2",
         "drupal/twig_field_value": "^1.2",
@@ -149,7 +150,8 @@
         ],
         "patches": {
             "drupal/core": {
-                "Add a \"context\" array variable to all theme hooks and \"#context\" array property to all elements to provide optional contextual data": "https://www.drupal.org/files/issues/2019-04-30/2511548-83.patch"
+                "Add a \"context\" array variable to all theme hooks and \"#context\" array property to all elements to provide optional contextual data": "https://www.drupal.org/files/issues/2019-04-30/2511548-83.patch",
+                "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch"
             },
             "drupal/eck": {
                 "ECK entity is not working with jsonapi filter": "https://www.drupal.org/files/issues/2020-03-20/eck_entity_is_not_working_with_jsonapi_filter-3025975-11.patch"
@@ -164,6 +166,9 @@
             },
             "drupal/rabbit_hole": {
                 "Support for entity types created with ECK": "https://www.drupal.org/files/issues/2299561-rh-eck.patch"
+            },
+            "drupal/simple_oauth": {
+                "Allow bypassing permissions check on public/private key files": "https://www.drupal.org/files/issues/2020-01-30/3021054-10-bypass_permissions.patch"
             }
         },
         "build-env": {

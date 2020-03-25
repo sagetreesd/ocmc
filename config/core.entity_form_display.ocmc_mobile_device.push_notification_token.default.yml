@@ -1,0 +1,50 @@
+uuid: c212654d-2d04-479e-a8e4-517dbacf4ac8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_device.push_notification_token
+    - field.field.ocmc_mobile_device.push_notification_token.field_device_operating_system
+    - field.field.ocmc_mobile_device.push_notification_token.field_device_token
+    - field.field.ocmc_mobile_device.push_notification_token.field_subscribed_ocmc_content
+    - field.field.ocmc_mobile_device.push_notification_token.field_subscribed_taxonomy
+id: ocmc_mobile_device.push_notification_token.default
+targetEntityType: ocmc_mobile_device
+bundle: push_notification_token
+mode: default
+content:
+  field_device_operating_system:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_device_token:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subscribed_ocmc_content:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_subscribed_taxonomy:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

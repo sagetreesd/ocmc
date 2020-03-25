@@ -27,6 +27,7 @@ $settings['config_sync_directory'] = $config_directories[$config_sync_directory]
 
 // Pantheon Env Specific Config
 if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $settings['simple_oauth.skip_key_permissions_check_UNSAFE'] = TRUE;
   switch ($_ENV['PANTHEON_ENVIRONMENT']) {
     case 'dev':
       $config['environment_indicator.indicator']['name'] = 'Dev';

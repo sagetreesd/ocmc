@@ -1,0 +1,10 @@
+uuid: 3e6875ea-1d64-4718-b25b-817285ac48a6
+langcode: en
+status: true
+dependencies: {  }
+id: ocmc_mobile_device
+label: 'OCMC Mobile Device'
+created: true
+changed: false
+uid: false
+title: false
