@@ -6,6 +6,7 @@
       margin-top: 40px;
     }
     .views-row {
+      @include make-col-ready();
       @include make-col(4);
       margin-bottom: 10px;
     }

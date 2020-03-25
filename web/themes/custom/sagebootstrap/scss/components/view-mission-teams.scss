@@ -3,11 +3,41 @@
     width: 100%;
   }
   .views-row {
-    @include make-col(4);
+    @include make-col(12);
     margin-bottom: 10px;
+    @include media-breakpoint-up(md) {
+      @include make-col-ready();
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
   }
-  .field--type-image {
-    width: 100%;
-    float: none;
+  .photo-interest-wrapper {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    .field--type-image {
+      width: 100%;
+    }
+    .field--name-field-interests {
+      position: absolute;
+      bottom: 33px;
+      left: 10px;
+      font-size: 14px;
+      line-height: 16px;
+      .field__item {
+        margin-bottom: 8px;
+      }
+      a {
+        background: $white;
+        text-decoration: none;
+        color: $fourth-shade;
+        border-radius: 4px;
+        padding: 2px;
+        margin-bottom: 2px;
+      }
+    }
   }
+
 }

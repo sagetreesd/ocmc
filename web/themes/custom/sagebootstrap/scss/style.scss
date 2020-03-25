@@ -93,7 +93,7 @@ a {
 }
 
 .btn {
-  padding: 11px 20px;
+  padding: 8px 20px;
   border-radius: 40px;
   background-color: $primary-light;
   border: none;
@@ -115,7 +115,7 @@ a {
 }
 
 .field {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .field__label {
@@ -123,6 +123,10 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+}
+
+.node .field--type-image {
+  margin-bottom: 20px;
 }
 
 .field--type-image img {
