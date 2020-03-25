@@ -1,0 +1,7 @@
+uuid: ce1cf5bd-1247-42f0-a23d-238e9a3c517a
+langcode: en
+status: true
+dependencies: {  }
+id: text_label_and_field
+label: 'Text Label and Field'
+pattern: "<div class=\"field field--name-field-serving-cities field--type-string field--label-above\">\r\n    <div class=\"field__label\">Serving Cities</div>\r\n          <div class=\"field__items\">\r\n              <div class=\"field__item\">San Diego</div>\r\n              </div>\r\n      </div>\r\n\r\n<div class=\"field field--name-field-team-cost field--type-decimal field--label-above\">\r\n    <div class=\"field__label\">Team Cost</div>\r\n              <div content=\"1000000.00\" class=\"field__item\">$1,000.00</div>\r\n          </div>"
