@@ -2,4 +2,12 @@
   h3 {
     width: 100%;
   }
+  .views-row {
+    @include make-col(4);
+    margin-bottom: 10px;
+  }
+  .field--type-image {
+    width: 100%;
+    float: none;
+  }
 }
