@@ -7,14 +7,19 @@
     }
     .views-row {
       @include make-col(4);
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
     .field--type-image {
       width: 100%;
       float: none;
+      margin-bottom: 10px;
       img {
         box-shadow: 0 40px 40px -40px #707070;
       }
+    }
+    .field--name-title {
+      padding-left: 10px;
+      margin-bottom: 20px;
     }
   }
 }
