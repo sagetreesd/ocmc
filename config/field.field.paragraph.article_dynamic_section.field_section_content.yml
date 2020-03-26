@@ -6,6 +6,7 @@ dependencies:
     - field.storage.paragraph.field_section_content
     - paragraphs.paragraphs_type.article_dynamic_section
     - paragraphs.paragraphs_type.basic_html_section
+    - paragraphs.paragraphs_type.columns_image_and_text
     - paragraphs.paragraphs_type.full_width_hero
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.links
@@ -33,6 +34,7 @@ settings:
     negate: 0
     target_bundles:
       basic_html_section: basic_html_section
+      columns_image_and_text: columns_image_and_text
       gallery: gallery
       links: links
       full_width_hero: full_width_hero
@@ -59,6 +61,9 @@ settings:
       friends_and_partners:
         weight: 21
         enabled: false
+      columns_image_and_text:
+        enabled: true
+        weight: 22
       from_library:
         weight: 22
         enabled: false

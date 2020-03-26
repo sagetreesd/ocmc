@@ -1,0 +1,10 @@
+uuid: 264d05b6-83ef-457c-97fd-fa1919d37f51
+langcode: en
+status: true
+dependencies: {  }
+id: columns_image_and_text
+label: 'Columns - Image And Text'
+icon_uuid: null
+icon_default: null
+description: 'A large image text to text. Use the Columns classes to switch the order'
+behavior_plugins: {  }

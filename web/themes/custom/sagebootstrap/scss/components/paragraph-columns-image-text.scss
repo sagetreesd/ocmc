@@ -1,0 +1,26 @@
+.paragraph--type--columns-image-and-text {
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+  }
+  .field--name-field-text {
+    padding: 30px;
+    @include media-breakpoint-up(lg) {
+      width: 33%;
+    }
+  }
+  .images-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .field--name-field-small-image {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}

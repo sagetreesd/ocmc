@@ -1,0 +1,43 @@
+uuid: f0766daf-b5d0-47a5-b7bb-794094454dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_large_image
+    - paragraphs.paragraphs_type.columns_image_and_text
+  module:
+    - custom_add_another
+    - image
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.columns_image_and_text.field_large_image
+field_name: field_large_image
+entity_type: paragraph
+bundle: columns_image_and_text
+label: 'Large Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

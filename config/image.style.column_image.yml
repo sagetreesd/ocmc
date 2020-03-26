@@ -1,0 +1,15 @@
+uuid: 0cb6d122-f8c6-4750-8470-d39ef75ca5c5
+langcode: en
+status: true
+dependencies: {  }
+name: column_image
+label: 'Column Image'
+effects:
+  6971ca43-dfc6-4dc3-9395-6fb403347e22:
+    uuid: 6971ca43-dfc6-4dc3-9395-6fb403347e22
+    id: image_scale
+    weight: 1
+    data:
+      width: 565
+      height: 335
+      upscale: false

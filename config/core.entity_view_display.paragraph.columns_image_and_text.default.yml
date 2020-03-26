@@ -1,0 +1,66 @@
+uuid: c0d9ac42-5ccd-4f9c-b31b-95bf38ca6885
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.columns_image_and_text.field_large_image
+    - field.field.paragraph.columns_image_and_text.field_small_image
+    - field.field.paragraph.columns_image_and_text.field_text
+    - image.style.medium
+    - paragraphs.paragraphs_type.columns_image_and_text
+  module:
+    - field_group
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_images_wrapper:
+      children:
+        - field_large_image
+        - field_small_image
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: images-wrapper
+      label: 'Images Wrapper'
+id: paragraph.columns_image_and_text.default
+targetEntityType: paragraph
+bundle: columns_image_and_text
+mode: default
+content:
+  field_large_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: column_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_small_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

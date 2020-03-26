@@ -33,7 +33,7 @@ bundle: missionary_team
 mode: default
 content:
   field_country_serving:
-    weight: 8
+    weight: 9
     label: inline
     settings:
       link: true
@@ -41,7 +41,7 @@ content:
     type: entity_reference_label
     region: content
   field_departure_city:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       link_to_entity: false
@@ -49,21 +49,21 @@ content:
     type: string
     region: content
   field_description:
-    weight: 14
-    label: above
+    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_geo_location:
-    weight: 12
+    weight: 13
     label: above
     settings: {  }
     third_party_settings: {  }
     type: geolocation_latlng
     region: content
   field_geofield:
-    weight: 13
+    weight: 14
     label: above
     settings:
       output_format: wkt
@@ -72,7 +72,7 @@ content:
     type: geofield_default
     region: content
   field_interests:
-    weight: 6
+    weight: 7
     label: inline
     settings:
       link: true
@@ -80,7 +80,7 @@ content:
     type: entity_reference_label
     region: content
   field_orientation_days:
-    weight: 7
+    weight: 8
     label: inline
     settings:
       thousand_separator: ''
@@ -98,7 +98,7 @@ content:
     type: image
     region: content
   field_serving_cities:
-    weight: 9
+    weight: 10
     label: inline
     settings:
       link_to_entity: false
@@ -106,7 +106,7 @@ content:
     type: string
     region: content
   field_start_end_dates:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       separator: '-'
@@ -116,7 +116,7 @@ content:
     type: daterange_default
     region: content
   field_team_cost:
-    weight: 10
+    weight: 11
     label: inline
     settings:
       thousand_separator: ''
@@ -127,7 +127,7 @@ content:
     type: number_decimal
     region: content
   field_team_raiser_link:
-    weight: 11
+    weight: 12
     label: hidden
     settings:
       trim_length: 80
@@ -146,7 +146,7 @@ content:
     type: list_default
     region: content
   field_team_type:
-    weight: 3
+    weight: 4
     label: inline
     settings: {  }
     third_party_settings: {  }
