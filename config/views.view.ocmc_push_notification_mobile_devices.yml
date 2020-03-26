@@ -1,0 +1,657 @@
+uuid: 8e29052f-1ba8-4556-9eff-ac490b1ebcb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_device.push_notification_token
+    - field.storage.ocmc_mobile_device.field_device_operating_system
+    - field.storage.ocmc_mobile_device.field_device_token
+    - field.storage.ocmc_mobile_device.field_subscribed_ocmc_content
+    - field.storage.ocmc_mobile_device.field_subscribed_taxonomy
+    - system.menu.admin
+  module:
+    - eck
+    - options
+    - user
+id: ocmc_push_notification_mobile_devices
+label: 'OCMC Push Notification Mobile Devices'
+module: views
+description: ''
+tag: ''
+base_table: ocmc_mobile_device_field_data
+base_field: id
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access ocmc_mobile_device entity listing'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: mini
+        options:
+          items_per_page: 50
+          offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            id: id
+            field_device_token: field_device_token
+            field_device_operating_system: field_device_operating_system
+            field_subscribed_ocmc_content: field_subscribed_ocmc_content
+            field_subscribed_taxonomy: field_subscribed_taxonomy
+            created: created
+            operations: operations
+          info:
+            id:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_device_token:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_device_operating_system:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_subscribed_ocmc_content:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_subscribed_taxonomy:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            operations:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: created
+          empty_table: false
+      row:
+        type: fields
+      fields:
+        field_device_token:
+          id: field_device_token
+          table: ocmc_mobile_device__field_device_token
+          field: field_device_token
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Device Token'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_device_operating_system:
+          id: field_device_operating_system
+          table: ocmc_mobile_device__field_device_operating_system
+          field: field_device_operating_system
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Device Operating System'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_subscribed_ocmc_content:
+          id: field_subscribed_ocmc_content
+          table: ocmc_mobile_device__field_subscribed_ocmc_content
+          field: field_subscribed_ocmc_content
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Subscribed OCMC Content'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_subscribed_taxonomy:
+          id: field_subscribed_taxonomy
+          table: ocmc_mobile_device__field_subscribed_taxonomy
+          field: field_subscribed_taxonomy
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Subscribed Taxonomy'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        created:
+          id: created
+          table: ocmc_mobile_device_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Created
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: medium
+            custom_date_format: ''
+            timezone: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: ocmc_mobile_device
+          entity_field: created
+          plugin_id: field
+        operations:
+          id: operations
+          table: ocmc_mobile_device
+          field: operations
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Operations links'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          destination: false
+          entity_type: ocmc_mobile_device
+          plugin_id: entity_operations
+      filters:
+        type:
+          id: type
+          table: ocmc_mobile_device_field_data
+          field: type
+          value:
+            push_notification_token: push_notification_token
+          entity_type: ocmc_mobile_device
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_device_operating_system_value:
+          id: field_device_operating_system_value
+          table: ocmc_mobile_device__field_device_operating_system
+          field: field_device_operating_system_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_device_operating_system_value_op
+            label: 'Device Operating System'
+            description: ''
+            use_operator: false
+            operator: field_device_operating_system_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_device_operating_system_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              site_administrator: '0'
+              api: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      sorts: {  }
+      title: 'OCMC Push Notification Mobile Devices'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<ul>\r\n<li>How to get an OAuth2 Authorization token: <a href=\"https://youtu.be/BEKKFExaBMM?t=215\" target=_blank>YouTube: OAuth2 Password Grant</a></li>\r\n<li>The video above also shows how to use the Bearer token. Use this for all GET, POST and PATCH requests for this entity.</li>\r\n<li>Scroll all the way down to the footer for example POST and PATCH requests</li>\r\n</ul>"
+            format: basic_html
+          plugin_id: text
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h2>Example POST (create)</h2>\r\n<p>Request URL: [site:url]/jsonapi/ocmc_mobile_device/push_notification_token</p>\r\n<code>{\r\n    \"data\": {\r\n        \"type\": \"ocmc_mobile_device--push_notification_token\",\r\n        \"id\": \"{{DEVICE UUID}}\",\r\n        \"attributes\": {\r\n            \"langcode\": \"en\",\r\n            \"field_device_operating_system\": \"android\",\r\n            \"field_device_token\": \"{{DEVICE UUID}}\"\r\n        },\r\n        \"relationships\": {\r\n            \"ocmc_mobile_device_type\": {\r\n                \"data\": {\r\n                    \"type\": \"ocmc_mobile_device_type--ocmc_mobile_device_type\",\r\n                    \"id\": \"740afb77-8520-4179-8872-12a29df3aeb3\"\r\n                }\r\n            },\r\n            \"field_subscribed_ocmc_content\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"missionary--missionary\",\r\n                        \"id\": \"{{OCMC CONTENT UUID}}\"\r\n                    }\r\n                ]\r\n            },\r\n            \"field_subscribed_taxonomy\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"taxonomy_term--interests\",\r\n                        \"id\": \"{{TAXONOMY TERM UUID}}\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}</code>"
+            format: basic_html
+          plugin_id: text
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h2>Example PATCH (update)</h2>\r\n<p>Request URL: [site:url]/jsonapi/ocmc_mobile_device/push_notification_token/{{DEVICE UUID}}</p>\r\n<code>{\r\n    \"data\": {\r\n        \"type\": \"ocmc_mobile_device--push_notification_token\",\r\n        \"id\": \"{{DEVICE UUID}}\",\r\n        \"attributes\": {\r\n            \"langcode\": \"en\",\r\n            \"field_device_operating_system\": \"android\",\r\n            \"field_device_token\": \"{{DEVICE UUID}}\"\r\n        },\r\n        \"relationships\": {\r\n            \"ocmc_mobile_device_type\": {\r\n                \"data\": {\r\n                    \"type\": \"ocmc_mobile_device_type--ocmc_mobile_device_type\",\r\n                    \"id\": \"740afb77-8520-4179-8872-12a29df3aeb3\"\r\n                }\r\n            },\r\n            \"field_subscribed_ocmc_content\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"missionary--missionary\",\r\n                        \"id\": \"{{OCMC CONTENT UUID}}\"\r\n                    }\r\n                ]\r\n            },\r\n            \"field_subscribed_taxonomy\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"taxonomy_term--interests\",\r\n                        \"id\": \"{{TAXONOMY TERM UUID}}\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}</code>\r\n"
+            format: basic_html
+          plugin_id: text
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user.permissions
+      tags:
+        - 'config:field.storage.ocmc_mobile_device.field_device_operating_system'
+        - 'config:field.storage.ocmc_mobile_device.field_device_token'
+        - 'config:field.storage.ocmc_mobile_device.field_subscribed_ocmc_content'
+        - 'config:field.storage.ocmc_mobile_device.field_subscribed_taxonomy'
+  ocmc_push_notification_mobile_device_admin_page:
+    display_plugin: page
+    id: ocmc_push_notification_mobile_device_admin_page
+    display_title: 'Push Notification Mobile Devices Admin Page'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/structure/ocmc-push-notification-mobile-devices
+      display_description: ''
+      menu:
+        type: normal
+        title: 'OCMC Push Notification Mobile Devices'
+        description: ''
+        expanded: false
+        parent: system.admin_structure
+        weight: 99
+        context: '0'
+        menu_name: admin
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user.permissions
+      tags:
+        - 'config:field.storage.ocmc_mobile_device.field_device_operating_system'
+        - 'config:field.storage.ocmc_mobile_device.field_device_token'
+        - 'config:field.storage.ocmc_mobile_device.field_subscribed_ocmc_content'
+        - 'config:field.storage.ocmc_mobile_device.field_subscribed_taxonomy'
