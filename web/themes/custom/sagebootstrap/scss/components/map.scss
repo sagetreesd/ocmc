@@ -3,17 +3,22 @@
  * Visual styles for Bootstrap Barrio's map component.
  */
 .map-caption-split {
-  background-color: #9f9f9f;
+  background-color: #e9e9e9;
 
   h3 {
     margin-top: 0px;
     margin-bottom: 20px;
-    color: $orange;
-    font-size: 3em;
+    color: #da743b;
+    font-size: 42px;
     line-height: 1em;
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: 300;
   }
 
   .field--name-field-section-content {
@@ -34,17 +39,37 @@
       }
     }
   }
+
+
+}
+
+.leaflet-container {
+  background: transparent;
 }
 
 .leaflet-tile-pane {
-  filter: grayscale(100%) invert(80%) contrast(175%) brightness(330%);
+  filter: grayscale(100%) invert(75%) contrast(200%) brightness(450%);
 }
 
 #leaflet-map-view-missionary-and-mission-team-map-block-1 {
+  min-height: 500px;
   max-width: 1000px;
-  width: 60%;
+  width: 100%;
+}
 
-  @media (max-width: 991px) {
+@media (max-width: 991px) {
+  .map-caption-split .field--name-field-section-content > .field__item {
+    &:first-child {
+      padding: 15%;
+      width: 100%;
+    }
+    &:last-child {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  #leaflet-map-view-missionary-and-mission-team-map-block-1 {
     display: none;
     height: 0;
     min-width: 0;
