@@ -1,0 +1,7 @@
+uuid: 1f70f548-4f14-4bc0-a9ec-a46da0b6a3c9
+langcode: en
+status: true
+dependencies: {  }
+id: missionary_share_url
+label: 'Missionary Share URL'
+url: 'https://www.ocmc.org/how-we-serve/missionaries'

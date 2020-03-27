@@ -13,6 +13,12 @@ targetEntityType: ocmc_mobile_device
 bundle: push_notification_token
 mode: default
 content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_device_operating_system:
     weight: 4
     settings: {  }
