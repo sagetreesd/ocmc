@@ -1,0 +1,7 @@
+uuid: 16e5de22-7b30-4a26-8001-f3fa250f7f60
+langcode: en
+status: true
+dependencies: {  }
+id: missionteam_share_url
+label: 'Mission Team Share URL'
+url: 'https://www.ocmc.org/how-we-serve/orthodox-mission-teams'
