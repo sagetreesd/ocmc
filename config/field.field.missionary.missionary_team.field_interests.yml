@@ -17,7 +17,7 @@ field_name: field_interests
 entity_type: missionary
 bundle: missionary_team
 label: Interests
-description: 'Start typing the term, one term per line, and the site will help you pick an existing term. <a href="/admin/structure/taxonomy/manage/interests/overview" target=_blank>View the list of Interest terms</a><br />Click the "Add Another Interest" button to add more terms related to this content.'
+description: 'Start typing the term, one term per line, and the site will help you pick an existing term. <a href="/admin/structure/taxonomy/manage/interests/overview" target=_blank>View the list of Interest terms</a><br />Note: a max of four interests will be displayed due to limited space on the photo that they appear on.'
 required: false
 translatable: true
 default_value: {  }
