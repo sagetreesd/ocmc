@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.columns_image_and_text.field_large_image
+    - field.field.paragraph.columns_image_and_text.field_section_classes
     - field.field.paragraph.columns_image_and_text.field_small_image
     - field.field.paragraph.columns_image_and_text.field_text
     - image.style.medium
@@ -63,4 +64,5 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-hidden: {  }
+hidden:
+  field_section_classes: true

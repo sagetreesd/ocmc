@@ -3,6 +3,8 @@
   flex-direction: column;
   @include media-breakpoint-up(lg) {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
   .field--name-field-text {
     padding: 30px;
@@ -13,6 +15,7 @@
   .images-wrapper {
     position: relative;
     margin-bottom: 30px;
+    height: 350px;
   }
   .field--name-field-small-image {
     position: absolute;
@@ -21,6 +24,11 @@
     display: none;
     @include media-breakpoint-up(md) {
       display: block;
+    }
+  }
+  .column-image-text-image-left {
+    @include media-breakpoint-up(lg) {
+      flex-direction: row-reverse;
     }
   }
 }

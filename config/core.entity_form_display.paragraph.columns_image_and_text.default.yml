@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.columns_image_and_text.field_large_image
+    - field.field.paragraph.columns_image_and_text.field_section_classes
     - field.field.paragraph.columns_image_and_text.field_small_image
     - field.field.paragraph.columns_image_and_text.field_text
     - image.style.thumbnail
@@ -23,6 +24,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_section_classes:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_small_image:
     weight: 3
