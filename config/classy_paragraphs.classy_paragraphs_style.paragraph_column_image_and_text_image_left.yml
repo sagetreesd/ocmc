@@ -1,0 +1,7 @@
+uuid: f4c30a13-421b-42b6-b725-e1ac83132755
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_column_image_and_text_image_left
+label: 'Paragraph: Column Image And Text - Image Left'
+classes: column-image-text-image-left
