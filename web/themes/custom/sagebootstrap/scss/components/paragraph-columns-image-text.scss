@@ -27,7 +27,7 @@
       display: block;
     }
   }
-  .column-image-text-image-left {
+  &.column-image-text-image-left {
     @include media-breakpoint-up(lg) {
       flex-direction: row-reverse;
     }
