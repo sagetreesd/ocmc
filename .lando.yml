@@ -4,6 +4,18 @@ config:
   framework: drupal8
   site: ocmc
   id: 56fc199e-402e-4733-87e4-f50029b384b8
+
+# Excludes rarely edited folder / files to win performance.
+excludes:
+  - drush
+  - scripts
+  - vendor
+  - web/core
+  - web/profiles/contrib
+  - web/modules/contrib
+  - web/themes/contrib
+  - web/libraries
+
 services:
   appserver:
     ssl: true
