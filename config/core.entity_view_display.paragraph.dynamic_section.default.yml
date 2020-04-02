@@ -14,14 +14,6 @@ targetEntityType: paragraph
 bundle: dynamic_section
 mode: default
 content:
-  field_section_classes:
-    weight: 2
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_section_content:
     type: entity_reference_revisions_entity_view
     weight: 1
@@ -39,4 +31,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_section_classes: true
