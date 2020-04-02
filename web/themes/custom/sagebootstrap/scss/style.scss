@@ -63,6 +63,15 @@ a {
     @include outside-wrapper;
     max-width: 100%;
   }
+
+  // This spacing is great on every page except the homepage where all items are next to each other.
+  .field {
+    margin-bottom: 0;
+  }
+  .field__item {
+    margin-bottom: 0 !important;
+
+  }
 }
 
 .field--name-field-content-paragraphs {
