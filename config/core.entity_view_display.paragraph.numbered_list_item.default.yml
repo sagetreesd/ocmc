@@ -4,11 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.numbered_list_item.field_description_text
-    - field.field.paragraph.numbered_list_item.field_link
-    - field.field.paragraph.numbered_list_item.field_title
     - paragraphs.paragraphs_type.numbered_list_item
-  module:
-    - link
 id: paragraph.numbered_list_item.default
 targetEntityType: paragraph
 bundle: numbered_list_item
@@ -20,25 +16,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
-  field_link:
-    weight: 2
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_title:
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
 hidden: {  }

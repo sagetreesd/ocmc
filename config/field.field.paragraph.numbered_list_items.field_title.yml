@@ -1,20 +1,20 @@
-uuid: 1065adcf-82da-4f24-8800-ac2198666db5
+uuid: 49d6a0b0-02c1-466f-ae10-10eda249e4f1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.numbered_list_item
+    - paragraphs.paragraphs_type.numbered_list_items
   module:
     - custom_add_another
 third_party_settings:
   custom_add_another:
     custom_add_another: ''
     custom_remove: ''
-id: paragraph.numbered_list_item.field_title
+id: paragraph.numbered_list_items.field_title
 field_name: field_title
 entity_type: paragraph
-bundle: numbered_list_item
+bundle: numbered_list_items
 label: Title
 description: ''
 required: false

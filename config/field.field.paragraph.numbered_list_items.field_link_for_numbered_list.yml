@@ -1,0 +1,28 @@
+uuid: 9051175b-404a-4edd-b8e8-5895d1438e16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_for_numbered_list
+    - paragraphs.paragraphs_type.numbered_list_items
+  module:
+    - custom_add_another
+    - link
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.numbered_list_items.field_link_for_numbered_list
+field_name: field_link_for_numbered_list
+entity_type: paragraph
+bundle: numbered_list_items
+label: 'Link for Numbered List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

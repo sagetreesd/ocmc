@@ -3,18 +3,38 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.numbered_list_items.field_description_text
+    - field.field.paragraph.numbered_list_items.field_link_for_numbered_list
     - field.field.paragraph.numbered_list_items.field_numbered_list_item
+    - field.field.paragraph.numbered_list_items.field_title
     - paragraphs.paragraphs_type.numbered_list_items
   module:
+    - link
     - paragraphs
 id: paragraph.numbered_list_items.default
 targetEntityType: paragraph
 bundle: numbered_list_items
 mode: default
 content:
+  field_description_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_link_for_numbered_list:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_numbered_list_item:
     type: entity_reference_paragraphs
-    weight: 0
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -23,6 +43,14 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true
