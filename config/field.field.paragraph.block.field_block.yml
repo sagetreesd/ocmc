@@ -24,6 +24,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   plugin_ids:
+    'views_block:missionaries_listing-no_country_missionaries_block': 'views_block:missionaries_listing-no_country_missionaries_block'
     'views_block:missionaries_listing-missionaries_listing_block': 'views_block:missionaries_listing-missionaries_listing_block'
     'views_block:missionary_and_mission_team_map-block_1': 'views_block:missionary_and_mission_team_map-block_1'
     'views_block:mission_priest_countries-mission_priest_countries_listing_block': 'views_block:mission_priest_countries-mission_priest_countries_listing_block'
