@@ -39,6 +39,7 @@
         "drupal/entity_usage": "^2.0.0-beta1",
         "drupal/environment_indicator": "^3.7",
         "drupal/field_group": "^3.0-rc2",
+        "drupal/firebase": "^2.0",
         "drupal/geocoder": "^3.0-beta5",
         "drupal/geofield": "^1.8",
         "drupal/geolocation": "^3.0-rc4",
