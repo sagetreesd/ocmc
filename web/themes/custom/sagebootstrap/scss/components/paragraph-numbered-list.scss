@@ -1,0 +1,28 @@
+.field--name-field-numbered-list-item {
+  counter-reset: my-counter;
+  display: flex;
+  text-align: center;
+  > .field__item {
+    counter-increment: my-counter;
+    &:before {
+      content: counter(my-counter);
+      font-size: 72px;
+      background: $primary-shade;
+
+      display: flex;
+      width: 200px;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      border-style: none;
+      border-width: 5px;
+      border-color: #fca300;
+      border-radius: 200px;
+      background-image: linear-gradient(321deg, $primary-shade, #eebf69 67%);
+      box-shadow: 0 0 0 5px #fff, 0 0 0 7px #f0b13e;
+      color: #353f4e;
+      font-size: 7em;
+      font-weight: 800;
+    }
+  }
+}
