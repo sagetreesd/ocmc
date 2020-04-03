@@ -91,11 +91,18 @@ function ocmc_mission_update_geofield_form_submit($form, \Drupal\Core\Form\FormS
 /**
  * Implements hook_leaflet_map_info().
  */
-function leaflet_leaflet_map_info_alter(&$map_info) {
+function ocmc_mission_leaflet_map_info_alter(&$map_info) {
   $current_path = \Drupal::service('path.current')->getPath();;
   if ($current_path === '/node/1') {
     $map_info['OSM Mapnik']['settings']['dragging'] = FALSE;
     $map_info['OSM Mapnik']['settings']['touchZoom'] = FALSE;
     $map_info['OSM Mapnik']['settings']['zoomControl'] = FALSE;
   }
+}
+
+/**
+ * Implements template_preprocess_page().
+ */
+function ocmc_mission_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] = 'ocmc_mission/ocmc-mission-disable-number-input-scrolling';
 }

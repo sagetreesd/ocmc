@@ -1,0 +1,5 @@
+ocmc-mission-disable-number-input-scrolling:
+  js:
+    js/ocmc_mission_disable_number_input_scrolling.js: {}
+  dependencies:
+    - core/jquery
