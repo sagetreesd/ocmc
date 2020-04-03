@@ -2,7 +2,7 @@
   text-align: center;
   background: $white;
   @include outside-wrapper();
-  padding: 130px 0 90px;
+  padding: 130px 20px 90px;
   .field--name-field-title {
     margin-bottom: 70px !important;
   }
@@ -18,10 +18,16 @@
   justify-content: center;
   align-items: top;
   margin-bottom: 50px !important;
+  flex-direction: column;
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+  }
   > .field__item {
     counter-increment: my-counter;
-    width: 330px;
-    margin-bottom: 0 !important;
+    @include media-breakpoint-up(lg) {
+      width: 330px;
+      margin-bottom: 0 !important;
+    }
     &:before {
       content: counter(my-counter);
       font-size: 72px;
