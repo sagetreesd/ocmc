@@ -10,6 +10,7 @@ dependencies:
     - field.field.missionary.missionary.field_geofield
     - field.field.missionary.missionary.field_interests
     - field.field.missionary.missionary.field_links
+    - field.field.missionary.missionary.field_long_term_missionary
     - field.field.missionary.missionary.field_luminate_link
     - field.field.missionary.missionary.field_metatags
     - field.field.missionary.missionary.field_missionary_status
@@ -96,6 +97,16 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_long_term_missionary:
+    weight: 11
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_luminate_link:
     weight: 5

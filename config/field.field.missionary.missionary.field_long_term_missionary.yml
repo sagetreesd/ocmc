@@ -1,0 +1,29 @@
+uuid: 25181413-b914-4726-8a70-d21a0fc2a113
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+    - field.storage.missionary.field_long_term_missionary
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: missionary.missionary.field_long_term_missionary
+field_name: field_long_term_missionary
+entity_type: missionary
+bundle: missionary
+label: 'Long Term Missionary'
+description: 'Check this box if this missionary is categorized as a long term missionary.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

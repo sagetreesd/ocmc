@@ -291,6 +291,18 @@ display:
           expose:
             label: ''
           plugin_id: standard
+        field_long_term_missionary_value:
+          id: field_long_term_missionary_value
+          table: missionary__field_long_term_missionary
+          field: field_long_term_missionary_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
         title:
           id: title
           table: missionary_field_data

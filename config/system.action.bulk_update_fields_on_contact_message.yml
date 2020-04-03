@@ -1,0 +1,11 @@
+uuid: 6aad684f-2b53-4b7f-bada-eae6f1b3cf28
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_contact_message
+label: 'Bulk Update Contact message Fields'
+type: contact_message
+plugin: bulk_update_fields_action_base
+configuration: {  }

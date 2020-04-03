@@ -1,0 +1,18 @@
+uuid: c474706f-df8d-49bf-93a2-910b8b9e983e
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: missionary.field_long_term_missionary
+field_name: field_long_term_missionary
+entity_type: missionary
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

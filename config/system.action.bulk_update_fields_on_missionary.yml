@@ -1,0 +1,11 @@
+uuid: 3a1e0cb3-e3ae-43cb-acca-6058809a45a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_missionary
+label: 'Bulk Update OCMC Content Fields'
+type: missionary
+plugin: bulk_update_fields_action_base
+configuration: {  }

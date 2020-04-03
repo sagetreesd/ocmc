@@ -1,0 +1,11 @@
+uuid: 6d3c30fc-4e97-4d3f-aeb3-d58ef159ff42
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_styleguide_pattern
+label: 'Bulk Update Styleguide pattern Fields'
+type: styleguide_pattern
+plugin: bulk_update_fields_action_base
+configuration: {  }

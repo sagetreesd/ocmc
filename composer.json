@@ -24,6 +24,7 @@
         "drupal/block_class": "^1.1",
         "drupal/block_field": "1.0-alpha8",
         "drupal/bootstrap_barrio": "^4.22",
+        "drupal/bulk_update_fields": "^2.0-alpha3",
         "drupal/classy_paragraphs": "1.x-dev",
         "drupal/colorbox": "^1.4",
         "drupal/colorbox_inline": "1.x-dev",

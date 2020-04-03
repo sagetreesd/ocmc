@@ -1,0 +1,11 @@
+uuid: ae7934f4-4f5b-412d-b5d3-90b788e019b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_ocmc_mobile_app_link
+label: 'Bulk Update OCMC Mobile App Link Fields'
+type: ocmc_mobile_app_link
+plugin: bulk_update_fields_action_base
+configuration: {  }

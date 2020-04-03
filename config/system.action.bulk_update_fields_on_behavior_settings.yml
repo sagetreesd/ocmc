@@ -1,0 +1,11 @@
+uuid: a982bf1a-66ed-449a-91b5-a4353ce41d74
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_behavior_settings
+label: 'Bulk Update Rabbit hole settings Fields'
+type: behavior_settings
+plugin: bulk_update_fields_action_base
+configuration: {  }

@@ -1,0 +1,11 @@
+uuid: 825ee5c5-faf8-41d0-970a-7fdea2272b4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_jsonapi_resource_config
+label: 'Bulk Update JSON:API Resource override Fields'
+type: jsonapi_resource_config
+plugin: bulk_update_fields_action_base
+configuration: {  }
