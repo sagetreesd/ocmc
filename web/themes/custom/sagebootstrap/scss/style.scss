@@ -24,6 +24,9 @@ a {
     background: $primary-shade !important;
 }
 
+#main-wrapper {
+  background: url('../images/ocmc_background.png') repeat;
+}
 .site-footer {
     background: #ffffff;
 }
@@ -70,7 +73,13 @@ a {
   }
   .field__item {
     margin-bottom: 0 !important;
+  }
 
+  #content {
+    padding: 0;
+  }
+  .node__content {
+    margin-top: 0;
   }
 }
 
@@ -93,15 +102,6 @@ a {
   background-color: $brown;
   color: $primary-shade;
   font-style: italic;
-}
-
-.path-frontpage {
-  #content {
-    padding: 0;
-  }
-  .node__content {
-    margin-top: 0;
-  }
 }
 
 .colorbox {
