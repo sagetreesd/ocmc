@@ -8,8 +8,16 @@ dependencies:
     - field.field.missionary.project.field_country_serving
     - field.field.missionary.project.field_description
     - field.field.missionary.project.field_donation_url
+    - field.field.missionary.project.field_interests
+    - field.field.missionary.project.field_photo
+    - field.field.missionary.project.field_project_cost
     - field.field.missionary.project.field_published
+    - field.field.missionary.project.field_serving_cities
+    - field.field.missionary.project.field_start_end_dates
+    - image.style.thumbnail
   module:
+    - datetime_range
+    - image
     - link
     - path
     - text
@@ -19,19 +27,19 @@ bundle: project
 mode: default
 content:
   field_assigned_to:
-    weight: 33
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_country_serving:
-    weight: 32
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_description:
-    weight: 31
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
@@ -41,29 +49,68 @@ content:
     type: text_textarea_with_summary
     region: content
   field_donation_url:
-    weight: 34
+    weight: 6
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_interests:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_photo:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_project_cost:
+    weight: 11
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_published:
-    weight: 35
+    weight: 7
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_serving_cities:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_start_end_dates:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
   path:
     type: path
-    weight: 30
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60

@@ -1,0 +1,29 @@
+uuid: 54cccd30-cf9a-4f4a-93bc-a554376cf648
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.project
+    - field.storage.missionary.field_project_cost
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: missionary.project.field_project_cost
+field_name: field_project_cost
+entity_type: missionary
+bundle: project
+label: 'Project Cost'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

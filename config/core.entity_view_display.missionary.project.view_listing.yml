@@ -1,8 +1,9 @@
-uuid: 1f8ed949-0a6f-4b68-95d7-c8f24bd88e29
+uuid: 433ae5f8-404d-4efa-a73d-8e7215e86aaa
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.missionary.view_listing
     - eck.eck_type.missionary.project
     - field.field.missionary.project.field_assigned_to
     - field.field.missionary.project.field_country_serving
@@ -19,10 +20,10 @@ dependencies:
     - image
     - link
     - text
-id: missionary.project.default
+id: missionary.project.view_listing
 targetEntityType: missionary
 bundle: project
-mode: default
+mode: view_listing
 content:
   field_description:
     weight: 6
@@ -72,13 +73,13 @@ content:
     type: number_decimal
     region: content
   field_serving_cities:
+    type: string
     weight: 4
+    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
   field_start_end_dates:
     weight: 3
     label: above

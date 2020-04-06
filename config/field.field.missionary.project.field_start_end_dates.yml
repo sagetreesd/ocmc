@@ -1,0 +1,26 @@
+uuid: b642153e-38f7-4ead-abcb-1a43281f536e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.project
+    - field.storage.missionary.field_start_end_dates
+  module:
+    - custom_add_another
+    - datetime_range
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: missionary.project.field_start_end_dates
+field_name: field_start_end_dates
+entity_type: missionary
+bundle: project
+label: Dates
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange
