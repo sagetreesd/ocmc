@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.missionary.view_listing
     - eck.eck_type.missionary.mission_priest_country
+    - field.storage.missionary.field_geofield
   module:
     - eck
+    - geofield
     - leaflet_views
     - user
 id: mission_priest_countries
@@ -269,25 +271,216 @@ display:
       style:
         type: leaflet_map
         options:
-          grouping:
-            -
-              field: title
-              rendered: true
-              rendered_strip: false
+          grouping: {  }
           uses_fields: true
+          data_source: field_geofield
+          entity_source: __base_table
+          name_field: title
+          description_field: ''
+          view_mode: view_listing
+          leaflet_map: 'OSM Mapnik'
+          height: '480'
+          height_unit: px
+          hide_empty_map: 0
+          disable_wheel: 1
+          fullscreen_control: 0
+          gesture_handling: 0
+          reset_map:
+            control: 0
+            position: topright
+          map_position:
+            force: 0
+            center:
+              lat: '0'
+              lon: '0'
+            zoom: '12'
+            minZoom: '1'
+            maxZoom: '12'
+            zoomFiner: '0'
+          icon:
+            iconType: marker
+            iconUrl: /themes/custom/sagebootstrap/images/icons/orange-pin.png
+            shadowUrl: ''
+            html: '<div></div>'
+            html_class: leaflet-map-divicon
+            circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+            iconSize:
+              x: '18'
+              'y': '30'
+            iconAnchor:
+              x: '9'
+              'y': '30'
+            shadowSize:
+              x: ''
+              'y': ''
+            shadowAnchor:
+              x: ''
+              'y': ''
+            popupAnchor:
+              x: '0'
+              'y': '-30'
+          leaflet_markercluster:
+            control: 0
+            options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+          path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+          geocoder:
+            control: 0
+            settings:
+              position: topright
+              input_size: '25'
+              providers:
+                googlemaps:
+                  weight: '0'
+                  checked: 0
+              min_terms: '4'
+              delay: '800'
+              zoom: '16'
+              popup: 0
+              options: ''
       defaults:
         style: false
         row: false
+        fields: false
       row:
         type: 'entity:missionary'
         options:
           relationship: none
           view_mode: view_listing
       display_description: ''
+      fields:
+        title:
+          table: missionary_field_data
+          field: title
+          id: title
+          entity_type: null
+          entity_field: title
+          plugin_id: field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_geofield:
+          id: field_geofield
+          table: missionary__field_geofield
+          field: field_geofield
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: geofield_default
+          settings:
+            output_format: wkt
+            output_escape: 0
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.missionary.field_geofield'
