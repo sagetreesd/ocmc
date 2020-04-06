@@ -3,6 +3,7 @@
  * Visual styles for Bootstrap Barrio's map component.
  */
 .map-caption-split {
+  @include outside-wrapper();
   background-color: #e9e9e9;
 
   h3 {
