@@ -43,6 +43,7 @@ function ocmc_mission_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
   switch ($form_id) {
     case 'missionary_missionary_edit_form':
     case 'missionary_missionary_team_edit_form':
+    case 'missionary_mission_priest_country_edit_form':
       // Geolocation field provides a great interface to use leaflet
       // to add location data to an entity, but the leaflet map view
       // requires geofield data. The following uses a custom submit
@@ -92,8 +93,9 @@ function ocmc_mission_update_geofield_form_submit($form, \Drupal\Core\Form\FormS
  * Implements hook_leaflet_map_info().
  */
 function ocmc_mission_leaflet_map_info_alter(&$map_info) {
-  $current_path = \Drupal::service('path.current')->getPath();;
-  if ($current_path === '/node/1') {
+  $current_path = \Drupal::service('path.current')->getPath();
+  // Homepage and Mission Priests page.
+  if ($current_path === '/node/1' || $current_path === '/node/14') {
     $map_info['OSM Mapnik']['settings']['dragging'] = FALSE;
     $map_info['OSM Mapnik']['settings']['touchZoom'] = FALSE;
     $map_info['OSM Mapnik']['settings']['zoomControl'] = FALSE;

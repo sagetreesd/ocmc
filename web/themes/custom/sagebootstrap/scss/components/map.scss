@@ -51,7 +51,8 @@
   filter: grayscale(100%) invert(75%) contrast(200%) brightness(450%);
 }
 
-#leaflet-map-view-missionary-and-mission-team-map-block-1 {
+#leaflet-map-view-missionary-and-mission-team-map-block-1,
+#leaflet-map-view-mission-priest-countries-mission-priest-countries-map-block {
   min-height: 500px;
   max-width: 1000px;
   width: 100%;
