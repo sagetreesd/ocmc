@@ -76,7 +76,6 @@ blockquote {
     @include outside-wrapper;
     max-width: 100%;
   }
-
   // This spacing is great on every page except the homepage where all items are next to each other.
   .field {
     margin-bottom: 0;
@@ -186,7 +185,7 @@ blockquote {
       margin-bottom: 10px;
     }
     .field--type-link {
-      margin-bottom: 10px;
+      margin-bottom: 25px;
     }
   }
 
