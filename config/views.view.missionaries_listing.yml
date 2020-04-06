@@ -366,6 +366,9 @@ display:
       display_extenders: {  }
       block_description: 'Missionaries Listing'
       display_description: 'Grouped by Country (Country required)'
+      css_class: ocmc-columns-view
+      defaults:
+        css_class: false
     cache_metadata:
       max-age: -1
       contexts:

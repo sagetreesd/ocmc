@@ -1,18 +1,4 @@
 .view-mission-teams {
-  h3 {
-    width: 100%;
-  }
-  .views-row {
-    @include make-col(12);
-    margin-bottom: 10px;
-    @include media-breakpoint-up(md) {
-      @include make-col-ready();
-      @include make-col(6);
-    }
-    @include media-breakpoint-up(lg) {
-      @include make-col(4);
-    }
-  }
   .photo-interest-wrapper {
     position: relative;
     height: auto;

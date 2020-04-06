@@ -343,6 +343,9 @@ display:
       display_extenders: {  }
       block_description: 'Mission Projects Listing'
       display_description: ''
+      css_class: ocmc-columns-view
+      defaults:
+        css_class: false
     cache_metadata:
       max-age: -1
       contexts:
