@@ -272,11 +272,10 @@ display:
         type: leaflet_map
         options:
           grouping: {  }
-          uses_fields: true
           data_source: field_geofield
           entity_source: __base_table
           name_field: title
-          description_field: ''
+          description_field: title
           view_mode: view_listing
           leaflet_map: 'OSM Mapnik'
           height: '480'
