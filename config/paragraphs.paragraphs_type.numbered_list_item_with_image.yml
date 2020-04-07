@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: numbered_list_item_with_image
-label: 'Numbered List Item With Image'
+label: 'Column With Stacked Image And Text'
 icon_uuid: null
 icon_default: null
 description: 'List of items with image, title, and description text. Limit 10.'
