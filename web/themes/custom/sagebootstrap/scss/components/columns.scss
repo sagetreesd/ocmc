@@ -29,11 +29,9 @@
 }
 
 .field--name-field-numbered-list-item-with-im {
-  > .field__items {
     display: flex;
     flex-wrap: wrap;
-  }
-  > .field__items > .field__item {
+  > .field__item {
     @include make-col(12);
     margin-bottom: 50px;
     @include media-breakpoint-up(md) {
