@@ -14,9 +14,6 @@
   }
   .images-wrapper {
     position: relative;
-    @include media-breakpoint-up(lg) {
-      height: 350px;
-    }
   }
   .field--name-field-small-image {
     position: absolute;
