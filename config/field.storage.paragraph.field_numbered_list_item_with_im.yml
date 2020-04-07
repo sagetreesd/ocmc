@@ -1,0 +1,20 @@
+uuid: 2ce1332d-95cc-4be5-a3fd-af213d3baafc
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_numbered_list_item_with_im
+field_name: field_numbered_list_item_with_im
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

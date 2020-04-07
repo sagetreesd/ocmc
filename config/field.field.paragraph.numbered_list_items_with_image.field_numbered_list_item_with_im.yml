@@ -1,0 +1,93 @@
+uuid: ea9ff6fe-4b4a-4135-9cc4-68be6e348d0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_numbered_list_item_with_im
+    - paragraphs.paragraphs_type.numbered_list_item_with_image
+    - paragraphs.paragraphs_type.numbered_list_items_with_image
+  module:
+    - custom_add_another
+    - entity_reference_revisions
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.numbered_list_items_with_image.field_numbered_list_item_with_im
+field_name: field_numbered_list_item_with_im
+entity_type: paragraph
+bundle: numbered_list_items_with_image
+label: 'Numbered List Item With Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      numbered_list_item_with_image: numbered_list_item_with_image
+    target_bundles_drag_drop:
+      article_dynamic_section:
+        weight: 20
+        enabled: false
+      basic_html_section:
+        weight: 21
+        enabled: false
+      block:
+        weight: 22
+        enabled: false
+      columns_image_and_text:
+        weight: 23
+        enabled: false
+      dynamic_section:
+        weight: 24
+        enabled: false
+      events:
+        weight: 25
+        enabled: false
+      financial_documents:
+        weight: 26
+        enabled: false
+      friends_and_partners:
+        weight: 27
+        enabled: false
+      from_library:
+        weight: 28
+        enabled: false
+      full_width_hero:
+        weight: 29
+        enabled: false
+      gallery:
+        weight: 30
+        enabled: false
+      hero:
+        weight: 31
+        enabled: false
+      links:
+        weight: 32
+        enabled: false
+      location:
+        weight: 33
+        enabled: false
+      numbered_list_item:
+        weight: 34
+        enabled: false
+      numbered_list_items:
+        weight: 35
+        enabled: false
+      numbered_list_items_with_image:
+        weight: 36
+        enabled: false
+      numbered_list_item_with_image:
+        enabled: true
+        weight: 37
+      person:
+        weight: 38
+        enabled: false
+      video:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

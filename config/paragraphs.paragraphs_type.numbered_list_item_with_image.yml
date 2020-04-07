@@ -1,0 +1,10 @@
+uuid: ce988900-1277-4bbc-99df-b7b6da8ef638
+langcode: en
+status: true
+dependencies: {  }
+id: numbered_list_item_with_image
+label: 'Numbered List Item With Image'
+icon_uuid: null
+icon_default: null
+description: 'List of items with image, title, and description text. Limit 10.'
+behavior_plugins: {  }

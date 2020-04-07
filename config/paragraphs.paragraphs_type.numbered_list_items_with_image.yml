@@ -1,0 +1,10 @@
+uuid: 7a1fa326-9c1e-491c-8990-001dfca2e3b5
+langcode: en
+status: true
+dependencies: {  }
+id: numbered_list_items_with_image
+label: 'Numbered List Items With Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

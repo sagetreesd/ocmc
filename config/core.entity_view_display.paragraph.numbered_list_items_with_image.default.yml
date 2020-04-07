@@ -1,0 +1,24 @@
+uuid: 4d3cdf0f-00aa-47e2-86c6-d00c3da59d9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.numbered_list_items_with_image.field_numbered_list_item_with_im
+    - paragraphs.paragraphs_type.numbered_list_items_with_image
+  module:
+    - entity_reference_revisions
+id: paragraph.numbered_list_items_with_image.default
+targetEntityType: paragraph
+bundle: numbered_list_items_with_image
+mode: default
+content:
+  field_numbered_list_item_with_im:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

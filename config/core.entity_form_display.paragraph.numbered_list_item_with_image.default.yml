@@ -1,0 +1,45 @@
+uuid: 6168a3d6-01a2-49ca-9b03-b2d87ca1c23d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.numbered_list_item_with_image.field_image
+    - field.field.paragraph.numbered_list_item_with_image.field_text
+    - field.field.paragraph.numbered_list_item_with_image.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.numbered_list_item_with_image
+  module:
+    - image
+    - text
+id: paragraph.numbered_list_item_with_image.default
+targetEntityType: paragraph
+bundle: numbered_list_item_with_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text:
+    weight: 2
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
