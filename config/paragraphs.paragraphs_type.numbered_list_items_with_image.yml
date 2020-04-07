@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: numbered_list_items_with_image
-label: 'Numbered List Items With Image'
+label: 'Columns With Stacked Image And Text'
 icon_uuid: null
 icon_default: null
-description: ''
+description: '4 columns in a row with an image, a title, and description text.'
 behavior_plugins: {  }

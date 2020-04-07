@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: columns_image_and_text
-label: 'Columns - Image And Text'
+label: 'Image And Text Side By Side'
 icon_uuid: null
 icon_default: null
-description: 'A large image text to text. Use the Columns classes to switch the order'
+description: 'A large image next to text. Use the Columns classes to switch the order.'
 behavior_plugins: {  }
