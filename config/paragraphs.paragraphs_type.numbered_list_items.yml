@@ -3,7 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: numbered_list_items
-label: 'Numbered List Items'
+label: 'Numbered List Items In Circles'
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'Up to 6 items.'
 behavior_plugins: {  }
