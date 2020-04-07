@@ -2,6 +2,9 @@
   h3 {
     width: 100%;
   }
+  > .row {
+    justify-content: center;
+  }
   .views-row {
     @include make-col(12);
     margin-bottom: 10px;
@@ -31,6 +34,7 @@
 .field--name-field-numbered-list-item-with-im {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   > .field__item {
     @include make-col(12);
     margin-bottom: 50px;
