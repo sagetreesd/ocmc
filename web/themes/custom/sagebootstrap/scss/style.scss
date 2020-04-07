@@ -162,34 +162,3 @@ blockquote {
   max-width: 100%;
   height: auto;
 }
-
-.ocmc-columns-view {
-  h3 {
-    width: 100%;
-  }
-  .views-row {
-    @include make-col(12);
-    margin-bottom: 10px;
-    @include media-breakpoint-up(md) {
-      @include make-col-ready();
-      @include make-col(6);
-    }
-    @include media-breakpoint-up(lg) {
-      @include make-col(4);
-    }
-  }
-  .field--type-image {
-    width: 100%;
-    float: none;
-  }
-  .view-missionaries-listing {
-    .field--name-title {
-      padding-left: 10px;
-      margin-bottom: 10px;
-    }
-    .field--type-link {
-      margin-bottom: 25px;
-    }
-  }
-
-}
