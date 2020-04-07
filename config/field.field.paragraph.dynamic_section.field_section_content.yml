@@ -16,6 +16,7 @@ dependencies:
     - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.links
     - paragraphs.paragraphs_type.numbered_list_items
+    - paragraphs.paragraphs_type.numbered_list_items_with_image
     - paragraphs.paragraphs_type.person
     - paragraphs.paragraphs_type.video
   module:
@@ -53,6 +54,7 @@ settings:
       columns_image_and_text: columns_image_and_text
       full_width_hero: full_width_hero
       numbered_list_items: numbered_list_items
+      numbered_list_items_with_image: numbered_list_items_with_image
     target_bundles_drag_drop:
       dynamic_section:
         weight: -31
@@ -96,16 +98,22 @@ settings:
       columns_image_and_text:
         enabled: true
         weight: 22
-      location:
-        weight: 26
-        enabled: false
       full_width_hero:
         enabled: true
         weight: 26
+      location:
+        weight: 26
+        enabled: false
       numbered_list_item:
         weight: 29
         enabled: false
       numbered_list_items:
         enabled: true
         weight: 30
+      numbered_list_items_with_image:
+        enabled: true
+        weight: 37
+      numbered_list_item_with_image:
+        weight: 38
+        enabled: false
 field_type: entity_reference_revisions
