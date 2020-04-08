@@ -1,0 +1,10 @@
+uuid: 85021b02-d90d-4a5f-b665-4ab8cb6ec307
+langcode: en
+status: true
+dependencies: {  }
+id: video_and_text_side_by_side
+label: 'Video And Text Side By Side'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

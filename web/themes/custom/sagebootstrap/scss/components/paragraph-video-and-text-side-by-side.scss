@@ -1,4 +1,4 @@
-.paragraph--type--columns-image-and-text {
+.paragraph--type--video-and-text-side-by-side {
   display: flex;
   flex-direction: column;
   @include media-breakpoint-up(lg) {
@@ -12,16 +12,9 @@
       padding: 30px;
     }
   }
-  .images-wrapper {
-    position: relative;
-  }
-  .field--name-field-small-image {
-    position: absolute;
-    bottom: -30px;
-    right: -30px;
-    display: none;
-    @include media-breakpoint-up(md) {
-      display: block;
+  .field--name-field-video {
+    @include media-breakpoint-up(lg) {
+      width: 50%;
     }
   }
   &.reverse-columns {

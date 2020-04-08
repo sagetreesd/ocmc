@@ -3,5 +3,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: paragraph_column_image_and_text_image_left
-label: 'Paragraph: Column Image And Text - Image Left'
-classes: column-image-text-image-left
+label: 'Paragraph: Image And Text Side By Side Reverse'
+classes: reverse-columns

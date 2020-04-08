@@ -1,0 +1,29 @@
+uuid: c50978a2-71f7-4540-994c-9d0a1bc7ee19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_classes
+    - paragraphs.paragraphs_type.video_and_text_side_by_side
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.video_and_text_side_by_side.field_section_classes
+field_name: field_section_classes
+entity_type: paragraph
+bundle: video_and_text_side_by_side
+label: 'Paragraph Classes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

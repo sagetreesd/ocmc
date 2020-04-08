@@ -1,0 +1,7 @@
+uuid: 299ada40-a980-4b0e-90bf-bfba3bf1313f
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_column_with_stacked_video_and_text_switch
+label: 'Paragraph: Video And Text Side By Side Reverse'
+classes: reverse-columns

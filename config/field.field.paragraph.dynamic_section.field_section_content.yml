@@ -19,6 +19,7 @@ dependencies:
     - paragraphs.paragraphs_type.numbered_list_items_with_image
     - paragraphs.paragraphs_type.person
     - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.video_and_text_side_by_side
   module:
     - custom_add_another
     - entity_reference_revisions
@@ -55,6 +56,7 @@ settings:
       full_width_hero: full_width_hero
       numbered_list_items: numbered_list_items
       numbered_list_items_with_image: numbered_list_items_with_image
+      video_and_text_side_by_side: video_and_text_side_by_side
     target_bundles_drag_drop:
       dynamic_section:
         weight: -31
@@ -116,4 +118,7 @@ settings:
       numbered_list_item_with_image:
         weight: 38
         enabled: false
+      video_and_text_side_by_side:
+        enabled: true
+        weight: 42
 field_type: entity_reference_revisions

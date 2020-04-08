@@ -1,0 +1,26 @@
+uuid: bd46cd63-8bff-4770-81d5-00d2c13a9797
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.video_and_text_side_by_side
+  module:
+    - custom_add_another
+    - text
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.video_and_text_side_by_side.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: video_and_text_side_by_side
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
