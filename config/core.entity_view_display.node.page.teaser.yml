@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.page.field_hero
     - field.field.node.page.field_internal_full_width_hero
     - field.field.node.page.field_metatags
+    - field.field.node.page.field_no_bottom_spacing
     - field.field.node.page.field_subtitle
     - node.type.page
   module:
@@ -41,4 +42,5 @@ hidden:
   field_hero: true
   field_internal_full_width_hero: true
   field_metatags: true
+  field_no_bottom_spacing: true
   field_subtitle: true

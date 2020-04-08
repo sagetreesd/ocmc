@@ -70,6 +70,7 @@
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
+    content.field_no_bottom_spacing.0['#markup'] ? 'no-bottom-spacing',
   ]
 %}
 
@@ -106,6 +107,6 @@
 
 
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content|without('field_internal_full_width_hero', 'field_subtitle', 'field_color') }}
+    {{ content|without('field_internal_full_width_hero', 'field_subtitle', 'field_color', 'field_no_bottom_spacing') }}
   </div>
 </article>

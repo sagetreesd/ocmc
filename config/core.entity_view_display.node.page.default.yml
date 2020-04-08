@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.page.field_hero
     - field.field.node.page.field_internal_full_width_hero
     - field.field.node.page.field_metatags
+    - field.field.node.page.field_no_bottom_spacing
     - field.field.node.page.field_subtitle
     - node.type.page
   module:
@@ -65,6 +66,16 @@ content:
     third_party_settings: {  }
     type: metatag_empty_formatter
     region: content
+  field_no_bottom_spacing:
+    type: boolean
+    weight: 7
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
   field_subtitle:
     type: string
     weight: 5

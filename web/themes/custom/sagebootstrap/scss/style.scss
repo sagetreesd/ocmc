@@ -36,7 +36,16 @@ blockquote {
 
 #main-wrapper {
   background: url('../images/ocmc_background.png') repeat;
+  height: auto;
+  overflow: hidden;
 }
+.node--type-page {
+  margin-bottom: 100px;
+}
+.node--type-page.no-bottom-spacing {
+  margin-bottom: 0;
+}
+
 .site-footer {
     background: #ffffff;
 }
@@ -137,6 +146,12 @@ blockquote {
 }
 
 .btn-primary {
+  &:hover {
+    background-color: $gray-800;
+  }
+}
+.btn-secondary {
+  background-color: $fourth-shade;
   &:hover {
     background-color: $gray-800;
   }
