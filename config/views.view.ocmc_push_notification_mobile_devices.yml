@@ -138,6 +138,71 @@ display:
       row:
         type: fields
       fields:
+        uuid:
+          id: uuid
+          table: ocmc_mobile_device
+          field: uuid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: UUID
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: ocmc_mobile_device
+          entity_field: uuid
+          plugin_id: field
         field_device_token:
           id: field_device_token
           table: ocmc_mobile_device__field_device_token
@@ -591,7 +656,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2>Example POST (create)</h2>\r\n<p>Request URL: [site:url]/jsonapi/ocmc_mobile_device/push_notification_token</p>\r\n<code>{\r\n    \"data\": {\r\n        \"type\": \"ocmc_mobile_device--push_notification_token\",\r\n        \"id\": \"{{DEVICE UUID}}\",\r\n        \"attributes\": {\r\n            \"langcode\": \"en\",\r\n            \"field_device_operating_system\": \"android\",\r\n            \"field_device_token\": \"{{DEVICE UUID}}\"\r\n        },\r\n        \"relationships\": {\r\n            \"ocmc_mobile_device_type\": {\r\n                \"data\": {\r\n                    \"type\": \"ocmc_mobile_device_type--ocmc_mobile_device_type\",\r\n                    \"id\": \"740afb77-8520-4179-8872-12a29df3aeb3\"\r\n                }\r\n            },\r\n            \"field_subscribed_ocmc_content\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"missionary--missionary\",\r\n                        \"id\": \"{{OCMC CONTENT UUID}}\"\r\n                    }\r\n                ]\r\n            },\r\n            \"field_subscribed_taxonomy\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"taxonomy_term--interests\",\r\n                        \"id\": \"{{TAXONOMY TERM UUID}}\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}</code>"
+            value: "<h2>Example POST (create)</h2>\r\n<p>Request URL: [site:url]/jsonapi/ocmc_mobile_device/push_notification_token</p>\r\n<code>{\r\n    \"data\": {\r\n        \"type\": \"ocmc_mobile_device--push_notification_token\",\r\n        \"id\": \"{{DEVICE UUID}}\",\r\n        \"attributes\": {\r\n            \"langcode\": \"en\",\r\n            \"field_device_operating_system\": \"android\",\r\n            \"field_device_token\": \"{{FIREBASE DEVICE TOKEN}}\"\r\n        },\r\n        \"relationships\": {\r\n            \"ocmc_mobile_device_type\": {\r\n                \"data\": {\r\n                    \"type\": \"ocmc_mobile_device_type--ocmc_mobile_device_type\",\r\n                    \"id\": \"740afb77-8520-4179-8872-12a29df3aeb3\"\r\n                }\r\n            },\r\n            \"field_subscribed_ocmc_content\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"missionary--missionary\",\r\n                        \"id\": \"{{OCMC CONTENT UUID}}\"\r\n                    }\r\n                ]\r\n            },\r\n            \"field_subscribed_taxonomy\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"taxonomy_term--interests\",\r\n                        \"id\": \"{{TAXONOMY TERM UUID}}\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}</code>"
             format: basic_html
           plugin_id: text
         area_1:
@@ -604,7 +669,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2>Example PATCH (update)</h2>\r\n<p>Request URL: [site:url]/jsonapi/ocmc_mobile_device/push_notification_token/{{DEVICE UUID}}</p>\r\n<code>{\r\n    \"data\": {\r\n        \"type\": \"ocmc_mobile_device--push_notification_token\",\r\n        \"id\": \"{{DEVICE UUID}}\",\r\n        \"attributes\": {\r\n            \"langcode\": \"en\",\r\n            \"field_device_operating_system\": \"android\",\r\n            \"field_device_token\": \"{{DEVICE UUID}}\"\r\n        },\r\n        \"relationships\": {\r\n            \"ocmc_mobile_device_type\": {\r\n                \"data\": {\r\n                    \"type\": \"ocmc_mobile_device_type--ocmc_mobile_device_type\",\r\n                    \"id\": \"740afb77-8520-4179-8872-12a29df3aeb3\"\r\n                }\r\n            },\r\n            \"field_subscribed_ocmc_content\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"missionary--missionary\",\r\n                        \"id\": \"{{OCMC CONTENT UUID}}\"\r\n                    }\r\n                ]\r\n            },\r\n            \"field_subscribed_taxonomy\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"taxonomy_term--interests\",\r\n                        \"id\": \"{{TAXONOMY TERM UUID}}\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}</code>\r\n"
+            value: "<h2>Example PATCH (update)</h2>\r\n<p>Request URL: [site:url]/jsonapi/ocmc_mobile_device/push_notification_token/{{DEVICE UUID}}</p>\r\n<code>{\r\n    \"data\": {\r\n        \"type\": \"ocmc_mobile_device--push_notification_token\",\r\n        \"id\": \"{{DEVICE UUID}}\",\r\n        \"attributes\": {\r\n            \"langcode\": \"en\",\r\n            \"field_device_operating_system\": \"android\",\r\n            \"field_device_token\": \"{{FIREBASE DEVICE TOKEN}}\"\r\n        },\r\n        \"relationships\": {\r\n            \"ocmc_mobile_device_type\": {\r\n                \"data\": {\r\n                    \"type\": \"ocmc_mobile_device_type--ocmc_mobile_device_type\",\r\n                    \"id\": \"740afb77-8520-4179-8872-12a29df3aeb3\"\r\n                }\r\n            },\r\n            \"field_subscribed_ocmc_content\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"missionary--missionary\",\r\n                        \"id\": \"{{OCMC CONTENT UUID}}\"\r\n                    }\r\n                ]\r\n            },\r\n            \"field_subscribed_taxonomy\": {\r\n                \"data\": [\r\n                    {\r\n                        \"type\": \"taxonomy_term--interests\",\r\n                        \"id\": \"{{TAXONOMY TERM UUID}}\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}</code>\r\n"
             format: basic_html
           plugin_id: text
       empty: {  }
