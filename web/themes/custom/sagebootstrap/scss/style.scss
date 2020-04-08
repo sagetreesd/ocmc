@@ -39,7 +39,8 @@ blockquote {
   height: auto;
   overflow: hidden;
 }
-.node--type-page {
+.node--type-page,
+.node--type-article {
   margin-bottom: 100px;
 }
 .node--type-page.no-bottom-spacing {
