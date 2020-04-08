@@ -4,4 +4,4 @@ status: true
 dependencies: {  }
 id: primary_button
 label: Buttons
-pattern: "<a href=\"http://www.google.com\" class=\"btn btn-primary\">Learn More</a><br/>\r\n<a href=\"http://www.google.com\" class=\"btn btn-secondary\">Learn More</a>"
+pattern: "<a href=\"http://www.google.com\" class=\"btn btn-primary\">Learn More</a><br/><br/>\r\n<a href=\"http://www.google.com\" class=\"btn btn-secondary\">Learn More</a>"
