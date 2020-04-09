@@ -1,0 +1,17 @@
+uuid: 6cc529aa-1952-4fe4-9913-f3bc72821c46
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.full_width_hero.field_full_width_hero_image
+    - field.field.paragraph.full_width_hero.field_section_html
+    - paragraphs.paragraphs_type.full_width_hero
+id: paragraph.full_width_hero.news_article_listing
+targetEntityType: paragraph
+bundle: full_width_hero
+mode: news_article_listing
+content: {  }
+hidden:
+  field_full_width_hero_image: true
+  field_section_html: true

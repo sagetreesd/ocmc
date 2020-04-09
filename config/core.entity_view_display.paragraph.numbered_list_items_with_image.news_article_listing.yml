@@ -1,0 +1,15 @@
+uuid: 7e8d9042-ab62-495a-a296-fcf2f4294441
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.numbered_list_items_with_image.field_numbered_list_item_with_im
+    - paragraphs.paragraphs_type.numbered_list_items_with_image
+id: paragraph.numbered_list_items_with_image.news_article_listing
+targetEntityType: paragraph
+bundle: numbered_list_items_with_image
+mode: news_article_listing
+content: {  }
+hidden:
+  field_numbered_list_item_with_im: true

@@ -1,0 +1,36 @@
+uuid: 222a473d-8962-40c3-8bf9-25a32a8b6825
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.article_dynamic_section.field_section_classes
+    - field.field.paragraph.article_dynamic_section.field_section_content
+    - field.field.paragraph.article_dynamic_section.field_section_title
+    - paragraphs.paragraphs_type.article_dynamic_section
+  module:
+    - entity_reference_revisions
+id: paragraph.article_dynamic_section.news_article_listing
+targetEntityType: paragraph
+bundle: article_dynamic_section
+mode: news_article_listing
+content:
+  field_section_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: news_article_listing
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_section_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_section_classes: true

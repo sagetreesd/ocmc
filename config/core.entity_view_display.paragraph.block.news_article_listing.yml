@@ -1,0 +1,15 @@
+uuid: 6c182a97-2ac1-4d29-80e8-2b69489896f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.block.field_block
+    - paragraphs.paragraphs_type.block
+id: paragraph.block.news_article_listing
+targetEntityType: paragraph
+bundle: block
+mode: news_article_listing
+content: {  }
+hidden:
+  field_block: true

@@ -1,0 +1,17 @@
+uuid: 0f21fb0a-9a8a-4ee5-900f-591c2bd69838
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.links.field_link
+    - field.field.paragraph.links.field_links_paragraph_reference
+    - paragraphs.paragraphs_type.links
+id: paragraph.links.news_article_listing
+targetEntityType: paragraph
+bundle: links
+mode: news_article_listing
+content: {  }
+hidden:
+  field_link: true
+  field_links_paragraph_reference: true

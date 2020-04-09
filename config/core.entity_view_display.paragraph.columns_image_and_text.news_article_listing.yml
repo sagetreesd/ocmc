@@ -1,0 +1,44 @@
+uuid: 397122f0-2375-4e03-89d1-89b18ee00c22
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.news_article_listing
+    - field.field.paragraph.columns_image_and_text.field_large_image
+    - field.field.paragraph.columns_image_and_text.field_section_classes
+    - field.field.paragraph.columns_image_and_text.field_small_image
+    - field.field.paragraph.columns_image_and_text.field_text
+    - paragraphs.paragraphs_type.columns_image_and_text
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_images_wrapper:
+      children:
+        - field_large_image
+        - field_small_image
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: hidden
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: images-wrapper
+      label: 'Images Wrapper'
+id: paragraph.columns_image_and_text.news_article_listing
+targetEntityType: paragraph
+bundle: columns_image_and_text
+mode: news_article_listing
+content: {  }
+hidden:
+  field_large_image: true
+  field_section_classes: true
+  field_small_image: true
+  field_text: true
