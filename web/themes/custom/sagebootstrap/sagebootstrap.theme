@@ -78,3 +78,33 @@ function sagebootstrap_preprocess_field(&$variables) {
     $variables['is_front'] = FALSE;
   }
 }
+
+function sagebootstrap_preprocess_paragraph(&$variables) {
+  // Only show one Basic HTML section in teaser mode for articles.
+  if (isset($variables['content']['field_section_html']) && $variables['view_mode'] === 'news_article_listing') {
+    // Find out if the node ancestor has more than one. If so, only show the
+    // first field_section_html.
+    $this_id = $variables['paragraph']->id();
+    $parent = $variables['paragraph']->getParentEntity();
+    if ($parent->getEntityTypeId() === 'paragraph') {
+      $node = $parent->getParentEntity();
+      $basic_html_sections = [];
+      $paragraphs = $node->field_content_paragraphs->referencedEntities();;
+      foreach ($paragraphs as &$paragraph) {
+        $fields = $paragraph->getFields();
+        if (isset($fields['field_section_content'])) {
+          $sections = $paragraph->field_section_content->referencedEntities();
+          foreach($sections as $sectionKey => $section) {
+            if ($section->getParagraphType()->id() === 'basic_html_section') {
+              $basic_html_sections[] = $section->id();
+            }
+          }
+        }
+      }
+      array_shift($basic_html_sections);
+      if (count($basic_html_sections) > 0 && in_array($this_id, $basic_html_sections)) {
+        unset($variables['content']);
+      }
+    }
+  }
+}
