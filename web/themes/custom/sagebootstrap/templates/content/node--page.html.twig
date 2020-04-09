@@ -70,7 +70,7 @@
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
-    content.field_no_bottom_spacing.0['#markup'] ? 'no-bottom-spacing',
+    content.field_no_bottom_spacing.0['#markup'] == "On" ? 'no-bottom-spacing',
   ]
 %}
 
