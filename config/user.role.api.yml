@@ -10,5 +10,6 @@ permissions:
   - 'create ocmc_mobile_device entities'
   - 'delete any ocmc_mobile_device entities'
   - 'edit any ocmc_mobile_device entities'
+  - 'send ocmc push notifications'
   - 'view any ocmc_mobile_content entities'
   - 'view any ocmc_mobile_device entities'
