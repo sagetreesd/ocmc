@@ -1,13 +1,13 @@
-.view-news-articles {
+.node--type-article {
   text-align: center;
   .views-field-field-thumbnail-image {
     margin-bottom: 15px;
   }
-  .views-field-created {
+  .node__meta {
     margin-bottom: 15px;
     font-size: 15px;
   }
-  .views-field-title {
+  .node__title {
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;

@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.article.field_missionaries
     - field.field.node.article.field_programs
     - field.field.node.article.field_thumbnail_image
+    - image.style.medium_landscape_290x210_
     - node.type.article
   module:
     - entity_reference_revisions
@@ -41,7 +42,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: medium_landscape_290x210_
       image_link: ''
     third_party_settings: {  }
 hidden:

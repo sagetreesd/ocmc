@@ -1,0 +1,7 @@
+uuid: b24346f5-c19d-45ef-bacc-e7920b274f8f
+langcode: en
+status: true
+dependencies: {  }
+id: alternate_titles
+label: 'Alternate Titles'
+pattern: "<article role=\"article\" about=\"/news/missionaries-and-covid-19-around-world\" typeof=\"schema:Article\" class=\"node node--type-article node--view-mode-teaser clearfix\">\r\n      <header>\r\n      \r\n              <h2 class=\"node__title\">\r\n          <a href=\"/news/missionaries-and-covid-19-around-world\" rel=\"bookmark\">\r\n\r\n\r\n<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Alternate H2 </span>\r\n</a></h2></header></article>"
