@@ -1,0 +1,6 @@
+status: 1
+pattern: '[ocmc_mobile_device:field_device_operating_system] ([ocmc_mobile_device:field_device_token])'
+escape: false
+dependencies:
+  config:
+    - eck.eck_type.ocmc_mobile_device.push_notification_token
