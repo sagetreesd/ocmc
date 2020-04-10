@@ -107,10 +107,13 @@ content:
     weight: 10
     settings:
       centre:
-        client_location:
+        fit_bounds:
+          enable: true
+          settings:
+            min_zoom: null
+            reset_zoom: false
           weight: 0
-          enable: false
-          map_center_id: client_location
+          map_center_id: fit_bounds
         fixed_boundaries:
           settings:
             north: ''
@@ -120,20 +123,6 @@ content:
           weight: 0
           enable: false
           map_center_id: fixed_boundaries
-        fit_bounds:
-          enable: true
-          weight: 0
-          map_center_id: fit_bounds
-          settings:
-            reset_zoom: false
-        fixed_value:
-          settings:
-            latitude: null
-            longitude: null
-            location_option_id: fixed_value
-          weight: 0
-          enable: false
-          map_center_id: location_plugins
         ipstack:
           settings:
             access_key: ''
@@ -141,17 +130,29 @@ content:
           weight: 0
           enable: false
           map_center_id: location_plugins
+        fixed_value:
+          enable: true
+          settings:
+            latitude: 29.869535
+            longitude: -81.646942
+            location_option_id: fixed_value
+          weight: 0
+          map_center_id: location_plugins
         freeogeoip:
           weight: 0
           enable: false
           map_center_id: location_plugins
           settings:
             location_option_id: freeogeoip
+        client_location:
+          weight: 0
+          enable: false
+          map_center_id: client_location
       auto_client_location_marker: '1'
       leaflet_settings:
         height: 400px
         width: 100%
-        zoom: '7'
+        zoom: '9'
         map_features:
           leaflet_control_geocoder:
             weight: -100
