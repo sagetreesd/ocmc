@@ -13,3 +13,4 @@ permissions:
   - 'send ocmc push notifications'
   - 'view any ocmc_mobile_content entities'
   - 'view any ocmc_mobile_device entities'
+  - 'view the administration theme'
