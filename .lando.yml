@@ -1,9 +1,12 @@
 name: ocmc
 recipe: pantheon
 config:
+  xdebug: true
   framework: drupal8
   site: ocmc
   id: 56fc199e-402e-4733-87e4-f50029b384b8
+  conf:
+    php: lando/php/php.ini
 
 # Excludes rarely edited folder / files to win performance.
 excludes:
