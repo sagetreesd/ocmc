@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "050beb352edf2a00ee24de635115ad89",
+    "content-hash": "f2628fa6728ddc1388d607993801830a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2594,7 +2594,8 @@
                 },
                 "patches_applied": {
                     "Add a \"context\" array variable to all theme hooks and \"#context\" array property to all elements to provide optional contextual data": "https://www.drupal.org/files/issues/2019-04-30/2511548-83.patch",
-                    "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch"
+                    "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch",
+                    "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2020-01-08/exposed-filter-notice-2825860-33.patch"
                 }
             },
             "autoload": {
@@ -5219,6 +5220,54 @@
                 "source": "https://git.drupalcode.org/project/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
             }
+        },
+        {
+            "name": "drupal/vbo_push_notifications",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/vbo_push_notifications.git",
+                "reference": "bf5531a6e0ec2c026e07d536bebef517450de502"
+            },
+            "require": {
+                "drupal/core": "^8",
+                "drupal/firebase": "^2.0",
+                "drupal/views_bulk_operations": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "1.x-dev",
+                    "datestamp": "1586109875",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "introfini",
+                    "homepage": "https://www.drupal.org/user/42293"
+                }
+            ],
+            "description": "Integrate sending Push Notifications through Firebase with Views Bulk Operations",
+            "homepage": "https://www.drupal.org/project/vbo_push_notifications",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/vbo_push_notifications",
+                "issues": "https://www.drupal.org/project/issues/vbo_push_notifications"
+            },
+            "time": "2020-04-05T18:05:59+00:00"
         },
         {
             "name": "drupal/video_embed_field",
@@ -12534,7 +12583,8 @@
         "drupal/material_admin": 15,
         "drupal/paragraphs_edit": 20,
         "drupal/paragraphs_frontend_ui": 15,
-        "drupal/rabbit_hole": 10
+        "drupal/rabbit_hole": 10,
+        "drupal/vbo_push_notifications": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

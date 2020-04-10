@@ -2,7 +2,14 @@ administer ocmc mobile app links:
   title: 'Administer OCMC mobile app links'
   description: 'Allow to administer mobile app links'
 
+administer ocmc mobile devices:
+  title: 'Administer OCMC mobile devices'
+  description: 'Allow to administer mobile devices for push notifications'
+
 view ocmc mobile app links:
   title: 'View OCMC mobile app links'
   description: 'Allow to view mobile app links'
 
+send ocmc push notifications:
+  title: 'Send OCMC Push Notifications'
+  description: 'Allow to view a list of devices and send push notifications'

@@ -9,6 +9,7 @@ use Drupal\field\FieldConfigInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_help().
@@ -30,4 +31,70 @@ function ocmc_mobile_help($route_name, RouteMatchInterface $route_match) {
       }
   }
   return NULL;
+}
+
+/**
+ * Implements hook_form_ID_alter().
+ */
+function ocmc_mobile_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#id'] === 'views-exposed-form-ocmc-push-notification-mobile-devices-push-notification-page') {
+    $form['field_subscribed_missionaries']['#size'] = 9;
+    $form['field_subscribed_mission_team']['#size'] = 9;
+  }
+}
+
+function ocmc_mobile_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
+  $filters = $view->display_handler->getOption('filters');
+  $ocmc_content_filters = [
+    'missionary' => 'field_subscribed_ocmc_content_target_id',
+    'missionary_team' => 'field_subscribed_ocmc_content_target_id_1',
+  ];
+  foreach ($ocmc_content_filters as $ocmc_content_key => $content_filter) {
+    if (isset($filters[$content_filter])) {
+      foreach ($filters[$content_filter]['value'] as $key => $filter) {
+        unset($filters[$content_filter]['value'][$key]);
+      }
+      $filters[$content_filter]['operator'] = 'in';
+    }
+    $filters[$content_filter]['group_info']['group_items'] = _ocmc_mobile_get_views_exposed_filters_options_of_missionaries($ocmc_content_key);
+    $filters[$content_filter]['group_info']['multiple'] = TRUE;
+    unset($filters[$content_filter]['expose']['placeholder']);
+    unset($filters[$content_filter]['expose']['min_placeholder']);
+    unset($filters[$content_filter]['expose']['max_placeholder']);
+  }
+  $view->display_handler->overrideOption('filters', $filters);
+}
+
+/**
+ * Helper function to get a custom list of options for the Missionaries exposed
+ * filter.
+ *
+ * @param string $bundle_type
+ *
+ * @return array
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ */
+function _ocmc_mobile_get_views_exposed_filters_options_of_missionaries($bundle_type) {
+  $ids = \Drupal::entityQuery('missionary')->condition('type',$bundle_type)->execute();
+  $entities = \Drupal::entityTypeManager()->getStorage('missionary')->loadMultiple($ids);
+  $options = [];
+
+  foreach($entities as $id => $entity) {
+    $value = $entity->label();
+
+    if (isset($value)) {
+      $options[$id] = [
+        'title' => $value,
+        'operator' => '=',
+        'value' => [
+          'value' => $id,
+          'min' => '',
+          'max' => '',
+        ]
+      ];
+    }
+  }
+
+  return $options;
 }
