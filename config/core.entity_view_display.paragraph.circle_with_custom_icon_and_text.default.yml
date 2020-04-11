@@ -1,0 +1,29 @@
+uuid: 9d0e1b72-3de8-48ac-8866-fe046db53654
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.circle_with_custom_icon_and_text.field_description_text
+    - field.field.paragraph.circle_with_custom_icon_and_text.field_icon_code
+    - paragraphs.paragraphs_type.circle_with_custom_icon_and_text
+id: paragraph.circle_with_custom_icon_and_text.default
+targetEntityType: paragraph
+bundle: circle_with_custom_icon_and_text
+mode: default
+content:
+  field_description_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_icon_code:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

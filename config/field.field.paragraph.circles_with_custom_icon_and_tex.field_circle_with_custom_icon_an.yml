@@ -1,0 +1,102 @@
+uuid: 565cf1c7-c0aa-407b-9d41-4c51969a39bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_circle_with_custom_icon_an
+    - paragraphs.paragraphs_type.circle_with_custom_icon_and_text
+    - paragraphs.paragraphs_type.circles_with_custom_icon_and_tex
+  module:
+    - custom_add_another
+    - entity_reference_revisions
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.circles_with_custom_icon_and_tex.field_circle_with_custom_icon_an
+field_name: field_circle_with_custom_icon_an
+entity_type: paragraph
+bundle: circles_with_custom_icon_and_tex
+label: 'Circle with custom icon and text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      circle_with_custom_icon_and_text: circle_with_custom_icon_and_text
+    target_bundles_drag_drop:
+      article_dynamic_section:
+        weight: 24
+        enabled: false
+      basic_html_section:
+        weight: 25
+        enabled: false
+      block:
+        weight: 26
+        enabled: false
+      circles_with_custom_icon_and_tex:
+        weight: 27
+        enabled: false
+      circle_with_custom_icon_and_text:
+        enabled: true
+        weight: 28
+      columns_image_and_text:
+        weight: 29
+        enabled: false
+      dynamic_section:
+        weight: 30
+        enabled: false
+      events:
+        weight: 31
+        enabled: false
+      financial_documents:
+        weight: 32
+        enabled: false
+      friends_and_partners:
+        weight: 33
+        enabled: false
+      from_library:
+        weight: 34
+        enabled: false
+      full_width_hero:
+        weight: 35
+        enabled: false
+      gallery:
+        weight: 36
+        enabled: false
+      hero:
+        weight: 37
+        enabled: false
+      links:
+        weight: 38
+        enabled: false
+      location:
+        weight: 39
+        enabled: false
+      numbered_list_item:
+        weight: 40
+        enabled: false
+      numbered_list_items:
+        weight: 41
+        enabled: false
+      numbered_list_items_with_image:
+        weight: 42
+        enabled: false
+      numbered_list_item_with_image:
+        weight: 43
+        enabled: false
+      person:
+        weight: 44
+        enabled: false
+      video:
+        weight: 45
+        enabled: false
+      video_and_text_side_by_side:
+        weight: 46
+        enabled: false
+field_type: entity_reference_revisions

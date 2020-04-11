@@ -1,0 +1,24 @@
+uuid: a9ef6933-5807-4036-9583-e5fe03f82e79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.circles_with_custom_icon_and_tex.field_circle_with_custom_icon_an
+    - paragraphs.paragraphs_type.circles_with_custom_icon_and_tex
+  module:
+    - entity_reference_revisions
+id: paragraph.circles_with_custom_icon_and_tex.default
+targetEntityType: paragraph
+bundle: circles_with_custom_icon_and_tex
+mode: default
+content:
+  field_circle_with_custom_icon_an:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

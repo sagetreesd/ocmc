@@ -1,0 +1,10 @@
+uuid: 7326f362-1350-436a-aee1-a17571d1f306
+langcode: en
+status: true
+dependencies: {  }
+id: circles_with_custom_icon_and_tex
+label: 'Circles With Custom Icon And Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

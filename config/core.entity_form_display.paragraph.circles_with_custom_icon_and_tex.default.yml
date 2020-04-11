@@ -1,0 +1,29 @@
+uuid: 4c62dac9-587d-44b3-b7d6-0aa62fbf947c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.circles_with_custom_icon_and_tex.field_circle_with_custom_icon_an
+    - paragraphs.paragraphs_type.circles_with_custom_icon_and_tex
+  module:
+    - paragraphs
+id: paragraph.circles_with_custom_icon_and_tex.default
+targetEntityType: paragraph
+bundle: circles_with_custom_icon_and_tex
+mode: default
+content:
+  field_circle_with_custom_icon_an:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

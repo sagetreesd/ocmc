@@ -6,6 +6,7 @@ dependencies:
     - field.storage.paragraph.field_section_content
     - paragraphs.paragraphs_type.basic_html_section
     - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.circles_with_custom_icon_and_tex
     - paragraphs.paragraphs_type.columns_image_and_text
     - paragraphs.paragraphs_type.dynamic_section
     - paragraphs.paragraphs_type.events
@@ -54,6 +55,7 @@ settings:
       block: block
       columns_image_and_text: columns_image_and_text
       full_width_hero: full_width_hero
+      circles_with_custom_icon_and_tex: circles_with_custom_icon_and_tex
       numbered_list_items: numbered_list_items
       numbered_list_items_with_image: numbered_list_items_with_image
       video_and_text_side_by_side: video_and_text_side_by_side
@@ -103,20 +105,26 @@ settings:
       full_width_hero:
         enabled: true
         weight: 26
+      circles_with_custom_icon_and_tex:
+        enabled: true
+        weight: 26
       location:
         weight: 26
         enabled: false
-      numbered_list_item:
+      circle_with_custom_icon_and_text:
         weight: 29
+        enabled: false
+      numbered_list_item:
+        weight: 30
         enabled: false
       numbered_list_items:
         enabled: true
-        weight: 30
+        weight: 37
       numbered_list_items_with_image:
         enabled: true
-        weight: 37
-      numbered_list_item_with_image:
         weight: 38
+      numbered_list_item_with_image:
+        weight: 42
         enabled: false
       video_and_text_side_by_side:
         enabled: true

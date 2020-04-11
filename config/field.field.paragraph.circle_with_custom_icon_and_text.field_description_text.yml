@@ -1,0 +1,25 @@
+uuid: df80b142-2fe1-4947-8a01-6cd299a3f1c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_text
+    - paragraphs.paragraphs_type.circle_with_custom_icon_and_text
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.circle_with_custom_icon_and_text.field_description_text
+field_name: field_description_text
+entity_type: paragraph
+bundle: circle_with_custom_icon_and_text
+label: 'Description Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
