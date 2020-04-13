@@ -97,6 +97,6 @@
     </header>
   {% endif %}
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content|without('field_thumbnail_image') }}
+    {{ content|without('field_thumbnail_image') | striptags}}
   </div>
 </article>
