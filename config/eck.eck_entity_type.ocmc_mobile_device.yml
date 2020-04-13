@@ -7,4 +7,4 @@ label: 'OCMC Mobile Device'
 created: true
 changed: false
 uid: false
-title: false
+title: true
