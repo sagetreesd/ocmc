@@ -5,7 +5,10 @@ dependencies:
   config:
     - field.field.paragraph.circle_with_custom_icon_and_text.field_description_text
     - field.field.paragraph.circle_with_custom_icon_and_text.field_icon_code
+    - field.field.paragraph.circle_with_custom_icon_and_text.field_link_for_numbered_list
     - paragraphs.paragraphs_type.circle_with_custom_icon_and_text
+  module:
+    - link
 id: paragraph.circle_with_custom_icon_and_text.default
 targetEntityType: paragraph
 bundle: circle_with_custom_icon_and_text
@@ -26,6 +29,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_link_for_numbered_list:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
 hidden:
   created: true

@@ -47,7 +47,10 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
-<i class="{{ content.field_icon_code.0['#context'].value }}"></i>
+
+<div class="icon-wrapper">
+  <i class="{{ content.field_icon_code.0['#context'].value }}"></i>
+</div>
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}

@@ -1,0 +1,28 @@
+uuid: b677b8a1-40a4-4a6f-a6d1-fc5f8c98b8eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_for_numbered_list
+    - paragraphs.paragraphs_type.circle_with_custom_icon_and_text
+  module:
+    - custom_add_another
+    - link
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.circle_with_custom_icon_and_text.field_link_for_numbered_list
+field_name: field_link_for_numbered_list
+entity_type: paragraph
+bundle: circle_with_custom_icon_and_text
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link
