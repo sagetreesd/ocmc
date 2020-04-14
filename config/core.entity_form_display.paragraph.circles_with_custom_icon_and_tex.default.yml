@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.circles_with_custom_icon_and_tex.field_circle_with_custom_icon_an
     - field.field.paragraph.circles_with_custom_icon_and_tex.field_description_text
+    - field.field.paragraph.circles_with_custom_icon_and_tex.field_section_classes
     - field.field.paragraph.circles_with_custom_icon_and_tex.field_title
     - paragraphs.paragraphs_type.circles_with_custom_icon_and_tex
   module:
@@ -16,7 +17,7 @@ mode: default
 content:
   field_circle_with_custom_icon_an:
     type: entity_reference_paragraphs
-    weight: 0
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -27,15 +28,21 @@ content:
     third_party_settings: {  }
     region: content
   field_description_text:
-    weight: 2
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
     region: content
+  field_section_classes:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_title:
-    weight: 1
+    weight: 0
     settings:
       size: 60
       placeholder: ''

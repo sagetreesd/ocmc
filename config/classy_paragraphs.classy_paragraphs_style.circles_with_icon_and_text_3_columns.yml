@@ -1,0 +1,7 @@
+uuid: f22d6a85-23d7-4499-82de-50eb690bd234
+langcode: en
+status: true
+dependencies: {  }
+id: circles_with_icon_and_text_3_columns
+label: 'Circles With Icon And Text: 3 columns'
+classes: three-columns

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.circles_with_custom_icon_and_tex.field_circle_with_custom_icon_an
     - field.field.paragraph.circles_with_custom_icon_and_tex.field_description_text
+    - field.field.paragraph.circles_with_custom_icon_and_tex.field_section_classes
     - field.field.paragraph.circles_with_custom_icon_and_tex.field_title
     - paragraphs.paragraphs_type.circles_with_custom_icon_and_tex
   module:
@@ -38,4 +39,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_section_classes: true
