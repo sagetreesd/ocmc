@@ -36,8 +36,11 @@
 }
 
 .internal-hero {
+  margin-bottom: 50px;
   @include outside-wrapper();
-  margin-bottom: 110px;
+  @include media-breakpoint-up(md) {
+    emargin-bottom: 110px;
+  }
   .paragraph--type--full-width-hero-inner {
     height: 500px;
     display: flex;

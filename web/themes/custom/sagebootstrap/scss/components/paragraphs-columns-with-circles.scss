@@ -2,7 +2,10 @@
 .paragraph--type--circles-with-custom-icon-and-tex {
   text-align: center;
   .field--name-field-title {
-    margin-bottom: 70px !important;
+    margin-bottom: 30px !important;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 60px !important;
+    }
   }
   .field--name-field-description-text {
     font-size: 18px;
