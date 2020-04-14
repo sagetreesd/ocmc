@@ -1,18 +1,23 @@
-
-// Numbered List Items
-.paragraph--type--numbered-list-items {
+.paragraph--type--numbered-list-items,
+.paragraph--type--circles-with-custom-icon-and-tex {
   text-align: center;
-  background: $white;
-  @include outside-wrapper();
-  padding: 130px 20px 90px;
   .field--name-field-title {
     margin-bottom: 70px !important;
   }
   .field--name-field-description-text {
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 18px;
     padding: 0 50px;
+    margin: 0 auto 20px;
   }
+}
+
+
+
+// Numbered List Items
+.paragraph--type--numbered-list-items {
+  background: $white;
+  @include outside-wrapper();
+  padding: 130px 20px 90px;
 }
 
 .field--name-field-numbered-list-item {
@@ -27,6 +32,7 @@
   }
   > .field__item {
     counter-increment: my-counter;
+    margin-bottom: 50px;
     @include media-breakpoint-up(lg) {
       width: 330px;
       margin-bottom: 0 !important;
@@ -49,7 +55,9 @@
       color: #353f4e;
       font-size: 7em;
       font-weight: 800;
-      margin: 0 auto 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 34px;
     }
   }
 }
@@ -74,11 +82,5 @@
     i {
       color: $gray-800;
     }
-  }
-  .field--name-field-title {
-    margin-bottom: 70px !important; // match numbered circles paragraph
-  }
-  .field--name-field-description-text {
-    font-size: 18px;
   }
 }
