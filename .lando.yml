@@ -1,7 +1,7 @@
 name: ocmc
 recipe: pantheon
 config:
-  xdebug: true
+  xdebug: false
   framework: drupal8
   site: ocmc
   id: 56fc199e-402e-4733-87e4-f50029b384b8
