@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26cffbb62992b9ac30d0384aff18e4b5",
+    "content-hash": "56a65511a034f16225647f45a4469358",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1967,6 +1967,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "Call to undefined method Drupal\\colorbox\\Commands\\ColorboxCommands::getName()": "https://www.drupal.org/files/issues/2020-04-15/3127666-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
