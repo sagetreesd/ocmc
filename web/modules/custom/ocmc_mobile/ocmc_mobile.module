@@ -91,24 +91,26 @@ function ocmc_mobile_form_views_exposed_form_alter(&$form, &$form_state) {
 
 function ocmc_mobile_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
   $filters = $view->display_handler->getOption('filters');
-  $ocmc_content_filters = [
-    'missionary' => 'field_subscribed_ocmc_content_target_id',
-    'missionary_team' => 'field_subscribed_ocmc_content_target_id_1',
-  ];
-  foreach ($ocmc_content_filters as $ocmc_content_key => $content_filter) {
-    if (isset($filters[$content_filter])) {
-      foreach ($filters[$content_filter]['value'] as $key => $filter) {
-        unset($filters[$content_filter]['value'][$key]);
+  if (!empty($filters)) {
+    $ocmc_content_filters = [
+      'missionary' => 'field_subscribed_ocmc_content_target_id',
+      'missionary_team' => 'field_subscribed_ocmc_content_target_id_1',
+    ];
+    foreach ($ocmc_content_filters as $ocmc_content_key => $content_filter) {
+      if (isset($filters[$content_filter])) {
+        foreach ($filters[$content_filter]['value'] as $key => $filter) {
+          unset($filters[$content_filter]['value'][$key]);
+        }
+        $filters[$content_filter]['operator'] = 'in';
+        $filters[$content_filter]['group_info']['group_items'] = _ocmc_mobile_get_views_exposed_filters_options_of_missionaries($ocmc_content_key);
+        $filters[$content_filter]['group_info']['multiple'] = TRUE;
+        unset($filters[$content_filter]['expose']['placeholder']);
+        unset($filters[$content_filter]['expose']['min_placeholder']);
+        unset($filters[$content_filter]['expose']['max_placeholder']);
       }
-      $filters[$content_filter]['operator'] = 'in';
     }
-    $filters[$content_filter]['group_info']['group_items'] = _ocmc_mobile_get_views_exposed_filters_options_of_missionaries($ocmc_content_key);
-    $filters[$content_filter]['group_info']['multiple'] = TRUE;
-    unset($filters[$content_filter]['expose']['placeholder']);
-    unset($filters[$content_filter]['expose']['min_placeholder']);
-    unset($filters[$content_filter]['expose']['max_placeholder']);
+    $view->display_handler->overrideOption('filters', $filters);
   }
-  $view->display_handler->overrideOption('filters', $filters);
 }
 
 /**
