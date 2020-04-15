@@ -33,10 +33,6 @@ function ocmc_mobile_help($route_name, RouteMatchInterface $route_match) {
   return NULL;
 }
 
-function ocmc_mobile_form_alter(&$form, &$form_state, $form_id) {
-//  kint($form['field_link']['widget'][0]['uri']['#element_validate']);
-}
-
 /**
  * Implements hook_form_ID_alter().
  */
