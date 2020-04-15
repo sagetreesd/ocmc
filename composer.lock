@@ -143,16 +143,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "3.4.1",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
+                "reference": "1fd78cd729742aa26f64783f9188e169e41f194e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
-                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/1fd78cd729742aa26f64783f9188e169e41f194e",
+                "reference": "1fd78cd729742aa26f64783f9188e169e41f194e",
                 "shasum": null
             },
             "type": "bower-asset",
@@ -1747,9 +1747,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-alpha8",
                     "datestamp": "1536732480",
@@ -1764,6 +1761,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
                 {
                     "name": "acbramley",
                     "homepage": "https://www.drupal.org/user/1036766"
@@ -1934,32 +1935,37 @@
         },
         {
             "name": "drupal/colorbox",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "bf163fd2d28450c1324512ad7e6a72fc48d274e3"
+                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "4e8d833fc96ee15e7ff2a03b89c081a6f68acbaf"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.8 || ^9"
+            },
+            "suggest": {
+                "jackmoore/colorbox": "The Colorbox library is required to use the drupal/colorbox module."
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1493051344",
+                    "version": "8.x-1.5",
+                    "datestamp": "1586777974",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
                     }
                 }
             },
@@ -1969,31 +1975,25 @@
             ],
             "authors": [
                 {
-                    "name": "RenatoG",
-                    "homepage": "https://www.drupal.org/user/3326031"
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
-                    "name": "frjo",
-                    "homepage": "https://www.drupal.org/user/5546"
+                    "name": "Fredrik Jonsson",
+                    "homepage": "https://www.drupal.org/u/frjo",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "jdwfly",
                     "homepage": "https://www.drupal.org/user/298179"
-                },
-                {
-                    "name": "rsmylski",
-                    "homepage": "https://www.drupal.org/user/1324348"
                 }
             ],
             "description": "A light-weight, customizable lightbox plugin for jQuery.",
             "homepage": "https://www.drupal.org/project/colorbox",
             "support": {
-                "source": "https://cgit.drupalcode.org/colorbox",
-                "issues": "https://www.drupal.org/project/colorbox"
+                "source": "https://git.drupalcode.org/project/colorbox",
+                "issues": "https://www.drupal.org/project/issues/colorbox"
             }
         },
         {
@@ -2835,9 +2835,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.4",
                     "datestamp": "1585763383",
@@ -3479,9 +3476,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.0",
                     "datestamp": "1580250787",
@@ -3576,17 +3570,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "3.0.0-beta11",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geocoder.git",
-                "reference": "8.x-3.0-beta11"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-3.0-beta11.zip",
-                "reference": "8.x-3.0-beta11",
-                "shasum": "873d9c3958cabd056915f62e7df3c1c31db091d5"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "88f52966129fab319079215c9b6c25da6d076253"
             },
             "require": {
                 "davedevelopment/stiphle": "^0.9.2",
@@ -3628,11 +3622,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-beta11",
-                    "datestamp": "1586209924",
+                    "version": "8.x-3.0",
+                    "datestamp": "1586899356",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -4042,17 +4036,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "1.33.0",
+            "version": "1.35.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "8.x-1.33"
+                "reference": "8.x-1.35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.33.zip",
-                "reference": "8.x-1.33",
-                "shasum": "4b1f566dc82710a7fcd06a5b9115ceefbce12745"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.35.zip",
+                "reference": "8.x-1.35",
+                "shasum": "40ddd6fae7800b168b71b2521d7f5452f68f1215"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -4061,8 +4055,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.33",
-                    "datestamp": "1586209401",
+                    "version": "8.x-1.35",
+                    "datestamp": "1586903111",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4368,12 +4362,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.12",
-                    "datestamp": "1585646341",
+                    "datestamp": "1586025529",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5010,29 +5001,26 @@
         },
         {
             "name": "drupal/simple_styleguide",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_styleguide.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_styleguide-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "ade7511ef12d467eff8747b015f937326877addd"
+                "url": "https://ftp.drupal.org/files/projects/simple_styleguide-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "31363c626603c043f0cbe1c8dbcf5c51e9c49196"
             },
             "require": {
                 "drupal/core": "~8.0"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1563492485",
+                    "version": "8.x-1.7",
+                    "datestamp": "1586794326",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6401,16 +6389,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.3.0",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc"
+                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9a9981c347c5c49d6dfe5cf826bb882b824080dc",
-                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
                 "shasum": ""
             },
             "require": {
@@ -6449,7 +6437,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-11-08T13:50:10+00:00"
+            "time": "2020-04-10T16:34:50+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
