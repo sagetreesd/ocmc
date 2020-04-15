@@ -174,6 +174,9 @@
             },
             "drupal/simple_oauth": {
                 "Allow bypassing permissions check on public/private key files": "https://www.drupal.org/files/issues/2020-01-30/3021054-10-bypass_permissions.patch"
+            },
+            "drupal/vbo_push_notifications": {
+                "Add link to payload": "patches/vbo_push_notifications-add_link_to_payload.patch"
             }
         },
         "build-env": {

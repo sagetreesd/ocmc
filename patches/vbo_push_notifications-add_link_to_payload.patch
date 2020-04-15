@@ -1,0 +1,63 @@
+diff --git a/src/Plugin/Action/SendPushAction.php b/src/Plugin/Action/SendPushAction.php
+index 2ccb802..2286929 100644
+--- a/src/Plugin/Action/SendPushAction.php
++++ b/src/Plugin/Action/SendPushAction.php
+@@ -173,6 +173,7 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
+     $remember_push_notification = $config->get('remember_push_notification');
+     $push_notification_title = $config->get('push_notification_title');
+     $push_notification_body = $config->get('push_notification_body');
++    $push_notification_link = $config->get('push_notification_link');
+ 
+     $form['#title'] = $this->t('Send Push Notification');
+ 
+@@ -188,6 +189,12 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
+       '#default_value' => ($remember_push_notification == 1) ? $push_notification_body : NULL,
+       '#rows' => 3,
+     ];
++    $form['push_notification_link'] = [
++      '#type' => 'url',
++      '#title' => $this->t('Link'),
++      '#description' => $this->t('Enter a URL for the push notification to link to.'),
++      '#default_value' => ($remember_push_notification == 1) ? $push_notification_link : NULL,
++    ];
+     $form['token_tree'] = [
+       '#theme' => 'token_tree_link',
+       '#show_restricted' => TRUE,
+@@ -225,6 +232,7 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
+         $config->set('remember_push_notification',1);
+         $config->set('push_notification_title',$form_state->getValue('push_notification_title'));
+         $config->set('push_notification_body',$form_state->getValue('push_notification_body'));
++        $config->set('push_notification_link',$form_state->getValue('push_notification_link'));
+         $config->save();
+       }
+       else{
+@@ -235,7 +243,7 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
+       $this->configuration = [];
+       $this->configuration['push_notification_title'] = $form_state->getValue('push_notification_title');
+       $this->configuration['push_notification_body'] = $form_state->getValue('push_notification_body');
+-
++      $this->configuration['push_notification_link'] = $form_state->getValue('push_notification_link');
+     }
+   }
+ 
+@@ -284,15 +292,20 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
+     $device_token = $this->view->style_plugin->getFieldValue($current_batch_count, $device_token_field_name);
+     $title = $this->context['configuration']['push_notification_title'];
+     $body = $this->context['configuration']['push_notification_body'];
++    $link = $this->context['configuration']['push_notification_link'];
+ 
+     $processed_title = $this->processMessage($current_batch_count, $title);
+     $processed_body = $this->processMessage($current_batch_count, $body);
++    $processed_link = $this->processMessage($current_batch_count, $link);
+ 
+ 
+     $this->push_service->setRecipients($device_token);
+     $this->push_service->setNotification([
+       'title' => $processed_title,
+       'body' => $processed_body,
++      'data' => [
++        'url' => $processed_link,
++      ],
+       'badge' => 1,
+       //'click_action' => 'optional-action',
+     ]);
