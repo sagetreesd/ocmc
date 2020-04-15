@@ -7,16 +7,16 @@ dependencies:
 id: article_pathauto_pattern
 label: 'Article Pathauto Pattern'
 type: 'canonical_entities:node'
-pattern: 'news/[node:title]'
+pattern: '[node:title]'
 selection_criteria:
-  cba44b39-1422-4a04-a831-1dd5d31f8791:
+  a86bd9c9-7cd6-4841-9bbb-d1135df014e8:
     id: node_type
     bundles:
       article: article
     negate: false
     context_mapping:
       node: node
-    uuid: cba44b39-1422-4a04-a831-1dd5d31f8791
+    uuid: a86bd9c9-7cd6-4841-9bbb-d1135df014e8
 selection_logic: and
 weight: -5
 relationships: {  }
