@@ -47,14 +47,17 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
+
 {% block paragraph %}
-<div class="paragraph--type--full-width-hero-wrapper">
-  <div{{ attributes.addClass(classes) }} style="background-image: url( {{ content.field_full_width_hero_image.0['#markup'] }} );">
-    <div class="paragraph--type--full-width-hero-inner">
-      {% block content %}
-        {{ content|without('field_full_width_hero_image') }}
-      {% endblock %}
+{% if elements.field_full_width_hero_image %}
+  <div class="paragraph--type--full-width-hero-wrapper">
+    <div{{ attributes.addClass(classes) }} style="background-image: url( {{ content.field_full_width_hero_image.0['#markup'] }} );">
+      <div class="paragraph--type--full-width-hero-inner">
+        {% block content %}
+          {{ content|without('field_full_width_hero_image') }}
+        {% endblock %}
+      </div>
     </div>
   </div>
-</div>
+{% endif %}
 {% endblock paragraph %}
