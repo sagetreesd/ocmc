@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7577163016b8224f806a8391d57d9958",
+    "content-hash": "d60dfd1c550022eac9a5a23d268e899e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5327,8 +5327,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/vbo_push_notifications",
                 "issues": "https://www.drupal.org/project/issues/vbo_push_notifications"
-            },
-            "time": "2020-04-05T18:05:59+00:00"
+            }
         },
         {
             "name": "drupal/video_embed_field",

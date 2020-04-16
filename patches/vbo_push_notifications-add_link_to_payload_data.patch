@@ -1,5 +1,5 @@
 diff --git a/src/Plugin/Action/SendPushAction.php b/src/Plugin/Action/SendPushAction.php
-index 2ccb802..2286929 100644
+index 2ccb802..3d1bac8 100644
 --- a/src/Plugin/Action/SendPushAction.php
 +++ b/src/Plugin/Action/SendPushAction.php
 @@ -173,6 +173,7 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
@@ -40,7 +40,7 @@ index 2ccb802..2286929 100644
      }
    }
  
-@@ -284,15 +292,20 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
+@@ -284,9 +292,11 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
      $device_token = $this->view->style_plugin->getFieldValue($current_batch_count, $device_token_field_name);
      $title = $this->context['configuration']['push_notification_title'];
      $body = $this->context['configuration']['push_notification_body'];
@@ -52,12 +52,14 @@ index 2ccb802..2286929 100644
  
  
      $this->push_service->setRecipients($device_token);
-     $this->push_service->setNotification([
-       'title' => $processed_title,
-       'body' => $processed_body,
-+      'data' => [
-+        'url' => $processed_link,
-+      ],
-       'badge' => 1,
+@@ -297,6 +307,10 @@ class SendPushAction extends ViewsBulkOperationsActionBase implements ViewsBulkO
        //'click_action' => 'optional-action',
      ]);
+ 
++    $this->push_service->setData([
++      'url' => $processed_link,
++    ]);
++
+     $this->push_service->setOptions(['priority' => 'normal']);
+     $this->push_service->send();
+ 
