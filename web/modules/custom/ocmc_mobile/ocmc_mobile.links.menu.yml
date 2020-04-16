@@ -3,6 +3,6 @@ entity.ocmc_mobile_app_link.collection:
   title: 'OCMC Mobile App Links'
   route_name: entity.ocmc_mobile_app_link.collection
   description: 'List OCMC Mobile App Links (bundles)'
-  parent: system.admin_structure
+  parent: system.admin_config_services
   weight: 99
 
