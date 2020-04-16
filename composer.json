@@ -153,9 +153,6 @@
             "bower-asset"
         ],
         "patches": {
-            "drupal/colorbox": {
-                "Call to undefined method Drupal\\colorbox\\Commands\\ColorboxCommands::getName()": "https://www.drupal.org/files/issues/2020-04-15/3127666-6.patch"
-            },
             "drupal/core": {
                 "Add a \"context\" array variable to all theme hooks and \"#context\" array property to all elements to provide optional contextual data": "https://www.drupal.org/files/issues/2019-04-30/2511548-83.patch",
                 "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch",

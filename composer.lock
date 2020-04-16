@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57628974f9b2895140eb9d8e30b86b52",
+    "content-hash": "7577163016b8224f806a8391d57d9958",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1935,17 +1935,17 @@
         },
         {
             "name": "drupal/colorbox",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "4e8d833fc96ee15e7ff2a03b89c081a6f68acbaf"
+                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "73bfc74e9afd294e3d3aded3622ad9cb9de6b75c"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -1956,8 +1956,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1586777974",
+                    "version": "8.x-1.6",
+                    "datestamp": "1587016344",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1967,9 +1967,6 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": {
-                    "Call to undefined method Drupal\\colorbox\\Commands\\ColorboxCommands::getName()": "https://www.drupal.org/files/issues/2020-04-15/3127666-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3773,17 +3770,17 @@
         },
         {
             "name": "drupal/geolocation",
-            "version": "3.0.0-rc8",
+            "version": "3.0.0-rc9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geolocation.git",
-                "reference": "8.x-3.0-rc8"
+                "reference": "8.x-3.0-rc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-3.0-rc8.zip",
-                "reference": "8.x-3.0-rc8",
-                "shasum": "76cac914e9cb1c85d6bb95d392b1790fc7e0206e"
+                "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-3.0-rc9.zip",
+                "reference": "8.x-3.0-rc9",
+                "shasum": "66d68d67c3f8292aeea1bd96f52ff1c827b2c77a"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -3794,6 +3791,7 @@
                 "drupal/geolocation_demo": "*",
                 "drupal/geolocation_geometry": "*",
                 "drupal/geolocation_geometry_data": "*",
+                "drupal/geolocation_geometry_natural_earth_countries": "*",
                 "drupal/geolocation_google_maps": "*",
                 "drupal/geolocation_google_maps_demo": "*",
                 "drupal/geolocation_google_static_maps": "*",
@@ -3805,8 +3803,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-rc8",
-                    "datestamp": "1586278235",
+                    "version": "8.x-3.0-rc9",
+                    "datestamp": "1586980843",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -5307,6 +5305,7 @@
                     }
                 },
                 "patches_applied": {
+                    "SendPushAction.php execute method is using the wrong view index value in getFieldValue": "https://www.drupal.org/files/issues/2020-04-15/vbo_push_notifications-getFieldValue_views_row_index_adjustment-3128051-2.patch",
                     "Add link to payload": "patches/vbo_push_notifications-add_link_to_payload.patch"
                 }
             },
