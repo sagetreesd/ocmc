@@ -749,16 +749,7 @@ display:
             value: 'There are no devices to show with the selected filters.'
             format: basic_html
           plugin_id: text
-      relationships:
-        field_subscribed_ocmc_content:
-          id: field_subscribed_ocmc_content
-          table: ocmc_mobile_device__field_subscribed_ocmc_content
-          field: field_subscribed_ocmc_content
-          relationship: none
-          group_type: group
-          admin_label: 'OCMC Content'
-          required: false
-          plugin_id: standard
+      relationships: {  }
       arguments: {  }
       display_extenders: {  }
       filter_groups:
