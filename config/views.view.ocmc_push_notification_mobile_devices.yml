@@ -785,14 +785,14 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: admin/structure/ocmc-push-notification-mobile-devices
+      path: admin/config/services/ocmc-push-notification-mobile-devices
       display_description: ''
       menu:
         type: normal
         title: 'OCMC Push Notification Mobile Devices'
         description: ''
         expanded: false
-        parent: system.admin_structure
+        parent: system.admin_config_services
         weight: 99
         context: '0'
         menu_name: admin
@@ -816,13 +816,13 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: admin/structure/send-push-notification
+      path: admin/content/send-push-notification
       menu:
         type: normal
         title: 'Send Push Notification'
         description: ''
         expanded: false
-        parent: system.admin_structure
+        parent: system.admin_content
         weight: 99
         context: '0'
         menu_name: admin
