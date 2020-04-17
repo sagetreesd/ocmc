@@ -274,8 +274,8 @@ display:
           grouping: {  }
           data_source: field_geofield
           entity_source: __base_table
-          name_field: title
-          description_field: title
+          name_field: ''
+          description_field: ''
           view_mode: view_listing
           leaflet_map: 'OSM Mapnik'
           height: '480'
@@ -292,17 +292,17 @@ display:
             center:
               lat: '0'
               lon: '0'
-            zoom: '12'
+            zoom: '2'
             minZoom: '1'
-            maxZoom: '12'
+            maxZoom: '2'
             zoomFiner: '0'
           icon:
             iconType: marker
-            iconUrl: /themes/custom/sagebootstrap/images/icons/orange-pin.png
+            iconUrl: ''
             shadowUrl: ''
             html: '<div></div>'
             html_class: leaflet-map-divicon
-            circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+            circle_marker_options: '{"radius":10,"color":"black","fillColor":"orange","fillOpacity":0.5}'
             iconSize:
               x: '18'
               'y': '30'
@@ -319,8 +319,8 @@ display:
               x: '0'
               'y': '-30'
           leaflet_markercluster:
-            control: 0
-            options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+            control: 1
+            options: '{"spiderfyOnMaxZoom":false,"showCoverageOnHover":true,"removeOutsideVisibleBounds":true,"zoomToBoundsOnClick":false,"singleMarkerMode":true}'
           path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
           geocoder:
             control: 0
