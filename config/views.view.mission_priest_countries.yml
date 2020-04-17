@@ -278,7 +278,7 @@ display:
           description_field: ''
           view_mode: view_listing
           leaflet_map: 'OSM Mapnik'
-          height: '480'
+          height: '580'
           height_unit: px
           hide_empty_map: 0
           disable_wheel: 1
@@ -288,9 +288,9 @@ display:
             control: 0
             position: topright
           map_position:
-            force: 0
+            force: 1
             center:
-              lat: '0'
+              lat: '25'
               lon: '0'
             zoom: '2'
             minZoom: '1'

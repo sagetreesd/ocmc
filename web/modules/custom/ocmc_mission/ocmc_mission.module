@@ -102,6 +102,18 @@ function ocmc_mission_leaflet_map_info_alter(&$map_info) {
     $map_info['OSM Mapnik']['settings']['dragging'] = FALSE;
     $map_info['OSM Mapnik']['settings']['touchZoom'] = FALSE;
     $map_info['OSM Mapnik']['settings']['zoomControl'] = FALSE;
+    $map_info['OSM Mapnik']['settings']['doubleClickZoom'] = FALSE;
+    $map_info['OSM Mapnik']['settings']['maxBounds'] = [
+      [
+        85,
+        -175
+      ],
+      [
+        -85,
+        175
+      ]
+    ];
+
   }
 }
 
