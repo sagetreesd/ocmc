@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d60dfd1c550022eac9a5a23d268e899e",
+    "content-hash": "410192f97b77095c0543c25e7ec41e2f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2663,7 +2663,8 @@
                 "patches_applied": {
                     "Add a \"context\" array variable to all theme hooks and \"#context\" array property to all elements to provide optional contextual data": "https://www.drupal.org/files/issues/2019-04-30/2511548-83.patch",
                     "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch",
-                    "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2020-01-08/exposed-filter-notice-2825860-33.patch"
+                    "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2020-01-08/exposed-filter-notice-2825860-33.patch",
+                    "Incorrect filter group OR behavior, LEFT JOIN changed to INNER JOIN": "https://www.drupal.org/files/issues/2019-10-08/1766338-106.patch"
                 }
             },
             "autoload": {
@@ -5306,7 +5307,7 @@
                 },
                 "patches_applied": {
                     "SendPushAction.php execute method is using the wrong view index value in getFieldValue": "https://www.drupal.org/files/issues/2020-04-15/vbo_push_notifications-getFieldValue_views_row_index_adjustment-3128051-2.patch",
-                    "Add link to payload": "patches/vbo_push_notifications-add_link_to_payload.patch"
+                    "Add link to payload": "patches/vbo_push_notifications-add_link_to_payload_data.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5327,7 +5328,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/vbo_push_notifications",
                 "issues": "https://www.drupal.org/project/issues/vbo_push_notifications"
-            }
+            },
+            "time": "2020-04-05T18:05:59+00:00"
         },
         {
             "name": "drupal/video_embed_field",

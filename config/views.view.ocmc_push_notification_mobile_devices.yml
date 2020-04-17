@@ -42,7 +42,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -843,50 +843,6 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
-        field_device_operating_system_value:
-          id: field_device_operating_system_value
-          table: ocmc_mobile_device__field_device_operating_system
-          field: field_device_operating_system_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_device_operating_system_value_op
-            label: 'Device Operating System'
-            description: ''
-            use_operator: false
-            operator: field_device_operating_system_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_device_operating_system_value
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              site_administrator: '0'
-              api: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
         field_subscribed_taxonomy_target_id:
           id: field_subscribed_taxonomy_target_id
           table: ocmc_mobile_device__field_subscribed_taxonomy
@@ -929,7 +885,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           type: select
           limit: true
           vid: country
@@ -978,7 +934,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           type: select
           limit: true
           vid: interests
