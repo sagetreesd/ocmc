@@ -132,7 +132,7 @@ blockquote {
 }
 
 .btn {
-  padding: 8px 20px;
+  padding: 18px 30px;
   border-radius: 40px;
   background-color: $primary-light;
   border: none;
@@ -140,9 +140,10 @@ blockquote {
   text-decoration: none;
   -webkit-transition: color 200ms ease, background-color 200ms ease;
   transition: color 200ms ease, background-color 200ms ease;
-  font-size: 14px;
-  @include media-breakpoint-up(lg) {
+  font-size: 24px;
+  @include media-breakpoint-up(md) {
     font-size: 17px;
+    padding: 8px 20px;
   }
   font-weight: 400;
 }
