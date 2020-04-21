@@ -13,6 +13,7 @@
     display: block;
     visibility: visible;
     height: auto;
+    background-color: #e6e6e6;
     @include outside-wrapper();
     h3 {
       margin-top: 0px;
