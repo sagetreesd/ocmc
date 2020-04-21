@@ -131,37 +131,12 @@ blockquote {
   display: none;
 }
 
-.btn {
-  padding: 18px 30px;
-  border-radius: 40px;
-  background-color: $primary-light;
-  border: none;
-  color: $gray-800;
-  text-decoration: none;
-  -webkit-transition: color 200ms ease, background-color 200ms ease;
-  transition: color 200ms ease, background-color 200ms ease;
-  font-size: 24px;
-  @include media-breakpoint-up(md) {
-    font-size: 17px;
-    padding: 8px 20px;
-  }
-  font-weight: 400;
-}
-
-.btn-primary {
-  &:hover {
-    background-color: $gray-800;
-  }
-}
-.btn-secondary {
-  background-color: $fourth-shade;
-  &:hover {
-    background-color: $gray-800;
-  }
-}
-
 .field {
   margin-bottom: 13px;
+}
+
+.field--name-field-section-content, .field--name-field-content-paragraphs {
+  margin-bottom: 0;
 }
 
 .field__label {
