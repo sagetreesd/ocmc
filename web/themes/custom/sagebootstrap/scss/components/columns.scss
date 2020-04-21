@@ -53,6 +53,10 @@
   .field--type-image {
     width: 100%;
     float: none;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
   }
   .three-columns & {
     > .field__item {
