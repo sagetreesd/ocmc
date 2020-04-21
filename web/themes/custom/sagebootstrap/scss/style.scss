@@ -18,6 +18,7 @@ body {
 
 a {
     color: $accent-shade;
+    transition: color 130ms ease;
 }
 
 blockquote {

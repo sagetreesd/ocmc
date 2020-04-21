@@ -1,5 +1,6 @@
 .node--type-article.node--view-mode-teaser {
   text-align: center;
+  border: none;
   .views-field-field-thumbnail-image {
     margin-bottom: 15px;
   }
@@ -16,6 +17,9 @@
     a {
       text-decoration: none;
       color: $fourth-shade;
+      &:hover {
+        color: $primary-shade;
+      }
     }
   }
 }
