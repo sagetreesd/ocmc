@@ -22,7 +22,9 @@
   .field--type-image {
     width: 100%;
     float: none;
-    margin: 0 auto;
+    img {
+      margin: 0 auto;
+    }
   }
   .view-missionaries-listing {
     .field--name-title {
