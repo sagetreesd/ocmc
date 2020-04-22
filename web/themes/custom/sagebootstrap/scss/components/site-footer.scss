@@ -89,29 +89,19 @@
     }
   }
   a.facebook {
-    &:before {
-      content: '\f39e';
-    }
+    &:before { content: '\f39e';}
   }
   a.instagram {
-    &:before {
-      content: '\f16d';
-    }
+    &:before {content: '\f16d';}
   }
   a.linkedin {
-    &:before {
-      content: '\f08c';
-    }
+    &:before {content: '\f08c';}
   }
   a.twitter {
-    &:before {
-      content: '\f081';
-    }
+    &:before {content: '\f081';}
   }
   a.youtube {
-    &:before {
-      content: '\f167';
-    }
+    &:before {content: '\f167';}
   }
 }
 
