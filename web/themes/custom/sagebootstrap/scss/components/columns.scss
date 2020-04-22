@@ -9,7 +9,6 @@
     justify-content: center;
   }
   .views-row {
-    @include make-col(12);
     margin-bottom: 40px;
     @include media-breakpoint-up(md) {
       @include make-col-ready();
