@@ -1,6 +1,8 @@
 .ocmc-columns-view {
   h3 {
-    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
   }
   .view-missionaries-listing h3 {
     margin-top: 25px;
