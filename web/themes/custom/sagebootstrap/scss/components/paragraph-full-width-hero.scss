@@ -39,20 +39,28 @@
   margin-bottom: 50px;
   @include outside-wrapper();
   @include media-breakpoint-up(md) {
-    emargin-bottom: 110px;
+    margin-bottom: 40px;
   }
   .paragraph--type--full-width-hero-inner {
-    height: 500px;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
+    @include media-breakpoint-up(lg) {
+      height: 500px;
+    }
   }
   h1 {
-    font-size: 52px;
+    font-size: 36px;
     line-height: 44px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      font-size: 48px;
+      line-height: 50px;
+    }
     @include media-breakpoint-up(lg) {
       font-size: 66px;
       line-height: 66px;
@@ -72,9 +80,17 @@
     color: $accent-shade;
   }
 
-
   .subtitle {
-    font-size: 36px;
+    font-size: 18px;
+    line-height: 20px;
     text-transform: uppercase;
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 }
