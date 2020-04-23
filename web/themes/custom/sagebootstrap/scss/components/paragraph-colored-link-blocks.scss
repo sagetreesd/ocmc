@@ -29,9 +29,14 @@
       line-height: 27px;
       padding: 49px 0;
       text-decoration: none;
-      transition: background-color 200ms ease;
+      transition: $transition;
       &:hover {
         background: $gray-800;
+        color: $primary-shade;
+        &:before {
+          color: $primary-shade;
+          transition: $transition;
+        }
       }
     }
   }
