@@ -24,7 +24,6 @@ $value in $theme-colors {
   position: relative;
 
   &:#{$position} {
-    position: relative;
     color: $color;
     font-size: $font-size;
     line-height: $font-size;

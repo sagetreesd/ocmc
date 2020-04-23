@@ -6,29 +6,28 @@
 .site-footer {
   padding: $spacer*3 0;
   color: $gray-600;
-  font-size: 17px;
-    .layout-container {
-        padding: 0 $spacer;
-    }
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        > li > span {
-          color: $primary-shade;
-        }
-    }
+  font-size: 21px;
+  @include media-breakpoint-up(md) {
+    font-size: 17px;
+  }
+  .layout-container {
+      padding: 0 $spacer;
+  }
+  .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      > li > span {
+        color: $primary-shade;
+      }
+  }
 }
 
-
 /* Footer Top Styling. */
-
 .site-footer__top .content {
     margin-top: 0;
 }
 
-
 /* Footer Bottom Styling. */
-
 .site-footer__bottom .block {
     margin: ($spacer / 2) 0;
 }
@@ -47,7 +46,12 @@
   }
 
   ul.navbar-nav > li {
-    width: 33%;
+    margin-bottom: 30px;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 33%;
+      margin-bottom: 0;
+    }
     > .nav-link {
       font-weight: bold;
     }
@@ -67,6 +71,7 @@
           padding-bottom: 1px;
           margin-bottom: 8px;
           display: inline-block;
+          font-weight: 600;
         }
       }
     }
@@ -74,10 +79,24 @@
 }
 
 #block-whoweare {
-  font-size: 13px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  @include media-breakpoint-up(md) {
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal;
+  }
 }
 
 #block-sociallinks {
+  margin-bottom: 40px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+  .nav {
+    justify-content: space-around;
+  }
   a {
     @include add-fontawesome(40px, $primary-shade, true);
     font-size: 0;
@@ -106,6 +125,19 @@
 }
 
 #block-footerctas {
+  .nav {
+    flex-direction: column;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+  }
+  li {
+    margin-bottom: 10px;
+    @include media-breakpoint-up(md) {
+
+    }
+  }
+
   a {
     margin-right: 16px;
     border-radius: 20px;
@@ -113,5 +145,6 @@
     color: $white;
     padding: 9px 15px;
     text-decoration: none;
+    text-align: center;
   }
 }
