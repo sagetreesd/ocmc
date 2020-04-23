@@ -9,6 +9,11 @@
   }
   > .row {
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
   }
   .views-row {
     margin-bottom: 40px;
