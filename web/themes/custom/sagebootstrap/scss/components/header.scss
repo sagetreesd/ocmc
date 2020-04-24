@@ -71,7 +71,7 @@
 #block-mainnavigation li.nav-item {
   border-left: 1px solid $gray-300;
   padding-top: 24px;
-  font-weight: 300;
+  font-weight: 300 !important;
   > span, > a {
     position: relative;
     border-bottom-width: 4px;
@@ -84,7 +84,7 @@
     font-family: $font-family-base !important; // Override font-awesome mixin
     &:before {
       top: 0px;
-      left: -4px;
+      left: -10px;
       position: relative;
       font-family: $font-awesome;
     }
