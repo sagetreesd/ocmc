@@ -3,15 +3,19 @@
   display: flex;
   flex-wrap: wrap;
   > .field__item { // first child wrapper for paragraphs
-    width: 50%;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
   }
   .paragraph--type--hero {
-    height:500px;
+    height: 258px;
     width: 100%;
     display: flex;
     justify-content: start;
     align-items: flex-end;
-    padding: 0 0 50px 70px;
+    padding: 0 0 24px 25px;
     background-size: cover;
     background-position: 50% 50%;
     border: 2px solid #fff;
@@ -31,14 +35,19 @@
         color: $primary-shade;
       }
     }
+
+    @include media-breakpoint-up(md) {
+      height: 500px;
+      padding: 0 0 50px 70px;
+    }
   }
 
   .field--name-field-cta-link {
     width: 70%;
     a {
       color: $white;
-      font-size: 52px;
-      line-height: 48px;
+      font-size: 31px;
+      line-height: 29px;
       text-transform: uppercase;
       text-decoration: none;
       font-weight: bold;
@@ -47,6 +56,11 @@
         content: '  \f054';
         top: -4px;
         left: 5px;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 52px;
+        line-height: 48px;
       }
     }
   }
