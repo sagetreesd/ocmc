@@ -30,6 +30,11 @@
       padding: 49px 0;
       text-decoration: none;
       transition: $transition;
+      &:before {
+        position: relative;
+        top: 0px;
+        left: -6px;
+      }
       &:hover {
         background: $gray-800;
         color: $primary-shade;
@@ -42,22 +47,27 @@
   }
 
   .how-we {
-    @include add-fontawesome(25px, #fff);
+    //@include add-fontawesome(25px, #fff);
+    @extend %fa-icon;
     @extend .far;
     &:before {
       content: fa-content($fa-var-cross);
     }
   }
   .serve-abroad {
-    @include add-fontawesome(25px, #fff);
+    //@include add-fontawesome(25px, #fff);
+    @extend %fa-icon;
+    @extend .far;
     &:before {
-      content: fa-content($fa-var-twitter);
+      content: fa-content($fa-var-globe);
     }
   }
   .serve-home {
-    @include add-fontawesome(25px, #fff);
+   //  @include add-fontawesome(25px, #fff);
+    @extend %fa-icon;
+    @extend .far;
     &:before {
-      content: '\f015';
+      content: fa-content($fa-var-home);
     }
   }
 }

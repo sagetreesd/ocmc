@@ -82,8 +82,9 @@
     height: 51px;
     top: 0px;
     &:before {
-      top: -3px;
-      left: 20px;
+      top: 0px;
+      left: -4px;
+      position: relative;
     }
     &:hover {
 
@@ -107,31 +108,41 @@
 }
 
 #block-mainnavigation li.nav-item .how-we {
-  @include add-fontawesome(20px, #000);
+  // @include add-fontawesome(20px, #000);
   border-bottom-color: $third-shade;
+  @extend %fa-icon;
+  @extend .far;
   &:before {
-    content: '\f005';
+    content: fa-content($fa-var-cross);
   }
+
+
 }
 #block-mainnavigation li.nav-item .serve-abroad {
-  @include add-fontawesome(20px, #000);
+  // @include add-fontawesome(20px, #000);
   border-bottom-color: $primary-shade;
+  @extend %fa-icon;
+  @extend .far;
   &:before {
-    content: '\f0ac';
+    content: fa-content($fa-var-globe);
   }
 }
 #block-mainnavigation li.nav-item .serve-home {
-  @include add-fontawesome(20px, #000);
+  // @include add-fontawesome(20px, #000);
   border-bottom-color: $fourth-shade;
+  @extend %fa-icon;
+  @extend .far;
   &:before {
-    content: '\f015';
+    content: fa-content($fa-var-home);
   }
 }
 #block-mainnavigation li.nav-item .donate {
-  @include add-fontawesome(20px, #000);
+  // @include add-fontawesome(20px, #000);
   border-bottom-color: $accent-shade;
+  @extend %fa-icon;
+  @extend .far;
   &:before {
-    content: '\f004';
+    content: fa-content($fa-var-heart);
   }
 }
 
