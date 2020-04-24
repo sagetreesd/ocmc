@@ -76,7 +76,7 @@
     position: relative;
     border-bottom-width: 4px;
     border-bottom-style: solid;
-    color: #000;
+    color: #222;
     padding: 0px 25px 0 47px;
     transition: all 200ms ease;
     height: 51px;
@@ -118,9 +118,8 @@
   &:before {
     content: fa-content($fa-var-cross);
   }
-
-
 }
+
 #block-mainnavigation li.nav-item .serve-abroad {
   // @include add-fontawesome(20px, #000);
   border-bottom-color: $primary-shade;
