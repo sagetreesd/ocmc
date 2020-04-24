@@ -15,6 +15,7 @@
   }
   .navbar-nav {
     float: right;
+    height: 78px;
   }
 }
 
@@ -72,6 +73,7 @@
   border-left: 1px solid $gray-300;
   padding-top: 24px;
   font-weight: 300 !important;
+  height: 78px;
   > span, > a {
     position: relative;
     border-bottom-width: 4px;
@@ -93,12 +95,14 @@
 
     }
   }
+  &.show,
   &:hover {
     cursor: pointer;
     padding-top: 18px;
     transition: all 200ms ease;
-    span:hover, a:hover {
+    span, a {
       border-bottom-width: 12px;
+      height: 57px;
     }
   }
   a {
@@ -151,11 +155,19 @@
 // Dropdown Menus
 #block-mainnavigation {
   .nav-item {
+    .dropdown-menu {
+      border-radius: 0;
+      border-top: 0;
+      padding: 0;
+      top: calc(100% - 2px);
+    }
     &:nth-child(1) {
+      .dropdown-menu {
+        min-width: 215px;
+      }
       .dropdown-item:hover,
       .dropdown-item.active {
         background-color: $third-shade;
-
       }
     }
     &:nth-child(2) {
@@ -165,6 +177,9 @@
       }
     }
     &:nth-child(3) {
+      .dropdown-menu {
+        min-width: 250px;
+      }
       .dropdown-item:hover,
       .dropdown-item.active {
         background-color: $fourth-shade;
