@@ -3,6 +3,8 @@
  * @file ocmc_mission.module
  */
 
+use Drupal\Core\Config\Config;
+
 /**
  * Implements hook_page_attachments_alter().
  *
@@ -41,6 +43,25 @@ function ocmc_mission_page_attachments_alter(array &$attachments) {
  */
 function ocmc_mission_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   switch ($form_id) {
+    case 'node_page_edit_form':
+      $nid = $form_state->getformObject()->getEntity()->id();
+      $config = \Drupal::config('system.site');
+      $front_uri = $config->get('page.front');
+      $is_homepage = null;
+      if (preg_match('/node\/(\d+)/', $front_uri, $matches)) {
+        $homepage_nid = $matches[1];
+        if ($is_homepage = ($nid === $homepage_nid)) {
+          $form['#fieldgroups']['group_internal_page_elements']->format_settings['formatter'] = 'closed';
+          $form['#fieldgroups']['group_internal_page_elements']->format_settings['classes'] = 'hidden';
+        }
+      }
+    case 'node_page_form':
+      if (!isset($is_homepage) || !is_homepage) {
+        $form['#fieldgroups']['group_homepage_elements']->format_settings['formatter'] = 'closed';
+        $form['#fieldgroups']['group_homepage_elements']->format_settings['classes'] = 'hidden';
+      }
+      break;
+
     case 'missionary_missionary_form':
     case 'missionary_missionary_edit_form':
     case 'missionary_missionary_team_form':
