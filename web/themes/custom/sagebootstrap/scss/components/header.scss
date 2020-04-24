@@ -81,12 +81,15 @@
     transition: all 200ms ease;
     height: 51px;
     top: 0px;
+    font-family: $font-family-base !important; // Override font-awesome mixin
     &:before {
       top: 0px;
       left: -4px;
       position: relative;
+      font-family: $font-awesome;
     }
-    &:hover {
+    &:after {
+      border-top: none;
 
     }
   }

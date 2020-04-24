@@ -30,10 +30,12 @@
       padding: 49px 0;
       text-decoration: none;
       transition: $transition;
+      font-family: $font-family-base;
       &:before {
         position: relative;
         top: 0px;
         left: -6px;
+        font-family: $font-awesome;
       }
       &:hover {
         background: $gray-800;
