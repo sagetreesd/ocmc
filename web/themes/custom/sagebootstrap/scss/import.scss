@@ -1,9 +1,14 @@
 /* IMPORTS */
 
-// @import url(font-awesome.min.css);
-
 // variables
 @import "variables";
+
+// fontawesome
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/regular.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "../fontawesome/scss/brands.scss";
+@import "../fontawesome/scss/light.scss";
 
 //bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -17,3 +22,5 @@
 @import "barrio";
 // typography
 @import "typography";
+
+

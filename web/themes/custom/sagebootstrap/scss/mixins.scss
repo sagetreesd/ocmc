@@ -27,14 +27,11 @@ $value in $theme-colors {
     color: $color;
     font-size: $font-size;
     line-height: $font-size;
-    font-family: Font Awesome\ 5 Free;
+    font-family: 'Font Awesome 5 Pro';
     transition: color .15s ease;
     font-weight: 900 !important;
     left: -10px;
     top: 1px;
-    @if $brand {
-      font-family: Font Awesome\ 5 Brands;
-    }
   }
   &:hover {
     background: none;

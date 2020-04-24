@@ -43,14 +43,15 @@
 
   .how-we {
     @include add-fontawesome(25px, #fff);
+    @extend .far;
     &:before {
-      content: '\f005';
+      content: fa-content($fa-var-cross);
     }
   }
   .serve-abroad {
     @include add-fontawesome(25px, #fff);
     &:before {
-      content: '\f0ac';
+      content: fa-content($fa-var-twitter);
     }
   }
   .serve-home {
