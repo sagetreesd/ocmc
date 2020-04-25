@@ -6,11 +6,18 @@
     flex-direction: column;
     @include media-breakpoint-up(lg) {
       flex-direction: row;
+      border-bottom: 0;
+      border-top: 0;
     }
     .field__item {
       width: 100%;
+      border-bottom: 2px solid #fff;
       &:nth-child(1) {
         background: $third-shade;
+        border-top: 2px solid #fff;
+        @include media-breakpoint-up(lg) {
+          border-top: 0;
+        }
       }
       &:nth-child(2) {
         background: $primary-shade;
@@ -26,16 +33,26 @@
       display: block;
       color: #fff;
       font-size: 25px;
+      font-weight: 600;
       line-height: 27px;
       padding: 49px 0;
       text-decoration: none;
       transition: $transition;
       font-family: $font-family-base;
+      @include media-breakpoint-up(lg) {
+        font-weight: 500;
+      }
       &:before {
         position: relative;
         top: 0px;
-        left: -15px;
         font-family: $font-awesome;
+        display: block;
+        margin-bottom: 8px;
+        @include media-breakpoint-up(lg) {
+          display: inline;
+          left: -15px;
+          margin-bottom: 0;
+        }
       }
       &:hover {
         background: $gray-800;
