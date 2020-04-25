@@ -81,6 +81,13 @@
       }
     }
   }
+
+  &.mb-5 {
+    margin-bottom: 0 !important;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 3rem !important;
+    }
+  }
 }
 
 #block-whoweare {
@@ -103,35 +110,46 @@
     justify-content: space-around;
   }
   a {
-    color: $primary-shade;
-    font-family: 'Font Awesome 5 Brands';
-    font-size: 0;
+    // @include add-fontawesome(40px, $primary-shade, true);
     margin-right: 13px;
     padding: 0;
     text-decoration: none;
+    font-size: 0;
+    color: $primary-shade;
     &:before {
-      font-size: 26px;
+      font-size: 40px;
     }
+
     &:hover:before {
       color: $gray-600;
     }
+    // @include sr-only;
   }
   a.facebook {
-    &:before {
-      content: fa-content($fa-var-facebook-square);
-    }
+    @extend %fa-icon;
+    @extend .fab;
+    &:before { content: fa-content($fa-var-facebook-square); }
+
   }
   a.instagram {
-    &:before {content: '\f16d';}
+    @extend %fa-icon;
+    @extend .fab;
+    &:before { content: fa-content($fa-var-instagram); }
   }
   a.linkedin {
-    &:before {content: '\f08c';}
+    @extend %fa-icon;
+    @extend .fab;
+    &:before { content: fa-content($fa-var-linkedin); }
   }
   a.twitter {
-    &:before {content: '\f081';}
+    @extend %fa-icon;
+    @extend .fab;
+    &:before { content: fa-content($fa-var-twitter-square); }
   }
   a.youtube {
-    &:before {content: '\f167';}
+    @extend %fa-icon;
+    @extend .fab;
+    &:before { content: fa-content($fa-var-youtube-square); }
   }
 }
 
@@ -145,16 +163,15 @@
   li {
     margin-bottom: 10px;
     @include media-breakpoint-up(md) {
-
     }
   }
 
   a {
     margin-right: 16px;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: $gray-800;
     color: $white;
-    padding: 9px 15px;
+    padding: 15px 15px;
     text-decoration: none;
     text-align: center;
   }
