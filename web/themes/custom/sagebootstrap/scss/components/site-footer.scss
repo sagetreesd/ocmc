@@ -5,7 +5,7 @@
 
 .site-footer {
   padding: $spacer*3 0;
-  color: $gray-600;
+  color: $gray-650;
   font-size: 21px;
   @include media-breakpoint-up(md) {
     font-size: 17px;
@@ -65,13 +65,18 @@
       li {
         a {
           list-style-type: none;
-          color: #000;
+          color: #333;
           border-bottom: 1px dotted #000;
           text-decoration: none;
           padding-bottom: 1px;
           margin-bottom: 8px;
           display: inline-block;
-          font-weight: 600;
+          font-weight: 300;
+
+          &:hover {
+            color: $primary-light;
+            border-bottom: 1px solid #000;
+          }
         }
       }
     }
@@ -103,6 +108,9 @@
     margin-right: 13px;
     padding: 0;
     text-decoration: none;
+    &:before {
+      font-size: 26px;
+    }
     &:hover:before {
       color: $gray-600;
     }
