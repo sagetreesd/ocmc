@@ -47,7 +47,7 @@ function ocmc_mission_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
       $nid = $form_state->getformObject()->getEntity()->id();
       $config = \Drupal::config('system.site');
       $front_uri = $config->get('page.front');
-      $is_homepage = null;
+      $is_homepage = false;
       if (preg_match('/node\/(\d+)/', $front_uri, $matches)) {
         $homepage_nid = $matches[1];
         if ($is_homepage = ($nid === $homepage_nid)) {
@@ -56,7 +56,7 @@ function ocmc_mission_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
         }
       }
     case 'node_page_form':
-      if (!isset($is_homepage) || !is_homepage) {
+      if (!isset($is_homepage) || !$is_homepage) {
         $form['#fieldgroups']['group_homepage_elements']->format_settings['formatter'] = 'closed';
         $form['#fieldgroups']['group_homepage_elements']->format_settings['classes'] = 'hidden';
       }
