@@ -42,7 +42,9 @@ blockquote {
 }
 .node--type-page,
 .node--type-article {
-  margin-bottom: 100px;
+  @include media-breakpoint-up(lg) {
+    //margin-bottom: 100px;
+  }
 }
 .node--type-page.no-bottom-spacing {
   margin-bottom: 0;
