@@ -103,7 +103,8 @@
     justify-content: space-around;
   }
   a {
-    @include add-fontawesome(40px, $primary-shade, true);
+    color: $primary-shade;
+    font-family: 'Font Awesome 5 Brands';
     font-size: 0;
     margin-right: 13px;
     padding: 0;
@@ -116,7 +117,9 @@
     }
   }
   a.facebook {
-    &:before { content: '\f39e';}
+    &:before {
+      content: fa-content($fa-var-facebook-square);
+    }
   }
   a.instagram {
     &:before {content: '\f16d';}
