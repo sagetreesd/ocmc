@@ -4,4 +4,5 @@ status: true
 dependencies: {  }
 id: donate
 label: Donate
-url: 'https://www.sagetree.com'
+url: 'https://www.ocmc.org/donate'
+share_text: 'Donate to the Orthodox Christian Mission Center'

@@ -5,3 +5,4 @@ dependencies: {  }
 id: missionteam_share_url
 label: 'Mission Team Share URL'
 url: 'https://www.ocmc.org/how-we-serve/orthodox-mission-teams'
+share_text: 'The mission teams that serve with the Orthodox Christian Mission Center'

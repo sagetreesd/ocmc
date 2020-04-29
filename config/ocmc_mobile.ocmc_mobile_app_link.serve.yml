@@ -5,3 +5,4 @@ dependencies: {  }
 id: serve
 label: Serve
 url: 'https://www.ocmc.org'
+share_text: 'Serve with the Orthodox Christian Mission Center'

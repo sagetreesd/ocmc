@@ -5,3 +5,4 @@ dependencies: {  }
 id: missionary_share_url
 label: 'Missionary Share URL'
 url: 'https://www.ocmc.org/how-we-serve/missionaries'
+share_text: 'The missionaries that serve with the Orthodox Christian Mission Center'

@@ -11,5 +11,8 @@ ocmc_mobile.ocmc_mobile_app_link.*:
     url:
       type: string
       label: 'URL'
+    share_text:
+      type: string
+      label: 'Share text'
     uuid:
       type: string

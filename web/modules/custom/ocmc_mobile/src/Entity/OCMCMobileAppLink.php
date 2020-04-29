@@ -60,6 +60,13 @@ class OCMCMobileAppLink extends ConfigEntityBase implements OCMCMobileAppLinkInt
   protected $url;
 
   /**
+   * The OCMC Mobile App Link Share Text.
+   *
+   * @var string
+   */
+  protected $share_text;
+
+  /**
    * {@inheritdoc}
    */
   public function access($operation, AccountInterface $account = NULL, $return_as_object = FALSE) {
@@ -89,6 +96,13 @@ class OCMCMobileAppLink extends ConfigEntityBase implements OCMCMobileAppLinkInt
    */
   public function getUrl() {
     return isset($this->url) ? $this->url : NULL;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getShareText() {
+    return isset($this->share_text) ? $this->share_text : NULL;
   }
 
 }

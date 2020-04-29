@@ -46,6 +46,15 @@ class OCMCMobileAppLinkForm extends EntityForm {
       '#required' => TRUE,
     ];
 
+    $form['share_text'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Share Text'),
+      '#maxlength' => 255,
+      '#default_value' => $style->getShareText(),
+      '#description' => $this->t("This gets appended to the text when the link is shared from the app."),
+      '#required' => TRUE,
+    ];
+
     return $form;
   }
 

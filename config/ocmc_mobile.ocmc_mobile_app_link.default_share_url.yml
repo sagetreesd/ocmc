@@ -5,3 +5,4 @@ dependencies: {  }
 id: default_share_url
 label: 'Default Share URL'
 url: 'https://www.ocmc.org/'
+share_text: 'Pray, give and serve with the Orthodox Christian Mission Center'

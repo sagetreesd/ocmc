@@ -16,6 +16,7 @@ class OCMCMobileAppLinkListBuilder extends ConfigEntityListBuilder {
     $header['label'] = $this->t('Link Label');
     $header['id'] = $this->t('Machine Name');
     $header['url'] = $this->t('Link URL');
+    $header['share_text'] = $this->t('Share Text');
     return $header + parent::buildHeader();
   }
 
@@ -26,6 +27,7 @@ class OCMCMobileAppLinkListBuilder extends ConfigEntityListBuilder {
     $row['label'] = $entity->label();
     $row['id'] = $entity->id();
     $row['url'] = $entity->getUrl();
+    $row['share_text'] = $entity->getShareText();
     return $row + parent::buildRow($entity);
   }
 
