@@ -178,7 +178,7 @@
             },
             "drupal/vbo_push_notifications": {
                 "SendPushAction.php execute method is using the wrong view index value in getFieldValue": "https://www.drupal.org/files/issues/2020-04-15/vbo_push_notifications-getFieldValue_views_row_index_adjustment-3128051-2.patch",
-                "Add link to payload": "patches/vbo_push_notifications-add_link_to_payload_data.patch"
+                "Add link to payload": "patches/vbo_push_notifications-add_link_to_payload_data_and_ios_compatibility.patch"
             }
         },
         "build-env": {
