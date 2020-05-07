@@ -9,6 +9,7 @@ dependencies:
   module:
     - datetime
     - eck
+    - taxonomy
     - user
 id: mission_teams
 label: 'Mission Teams'
@@ -295,17 +296,19 @@ display:
             group_items: {  }
           plugin_id: boolean
       sorts:
-        field_country_serving_target_id:
-          id: field_country_serving_target_id
-          table: missionary__field_country_serving
-          field: field_country_serving_target_id
-          relationship: none
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_country_serving
           group_type: group
           admin_label: ''
           order: ASC
           exposed: false
           expose:
             label: ''
+          entity_type: taxonomy_term
+          entity_field: name
           plugin_id: standard
         field_start_end_dates_value:
           id: field_start_end_dates_value
@@ -338,7 +341,16 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_country_serving:
+          id: field_country_serving
+          table: missionary__field_country_serving
+          field: field_country_serving
+          relationship: none
+          group_type: group
+          admin_label: 'field_country_serving: Taxonomy term'
+          required: false
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       css_class: ocmc-columns-view
