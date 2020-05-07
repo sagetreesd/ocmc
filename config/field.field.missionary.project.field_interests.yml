@@ -16,7 +16,7 @@ id: missionary.project.field_interests
 field_name: field_interests
 entity_type: missionary
 bundle: project
-label: Interests
+label: 'Project Type(s)'
 description: ''
 required: false
 translatable: true
