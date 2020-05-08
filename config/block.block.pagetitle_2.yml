@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - block_class
+    - ctools
+    - node
   theme:
     - sagebootstrap
 third_party_settings:
@@ -19,5 +21,19 @@ settings:
   id: page_title_block
   label: 'Page title'
   provider: core
-  label_display: visible
-visibility: {  }
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
