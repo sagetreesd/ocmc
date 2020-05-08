@@ -1,0 +1,31 @@
+uuid: f020ce02-f67c-4703-b680-654e8ad5bab0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.taxonomy_term_missionary_content
+  module:
+    - system
+    - views
+  theme:
+    - sagebootstrap
+id: views_block__missionary_content_taxonomy_block
+theme: sagebootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:taxonomy_term_missionary_content-missionary_content_taxonomy_block'
+settings:
+  id: 'views_block:taxonomy_term_missionary_content-missionary_content_taxonomy_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/taxonomy/term/*\r\n/interests/*"
+    negate: false
+    context_mapping: {  }
