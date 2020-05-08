@@ -157,3 +157,12 @@ blockquote {
   max-width: 100%;
   height: auto;
 }
+
+.context-serve-from-home-parish-ambassadors {
+  .paragraph--type--numbered-list-items {
+    .field--name-field-link-for-numbered-list a {
+      @extend .btn;
+      @extend .btn-secondary;
+    }
+  }
+}
