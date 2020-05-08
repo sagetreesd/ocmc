@@ -44,3 +44,15 @@
 .views-ui-display-tab-actions .dropbutton .form-submit:focus {
     color: $link-color;
 }
+
+#views-exposed-form-news-articles-block-1 {
+  margin-bottom: 15px;
+
+  .form-row>fieldset {
+    flex: 0 0 33%;
+
+    .form-text {
+      margin: 0;
+    }
+  }
+}
