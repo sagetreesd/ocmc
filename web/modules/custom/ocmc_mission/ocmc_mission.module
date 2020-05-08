@@ -4,6 +4,7 @@
  */
 
 use Drupal\Core\Config\Config;
+use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_page_attachments_alter().
@@ -145,4 +146,68 @@ function ocmc_mission_leaflet_map_info_alter(&$map_info) {
  */
 function ocmc_mission_preprocess_page(&$variables) {
   $variables['#attached']['library'][] = 'ocmc_mission/ocmc-mission-disable-number-input-scrolling';
+}
+
+/**
+ * Implements hook_views_pre_view().
+ */
+function ocmc_mission_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
+  if ($view->id() === 'news_articles') {
+    $filters = $view->display_handler->getOption('filters');
+    if (!empty($filters) && isset($filters['field_missionaries_target_id'])) {
+      foreach ($filters['field_missionaries_target_id']['value'] as $key => $filter) {
+        unset($filters['field_missionaries_target_id']['value'][$key]);
+      }
+      $filters['field_missionaries_target_id']['group_info']['group_items'] = _ocmc_mission_get_views_exposed_filters_options_of_missionaries('missionary');
+      unset($filters['field_missionaries_target_id']['expose']['placeholder']);
+      unset($filters['field_missionaries_target_id']['expose']['min_placeholder']);
+      unset($filters['field_missionaries_target_id']['expose']['max_placeholder']);
+      $view->display_handler->overrideOption('filters', $filters);
+    }
+  }
+}
+
+/**
+ * Helper function to configure a views exposed filters.
+ *
+ * @param string $bundle_type
+ *
+ * @return array
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ */
+function _ocmc_mission_get_views_exposed_filters_options_of_missionaries($bundle_type) {
+  $entities = _ocmc_mission_get_missionary_entity_list($bundle_type);
+  $options = [];
+
+  foreach($entities as $id => $entity) {
+    $value = $entity->label();
+
+    if (isset($value)) {
+      $options[$id] = [
+        'title' => $value,
+        'operator' => '=',
+        'value' => [
+          'value' => $id,
+          'min' => '',
+          'max' => '',
+        ]
+      ];
+    }
+  }
+
+  return $options;
+}
+
+/**
+ * Helper function that returns a list of missionary entity items.
+ *
+ * @param string $bundle_type
+ *
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ */
+function _ocmc_mission_get_missionary_entity_list($bundle_type) {
+  $ids = \Drupal::entityQuery('missionary')->condition('type', $bundle_type)->execute();
+  return \Drupal::entityTypeManager()->getStorage('missionary')->loadMultiple($ids);
 }
