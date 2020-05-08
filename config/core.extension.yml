@@ -19,7 +19,6 @@ module:
   colorbox_inline: 0
   config: 0
   consumers: 0
-  contact: 0
   contextual: 0
   ctools: 0
   custom_add_another: 0
@@ -112,8 +111,11 @@ module:
   video_embed_field: 0
   views_bulk_operations: 0
   views_ui: 0
+  webform: 0
+  webform_ui: 0
   menu_link_content: 1
   pathauto: 1
+  webform_bootstrap: 1
   views: 10
   paragraphs: 11
   standard: 1000

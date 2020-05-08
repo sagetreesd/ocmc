@@ -71,6 +71,7 @@
         "drupal/vbo_push_notifications": "1.x-dev",
         "drupal/video_embed_field": "^2.2",
         "drupal/views_bulk_operations": "^3.3",
+        "drupal/webform": "^5.11",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
         "geocoder-php/google-maps-provider": "^4.4",

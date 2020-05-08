@@ -1,0 +1,25 @@
+uuid: 07bc5244-1385-4032-baf3-21420afda9e8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:webform:26044c3e-fc45-42c7-9792-086294f805d0'
+  module:
+    - block_content
+  theme:
+    - sagebootstrap
+id: contact
+theme: sagebootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:26044c3e-fc45-42c7-9792-086294f805d0'
+settings:
+  id: 'block_content:26044c3e-fc45-42c7-9792-086294f805d0'
+  label: contact
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
