@@ -41,11 +41,11 @@
       > .field__item {
         &:first-child {
           padding-right: 68px;
-          width: 500px;
+          flex: 0 0 29%;
         }
 
         &:last-child {
-          width: 60%;
+          flex: 0 0 61%;
         }
       }
     }
@@ -66,7 +66,6 @@
 #leaflet-map-view-missionary-and-mission-team-map-block-1,
 #leaflet-map-view-mission-priest-countries-mission-priest-countries-map-block {
   min-height: 500px;
-  max-width: 1000px;
   width: 100%;
 }
 
