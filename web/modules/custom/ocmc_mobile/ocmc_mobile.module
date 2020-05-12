@@ -118,14 +118,3 @@ function ocmc_mobile_views_pre_view(ViewExecutable $view, $display_id, array &$a
   }
 }
 
-/**
- * Helper function to get a custom list of options for the Missionaries exposed
- * filter.
- *
- * @param string $bundle_type
- *
- * @return array
- * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
- * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
- */
-
