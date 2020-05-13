@@ -22,8 +22,6 @@
     transition: all 200ms ease;
 
     &:hover {
-      padding-bottom: 46px;
-      padding-left: 66px;
       border-style: solid;
       border-width: 6px;
       border-color: #fff;
@@ -38,24 +36,34 @@
 
     @include media-breakpoint-up(md) {
       height: 500px;
-      padding: 0 0 50px 70px;
+      padding: 0;
     }
   }
 
   .field--name-field-cta-link {
-    width: 70%;
+    height: 100%;
+    width: 100%;
+
     a {
       color: $white;
+      display: flex;
       font-size: 31px;
+      height: 100%;
       line-height: 29px;
       text-transform: uppercase;
       text-decoration: none;
       font-weight: bold;
-      @include add-fontawesome(34px, #ffffff, false, after);
-      &:after {
-        content: '  \f054';
-        top: -4px;
-        left: 5px;
+      padding: 0 70px 50px;
+      width: 100%;
+
+      > span {
+        display: inline;
+        margin-top: auto;
+
+        // CSS trickery to prevent the arrow-right icon from breaking to a new line from the last word.
+        > span:last-child {
+          white-space: nowrap;
+        }
       }
 
       @include media-breakpoint-up(md) {
