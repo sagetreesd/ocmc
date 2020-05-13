@@ -56,6 +56,7 @@ permissions:
   - 'revert article revisions'
   - 'revert page revisions'
   - 'send ocmc push notifications'
+  - 'use text format full_html'
   - 'view all revisions'
   - 'view any missionary entities'
   - 'view article revisions'
