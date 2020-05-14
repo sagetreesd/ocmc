@@ -28,9 +28,9 @@
   counter-reset: my-counter;
   display: flex;
   justify-content: center;
-  align-items: top;
   margin-bottom: 50px !important;
   flex-direction: column;
+  flex-wrap: wrap;
   @include media-breakpoint-up(lg) {
     flex-direction: row;
   }
@@ -38,7 +38,7 @@
     counter-increment: my-counter;
     margin-bottom: 50px;
     @include media-breakpoint-up(lg) {
-      width: 330px;
+      flex: 0 0 20%;
       margin-bottom: 0 !important;
     }
     &:before {
