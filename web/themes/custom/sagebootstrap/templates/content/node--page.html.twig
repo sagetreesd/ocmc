@@ -71,6 +71,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
     content.field_no_bottom_spacing.0['#markup'] == "On" ? 'no-bottom-spacing',
+    content.field_color is not empty ? 'section-' ~ content.field_color.0['#markup'] | lower | clean_class
   ]
 %}
 

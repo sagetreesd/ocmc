@@ -7,7 +7,8 @@
       margin-bottom: 60px !important;
     }
   }
-  .field--name-field-description-text {
+  .field--name-field-description-text,
+  .field--name-field-description-html {
     font-size: 18px;
     padding: 0 50px;
     margin: 0 auto 20px;
@@ -51,10 +52,7 @@
       align-items: center;
       border-style: none;
       border-width: 5px;
-      border-color: #fca300;
       border-radius: 200px;
-      background-image: linear-gradient(321deg, $primary-shade, #eebf69 67%);
-      box-shadow: 0 0 0 5px #fff, 0 0 0 7px #f0b13e;
       color: #353f4e;
       font-size: 7em;
       font-weight: 800;
@@ -63,6 +61,34 @@
       margin-bottom: 34px;
     }
   }
+}
+
+.section-blue .field--name-field-numbered-list-item > .field__item:before {
+  background: $fourth-shade;
+  background-image: linear-gradient(321deg, $fourth-shade, lighten($fourth-shade, 10%) 67%);
+  border-color: darken($fourth-shade, 12%);
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px lighten($fourth-shade, 15%);
+}
+
+.section-green .field--name-field-numbered-list-item > .field__item:before {
+  background: $third-shade;
+  background-image: linear-gradient(321deg, $third-shade, lighten($third-shade, 10%) 67%);
+  border-color: darken($third-shade, 12%);
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px lighten($third-shade, 15%);
+}
+
+.section-orange .field--name-field-numbered-list-item > .field__item:before {
+  background: $primary-shade;
+  background-image: linear-gradient(321deg, $primary-shade, #eebf69 67%);
+  border-color: #fca300;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px #f0b13e;
+}
+
+.section-red .field--name-field-numbered-list-item > .field__item:before {
+  background: $accent-shade;
+  background-image: linear-gradient(321deg, $accent-shade, $accent-light 67%);
+  border-color: $accent-dark;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px $accent-light;
 }
 
 

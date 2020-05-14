@@ -3,18 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.numbered_list_item.field_description_text
+    - field.field.paragraph.numbered_list_item.field_description_html
     - paragraphs.paragraphs_type.numbered_list_item
+  module:
+    - text
 id: paragraph.numbered_list_item.default
 targetEntityType: paragraph
 bundle: numbered_list_item
 mode: default
 content:
-  field_description_text:
-    weight: 1
+  field_description_html:
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
 hidden: {  }
