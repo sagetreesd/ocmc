@@ -23,20 +23,16 @@
 {% set classes = [
 'eck-entity',
 ] %}
-<div class="photo-interest-wrapper-outer">
-  <div class="photo-interest-wrapper">
+<div class="photo-team-type-wrapper-outer">
+  <div class="photo-team-type-wrapper">
     {{ content.field_photo }}
-    <div class="field field--name-field-interests field--type-entity-reference field--label-hidden field__items">
-      {% for i in content.field_interests['#items']|keys %}
-        {% if loop.index <= 4 %}
-            <div class="field__item">
-              {{ content.field_interests[i] }}
-            </div>
-        {% endif %}
-      {% endfor %}
+    <div class="field field--name-field-team-type field--label-hidden field__items">
+      <div class="field__item">
+        {{ content.field_team_type }}
+      </div>
     </div>
   </div>
 </div>
 <div{{ attributes.addClass(classes) }}>
-    {{ content|without('field_photo', 'field_interests') }}
+    {{ content|without('field_photo', 'field_team_type') }}
 </div>

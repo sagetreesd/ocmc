@@ -1,9 +1,9 @@
 .view-mission-teams {
-  .photo-interest-wrapper-outer {
+  .photo-team-type-wrapper-outer {
     display: flex;
     justify-content: center;
   }
-  .photo-interest-wrapper {
+  .photo-team-type-wrapper {
     position: relative;
     height: auto;
     overflow: hidden;
@@ -11,22 +11,22 @@
       width: 100%;
       margin-bottom: 30px;
     }
-    .field--name-field-interests {
-      position: absolute;
-      bottom: 33px;
-      left: 10px;
+    > .field--name-field-team-type {
+      background: $white;
+      bottom: 43px;
+      border-radius: 4px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      color: $fourth-shade;
       font-size: 14px;
-      line-height: 16px;
+      margin-bottom: 2px;
+      padding: 3px 7px;
+      position: absolute;
+      left: 13px;
+      line-height: 20px;
+      text-decoration: none;
+
       .field__item {
-        margin-bottom: 8px;
-      }
-      a {
-        background: $white;
-        text-decoration: none;
-        color: $fourth-shade;
-        border-radius: 4px;
-        padding: 2px 4px;
-        margin-bottom: 2px;
+        margin-bottom: 0;
       }
     }
   }
