@@ -43,7 +43,11 @@ function ocmc_mobile_form_views_bulk_operations_configure_action_alter(&$form, &
     $form['push_notification_link']['#type'] = 'entity_autocomplete';
     $form['push_notification_link']['#target_type'] = 'node';
     $form['push_notification_link']['#attributes']['data-autocomplete-first-character-blacklist'] = '/#?';
-    $form['push_notification_link']['#description'] = t('Start typing the title of a piece of content to select it. You can also enter an internal path such as %add-node or an external URL such as %url. Enter %front to link to the front page. Enter %nolink to display link text only.');
+    $form['push_notification_link']['#description'] = t('Start typing the title of a piece of content to select it. You can also enter an internal path such as %add-node or an external URL such as %url (https is required). Enter %front to link to the front page.', [
+      '%add-node' => '/node/add',
+      '%url' => 'https://www.ocmc.org',
+      '%front' => '<front>',
+    ]);
     $form['push_notification_link']['#link_type'] = 17;
     $form['push_notification_link']['#element_validate'][] = [
       'Drupal\link\Plugin\Field\FieldWidget\LinkWidget',
@@ -68,7 +72,8 @@ function ocmc_vbo_push_notification_link_validate(&$form, &$form_state) {
     $value_parts = explode('/', $value);
     $nid = $value_parts[1];
     if ($nid && is_numeric($nid)) {
-      $host = \Drupal::request()->getSchemeAndHttpHost();
+      // https is required for the app.
+      $host = 'https://' . \Drupal::request()->getHttpHost();
       $url = $host . \Drupal::service('path.alias_manager')->getAliasByPath('/node/'. $nid);
       $form_state->setValue('push_notification_link', $url);
       return true;
@@ -76,6 +81,12 @@ function ocmc_vbo_push_notification_link_validate(&$form, &$form_state) {
     else {
       return false;
     }
+  }
+  // Reject if non-https.
+  $start_string = 'http://';
+  if (substr($value, 0, strlen($start_string)) === $start_string) {
+    $form_state->setErrorByName('push_notification_link', t('URL must start with an https://.'));
+    return false;
   }
 }
 
