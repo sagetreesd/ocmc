@@ -16,6 +16,7 @@ dependencies:
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
     - field.field.missionary.missionary.field_published
+    - field.field.missionary.missionary.field_social_media_accounts
     - image.style.thumbnail
   module:
     - geofield
@@ -23,6 +24,7 @@ dependencies:
     - image
     - link
     - metatag
+    - social_media_links_field
     - straw
     - text
 id: missionary.missionary.default
@@ -544,7 +546,7 @@ content:
     type: geolocation_leaflet
     region: content
   field_geofield:
-    weight: 12
+    weight: 13
     settings:
       html5_geolocation: false
     third_party_settings: {  }
@@ -561,7 +563,7 @@ content:
     type: super_term_reference_autocomplete_widget
     region: content
   field_links:
-    weight: 9
+    weight: 10
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -584,7 +586,7 @@ content:
     type: link_default
     region: content
   field_metatags:
-    weight: 11
+    weight: 12
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -605,11 +607,17 @@ content:
     type: image_image
     region: content
   field_published:
-    weight: 10
+    weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_social_media_accounts:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: social_media_links_field_default
     region: content
   title:
     type: string_textfield

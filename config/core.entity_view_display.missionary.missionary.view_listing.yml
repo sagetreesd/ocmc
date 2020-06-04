@@ -17,6 +17,7 @@ dependencies:
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
     - field.field.missionary.missionary.field_published
+    - field.field.missionary.missionary.field_social_media_accounts
     - image.style.medium_landscape_290x210_
   module:
     - image
@@ -66,3 +67,4 @@ hidden:
   field_metatags: true
   field_missionary_status: true
   field_published: true
+  field_social_media_accounts: true

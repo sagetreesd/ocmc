@@ -16,6 +16,7 @@ dependencies:
     - field.field.missionary.missionary.field_missionary_status
     - field.field.missionary.missionary.field_photo
     - field.field.missionary.missionary.field_published
+    - field.field.missionary.missionary.field_social_media_accounts
     - filter.format.plain_text
   module:
     - geofield
@@ -24,6 +25,7 @@ dependencies:
     - link
     - metatag
     - options
+    - social_media_links_field
     - text
 id: missionary.missionary.default
 targetEntityType: missionary
@@ -50,8 +52,8 @@ content:
     label: above
     settings:
       title: ''
-      set_marker: '1'
-      common_map: '1'
+      set_marker: true
+      common_map: true
       data_provider_settings: {  }
       map_provider_id: leaflet
       centre:
@@ -65,7 +67,7 @@ content:
       info_text:
         value: ''
         format: plain_text
-      use_overridden_map_settings: 0
+      use_overridden_map_settings: false
     third_party_settings: {  }
     type: geolocation_map
     region: content
@@ -142,6 +144,15 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_social_media_accounts:
+    weight: 12
+    label: above
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    type: social_media_links_field_default
     region: content
   title:
     label: hidden
