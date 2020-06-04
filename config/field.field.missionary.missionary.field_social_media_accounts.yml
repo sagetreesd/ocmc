@@ -1,0 +1,152 @@
+uuid: 02f93b7a-16ac-4437-a151-43c8b4253f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.missionary.missionary
+    - field.storage.missionary.field_social_media_accounts
+  module:
+    - custom_add_another
+    - social_media_links_field
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: missionary.missionary.field_social_media_accounts
+field_name: field_social_media_accounts
+entity_type: missionary
+bundle: missionary
+label: 'Social Media Accounts'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    platform: null
+    value: null
+    platform_values:
+      tumblr:
+        value: ''
+      pinterest:
+        value: ''
+      bitbucket:
+        value: ''
+      behance:
+        value: ''
+      vkontakte:
+        value: ''
+      rss:
+        value: ''
+      slideshare:
+        value: ''
+      flickr:
+        value: ''
+      email:
+        value: ''
+      instagram:
+        value: ''
+      drupal:
+        value: ''
+      youtube:
+        value: ''
+      twitter:
+        value: ''
+      github:
+        value: ''
+      linkedin:
+        value: ''
+      vimeo:
+        value: ''
+      youtube_channel:
+        value: ''
+      googleplus:
+        value: ''
+      facebook:
+        value: ''
+      contact:
+        value: ''
+default_value_callback: ''
+settings:
+  iconset: 'fontawesome:2x'
+  platforms:
+    facebook:
+      enabled: '1'
+      description: ''
+      weight: '-30'
+    instagram:
+      enabled: '1'
+      description: ''
+      weight: '-29'
+    linkedin:
+      enabled: '1'
+      description: ''
+      weight: '-28'
+    twitter:
+      enabled: '1'
+      description: ''
+      weight: '-27'
+    youtube_channel:
+      enabled: '1'
+      description: ''
+      weight: '-26'
+    tumblr:
+      description: ''
+      weight: '-25'
+      enabled: 0
+    drupal:
+      description: ''
+      weight: '-24'
+      enabled: 0
+    googleplus:
+      description: ''
+      weight: '-23'
+      enabled: 0
+    vimeo:
+      description: ''
+      weight: '-22'
+      enabled: 0
+    github:
+      description: ''
+      weight: '-21'
+      enabled: 0
+    youtube:
+      description: ''
+      weight: '-20'
+      enabled: 0
+    pinterest:
+      description: ''
+      weight: '-19'
+      enabled: 0
+    email:
+      description: ''
+      weight: '-18'
+      enabled: 0
+    flickr:
+      description: ''
+      weight: '-17'
+      enabled: 0
+    slideshare:
+      description: ''
+      weight: '-16'
+      enabled: 0
+    rss:
+      description: ''
+      weight: '-15'
+      enabled: 0
+    vkontakte:
+      description: ''
+      weight: '-14'
+      enabled: 0
+    behance:
+      description: ''
+      weight: '-13'
+      enabled: 0
+    bitbucket:
+      description: ''
+      weight: '-12'
+      enabled: 0
+    contact:
+      description: ''
+      weight: '-11'
+      enabled: 0
+field_type: social_media_links_field
