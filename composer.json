@@ -159,12 +159,8 @@
             "drupal/core": {
                 "Add a \"context\" array variable to all theme hooks and \"#context\" array property to all elements to provide optional contextual data": "https://www.drupal.org/files/issues/2019-04-30/2511548-83.patch",
                 "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch",
-                "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2020-01-08/exposed-filter-notice-2825860-33.patch",
-                "Incorrect filter group OR behavior, LEFT JOIN changed to INNER JOIN": "https://www.drupal.org/files/issues/2019-10-08/1766338-106.patch",
-                "Off canvas filling up localStorage's quota, causing errors": "https://www.drupal.org/files/issues/2020-04-16/3070745-30.patch"
-            },
-            "drupal/eck": {
-                "ECK entity is not working with jsonapi filter": "https://www.drupal.org/files/issues/2020-03-20/eck_entity_is_not_working_with_jsonapi_filter-3025975-11.patch"
+                "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
+                "Incorrect filter group OR behavior, LEFT JOIN changed to INNER JOIN": "https://www.drupal.org/files/issues/2019-10-08/1766338-106.patch"
             },
             "drupal/leaflet_more_maps": {
                 "Stamen https support": "https://www.drupal.org/files/issues/2018-10-18/stamen.https-3007651.2.patch",

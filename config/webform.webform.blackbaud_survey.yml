@@ -1,20 +1,18 @@
+uuid: 563ddc70-741c-4a9c-9e3c-ea66c4e295cb
 langcode: en
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform
+dependencies: {  }
 open: null
 close: null
 weight: 0
-uid: null
+uid: 1
 template: false
 archive: false
-id: contact
-title: Contact
-description: 'Basic email contact webform.'
+id: blackbaud_survey
+title: 'Blackbaud Survey'
+description: 'Blackbaud Survey'
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n  '#submit__attributes':\n    class:\n      - mt-3"
+elements: "'#action': 'https://secure2.convio.net/ocmc/site/SSurvey'\ncons_info_component:\n  '#type': hidden\n  '#title': 'Info Component'\n  '#default_value': t\ncons_first_name:\n  '#type': textfield\n  '#title': 'First Name'\n  '#maxlength': 50\n  '#size': 32\n  '#required': true\ncons_last_name:\n  '#type': textfield\n  '#title': 'Last Name'\n  '#maxlength': 50\n  '#size': 32\n  '#required': true\ncons_email:\n  '#type': email\n  '#title': Email\n  '#maxlength': 255\n  '#size': 32\n  '#required': true\ncons_mail_opt_in:\n  '#type': hidden\n  '#title': 'Mail Opt In'\n  '#default_value': t\ncons_email_opt_in:\n  '#type': checkbox\n  '#title': 'Please check this box to receive or continue receiving periodic email updates from Orthodox Christian Mission Center'\n  '#required': true\n  '#default_value': true\ncons_email_opt_in_requested:\n  '#type': hidden\n  '#title': 'Email Opt In Requested'\n  '#default_value': 'true'\nsurvey_id:\n  '#type': hidden\n  '#title': 'Survey ID'\n  '#default_value': '1503'\n  '#name': SURVEY_ID\n  '#id': SURVEY_ID\ndenysubmit:\n  '#type': textfield\n  '#title': 'Spam Control Text'\n  '#description': 'Please leave this field empty'\n  '#wrapper_attributes':\n    style: 'display:none'\n  '#attributes':\n    name: denySubmit\n    alt: 'This field is used to prevent form submission by scripts'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Submit\n  '#submit__attributes':\n    name: ACTION_SUBMIT_SURVEY_RESPONSE\n    id: ACTION_SUBMIT_SURVEY_RESPONSE"
 css: ''
 javascript: ''
 settings:
@@ -49,7 +47,7 @@ settings:
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
-  form_autofocus: true
+  form_autofocus: false
   form_details_toggle: false
   form_access_denied: default
   form_access_denied_title: ''
@@ -106,10 +104,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: page
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
-  confirmation_url: '<front>'
+  confirmation_message: ''
+  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -183,80 +181,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email_confirmation:
-    id: email
-    label: 'Email confirmation'
-    handler_id: email_confirmation
-    status: true
-    conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: '[webform_submission:values:email:raw]'
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-  email_notification:
-    id: email
-    label: 'Email notification'
-    handler_id: email_notification
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: _default
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
-      from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
+handlers: {  }
 variants: {  }
-uuid: c7b9716b-d2ef-4b72-ae4a-1b94012844c8
-_core:
-  default_config_hash: kwZVwIX7pVsR7yoEws_rwdWfn1Gr6l24w4ibCEvF5Js
