@@ -117,3 +117,8 @@ Thumbs.db
 .sass-cache
 /.drush-lock-update
 /.gitattributes
+
+# NPM #
+#######
+
+/web/themes/custom/sagebootstrap/node_modules/
