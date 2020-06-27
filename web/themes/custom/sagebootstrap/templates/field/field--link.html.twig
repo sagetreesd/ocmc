@@ -39,17 +39,17 @@
 #}
 {%
   set classes = [
-    'field',
-    'field--name-' ~ field_name|clean_class,
-    'field--type-' ~ field_type|clean_class,
-    'field--label-' ~ label_display,
-  ]
+  'field',
+  'field--name-' ~ field_name|clean_class,
+  'field--type-' ~ field_type|clean_class,
+  'field--label-' ~ label_display,
+]
 %}
 {%
   set title_classes = [
-    'field__label',
-    label_display == 'visually_hidden' ? 'visually-hidden',
-  ]
+  'field__label',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
 %}
 
 {% if label_hidden %}
@@ -59,7 +59,7 @@
         <div{{ item.attributes.addClass('field__item') }}>
           {% if is_front %}
             {{ item.content }}
-            {% else %}<a href="{{ element.0['#url_title'] }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
+          {% else %}<a href="{{ element.0['#url'].getUri() }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
           {% endif %}
         </div>
       {% endfor %}
@@ -69,7 +69,7 @@
       <div{{ attributes.addClass(classes, 'field__item') }}>
         {% if is_front %}
           {{ item.content }}
-        {% else %}<a href="{{ element.0['#url_title'] }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
+        {% else %}<a href="{{ element.0['#url'].getUri() }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
         {% endif %}
       </div>
     {% endfor %}
@@ -78,18 +78,18 @@
   <div{{ attributes.addClass(classes) }}>
     <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
     {% if multiple %}
-      <div class='field__items'>
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field__item') }}>
-        {% if is_front %}
-          {{ item.content }}
-        {% else %}<a href="{{ element.0['#url_title'] }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
-        {% endif %}
-      </div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
+    <div class='field__items'>
+      {% endif %}
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field__item') }}>
+          {% if is_front %}
+            {{ item.content }}
+          {% else %}<a href="{{ element.0['#url'].getUri() }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+      {% if multiple %}
+    </div>
     {% endif %}
   </div>
 {% endif %}
