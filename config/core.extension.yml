@@ -47,6 +47,7 @@ module:
   geolocation: 0
   geolocation_geofield: 0
   geolocation_leaflet: 0
+  google_tag: 0
   help: 0
   history: 0
   image: 0
