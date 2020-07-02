@@ -59,7 +59,7 @@
         <div{{ item.attributes.addClass('field__item') }}>
           {% if is_front %}
             {{ item.content }}
-          {% else %}<a href="{{ element.0['#url'].getUri() }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
+          {% else %}<a href="{{ element.0['#url'] }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
           {% endif %}
         </div>
       {% endfor %}
@@ -69,7 +69,7 @@
       <div{{ attributes.addClass(classes, 'field__item') }}>
         {% if is_front %}
           {{ item.content }}
-        {% else %}<a href="{{ element.0['#url'].getUri() }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
+        {% else %}<a href="{{ element.0['#url'] }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
         {% endif %}
       </div>
     {% endfor %}
@@ -84,7 +84,7 @@
         <div{{ item.attributes.addClass('field__item') }}>
           {% if is_front %}
             {{ item.content }}
-          {% else %}<a href="{{ element.0['#url'].getUri() }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
+          {% else %}<a href="{{ element.0['#url'] }}" class="btn btn-primary">{{ element.0['#title'] }}</a>
           {% endif %}
         </div>
       {% endfor %}
