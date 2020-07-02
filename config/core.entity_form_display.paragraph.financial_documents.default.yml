@@ -3,23 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.financial_documents.field_link_to_financial_report
+    - field.field.paragraph.financial_documents.field_finanacial_document
     - field.field.paragraph.financial_documents.field_title
     - paragraphs.paragraphs_type.financial_documents
   module:
-    - link
+    - file
 id: paragraph.financial_documents.default
 targetEntityType: paragraph
 bundle: financial_documents
 mode: default
 content:
-  field_link_to_financial_report:
-    weight: 1
+  field_finanacial_document:
+    weight: 3
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      progress_indicator: throbber
     third_party_settings: {  }
-    type: link_default
+    type: file_generic
     region: content
   field_title:
     weight: 0

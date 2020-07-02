@@ -1,0 +1,11 @@
+uuid: 8b95a5af-65e7-4295-9a91-01ca8080964d
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_media
+label: 'Bulk Update Media Fields'
+type: media
+plugin: bulk_update_fields_action_base
+configuration: {  }

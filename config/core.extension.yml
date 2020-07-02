@@ -61,6 +61,8 @@ module:
   leaflet_widget: 0
   link: 0
   link_attributes: 0
+  media: 0
+  media_library: 0
   menu_ui: 0
   metatag: 0
   metatag_open_graph: 0

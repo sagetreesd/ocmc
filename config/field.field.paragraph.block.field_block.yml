@@ -23,15 +23,17 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  plugin_ids:
-    'views_block:missionaries_listing-no_country_missionaries_block': 'views_block:missionaries_listing-no_country_missionaries_block'
-    'views_block:missionaries_listing-missionaries_listing_block': 'views_block:missionaries_listing-missionaries_listing_block'
-    'views_block:missionary_and_mission_team_map-block_1': 'views_block:missionary_and_mission_team_map-block_1'
-    'views_block:mission_priest_countries-mission_priest_countries_listing_block': 'views_block:mission_priest_countries-mission_priest_countries_listing_block'
-    'views_block:mission_priest_countries-mission_priest_countries_map_block': 'views_block:mission_priest_countries-mission_priest_countries_map_block'
-    'views_block:mission_projects-mission_projects_listing_block': 'views_block:mission_projects-mission_projects_listing_block'
-    'views_block:mission_teams-mission_teams_listing_block': 'views_block:mission_teams-mission_teams_listing_block'
-    'views_block:missionaries_listing-multi_country_personnel_missinoaries_block': 'views_block:missionaries_listing-multi_country_personnel_missinoaries_block'
-    'views_block:news_articles-block_1': 'views_block:news_articles-block_1'
-    webform_block: webform_block
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:missionaries_listing-no_country_missionaries_block': 'views_block:missionaries_listing-no_country_missionaries_block'
+      'views_block:missionaries_listing-missionaries_listing_block': 'views_block:missionaries_listing-missionaries_listing_block'
+      'views_block:missionary_and_mission_team_map-block_1': 'views_block:missionary_and_mission_team_map-block_1'
+      'views_block:mission_priest_countries-mission_priest_countries_listing_block': 'views_block:mission_priest_countries-mission_priest_countries_listing_block'
+      'views_block:mission_priest_countries-mission_priest_countries_map_block': 'views_block:mission_priest_countries-mission_priest_countries_map_block'
+      'views_block:mission_projects-mission_projects_listing_block': 'views_block:mission_projects-mission_projects_listing_block'
+      'views_block:mission_teams-mission_teams_listing_block': 'views_block:mission_teams-mission_teams_listing_block'
+      'views_block:missionaries_listing-multi_country_personnel_missinoaries_block': 'views_block:missionaries_listing-multi_country_personnel_missinoaries_block'
+      'views_block:news_articles-block_1': 'views_block:news_articles-block_1'
+      webform_block: webform_block
 field_type: block_field

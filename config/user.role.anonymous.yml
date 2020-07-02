@@ -18,4 +18,5 @@ permissions:
   - 'use text format restricted_html'
   - 'view any missionary entities'
   - 'view any ocmc_mobile_content entities'
+  - 'view media'
   - 'view ocmc mobile app links'
