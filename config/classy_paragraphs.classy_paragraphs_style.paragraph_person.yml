@@ -1,0 +1,7 @@
+uuid: 706e2687-9dc4-4119-a562-776ab032e524
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_person
+label: 'Paragraph: Person'
+classes: paragraphs-person

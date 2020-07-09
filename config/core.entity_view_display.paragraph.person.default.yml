@@ -33,7 +33,7 @@ content:
     region: content
   field_photo:
     weight: 2
-    label: above
+    label: hidden
     settings:
       image_style: column_image
       image_link: ''
