@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.person.field_name
     - field.field.paragraph.person.field_photo
     - field.field.paragraph.person.field_title
+    - image.style.column_image
     - paragraphs.paragraphs_type.person
   module:
     - image
@@ -34,7 +35,7 @@ content:
     weight: 2
     label: above
     settings:
-      image_style: ''
+      image_style: column_image
       image_link: ''
     third_party_settings: {  }
     type: image
