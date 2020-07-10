@@ -20,6 +20,7 @@ permissions:
   - 'access user profiles'
   - 'access webform overview'
   - 'access webform submission user'
+  - 'administer blocks'
   - 'administer eck entities'
   - 'administer media'
   - 'administer menu'

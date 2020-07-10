@@ -33,11 +33,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
+    uuid: c338005f-f36e-4a94-a797-fe95dc37aeee
+    alt: 'OCMC Staff Member'
+    title: 'OCMC Staff Member'
+    width: 1404
+    height: 958
   handler: 'default:file'
   handler_settings: {  }
 field_type: image
