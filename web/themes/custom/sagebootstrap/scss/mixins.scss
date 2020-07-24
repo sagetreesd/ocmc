@@ -65,3 +65,31 @@ $value in $theme-colors {
 @mixin purple-background() {
   background: mediumpurple;
 }
+
+@mixin gradient-green() {
+  background: $third-shade;
+  background-image: linear-gradient(321deg, $third-shade, lighten($third-shade, 10%) 67%);
+  border-color: darken($third-shade, 12%);
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px lighten($third-shade, 15%);
+}
+
+@mixin gradient-orange() {
+  background: $primary-shade;
+  background-image: linear-gradient(321deg, $primary-shade, #eebf69 67%);
+  border-color: #fca300;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px #f0b13e;
+}
+
+@mixin gradient-red() {
+  background: $accent-shade;
+  background-image: linear-gradient(321deg, $accent-shade, $accent-light 67%);
+  border-color: $accent-dark;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px $accent-light;
+}
+
+@mixin gradient-blue() {
+  background: $fourth-shade;
+  background-image: linear-gradient(321deg, $fourth-shade, lighten($fourth-shade, 10%) 67%);
+  border-color: darken($fourth-shade, 12%);
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px lighten($fourth-shade, 15%);
+}

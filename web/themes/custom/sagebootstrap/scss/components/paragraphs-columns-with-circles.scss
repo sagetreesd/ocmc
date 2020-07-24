@@ -64,31 +64,19 @@
 }
 
 .section-blue .field--name-field-numbered-list-item > .field__item:before {
-  background: $fourth-shade;
-  background-image: linear-gradient(321deg, $fourth-shade, lighten($fourth-shade, 10%) 67%);
-  border-color: darken($fourth-shade, 12%);
-  box-shadow: 0 0 0 5px #fff, 0 0 0 7px lighten($fourth-shade, 15%);
+  @include gradient-blue;
 }
 
 .section-green .field--name-field-numbered-list-item > .field__item:before {
-  background: $third-shade;
-  background-image: linear-gradient(321deg, $third-shade, lighten($third-shade, 10%) 67%);
-  border-color: darken($third-shade, 12%);
-  box-shadow: 0 0 0 5px #fff, 0 0 0 7px lighten($third-shade, 15%);
+  @include gradient-green;
 }
 
 .section-orange .field--name-field-numbered-list-item > .field__item:before {
-  background: $primary-shade;
-  background-image: linear-gradient(321deg, $primary-shade, #eebf69 67%);
-  border-color: #fca300;
-  box-shadow: 0 0 0 5px #fff, 0 0 0 7px #f0b13e;
+  @include gradient-orange;
 }
 
 .section-red .field--name-field-numbered-list-item > .field__item:before {
-  background: $accent-shade;
-  background-image: linear-gradient(321deg, $accent-shade, $accent-light 67%);
-  border-color: $accent-dark;
-  box-shadow: 0 0 0 5px #fff, 0 0 0 7px $accent-light;
+  @include gradient-red;
 }
 
 
@@ -108,6 +96,18 @@
     height: 200px;
     width:200px;
     margin: 0 auto 34px;
+    .section-blue & {
+      background-image: radial-gradient(circle farthest-corner at 50% 50%, lighten($fourth-shade, 20%) 41%, $fourth-shade);
+    }
+    .section-green & {
+      background-image: radial-gradient(circle farthest-corner at 50% 50%, lighten($third-shade, 20%) 41%, $third-shade);
+    }
+    .section-orange & {
+      background-image: radial-gradient(circle farthest-corner at 50% 50%, lighten($primary-shade, 20%) 41%, $primary-shade);
+    }
+    .section-red & {
+      background-image: radial-gradient(circle farthest-corner at 50% 50%, lighten($accent-shade, 20%) 41%, $accent-shade);
+    }
     i {
       color: $gray-800;
     }
