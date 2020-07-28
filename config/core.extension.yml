@@ -97,6 +97,7 @@ module:
   settings_tray: 0
   shortcut: 0
   simple_oauth: 0
+  simple_sitemap: 0
   simple_styleguide: 0
   smart_trim: 0
   social_media_links: 0
