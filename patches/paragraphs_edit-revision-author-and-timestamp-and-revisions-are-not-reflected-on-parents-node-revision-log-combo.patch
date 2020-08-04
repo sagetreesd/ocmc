@@ -1,0 +1,66 @@
+diff --git a/paragraphs_edit.services.yml b/paragraphs_edit.services.yml
+index 463ae38..df739a6 100644
+--- a/paragraphs_edit.services.yml
++++ b/paragraphs_edit.services.yml
+@@ -3,4 +3,4 @@ services:
+     class: Drupal\paragraphs_edit\ParagraphLineageInspector
+   paragraphs_edit.lineage.revisioner:
+     class: Drupal\paragraphs_edit\ParagraphLineageRevisioner
+-    arguments: ['@paragraphs_edit.lineage.inspector', '@entity_type.manager']
++    arguments: ['@paragraphs_edit.lineage.inspector', '@entity_type.manager', '@datetime.time']
+diff --git a/src/ParagraphLineageRevisioner.php b/src/ParagraphLineageRevisioner.php
+index d2cab2a..d650412 100644
+--- a/src/ParagraphLineageRevisioner.php
++++ b/src/ParagraphLineageRevisioner.php
+@@ -2,6 +2,7 @@
+ 
+ namespace Drupal\paragraphs_edit;
+ 
++use Drupal\Component\Datetime\TimeInterface;
+ use Drupal\Core\Entity\ContentEntityInterface;
+ use Drupal\Core\Entity\EntityInterface;
+ use Drupal\Core\Entity\EntityTypeManagerInterface;
+@@ -22,6 +23,13 @@ class ParagraphLineageRevisioner {
+    */
+   protected $entityTypeManager;
+ 
++  /**
++   * The time service.
++   *
++   * @var \Drupal\Component\Datetime\TimeInterface
++   */
++  protected $time;
++
+   /**
+    * Construct a new ParagraphLineageRevisioner object.
+    *
+@@ -29,10 +37,13 @@ class ParagraphLineageRevisioner {
+    *   Provides paragraphs_edit.lineage.inspector service.
+    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+    *   Provides  service.
++   * @param \Drupal\Component\Datetime\TimeInterface $time
++   *   Provides time.
+    */
+-  public function __construct(ParagraphLineageInspector $lineage_inspector, EntityTypeManagerInterface $entity_type_manager) {
++  public function __construct(ParagraphLineageInspector $lineage_inspector, EntityTypeManagerInterface $entity_type_manager, TimeInterface $time) {
+     $this->lineageInspector = $lineage_inspector;
+     $this->entityTypeManager = $entity_type_manager;
++    $this->time = $time;
+   }
+ 
+   /**
+@@ -78,7 +89,13 @@ class ParagraphLineageRevisioner {
+     }
+ 
+     try {
+-      $entity->setNewRevision();
++      $storage = $this->entityTypeManager->getStorage($entity->getEntityTypeId());
++      $entity = $storage->createRevision($entity);
++
++      if ($entity instanceof RevisionLogInterface) {
++        $entity->setRevisionCreationTime($this->time->getRequestTime());
++        $entity->setRevisionUserId(\Drupal::currentUser()->id());
++      }
+     }
+     catch (\LogicException $e) {
+       // A content entity not necessarily supports revisioning.
