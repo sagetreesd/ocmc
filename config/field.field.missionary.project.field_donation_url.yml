@@ -17,7 +17,7 @@ field_name: field_donation_url
 entity_type: missionary
 bundle: project
 label: 'Donation URL'
-description: ''
+description: ' Note: Make sure to use <strong>https://</strong> to make sure the links work correctly for the iOS app.'
 required: false
 translatable: false
 default_value: {  }

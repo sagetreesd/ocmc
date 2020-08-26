@@ -17,7 +17,7 @@ field_name: field_luminate_link
 entity_type: missionary
 bundle: missionary
 label: 'Luminate Link'
-description: 'URL to the Missionary''s Luminate page.'
+description: 'URL to the Missionary''s Luminate page. Note: Make sure to use <strong>https://</strong> to make sure the links work correctly for the iOS app.'
 required: false
 translatable: false
 default_value: {  }

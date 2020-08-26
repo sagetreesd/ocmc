@@ -17,7 +17,7 @@ field_name: field_team_raiser_link
 entity_type: missionary
 bundle: missionary_team
 label: 'Team Raiser Link'
-description: 'URL to the Mission Team''s Team Raiser page.'
+description: 'URL to the Mission Team''s Team Raiser page. Note: Make sure to use <strong>https://</strong> to make sure the links work correctly for the iOS app.'
 required: false
 translatable: false
 default_value: {  }
