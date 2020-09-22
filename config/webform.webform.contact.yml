@@ -1,12 +1,9 @@
-uuid: c7b9716b-d2ef-4b72-ae4a-1b94012844c8
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform
-_core:
-  default_config_hash: kwZVwIX7pVsR7yoEws_rwdWfn1Gr6l24w4ibCEvF5Js
 open: null
 close: null
 weight: 0
@@ -29,7 +26,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
@@ -89,11 +86,19 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -139,6 +144,7 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -216,13 +222,13 @@ handlers:
       html: true
       attachments: false
       twig: false
-      theme_name: ''
-      parameters: {  }
       debug: false
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
+      theme_name: ''
+      parameters: {  }
   email_notification:
     id: email
     label: 'Email notification'
@@ -252,11 +258,14 @@ handlers:
       html: true
       attachments: false
       twig: false
-      theme_name: ''
-      parameters: {  }
       debug: false
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
+      theme_name: ''
+      parameters: {  }
 variants: {  }
+uuid: c7b9716b-d2ef-4b72-ae4a-1b94012844c8
+_core:
+  default_config_hash: kwZVwIX7pVsR7yoEws_rwdWfn1Gr6l24w4ibCEvF5Js

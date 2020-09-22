@@ -39,7 +39,7 @@
         "drupal/eck": "1.x-dev",
         "drupal/entity_browser": "^2.3",
         "drupal/entity_usage": "^2.0.0-beta1",
-        "drupal/environment_indicator": "^3.7",
+        "drupal/environment_indicator": "^4.0",
         "drupal/field_group": "^3.0-rc2",
         "drupal/firebase": "^2.0",
         "drupal/geocoder": "^3.0-beta5",
