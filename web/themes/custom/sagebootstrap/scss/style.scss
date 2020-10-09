@@ -119,6 +119,10 @@ blockquote {
   }
 }
 
+.node--type-article.node--view-mode-teaser .field--name-field-section-content > .field__item {
+  margin-bottom: 0;
+}
+
 .yellow {
   color: $primary-shade;
 }
