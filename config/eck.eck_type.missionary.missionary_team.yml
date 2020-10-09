@@ -5,5 +5,5 @@ dependencies:
   config:
     - eck.eck_entity_type.missionary
 type: missionary_team
-name: 'Missionary Team'
+name: 'Mission Team'
 description: ''
