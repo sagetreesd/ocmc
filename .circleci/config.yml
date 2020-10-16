@@ -2,6 +2,9 @@
 defaults: &defaults
   docker:
     - image: quay.io/pantheon-public/build-tools-ci:6.x
+      auth:
+        username: johnbocaligsage  # can specify string literal values
+        password: $QUAYIO_PASSWORD  # or project environment variable reference
   working_directory: ~/example_drops_8_composer
   environment:
     #=========================================================================
