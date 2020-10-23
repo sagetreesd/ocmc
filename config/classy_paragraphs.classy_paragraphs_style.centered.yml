@@ -3,5 +3,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: centered
-label: Centered
+label: 'Center the section content horizontally in wide containers'
 classes: "container\r\npy-5"

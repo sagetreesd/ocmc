@@ -20,6 +20,10 @@ settings:
             - Bold
             - Italic
             - Styles
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
         -
           name: Linking
           items:
@@ -44,10 +48,10 @@ settings:
           items:
             - Source
   plugins:
-    stylescombo:
-      styles: "span.yellow|Yellow\r\nspan.highlight|Highlight"
     language:
       language_list: un
+    stylescombo:
+      styles: "span.yellow|Yellow\r\nspan.highlight|Highlight"
 image_upload:
   status: true
   scheme: public
