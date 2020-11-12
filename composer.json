@@ -66,6 +66,7 @@
         "drupal/simple_sitemap": "^3.7",
         "drupal/simple_styleguide": "^1.6",
         "drupal/smart_trim": "^1.2",
+        "drupal/smtp": "^1.0",
         "drupal/social_media_links": "^2.6",
         "drupal/straw": "^1.2",
         "drupal/twig_field_value": "^1.2",
@@ -161,6 +162,9 @@
                 "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch",
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
                 "Incorrect filter group OR behavior, LEFT JOIN changed to INNER JOIN": "https://www.drupal.org/files/issues/2019-10-08/1766338-106.patch"
+            },
+            "drupal/firebase": {
+                "when sending of notification fails throw an error": "https://www.drupal.org/files/issues/2020-10-29/firebase_when-sending-of-notification-fails-throw-an-error_3179715-2.patch"
             },
             "drupal/leaflet_more_maps": {
                 "Stamen https support": "https://www.drupal.org/files/issues/2018-10-18/stamen.https-3007651.2.patch",
