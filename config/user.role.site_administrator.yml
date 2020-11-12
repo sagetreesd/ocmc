@@ -31,6 +31,7 @@ permissions:
   - 'administer menu'
   - 'administer nodes'
   - 'administer ocmc mobile app links'
+  - 'administer ocmc mobile devices'
   - 'administer redirect settings'
   - 'administer redirects'
   - 'administer site configuration'

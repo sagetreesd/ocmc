@@ -1,9 +1,12 @@
+uuid: c7b9716b-d2ef-4b72-ae4a-1b94012844c8
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform
+_core:
+  default_config_hash: kwZVwIX7pVsR7yoEws_rwdWfn1Gr6l24w4ibCEvF5Js
 open: null
 close: null
 weight: 0
@@ -239,15 +242,15 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: niko@ocmc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: communications@ocmc.org
       from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
+      from_name: OCMC.org
       subject: '[webform_submission:values:subject:raw]'
       body: '[webform_submission:values:message:value]'
       excluded_elements: {  }
@@ -266,6 +269,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: c7b9716b-d2ef-4b72-ae4a-1b94012844c8
-_core:
-  default_config_hash: kwZVwIX7pVsR7yoEws_rwdWfn1Gr6l24w4ibCEvF5Js
