@@ -59,6 +59,7 @@
         "drupal/paragraphs_frontend_ui": "^2.0-alpha2",
         "drupal/pathauto": "^1.6",
         "drupal/rabbit_hole": "^1.0-beta6",
+        "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.5",
         "drupal/schema_metatag": "^1.4",
         "drupal/search_kint": "^1.0",
