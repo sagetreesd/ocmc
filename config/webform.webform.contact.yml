@@ -212,9 +212,9 @@ handlers:
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      from_mail: _default
+      from_mail: web@ocmc.org
       from_options: {  }
-      from_name: _default
+      from_name: OCMC.org
       subject: '[webform_submission:values:subject:raw]'
       body: '[webform_submission:values:message:value]'
       excluded_elements: {  }
@@ -242,17 +242,17 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: niko@ocmc.org
+      to_mail: missions@ocmc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      from_mail: communications@ocmc.org
+      from_mail: web@ocmc.org
       from_options: {  }
-      from_name: OCMC.org
+      from_name: '[webform_submission:author:display-name]'
       subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      body: "<ul>\r\n\t<li>Submitted on [webform_submission:created]</li>\r\n\t<li>Submitted by: [webform_submission:user]</li>\r\n\t<li>Submitted values are:</li>\r\n\t<li>[webform_submission:values]</li>\r\n</ul>"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
