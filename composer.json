@@ -160,6 +160,9 @@
             "bower-asset"
         ],
         "patches": {
+            "drupal/captcha": {
+                "Captcha Session ID broken with cacheable captcha backends": "https://git.drupalcode.org/project/captcha/-/merge_requests/1.patch"
+            },
             "drupal/core": {
                 "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch",
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",

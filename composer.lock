@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a2bf1037b3949077d1ada93f4f640f0",
+    "content-hash": "080ee64329ead9d7af814b23dd8b2793",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1891,6 +1891,9 @@
                 },
                 "branch-alias": {
                     "dev-8.x-1.x": "1.x-dev"
+                },
+                "patches_applied": {
+                    "Captcha Session ID broken with cacheable captcha backends": "https://git.drupalcode.org/project/captcha/-/merge_requests/1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
