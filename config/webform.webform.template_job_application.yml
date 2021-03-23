@@ -1,23 +1,23 @@
-uuid: c7b9716b-d2ef-4b72-ae4a-1b94012844c8
+uuid: f3234215-3b97-41c3-9556-40cb9241dafd
 langcode: en
-status: open
+status: closed
 dependencies:
   enforced:
     module:
-      - webform
+      - webform_templates
 _core:
-  default_config_hash: kwZVwIX7pVsR7yoEws_rwdWfn1Gr6l24w4ibCEvF5Js
+  default_config_hash: c3aJwDN6tfL6do0lI8eoH2eh19rULbw6fTuCww14BKw
 open: null
 close: null
 weight: 0
 uid: null
-template: false
+template: true
 archive: false
-id: contact
-title: Contact
-description: 'Basic email contact webform.'
+id: template_job_application
+title: 'Job Application'
+description: 'A job application webform template.'
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nflexbox:\n  '#type': webform_flexbox\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\nurl:\n  '#type': url\n  '#title': Website\n  '#wrapper_attributes':\n    style: 'display:none'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n  '#submit__attributes':\n    class:\n      - mt-3"
+elements: "information:\n  '#title': 'Your Information'\n  '#type': webform_section\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  gender:\n    '#type': webform_radios_other\n    '#title': Gender\n    '#options': gender\n    '#required': true\ncontact_information:\n  '#title': 'Contact Information'\n  '#type': webform_section\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#title_display': invisible\n    '#name__access': false\n    '#company__access': false\nresume:\n  '#title': 'Your Resume'\n  '#type': webform_section\n  resume_method:\n    '#type': radios\n    '#options':\n      attach: 'Attach resume file'\n      paste: 'Paste your resume'\n    '#prefix': '<div class=\"container-inline\">'\n    '#suffix': '</div>'\n    '#default_value': attach\n  resume_file:\n    '#type': managed_file\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      required:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: attach\n  resume_text:\n    '#type': textarea\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      required:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: paste\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
 css: ''
 javascript: ''
 settings:
@@ -52,7 +52,7 @@ settings:
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
-  form_autofocus: true
+  form_autofocus: false
   form_details_toggle: false
   form_access_denied: default
   form_access_denied_title: ''
@@ -117,10 +117,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: page
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
-  confirmation_url: '<front>'
+  confirmation_message: 'Thank you for applying.'
+  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -196,27 +196,27 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  email_confirmation:
+  email_notification:
     id: email
-    label: 'Email confirmation'
-    handler_id: email_confirmation
+    label: 'Email Notification'
+    handler_id: email_notification
     status: true
     conditions: {  }
     weight: 1
     settings:
       states:
         - completed
-      to_mail: '[webform_submission:values:email:raw]'
+      to_mail: _default
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      from_mail: web@ocmc.org
+      from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
-      from_name: OCMC.org
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -225,47 +225,11 @@ handlers:
       html: true
       attachments: false
       twig: false
+      theme_name: ''
+      parameters: {  }
       debug: false
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      theme_name: ''
-      parameters: {  }
-  email_notification:
-    id: email
-    label: 'Email notification'
-    handler_id: email_notification
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: missions@ocmc.org
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: web@ocmc.org
-      from_options: {  }
-      from_name: '[webform_submission:author:display-name]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: "<ul>\r\n\t<li>Submitted on [webform_submission:created]</li>\r\n\t<li>Submitted by: [webform_submission:user]</li>\r\n\t<li>Submitted values are:</li>\r\n\t<li>[webform_submission:values]</li>\r\n</ul>"
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      theme_name: ''
-      parameters: {  }
 variants: {  }

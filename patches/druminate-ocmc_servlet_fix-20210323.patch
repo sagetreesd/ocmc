@@ -1,0 +1,65 @@
+diff --git a/modules/druminate_webforms/src/Plugin/DruminateEndpoint/GetSurvey.php b/modules/druminate_webforms/src/Plugin/DruminateEndpoint/GetSurvey.php
+index 9804947..2d98c65 100644
+--- a/modules/druminate_webforms/src/Plugin/DruminateEndpoint/GetSurvey.php
++++ b/modules/druminate_webforms/src/Plugin/DruminateEndpoint/GetSurvey.php
+@@ -11,7 +11,7 @@ use Drupal\druminate\Plugin\DruminateEndpointInterface;
+  * @DruminateEndpoint(
+  *  id = "getSurvey",
+  *  label = @Translation("List Survey Api."),
+- *  servlet = "CRSurveyAPI",
++ *  servlet = "site/CRSurveyAPI",
+  *  method = "getSurvey",
+  *  authRequired = TRUE,
+  *  cacheLifetime = 0,
+diff --git a/modules/druminate_webforms/src/Plugin/DruminateEndpoint/ListSurveys.php b/modules/druminate_webforms/src/Plugin/DruminateEndpoint/ListSurveys.php
+index 58cbbcb..d5d3de0 100644
+--- a/modules/druminate_webforms/src/Plugin/DruminateEndpoint/ListSurveys.php
++++ b/modules/druminate_webforms/src/Plugin/DruminateEndpoint/ListSurveys.php
+@@ -11,7 +11,7 @@ use Drupal\druminate\Plugin\DruminateEndpointInterface;
+  * @DruminateEndpoint(
+  *  id = "listSurveys",
+  *  label = @Translation("List Survey Api."),
+- *  servlet = "CRSurveyAPI",
++ *  servlet = "site/CRSurveyAPI",
+  *  method = "listSurveys",
+  *  authRequired = FALSE,
+  *  cacheLifetime = 0,
+diff --git a/modules/druminate_webforms/src/Plugin/DruminateEndpoint/SubmitSurvey.php b/modules/druminate_webforms/src/Plugin/DruminateEndpoint/SubmitSurvey.php
+index e324d8c..6246324 100644
+--- a/modules/druminate_webforms/src/Plugin/DruminateEndpoint/SubmitSurvey.php
++++ b/modules/druminate_webforms/src/Plugin/DruminateEndpoint/SubmitSurvey.php
+@@ -11,7 +11,7 @@ use Drupal\druminate\Plugin\DruminateEndpointInterface;
+  * @DruminateEndpoint(
+  *  id = "submitSurvey",
+  *  label = @Translation("Submit Survey Api."),
+- *  servlet = "CRSurveyAPI",
++ *  servlet = "site/CRSurveyAPI",
+  *  method = "submitSurvey",
+  *  authRequired = TRUE,
+  *  cacheLifetime = 0,
+diff --git a/modules/druminate_webforms/src/Plugin/WebformHandler/DruminateSurveyWebformHandler.php b/modules/druminate_webforms/src/Plugin/WebformHandler/DruminateSurveyWebformHandler.php
+index 90aedb7..4086295 100644
+--- a/modules/druminate_webforms/src/Plugin/WebformHandler/DruminateSurveyWebformHandler.php
++++ b/modules/druminate_webforms/src/Plugin/WebformHandler/DruminateSurveyWebformHandler.php
+@@ -187,7 +187,7 @@ class DruminateSurveyWebformHandler extends WebformHandlerBase {
+    * @param array $webform_elements_options
+    *   Array of options that contains webform elements.
+    */
+-  protected function recursiveMapping(array $element, array &$webform_elements_options) {
++  protected function recursiveMapping($element, array &$webform_elements_options) {
+     $isContainer = FALSE;
+     foreach ($element as $key => $partial) {
+       // Container elements are the only elements in the array that do not begin
+diff --git a/src/Luminate/DruminateApi.php b/src/Luminate/DruminateApi.php
+index c0ce1a5..328595e 100644
+--- a/src/Luminate/DruminateApi.php
++++ b/src/Luminate/DruminateApi.php
+@@ -101,7 +101,7 @@ class DruminateApi {
+         return FALSE;
+       }
+ 
+-      $url = Url::fromUri($base_url . '/CRConsAPI', $options);
++      $url = Url::fromUri($base_url . '/site/CRConsAPI', $options);
+ 
+       $request = $this->client->get($url->toString());
+       $response = json_decode((string) $request->getBody());

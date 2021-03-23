@@ -36,10 +36,12 @@
         "drupal/core-recommended": "^8.8.4",
         "drupal/custom_add_another": "^1.0-beta1",
         "drupal/devel": "^2.1",
+        "drupal/druminate": "1.x-dev",
         "drupal/eck": "1.x-dev",
         "drupal/entity_browser": "^2.3",
         "drupal/entity_usage": "^2.0.0-beta1",
         "drupal/environment_indicator": "^4.0",
+        "drupal/externalauth": "^1.3",
         "drupal/field_group": "^3.0-rc2",
         "drupal/firebase": "^2.0",
         "drupal/geocoder": "^3.0-beta5",
@@ -167,6 +169,9 @@
                 "X-CSRF-Token request header is missing when using Bearer authentication": "https://www.drupal.org/files/issues/2019-07-05/3055260-skip-csrf-token-check-when-using-bearer-auth-11-8.8.x.patch",
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
                 "Incorrect filter group OR behavior, LEFT JOIN changed to INNER JOIN": "https://www.drupal.org/files/issues/2019-10-08/1766338-106.patch"
+            },
+            "drupal/druminate": {
+                "OCMC Servlet fix.": "patches/druminate-ocmc_servlet_fix-20210323.patch"
             },
             "drupal/firebase": {
                 "when sending of notification fails throw an error": "https://www.drupal.org/files/issues/2020-10-29/firebase_when-sending-of-notification-fails-throw-an-error_3179715-2.patch"

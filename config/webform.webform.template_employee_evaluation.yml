@@ -1,23 +1,23 @@
-uuid: c7b9716b-d2ef-4b72-ae4a-1b94012844c8
+uuid: 6bb790b8-de00-417e-83b8-88c290abea99
 langcode: en
-status: open
+status: closed
 dependencies:
   enforced:
     module:
-      - webform
+      - webform_templates
 _core:
-  default_config_hash: kwZVwIX7pVsR7yoEws_rwdWfn1Gr6l24w4ibCEvF5Js
+  default_config_hash: Pf8VUadq-k3wvj1FZdJPnI8K35UUKyImluXFb6PQH6I
 open: null
 close: null
 weight: 0
 uid: null
-template: false
+template: true
 archive: false
-id: contact
-title: Contact
-description: 'Basic email contact webform.'
+id: template_employee_evaluation
+title: 'Employee Evaluation'
+description: 'An employee evaluation webform template.'
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nflexbox:\n  '#type': webform_flexbox\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\nurl:\n  '#type': url\n  '#title': Website\n  '#wrapper_attributes':\n    style: 'display:none'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n  '#submit__attributes':\n    class:\n      - mt-3"
+elements: "evaluator_information:\n  '#title': 'Your Information'\n  '#type': webform_section\n  evaluator_first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  evaluator_last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  evaluator_job_title:\n    '#type': textfield\n    '#title': 'Job Title'\n    '#required': true\n  evaluator_relationship:\n    '#type': webform_select_other\n    '#title': 'Relationship with employee'\n    '#options':\n      Coworker: Coworker\n      Supervisor: Supervisor\n    '#required': true\nemployee_information:\n  '#title': 'Employee Information'\n  '#type': webform_section\n  employee_first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  employee_last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  employee_job_title:\n    '#type': textfield\n    '#title': 'Job Title'\n    '#required': true\n  employee_ratings:\n    '#type': webform_likert\n    '#title': 'How would you rate the employee''s…'\n    '#questions':\n      attendance: Attendance\n      attire: Attire\n      professionalism: Professionalism\n      work_area: 'Work area'\n      ability: 'Ability to do the job'\n      work_with_others: 'Ability to work with others'\n      receive_feedback: 'Ability to receive feedback/criticism'\n      adaptabily: 'Ability to adapt'\n      learning: 'Willingness to learn'\n      participation: 'Willingness to participate'\n      work_ethic: 'Work ethic'\n      quality: 'Quality of work'\n    '#answers': likert_quality\n    '#required': true\n  employee_qualities:\n    '#type': textarea\n    '#title': 'What are the employee''s top qualities?'\n    '#required': true\n  employee_improve:\n    '#type': textarea\n    '#title': 'In what ways could the employee improve?'\n    '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
 css: ''
 javascript: ''
 settings:
@@ -52,7 +52,7 @@ settings:
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
-  form_autofocus: true
+  form_autofocus: false
   form_details_toggle: false
   form_access_denied: default
   form_access_denied_title: ''
@@ -117,10 +117,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: page
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
-  confirmation_url: '<front>'
+  confirmation_message: 'Thank you for applying.'
+  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -195,77 +195,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email_confirmation:
-    id: email
-    label: 'Email confirmation'
-    handler_id: email_confirmation
-    status: true
-    conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: '[webform_submission:values:email:raw]'
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: web@ocmc.org
-      from_options: {  }
-      from_name: OCMC.org
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      theme_name: ''
-      parameters: {  }
-  email_notification:
-    id: email
-    label: 'Email notification'
-    handler_id: email_notification
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: missions@ocmc.org
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: web@ocmc.org
-      from_options: {  }
-      from_name: '[webform_submission:author:display-name]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: "<ul>\r\n\t<li>Submitted on [webform_submission:created]</li>\r\n\t<li>Submitted by: [webform_submission:user]</li>\r\n\t<li>Submitted values are:</li>\r\n\t<li>[webform_submission:values]</li>\r\n</ul>"
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      theme_name: ''
-      parameters: {  }
+handlers: {  }
 variants: {  }

@@ -1,0 +1,11 @@
+uuid: fc29370c-0682-418b-a91b-992d78e475c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_webform_image_select_images
+label: 'Bulk Update Webform images Fields'
+type: webform_image_select_images
+plugin: bulk_update_fields_action_base
+configuration: {  }
