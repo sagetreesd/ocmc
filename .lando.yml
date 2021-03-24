@@ -55,3 +55,6 @@ tooling:
     service: node
   gulp-cli:
     service: node
+  theme:
+    service: node
+    cmd: cd /app/web/themes/custom/sagebootstrap && gulp
