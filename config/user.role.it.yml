@@ -1,0 +1,10 @@
+uuid: 16220caf-281f-4998-bf81-d0470fa72a95
+langcode: en
+status: true
+dependencies: {  }
+id: it
+label: IT
+weight: -7
+is_admin: null
+permissions:
+  - 'administer smtp module'

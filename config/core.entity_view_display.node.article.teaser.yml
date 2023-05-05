@@ -17,7 +17,6 @@ dependencies:
     - image.style.medium_landscape_290x210_
     - node.type.article
   module:
-    - entity_reference_revisions
     - image
     - user
 _core:
@@ -27,15 +26,6 @@ targetEntityType: node
 bundle: article
 mode: teaser
 content:
-  field_content_paragraphs:
-    type: entity_reference_revisions_entity_view
-    weight: 1
-    region: content
-    label: hidden
-    settings:
-      view_mode: news_article_listing
-      link: ''
-    third_party_settings: {  }
   field_thumbnail_image:
     type: image
     weight: 0
@@ -48,6 +38,7 @@ content:
 hidden:
   body: true
   field_article_author: true
+  field_content_paragraphs: true
   field_hero: true
   field_interests: true
   field_locations: true

@@ -1,0 +1,14 @@
+uuid: 7dd04dce-1196-4bf1-b2ee-e31aa238d68e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.it
+  module:
+    - user
+id: user_add_role_action.it
+label: 'Add the IT role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: it

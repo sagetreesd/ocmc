@@ -6,7 +6,7 @@ smtp_protocol: tls
 smtp_autotls: true
 smtp_timeout: 60
 smtp_username: web@ocmc.org
-smtp_password: Rar27975
+smtp_password: jgzqqrcsnntxzjns
 smtp_from: web@ocmc.org
 smtp_fromname: OCMC.org
 smtp_client_hostname: ocmc.org
